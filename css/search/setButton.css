@@ -1,0 +1,64 @@
+/*真实选项按钮样式*/
+.switch {
+    width: 100px;
+    height: 20px;
+
+    display: none;
+}
+/*按钮框架*/
+.buttonBorder {
+    background-color: #404040;
+    width: 160px;
+    height: 30px;
+}
+/*设置定位逻辑和排版*/
+.buttonBorder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: var(--z-buttonBorder);
+}
+/*实现边框统一控制*/
+.buttonBorder {
+    padding: 2px;
+    box-sizing: border-box;
+}
+/*统一控制按钮文本*/
+.buttonText {
+    width: 76px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    z-index: var(--z-buttonText);
+
+    color: #404040;
+}
+/*滑块*/
+/*滑块定位使用绝对定位，绝对定位会寻找最近的relative元素进行相对定位*/
+/*所以buttonBorder使用relative定位，这个滑块就会相对于border定位，不会受到flex影响*/
+/*同时，绝对定位也不会受到父元素的padding影响，所以这里需要写left和top，不然滑块会紧贴父元素*/
+.buttonSlider {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 76px;
+    height: 26px;
+
+    z-index: var(--z-buttonSlider);
+
+    background-color: white;
+    will-change: background-color,left;
+    transition: background-color 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
+                left 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+/*滑块激活状态*/
+.buttonSlider.active {
+    background-color: #D16430;
+    left: 82px;
+
+    will-change: background-color,left;
+    transition: background-color 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
+                left 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}

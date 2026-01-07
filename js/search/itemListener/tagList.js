@@ -1,0 +1,49 @@
+// 定义函数
+function getTag(loadButtonID,targetObjectPool) {
+    let box = document.getElementById("tagPool");
+    let element = document.getElementById(loadButtonID);
+
+    element.addEventListener("click",function (){
+        // 先清空再追加
+        box.replaceChildren();
+
+        // 创建一个虚拟对象，防止多次触发重绘
+        let cache = document.createDocumentFragment();
+
+        for (let i = 0; i < targetObjectPool.length; i++) {
+            let div = document.createElement("div");
+
+            div.textContent = targetObjectPool[i];
+            div.className = "waiting";
+
+            // 先放到虚拟对象里面
+            cache.appendChild(div);
+        }
+
+        // 把虚拟对象追加进去，仅触发一次重绘
+        box.appendChild(cache)
+    });
+}
+
+
+
+// 角色筛选
+getTag("character",characterPool);
+
+// 主线章节筛选
+getTag("mainLine",mainLinePool);
+
+// 活动章节筛选
+getTag("event",eventPool);
+
+// 角色轶事筛选
+getTag("anecdote",anecdotePool);
+
+// 按时间线筛选
+getTag("year",yearPool);
+
+// 亮色/暗色筛选
+getTag("lightAndDark",lightAndDarkPool);
+
+// 特殊标签筛选
+getTag("special",specialPool);

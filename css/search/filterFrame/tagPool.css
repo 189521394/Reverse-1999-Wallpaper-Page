@@ -1,0 +1,80 @@
+#tagPool {
+    width: 32vw;
+    height: 40vh;
+    background-color: var(--showTagBGC);
+    border: 1px solid var(--goldLine);
+
+    padding: 10px;
+}
+
+
+
+/*定义布局样式*/
+/*共享布局样式*/
+#tagPool,
+#submitPool {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+
+    justify-content: stretch;
+    align-content: start;
+}
+
+
+
+/*轶事，比较宽的布局样式，js动态添加(switchWide)*/
+#tagPool.wide,
+#submitPool.wide {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+
+
+/*为列表开启滚动条*/
+#tagPool {
+    overflow-y: auto;
+}
+#tagPool::-webkit-scrollbar {
+    display: initial;
+    width: 8px;
+}
+#tagPool::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
+    border-radius: 0;
+}
+#tagPool::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
+}
+#tagPool::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
+}
+
+
+
+/*定义每个标签的样式*/
+/*共享布局样式*/
+.waiting {
+    width: auto;
+    height: 40px;
+    background-color: var(--tagBGC);
+    transition: background-color 150ms;
+
+    /*禁止换行，超出自动省略*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    user-select: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.waiting:hover {
+    background-color: #ffffff;
+    transition: background-color 150ms;
+}
+.waiting:active {
+    background-color: #d2d2d2;
+    transition: background-color 150ms;
+}

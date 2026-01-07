@@ -1,0 +1,42 @@
+#switch {
+    position: fixed;
+    display: flex;
+
+    width: 60px;
+    height: 60px;
+    bottom: 10vh;
+
+    background: transparent;
+}
+#prev {
+    width: 24px;
+    height: 50px;
+    margin: 5px 1px 5px 5px;
+
+    backdrop-filter: blur(50px);
+    border-radius: 5px 0 0 5px;
+}
+#next {
+    width: 24px;
+    height: 50px;
+    margin: 5px 5px 5px 1px;
+
+    backdrop-filter: blur(50px);
+    border-radius: 0 5px 5px 0;
+}
+
+/*鼠标浮上样式*/
+.switchButton:hover{
+    box-shadow: 0 0 30px -10px #000;
+    transition: box-shadow 250ms;
+}
+/*鼠标点击样式*/
+.switchButton:active{
+    box-shadow: 0 0 10px -5px #000;
+    transition: box-shadow 1ms;
+}
+/*鼠标消失样式*/
+.switchButton{
+    box-shadow: none;
+    transition: box-shadow 250ms;
+}

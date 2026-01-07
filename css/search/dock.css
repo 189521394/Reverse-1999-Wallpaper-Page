@@ -1,0 +1,78 @@
+/*控制菜单外框*/
+/*初始化*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100vh;
+    z-index: var(--z-dock);
+}
+/*居中外框*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*控制菜单内框*/
+/*居中内框*/
+#dock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*内框样式*/
+#dock{
+    width: auto;
+    height: 100vh;
+    backdrop-filter: blur(100px);
+
+    /*不允许用户选择*/
+    user-select: none;
+}
+/*内框阴影*/
+#dock{
+    box-shadow: 0 0 30px -10px #000;
+    /*box-shadow: 水平位置 垂直位置 模糊距离 阴影大小 阴影颜色;*/
+}
+/*控制内容块大小*/
+.menu{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+}
+/*图片样式（临时统一控制，没图标资源）*/
+.menu_img{
+    content: url("../../pic/light/light.svg");
+    border-radius: 10px;
+}
+
+/*鼠标浮上样式*/
+.menu:hover{
+    box-shadow: 0 0 30px -10px #000;
+    transition: box-shadow 250ms;
+}
+/*鼠标点击样式*/
+.menu:active{
+    box-shadow: 0 0 10px -5px #000;
+    transition: box-shadow 1ms;
+}
+/*鼠标消失样式*/
+.menu{
+    box-shadow: none;
+    transition: box-shadow 250ms;
+}
+
+
+/*鼠标移入移出样式*/
+.dockin{
+    opacity: 1;
+    transition: opacity 1s;
+}
+.dockout{
+    opacity: 0;
+    transition: opacity 1s;
+}

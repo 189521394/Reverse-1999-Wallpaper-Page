@@ -1,0 +1,15 @@
+#title {
+    font-size: 40px;
+}
+/*文字居中*/
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*特殊的block，展示文本用的，自定义flex布局*/
+#c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

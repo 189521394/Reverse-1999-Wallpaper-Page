@@ -1,0 +1,55 @@
+#tagList {
+    background-color: var(--showListBGC);
+}
+/*自动添加滚动条*/
+#tagList {
+    overflow-y: auto;
+    height: 40vh;
+    padding: 10px;
+
+    border: 1px solid var(--goldLine);
+}
+
+
+
+/*设置每个选项的基础外观*/
+.item {
+    padding: 3px 15px 3px 15px;
+    user-select: none;
+    text-align: center;
+    font-size: 25px;
+}
+/*设置被选择的动画*/
+.item {
+    background-color: var(--showListBGC);
+    color: var(--fontColor);
+    transition: background-color 250ms, color 250ms;
+}
+.item:hover {
+    background-color: #ffffff;
+    color: var(--fontHoverColor);
+    transition: background-color 250ms, color 250ms;
+}
+.item:active {
+    background-color: #d2d2d2;
+    color: var(--fontHoverColor);
+    transition: background-color 250ms, color 250ms;
+}
+
+
+
+/*为列表开启滚动条*/
+#tagList::-webkit-scrollbar {
+    display: initial;
+    width: 8px;
+}
+#tagList::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
+    border-radius: 0;
+}
+#tagList::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
+}
+#tagList::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
+}

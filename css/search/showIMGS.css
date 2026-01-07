@@ -1,0 +1,22 @@
+/*基础样式*/
+#select {
+    background-color: var(--showImgBGC);
+    width: 85vw;
+    min-height: 70vh;
+    height: auto;
+
+    box-sizing: border-box;
+    margin-bottom: 20vh;
+    padding: 10px;
+
+    user-select: none;
+}
+/*设置布局*/
+#select {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    gap: 10px;
+
+    justify-content: stretch;
+    align-content: start;
+}

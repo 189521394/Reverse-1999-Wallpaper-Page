@@ -1,0 +1,21 @@
+/*重置边距*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*加载字体*/
+@font-face {
+    font-family: "思源宋体-Medium";
+    src: url("/font/Font-Medium.otf") format("opentype");
+    font-weight: auto;
+    font-style: auto;
+}
+body {
+    font-family: 思源宋体-Medium, sans-serif;
+}

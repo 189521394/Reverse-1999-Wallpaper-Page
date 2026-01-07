@@ -1,0 +1,104 @@
+/*重置边距*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*设置flex布局*/
+body {
+    width: 100vw;
+    min-height: 155vh;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--pageBGC);
+
+    /*防止页面左上角出现鼠标焦点*/
+    user-select: none;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*加载字体*/
+@font-face {
+    font-family: "思源宋体-Medium";
+    src: url("/font/Font-Medium.otf") format("opentype");
+    font-weight: auto;
+    font-style: auto;
+}
+body {
+    font-family: 思源宋体-Medium, sans-serif;
+}
+
+/*主题色控制*/
+:root {
+    /* 页面大背景：极深的灰黑色，模拟游戏主界面 */
+    --pageBGC: #121416;
+
+    /* 筛选大框：比背景稍亮，带有磨砂质感的深灰 */
+    --filterBoxBGC: #1d2024;
+
+    /* 控制面板：与筛选框保持一致或略深，稳重 */
+    --controlBGC: #181b1f;
+
+    /* 图片展示区：纯黑或极深色，为了凸显图片 */
+    --showImgBGC: #0a0a0a;
+
+    /* 列表区域(左侧类别)：深橄榄灰，区分层级 */
+    --showListBGC: #2a2e33;
+
+    /* 标签显示区域(右侧池子)：由于要放很多Tag，颜色要深，显得有进深感 */
+    --showTagBGC: #23262b;
+
+    /* 单个标签颜色：经典的1999“哑光金”，文字建议用黑色 */
+    --tagBGC: #d6b882;
+
+    /* 提交按钮：游戏里常用的“橙红色”高亮，诱导点击 */
+    --controlButtonBGC: #D16430;
+
+    /* 浅色文本 */
+    --fontColor: #dcdcdc;
+
+    /* 浅色文本hover */
+    --fontHoverColor: #000;
+
+    /* 金色边框 */
+    --goldLine: #5c5645;
+}
+
+/*index层级管理*/
+/*显示在遮罩上面的任何东西图层都要比遮罩高*/
+:root {
+    /*基础图片显示层*/
+    --z-base: 10;
+
+    /*遮罩层，背景遮罩*/
+    --z-overlay: 50;
+
+    /*设置自带的框架，在设置层背面贴着*/
+    --z-setBack: 90;
+
+    /*图片显示和设置显示，同级高度，都要比遮罩高*/
+    --z-imgAndSet: 100;
+
+    /*图片下方的图片标签显示区，在图片上面*/
+    --z-showTags: 110;
+
+    /*设置里面的按钮背景，在设置之上*/
+    --z-buttonBorder: 110;
+
+    /*设置里面的滑块，在背景上面，但是要比按钮文本低*/
+    --z-buttonSlider: 120;
+
+    /*设置按钮文本，比滑块高，做出透明效果*/
+    --z-buttonText: 130;
+
+    /*左侧dock栏，可以控制页面跳转，显示图层较高*/
+    --z-dock: 300;
+}

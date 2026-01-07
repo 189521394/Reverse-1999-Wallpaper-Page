@@ -1,0 +1,27 @@
+#Filter {
+    width: 85vw;
+    height: 60vh;
+    background-color: var(--filterBoxBGC);
+    margin-top: 12vh;
+}
+/*flex布局*/
+#Filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/*控制筛选器框架布局*/
+#filterBox {
+    width: 85vw;
+    height: 50vh;
+}
+#filterBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}

@@ -1,0 +1,62 @@
+:root {
+    --block-height: 25vh;
+}
+/*=================================这里是所有block统一的设置=================================*/
+.block {
+    width: 100vw;
+    height: var(--block-height);
+    background-color: #99ff99;
+}
+.block {
+    margin-top: 10vh;
+}
+.block:not(#c1,.left) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*=================================控制框架布局=================================*/
+.box {
+    width: 53vw;
+    height: var(--block-height);
+}
+.box:not(.left) {
+    right: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.box:not(.left) {
+    flex-direction: row;
+}
+/*=================================图片=================================*/
+.img {
+    width: 22vw;
+    height: var(--block-height);
+}
+.img {
+    background-size: cover;
+    background-position: center;
+}
+/*=================================文本=================================*/
+.text {
+    width: 20vw;
+    height: var(--block-height);
+}
+.text {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+}
+.text:not(.left) {
+    justify-content: left;
+    margin-left: 10px;
+}
+.text {
+    font-size: 25px;
+}

@@ -1,0 +1,75 @@
+#control {
+    width: 85vw;
+    height: 10vh;
+    background-color: var(--controlBGC);
+    box-sizing: border-box;
+    border: 1px solid var(--controlBGC);
+
+    transition: border 150ms;
+}
+#control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#control:hover {
+    border: 1px solid var(--goldLine);
+    transition: border 150ms;
+}
+
+
+
+/*设置按钮大小*/
+#clean {
+    width: 6.8em;
+}
+#submit {
+    width: 4.8em;
+}
+#setButton {
+    width: 7.8em;
+}
+#result {
+    color: var(--fontColor);
+}
+
+
+
+.buttons {
+    background-color: var(--controlButtonBGC);
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--goldLine);
+
+    height: 1.8em;
+    line-height: 1.8em;
+
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+
+    transition: background-color 150ms;
+}
+.buttons:hover {
+    background-color: #ffffff;
+    transition: background-color 150ms;
+}
+.buttons:active {
+    background-color: #d2d2d2;
+    transition: background-color 150ms;
+}
+
+
+
+/*设置结果样式*/
+/*让元素靠左对齐，同时又留有间距*/
+#result {
+    margin-right: auto;
+    margin-left: 30px;
+}
+#result {
+    width: 10em;
+    height: 1.4em;
+    line-height: 1.4em;
+    font-size: 24px;
+}

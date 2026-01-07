@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>筛选壁纸</title>
+</head>
+<body>
+    <header>
+        <div id="dock">
+            <div id="welcome"   class="menu"    onclick="">
+                <img src="" alt="欢迎" class="menu_img" onclick="location='index.html#home'">
+            </div>
+            <div id="publicize" class="menu">
+                <img src="" alt="介绍" class="menu_img" onclick="location='index.html#content'">
+            </div>
+            <div id="foot"      class="menu">
+                <img src="" alt="底栏" class="menu_img" onclick="location='index.html#bottom'">
+            </div>
+            <div id="file"      class="menu">
+                <img src="" alt="文件" class="menu_img" onclick="location='search.html'">
+            </div>
+        </div>
+    </header>
+    <div id="Filter">
+        <div id="filterBox">
+            <div id="tagList">
+                <div id="character" class="item">按角色筛选</div>
+                <div id="mainLine" class="item">按主线章节筛选</div>
+                <div id="event" class="item">按活动章节筛选</div>
+                <div id="anecdote" class="item">按轶事筛选</div>
+                <div id="year" class="item">按时间线筛选</div>
+                <div id="lightAndDark" class="item">按亮色/暗色筛选</div>
+                <div id="special" class="item">按特殊标签筛选</div>
+            </div>
+            <div id="tagPool">
+                <!--动态追加待选标签-->
+            </div>
+            <div id="submitPool">
+                <!--动态追加已选标签-->
+            </div>
+        </div>
+        <!--控制筛选面板-->
+        <div id="control">
+            <!--显示结果数量-->
+            <div id="result">0个筛选结果</div>
+            <div id="setButton" class="buttons" onclick="openSettings()">设置&使用说明</div>
+            <div id="clean" class="buttons" onclick="clean()">清空筛选标签</div>
+            <div id="submit" class="buttons" onclick="submit()">提交筛选</div>
+        </div>
+    </div>
+    <!--遮罩层(查看大图和设置)-->
+    <div id="overlay"></div>
+    <!--显示图片的所有标签-->
+    <div id="returnTag">
+        <!--动态获取标签-->
+    </div>
+    <!--默认隐藏的设置层-->
+    <div id="set">
+        <div id="setBox">
+            <div id="setList">
+                <div id="setTitle" class="title">设置</div>
+                <div class="line"></div>
+                <label class="tips">
+                    精确筛选
+                    <input type="checkbox" id="preciseScreening" class="switch">
+                    <div class="buttonBorder">
+                        <div class="OFF buttonText">OFF</div>
+                        <div class="ON buttonText">ON</div>
+                        <div id="PSSlider" class="buttonSlider"></div>
+                    </div>
+                </label>
+                <label class="tips">
+                    清空筛选标签的同时清空筛选结果
+                    <input type="checkbox" id="cleanAll" class="switch">
+                    <div class="buttonBorder">
+                        <div class="OFF buttonText">OFF</div>
+                        <div class="ON buttonText">ON</div>
+                        <div id="CASlider" class="buttonSlider"></div>
+                    </div>
+                </label>
+                <label class="tips">
+                    在图片下方显示图片的标签
+                    <input type="checkbox" id="showTags" class="switch">
+                    <div class="buttonBorder">
+                        <div class="OFF buttonText">OFF</div>
+                        <div class="ON buttonText">ON</div>
+                        <div id="STSlider" class="buttonSlider"></div>
+                    </div>
+                </label>
+            </div>
+            <div id="tipList">
+                <div id="tipTitle" class="title">使用说明</div>
+                <div class="line"></div>
+                <div class="tips">单击可以添加/移除筛选标签</div>
+                <div class="tips">若要请求所有图片，请打开精确筛选之后执行一次空筛选</div>
+                <div class="tips">[关于时间线] 本人时间有限，并没有认真考据，大部分数据都是从网上搜来的</div>
+                <div class="tips">[关于图片来源] 图片来自游戏解包文件(解包工作并不是我完成的)</div>
+            </div>
+        </div>
+    </div>
+    <div id="select">
+        <!--动态追加筛选结果-->
+    </div>
+</body>
+</html>
+<!--初始化-->
+<link rel="stylesheet" href="css/search/initialize.css">
+<!--保存和读取用户设置-->
+<script src="js/search/saveUserSettings.js"></script>
+
+<!--dock栏-->
+<link rel="stylesheet" href="css/search/dock.css">
+<!--dock栏淡入淡出-->
+<script src="js/search/dock.js"></script>
+
+<!--图片展示框架-->
+<link rel="stylesheet" href="css/search/showIMGS.css">
+<!--每张图片的样式-->
+<link rel="stylesheet" href="css/search/imgs.css">
+
+<!--获取筛选结果-->
+<script src="js/search/dataOperationsLayer/getURL.js"></script>
+<!--获取标签集-->
+<script src="js/search/dataOperationsLayer/getTag.js"></script>
+<!--根据结果集展示壁纸-->
+<script src="js/search/Display/DisplayImg.js"></script>
+<!--显示隐藏标签-->
+<script src="js/search/Display/showTag.js"></script>
+<script src="js/search/Display/hideTag.js"></script>
+<!--图片返回的标签样式-->
+<link rel="stylesheet" href="css/search/returnTag.css">
+<!--底部图片标签，拦截滚动修改为横向滚动-->
+<script src="js/search/scrollListener.js"></script>
+
+<!--筛选器样式-->
+<link rel="stylesheet" href="css/search/filterFrame/Filter.css">
+<!--标签组列表-->
+<link rel="stylesheet" href="css/search/filterFrame/tagList.css">
+<!--预定义的所有标签-->
+<script src="js/search/tagPool.js"></script>
+<!--等待用户选择的标签池-->
+<link rel="stylesheet" href="css/search/filterFrame/tagPool.css">
+<!--被选中的标签-->
+<link rel="stylesheet" href="css/search/filterFrame/submitPool.css">
+<!--控制面板-->
+<link rel="stylesheet" href="css/search/filterFrame/control.css">
+
+<!--角色筛选-->
+<script src="js/search/itemListener/tagList.js"></script>
+<!--添加标签-->
+<script src="js/search/itemListener/chooseTag.js"></script>
+<!--删除标签-->
+<script src="js/search/itemListener/removeTag.js"></script>
+<!--提交筛选-->
+<script src="js/search/submit.js"></script>
+<!--清空筛选-->
+<script src="js/search/clean.js"></script>
+<!--轶事的特殊样式，比较宽-->
+<script src="js/search/switchWide.js"></script>
+
+<!--图片预览动画-->
+<script src="js/search/imgAnimation.js"></script>
+<!--遮罩层-->
+<link rel="stylesheet" href="css/search/overlay.css">
+<!--设置逻辑-->
+<script src="js/search/setting.js"></script>
+<!--设置外观-->
+<link rel="stylesheet" href="css/search/set.css">
+<!--设置里面的按钮，外观部分-->
+<link rel="stylesheet" href="css/search/setButton.css">

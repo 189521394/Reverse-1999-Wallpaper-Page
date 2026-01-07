@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reverse-1999-Wallpaper</title>
+</head>
+<body>
+    <header>
+        <div id="dock">
+            <div id="welcome"   class="menu"    onclick="">
+                <img src="" alt="欢迎" class="menu_img" onclick="scrollToElement('home')">
+            </div>
+            <div id="publicize" class="menu">
+                <img src="" alt="介绍" class="menu_img" onclick="scrollToElement('content')">
+            </div>
+            <div id="foot"      class="menu">
+                <img src="" alt="底栏" class="menu_img" onclick="scrollToElement('bottom')">
+            </div>
+            <div id="file"      class="menu">
+                <img src="" alt="文件" class="menu_img" onclick="location='search.html'">
+            </div>
+        </div>
+    </header>
+    <div class="swiper">
+        <!--主页-->
+        <div id="home" class="swiper-slide">
+            <div id="currentIMG" class="IMGcontainer"></div>
+            <div id="nextIMG" class="IMGcontainer"></div>
+        </div>
+
+        <!--内容-->
+        <div id="content" class="swiper-slide">
+            <div id="Placeholder"></div>
+            <div id="c1" class="block">
+                <div id="title">
+                    WHEN MEMORY IS FULL<br>
+                    PUT ON THE PERFECT LID-<br>
+                    MEMORY IS...<br>
+                </div>
+            </div>
+            <div id="c2" class="block">
+                <div id="box1" class="box">
+                    <div id="img1" class="img">
+
+                    </div>
+                    <div id="text1" class="text">
+                        天空褪去色彩，<br>
+                        现在它们终于平静下来了。
+                    </div>
+                </div>
+            </div>
+            <div id="c3" class="block left">
+                <div id="box2" class="box left">
+                    <div id="img2" class="img">
+
+                    </div>
+                    <div id="text2" class="text left">
+                        最明净的夜晚，最短暂的时刻。
+                    </div>
+                </div>
+            </div>
+            <div id="c4" class="block">
+                <div id="box3" class="box">
+                    <div id="img3" class="img">
+
+                    </div>
+                    <div id="text3" class="text">
+                        驶往同一个方向，<br>
+                        驶向同一个......寓言。
+                    </div>
+                </div>
+            </div>
+            <div id="c5" class="block left">
+                <div id="box4" class="box left">
+                    <div id="img4" class="img">
+
+                    </div>
+                    <div id="text4" class="text left">
+                        她病了，却如好梦沉睡。
+                    </div>
+                </div>
+            </div>
+            <div id="c6" class="block">
+                <div id="box5" class="box">
+                    <div id="img5" class="img">
+
+                    </div>
+                    <div id="text5" class="text">
+                        对她而言，这称不上惩罚。<br>
+                        可她仍旧驻足了片刻。
+                    </div>
+                </div>
+            </div>
+            <div id="c7" class="block left">
+                <div id="box6" class="box left">
+                    <div id="img6" class="img">
+
+                    </div>
+                    <div id="text6" class="text left">
+                        思想亦能武装到牙齿。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--底栏-->
+        <div id="bottom" class="swiper-slide">
+            底栏
+        </div>
+    </div>
+</body>
+</html>
+<!--初始化-->
+<link rel="stylesheet" href="css/index/initialize.css">
+
+<!--主页，内容，和底栏-->
+<link rel="stylesheet" href="css/index/home.css">
+<link rel="stylesheet" href="css/index/content.css">
+<link rel="stylesheet" href="css/index/bottom.css">
+
+<!--统一控制三个页面-->
+<link rel="stylesheet" href="css/index/unity.css">
+<!--快速切换菜单-->
+<link rel="stylesheet" href="css/index/dock.css">
+
+<!--控制dock的淡入淡出-->
+<script src="js/index/in-and-out.js"></script>
+
+<!--控制dock栏跳转-->
+<script src="js/index/GoTo.js"></script>
+
+<!--主页图片轮换逻辑，图片容器基础样式，图片切换按钮(废弃)-->
+<script src="js/index/Rotation.js"></script>
+<link rel="stylesheet" href="css/index/IMGcontainer.css">
+
+<!--内容块-->
+<link rel="stylesheet" href="css/index/block.css">
+<!--内容块占位符，解决白色背景的bug-->
+<link rel="stylesheet" href="css/index/Placeholder.css">
+<!--内容块标题-->
+<link rel="stylesheet" href="css/index/title.css">
+<!--每个内容块-->
+<link rel="stylesheet" href="css/index/blocks.css">

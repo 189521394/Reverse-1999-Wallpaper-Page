@@ -1,0 +1,86 @@
+/*基础样式*/
+#returnTag {
+    position: fixed;
+
+    width: fit-content;
+    max-width: 70vw;
+    height: auto;
+    bottom: 0;
+    padding: 10px;
+
+    background-color: rgba(243, 233, 227, 0);
+
+    z-index: var(--z-showTags);
+    will-change: background-color;
+}
+/*滚动条设置*/
+#returnTag {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    /*平滑滚动*/
+    scroll-behavior: smooth;
+}
+#returnTag::-webkit-scrollbar {
+    display: initial;
+    height: 10px;
+}
+#returnTag::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.6); /* 滑块颜色 */
+    border-radius: 0;
+}
+#returnTag::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, 0.9); /* 悬停效果 */
+}
+#returnTag::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.3);  /* 滚动条轨道 */
+}
+
+
+
+/*布局方式*/
+#returnTag {
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 10px;
+}
+
+
+
+/*设置透明度作为显示隐藏*/
+#returnTag.show {
+    background-color: rgb(243, 233, 227, 100);
+}
+
+
+
+/*内部元素布局*/
+.tags {
+    min-width: 180px;
+    width: auto;
+    height: 40px;
+    background-color: var(--tagBGC);
+    transition: background-color 150ms;
+}
+/*文本设置*/
+.tags {
+    /*文本禁止换行，超出会撑大元素，所以没问题*/
+    white-space: nowrap;
+    /*撑大添加10px边距*/
+    padding: 0 13px;
+
+    /*文本设置*/
+    user-select: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.tags:hover {
+    background-color: #ffffff;
+    transition: background-color 150ms;
+}
+.tags:active {
+    background-color: #d2d2d2;
+    transition: background-color 150ms;
+}
