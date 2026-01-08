@@ -8,36 +8,10 @@
     bottom: 0;
     padding: 10px;
 
-    background-color: rgba(243, 233, 227, 0);
+    background-color: #F3E9E3;
 
     z-index: var(--z-showTags);
-    will-change: background-color;
 }
-/*滚动条设置*/
-#returnTag {
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    /*平滑滚动*/
-    scroll-behavior: smooth;
-}
-#returnTag::-webkit-scrollbar {
-    display: initial;
-    height: 10px;
-}
-#returnTag::-webkit-scrollbar-thumb {
-    background: rgba(128, 128, 128, 0.6); /* 滑块颜色 */
-    border-radius: 0;
-}
-#returnTag::-webkit-scrollbar-thumb:hover {
-    background: rgba(128, 128, 128, 0.9); /* 悬停效果 */
-}
-#returnTag::-webkit-scrollbar-track {
-    background: rgba(128, 128, 128, 0.3);  /* 滚动条轨道 */
-}
-
-
-
 /*布局方式*/
 #returnTag {
     display: flex;
@@ -45,15 +19,20 @@
 
     gap: 10px;
 }
-
-
+/*变化样式*/
+#returnTag {
+    opacity: 0;
+    pointer-events: none;
+    will-change: opacity;
+    transition: opacity 250ms ease;
+}
 
 /*设置透明度作为显示隐藏*/
 #returnTag.show {
-    background-color: rgb(243, 233, 227, 100);
+    transition: opacity 250ms ease;
+    pointer-events: auto;
+    opacity: 1;
 }
-
-
 
 /*内部元素布局*/
 .tags {
@@ -83,4 +62,30 @@
 .tags:active {
     background-color: #d2d2d2;
     transition: background-color 150ms;
+}
+
+/*滚动条设置*/
+#returnTag {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    /*平滑滚动*/
+    scroll-behavior: smooth;
+}
+#returnTag::-webkit-scrollbar {
+    display: initial;
+    height: 10px;
+}
+#returnTag::-webkit-scrollbar-thumb {
+    /* 滑块颜色 */
+    background: rgba(128, 128, 128, 0.6);
+    border-radius: 0;
+}
+#returnTag::-webkit-scrollbar-thumb:hover {
+    /* 悬停效果 */
+    background: rgba(128, 128, 128, 0.9);
+}
+#returnTag::-webkit-scrollbar-track {
+    /* 滚动条轨道 */
+    background: rgba(128, 128, 128, 0.3);
 }

@@ -2,15 +2,18 @@
 function saveUserSettings() {
     const precise = document.getElementById("preciseScreening").checked;
     const cleanAll = document.getElementById("cleanAll").checked;
+    const showTags = document.getElementById("showTags").checked;
 
     localStorage.setItem("precise", precise);
     localStorage.setItem("cleanAll", cleanAll);
+    localStorage.setItem("showTags", showTags);
 }
 // 加载用户设置
 function loadUserSettings() {
     // 从本地存储读取
     const precise = localStorage.getItem("precise");
     const cleanAll = localStorage.getItem("cleanAll");
+    const showTags = localStorage.getItem("showTags");
 
     if (precise === "true") {
         document.getElementById("preciseScreening").checked = true;
@@ -19,14 +22,20 @@ function loadUserSettings() {
     if (cleanAll === "true") {
         document.getElementById("cleanAll").checked = true;
     }
+
+    if (showTags === "true") {
+        document.getElementById("showTags").checked = true;
+    }
 }
 // 更新按钮状态
 function updateButtonStatus() {
     const precise = document.getElementById("preciseScreening").checked;
     const cleanAll = document.getElementById("cleanAll").checked;
+    const showTags = document.getElementById("showTags").checked;
 
     const PSSlider = document.getElementById("PSSlider");
     const CASlider = document.getElementById("CASlider");
+    const STSlider = document.getElementById("STSlider");
 
     // 更新实际逻辑
     saveUserSettings();
@@ -37,10 +46,17 @@ function updateButtonStatus() {
     } else {
         PSSlider.classList.remove("active");
     }
+
     if (cleanAll) {
         CASlider.classList.add("active");
     } else {
         CASlider.classList.remove("active");
+    }
+
+    if (showTags) {
+        STSlider.classList.add("active");
+    } else {
+        STSlider.classList.remove("active");
     }
 }
 
@@ -51,7 +67,8 @@ function updateButtonStatus() {
 window.addEventListener("DOMContentLoaded", ()=> {
     loadUserSettings();
     updateButtonStatus();
-})
+});
 // 按钮发生变化时，更新状态
 document.getElementById("preciseScreening").addEventListener("change", updateButtonStatus);
 document.getElementById("cleanAll").addEventListener("change", updateButtonStatus);
+document.getElementById("showTags").addEventListener("change", updateButtonStatus);

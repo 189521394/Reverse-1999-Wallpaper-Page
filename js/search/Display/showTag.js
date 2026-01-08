@@ -3,6 +3,7 @@ async function showTag(targetURL) {
     let Tags = await loadTag(targetURL);
     console.log(Tags);
 
+    showBox.replaceChildren();
     showBox.classList.add("show");
 
     let cache = document.createDocumentFragment();

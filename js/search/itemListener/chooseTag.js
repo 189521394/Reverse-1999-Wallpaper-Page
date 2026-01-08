@@ -1,7 +1,5 @@
-let target = document.getElementById("submitPool");
-let choose = document.getElementById("tagPool");
-
-choose.addEventListener("click",function (e) {
+document.getElementById("tagPool").addEventListener("click",function (e) {
+    let target = document.getElementById("submitPool");
     let tag = e.target.closest(".waiting");
 
     // 防止点击空白处报错

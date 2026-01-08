@@ -1,6 +1,10 @@
 // 它的调用在 图片被追加进去之后
 // 详见文件：DisplayImg.js
 // 因为图片是动态获取的，如果直接调用，会获取不到图片
+
+// 看一下用户是否需要查看标签
+// 如果查看标签，图片显示布局也需要修改
+const showTags = document.getElementById("showTags");
 function setAnimation() {
     const imgs = document.querySelectorAll('.imgs');
     const overlay = document.getElementById('overlay');
@@ -29,8 +33,13 @@ function setAnimation() {
 
             // 获取屏幕中心点坐标
             const viewportCenterX = window.innerWidth / 2;
-            // 设置高度偏移量
-            const offsetUp = window.innerHeight * 0.03;
+            // 设置高度偏移量，由用户选项决定
+            let offsetUp = 0;
+            if (showTags.checked) {
+                offsetUp = window.innerHeight * 0.03;
+            } else {
+                offsetUp = 0;
+            }
             const viewportCenterY = (window.innerHeight / 2) - offsetUp;
 
             // 计算需要移动的距离
@@ -59,7 +68,9 @@ function setAnimation() {
             activeImg = img;
 
             // 显示图片标签
-            showTag(img.src)
+            if (showTags.checked) {
+                showTag(img.src)
+            }
         });
     });
 
@@ -74,6 +85,9 @@ function setAnimation() {
         }
         document.body.style.overflow = "";
         overlay.classList.remove('show');
-        hideTag();
+        // 隐藏图片标签
+        if (showTags.checked) {
+            hideTag();
+        }
     }
 }

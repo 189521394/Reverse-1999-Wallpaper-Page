@@ -47,6 +47,11 @@
     box-sizing: border-box;
     padding: 20px;
 }
+/*添加滚动条*/
+#setBox {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
 
 
