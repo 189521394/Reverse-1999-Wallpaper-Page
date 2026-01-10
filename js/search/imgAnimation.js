@@ -5,6 +5,9 @@
 // 看一下用户是否需要查看标签
 // 如果查看标签，图片显示布局也需要修改
 const showTags = document.getElementById("showTags");
+// 不可以直接在这写checked，在代码里面写元素的checked可以动态调用，热刷新
+// 如果在这里写了checked，每次修改都需要手动提交筛选才生效
+
 function setAnimation() {
     const imgs = document.querySelectorAll('.imgs');
     const overlay = document.getElementById('overlay');

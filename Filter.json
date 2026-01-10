@@ -2491,97 +2491,107 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_baolina.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","保利娜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_fusuzhimujitan.png",
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_xinjiyuanjishi_kuanluan.png",
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","背景图"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_chongsuzhishou.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_duanjian.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城","轶事","J·旧金山小子", "1990","暗色","J"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_hameier.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","环状水星"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_jiujinshanxiaozi.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["轶事", "J·旧金山小子", "1990","亮色","J","贝克特"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_kandianshi1.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","亮色","环状水星","先驱者"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_kanren1.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","环状水星","杰洛"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_kanren2.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","环状水星","杰洛"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_kuanghuanye.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["轶事", "环状水星·第一千夜", "1990","暗色","环状水星"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_lanyanji.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","亮色","先驱者","J"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_men1.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","J"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_men2.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","J"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_shouhucanguan1.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","J","莱格斯"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_shouhucanguan2.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","J","莱格斯"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_wuruqingdian.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","先驱者","J","玛蒂尔达"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_xiaoxiang.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","亮色","环状水星"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_ys_lalaquan.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["轶事", "拉拉泉·只有泉水知道", "1990","亮色","拉拉泉"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_ys_sufubiqima.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["轶事", "苏芙比·淑女的守则", "1990","暗色","苏芙比"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_zhansunj1.png",
-    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990"],
+    "tag_ZH": ["活动剧情", "飞驰！明日之城", "1990","暗色","J"],
     "tag_EN": []
   }
 ]
