@@ -25,7 +25,7 @@ body {
     display: none;
 }
 #returnTag {
-    opacity: 0;
+    visibility: hidden;
 }
 
 /*隐藏滚动条*/

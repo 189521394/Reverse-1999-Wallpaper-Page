@@ -50,12 +50,23 @@ function setAnimation() {
             const moveY = viewportCenterY - imgCenterY;
 
             // 计算缩放比例
-            // 第一个参数，0.9，是让图片占屏幕的80%，留有一定空白
+            // 第一个参数，0.87，是图片占据屏幕空间的比例，留有一定空白
             // 第二个参数，0.93，取自img的初始缩放值transform: scale(0.93)
             // 详见css文件：imgs.css
             // 如果修改缩放值，也要修改这个，不然图片大小会显示异常
-            const scaleX = (window.innerWidth * 0.87 * 0.93) / rect.width;
-            const scaleY = (window.innerHeight * 0.87 * 0.93) / rect.height;
+            //==================================================================
+            // 根据不同选项设置不同大小
+            // 关闭标签时显示大一点，不然显得开启标签很挤
+            let scaleX = 0;
+            let scaleY = 0;
+            if (showTags.checked) {
+                scaleX = (window.innerWidth * 0.87 * 0.93) / rect.width;
+                scaleY = (window.innerHeight * 0.87 * 0.93) / rect.height;
+            } else {
+                scaleX = (window.innerWidth * 0.9 * 0.93) / rect.width;
+                scaleY = (window.innerHeight * 0.9 * 0.93) / rect.height;
+            }
+
             // 保持比例，取最小值
             const scale = Math.min(scaleX, scaleY);
 

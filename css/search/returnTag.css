@@ -2,8 +2,7 @@
 #returnTag {
     position: fixed;
 
-    width: fit-content;
-    max-width: 70vw;
+    width: 100vw;
     height: auto;
     bottom: 0;
     padding: 10px;
@@ -16,22 +15,26 @@
 #returnTag {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: safe center;
 
     gap: 10px;
 }
 /*变化样式*/
 #returnTag {
-    opacity: 0;
+    transform: translateY(100%);
     pointer-events: none;
-    will-change: opacity;
-    transition: opacity 250ms ease;
-}
+    visibility: hidden;
 
-/*设置透明度作为显示隐藏*/
+    transition: transform 250ms ease, visibility 0s linear 260ms;
+}
+/*这里的显示隐藏因为要同时考虑页面加载时元素闪烁问题，所以这么写*/
+/*设置是否可见作为显示隐藏*/
 #returnTag.show {
-    transition: opacity 250ms ease;
+    transform: translateY(0);
     pointer-events: auto;
-    opacity: 1;
+    visibility: visible;
+
+    transition: transform 250ms ease, visibility 0s linear 0s;
 }
 
 /*内部元素布局*/
@@ -62,6 +65,13 @@
 .tags:active {
     background-color: #d2d2d2;
     transition: background-color 150ms;
+}
+/*解决溢出时10px被裁切的问题*/
+.tags:first-child {
+    margin-left: 10px;
+}
+.tags:last-child {
+    margin-right: 10px;
 }
 
 /*滚动条设置*/
