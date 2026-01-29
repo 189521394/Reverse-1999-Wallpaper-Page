@@ -3103,5 +3103,210 @@
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_talou.png",
     "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","亮色","背景图"],
     "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_baoyushiyan.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","星锑","乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_beiying1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_cangdie.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","星锑","乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_cangdie2.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","星锑","乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_chaiyueqi.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_changge.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","图图石子"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_chengjidan1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_chengjidan2.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_chuanshangyanzou.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_chuchang.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","格蕾丝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_denghuo.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","星锑","芭卡洛儿","图图石子","多人合照"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_duizhi.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","格蕾丝","十四行诗","图图石子","卡穆塔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_duizhi2.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","图图石子","卡穆塔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_ewan.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","格蕾丝","维尔汀"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_fuqin.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_gouhuo.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","图图石子","卡穆塔","多人合照"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_huojiu.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_jietouyanzou1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_jijianbianyi.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_laqin.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_lingluan1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","星锑"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_piaoliu1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","维尔汀","十四行诗","星锑","乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_piaoliu2.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_pingshen.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1996","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_riquanshi1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_riquanshi2.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_shuibian.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_tiaoyin.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_weixiao.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "轶事","芭卡洛儿·河港与海之间","1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_wuerlixixingyun.png",
+    "tag_ZH": ["轶事", "乌尔里希·深空波", "1991","暗色","哑谜","乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_xialou.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","格蕾丝","图图石子"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_xiaotiqin.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_xingti1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","星锑"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_xingti2.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","星锑","APPLe"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_yanmo1.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","格蕾丝","图图石子"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_yanzou1.png",
+    "tag_ZH": ["轶事", "芭卡洛儿·河港与海之间", "1991","暗色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_yewantanxin.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","格蕾丝","芭卡洛儿","图图石子"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_yishun.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_ys_xingti.png",
+    "tag_ZH": ["轶事", "星锑·最佳乐队", "1991","亮色","星锑"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_zhaopianqiang.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","暗色","星锑","乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_zhushiqinzhong.png",
+    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
+    "tag_EN": []
   }
 ]
