@@ -1,11 +1,11 @@
 async function showTag(targetURL) {
     let showBox = document.getElementById("returnTag");
-    let Tags = await loadTag(targetURL);
-    console.log(Tags);
 
+    // 先显示再加载标签，动画先行
     showBox.replaceChildren();
     showBox.classList.add("show");
 
+    let Tags = await loadTag(targetURL);
     let cache = document.createDocumentFragment();
 
     // --- 调试功能：创建复制文件名的特殊标签 ---

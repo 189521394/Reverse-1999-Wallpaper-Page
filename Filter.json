@@ -2816,7 +2816,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_ditou.png",
-    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","暗色","天使娜娜","维尔汀","百合花"],
+    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","暗色","天使娜娜","维尔汀"],
     "tag_EN": []
   },
   {
@@ -2997,6 +2997,111 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_zuochuan.png",
     "tag_ZH": ["主线剧情", "忧郁的热带", "1990","亮色","天使娜娜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_chongjian.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","亮色","纸信圈儿","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_congtianerjiang.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","纸信圈儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_dajiqi1.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","福葛"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_dajiqi3.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","福葛"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_dudugu1.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明","轶事","笃笃骨·太阳的背面", "1935","亮色","纸信圈儿","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_duitan1.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "轶事","笃笃骨·太阳的背面","1935","亮色","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_duitan2.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "轶事","笃笃骨·太阳的背面","1935","亮色","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_heitiane1.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_jiatui.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_jisiwu.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_lianxi.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","亮色","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_shizijie.png",
+    "tag_ZH": ["轶事", "纸信圈儿·夜游十字街", "1935","亮色","纸信圈儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_tiane1.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_tiane2.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_weiguan.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","纸信圈儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_yangwang.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","笃笃骨"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_yaxian.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","牙仙"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_yihuo1.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","亮色","纸信圈儿"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_ys_huanzhuangshuixing.png",
+    "tag_ZH": ["轶事", "环状水星·“黄金”与悲喜剧", "1935","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_zhaocha.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","暗色","笃笃骨","卡洛琳"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_talou.png",
+    "tag_ZH": ["活动剧情", "圣火纪行：东区黎明", "1935","亮色","背景图"],
     "tag_EN": []
   }
 ]
