@@ -970,11 +970,6 @@
     "tag_EN": []
   },
   {
-    "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_63.png",
-    "tag_ZH": ["主线剧情", "洞穴的囚徒", "1913", "亮色","6"],
-    "tag_EN": []
-  },
-  {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_64.png",
     "tag_ZH": ["轶事", "6·漫漫之夜行迹", "1913", "亮色","6"],
     "tag_EN": []
@@ -3217,11 +3212,6 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_piaoliu2.png",
     "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1991","亮色","芭卡洛儿"],
-    "tag_EN": []
-  },
-  {
-    "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_pingshen.png",
-    "tag_ZH": ["活动剧情", "地球上最后的夜晚", "1996","亮色"],
     "tag_EN": []
   },
   {

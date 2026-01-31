@@ -21,6 +21,7 @@
 }
 /*变化样式*/
 #returnTag {
+    will-change: transform;
     transform: translateY(100%);
     pointer-events: none;
     visibility: hidden;

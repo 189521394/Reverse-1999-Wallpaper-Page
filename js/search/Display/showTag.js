@@ -1,59 +1,52 @@
 async function showTag(targetURL) {
     let showBox = document.getElementById("returnTag");
 
-    // 先显示再加载标签，动画先行
+    // 先清空，动画放在最后，等里面的标签准备完毕了再加载动画，不然动画会抽搐
     showBox.replaceChildren();
-    showBox.classList.add("show");
 
     let Tags = await loadTag(targetURL);
     let cache = document.createDocumentFragment();
 
-    // --- 调试功能：创建复制文件名的特殊标签 ---
+    // ======================================调试模式：快速复制文件名称======================================
 
-    // 1. 提取文件名 (例如：从 ../xx/xx/abc.png 提取出 abc.png)
+    // 提取文件名
     // 使用 decodeURIComponent 防止文件名中有中文乱码
     let fileName = decodeURIComponent(targetURL.substring(targetURL.lastIndexOf('/') + 1));
 
-    // 2. 创建特殊标签元素
+    // 创建特殊标签元素
     let copyBtn = document.createElement("div");
     copyBtn.textContent = "复制文件名称";
 
-    // 3. 赋予它 .tags 类名，让它长得和普通标签一样（继承 CSS）
+    // 赋予它 .tags 类名，让它长得和普通标签一样（继承 CSS）
     copyBtn.className = "tags";
 
-    // 4. 给个特殊样式区分一下
+    // 给个特殊样式区分一下
     copyBtn.style.fontSize = "22px";
 
-    // 5. 【核心逻辑】绑定独立的点击事件
+    // 绑定独立的点击事件
     copyBtn.addEventListener("click", async function(e) {
-        // 🛑 关键：阻止事件冒泡！
-        // 这样点击它时，事件不会传给父元素 #returnTag，也就不会触发下面的“添加到 submitPool”逻辑
+        // 阻止事件冒泡
+        // 这样点击它时，事件不会传给父元素，也就不会触发下面的“添加到 submitPool”逻辑
         e.stopPropagation();
 
-        try {
-            // 执行复制到剪切板
-            await navigator.clipboard.writeText(fileName);
+        // 执行复制到剪切板
+        await navigator.clipboard.writeText(fileName);
 
-            // 交互反馈：变成“已复制”1秒钟
-            let originalText = copyBtn.textContent;
-            copyBtn.textContent = "✅ 已复制";
-            copyBtn.style.backgroundColor = "#fff"; // 闪烁一下白底
+        // 交互反馈：变成“已复制”1秒钟
+        let originalText = copyBtn.textContent;
+        copyBtn.textContent = "✅ 已复制";
+        copyBtn.style.backgroundColor = "#fff"; // 闪烁一下白底
 
-            setTimeout(() => {
-                copyBtn.textContent = originalText;
-                copyBtn.style.backgroundColor = ""; // 恢复原样
-            }, 1000);
-
-        } catch (err) {
-            console.error('复制失败:', err);
-            copyBtn.textContent = "❌ 失败";
-        }
+        setTimeout(() => {
+            copyBtn.textContent = originalText;
+            copyBtn.style.backgroundColor = ""; // 恢复原样
+        }, 1000);
     });
 
-    // 6. 将这个特殊标签添加到最前面
+    // 将这个特殊标签添加到最前面
     cache.appendChild(copyBtn);
 
-    // --- 新增结束 ---
+    // ======================================调试结束======================================
 
     for (let i = 0; i < Tags.length; i++) {
         let div = document.createElement("div");
@@ -65,4 +58,7 @@ async function showTag(targetURL) {
     }
 
     showBox.appendChild(cache);
+
+    // 放在最后显示动画
+    showBox.classList.add("show");
 }
