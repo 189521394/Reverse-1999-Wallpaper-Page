@@ -25,13 +25,16 @@
     height: 60vh;
     background: rgba(0, 0, 0, 0);
     z-index: var(--z-imgAndSet);
+    padding: 20px;
+    box-sizing: border-box;
 
     overflow: hidden;
     opacity: 0;
 
-    will-change: background;
-    transition: background 250ms ease;
+    will-change: background, opacity;
+    transition: background 250ms, opacity 250ms;
 }
+/*设置页面出现*/
 #setBox.show {
     background: #F3E9E3;
     /*禁止鼠标穿过设置层*/
@@ -40,11 +43,8 @@
     opacity: 1;
     box-shadow: 0 0 15px 5px #191919;
 
-    will-change: background;
-    transition: background 250ms ease;
-
-    box-sizing: border-box;
-    padding: 20px;
+    will-change: background, opacity;
+    transition: background 250ms, opacity 250ms;
 }
 /*添加滚动条*/
 #setBox {
