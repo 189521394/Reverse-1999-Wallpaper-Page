@@ -90,6 +90,24 @@
                         <div id="STSlider" class="buttonSlider"></div>
                     </div>
                 </label>
+                <label class="tips">
+                    主题色跟随系统
+                    <input type="checkbox" id="autoSwitchTheme" class="switch">
+                    <div class="buttonBorder">
+                        <div class="OFF buttonText">OFF</div>
+                        <div class="ON buttonText">ON</div>
+                        <div id="ASTSlider" class="buttonSlider"></div>
+                    </div>
+                </label>
+                <label class="tips">
+                    手动切换暗色/亮色
+                    <input type="checkbox" id="manualSwitchTheme" class="switch">
+                    <div class="buttonBorder">
+                        <div class="OFF buttonText">OFF</div>
+                        <div class="ON buttonText">ON</div>
+                        <div id="MSTSlider" class="buttonSlider"></div>
+                    </div>
+                </label>
             </div>
             <div id="tipList">
                 <div id="tipTitle" class="title">使用说明</div>
@@ -107,6 +125,8 @@
     </div>
 </body>
 </html>
+<!--主题色切换-->
+<script src="js/search/switchTheme.js"></script>
 <!--保存和读取用户设置-->
 <script src="js/search/saveUserSettings.js"></script>
 

@@ -3,9 +3,9 @@
     height: 10vh;
     background-color: var(--controlBGC);
     box-sizing: border-box;
-    border: 1px solid var(--controlBGC);
+    border: 1px solid transparent;
 
-    transition: border 150ms;
+    transition: border 150ms,background-color 250ms;
 }
 #control {
     display: flex;
@@ -14,7 +14,7 @@
 }
 #control:hover {
     border: 1px solid var(--goldLine);
-    transition: border 150ms;
+    transition: border 150ms,background-color 250ms;
 }
 
 
