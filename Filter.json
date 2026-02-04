@@ -3648,5 +3648,190 @@
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_zuoshoushu.png",
     "tag_ZH": ["主线剧情", "疯癫与文明", "1991","暗色","阿莱夫"],
     "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_bakaluoer1.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_bakaluoer2.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_beiduidiqiu.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_canguanhuitan1.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_chengjidan.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_chengshidenghuo.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_chuansong.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_dahezhao.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_dalian.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_fujianbang1.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_fujianbang2.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_gouhuo.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_guanmen.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_haimian.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_huahuanhelengzhouliu.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_huahuanyuanlv.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_jinchangpian.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_kanshou.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_lengzhouliuzoulang.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_liuxing1.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_liuxing2.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_lushipin.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_maxituanyanchu.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_mingmingri.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_ruzhishenqing1.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_shizhong.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_shuijiao1.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_shuijiao2.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_siweidiantang.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_taotuodemen.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_xiaohuahuan.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_yanmo.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_ys_tutushizi.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_yuanlv.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_zhiwen.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_zhuiluo.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_zougangsi.png",
+    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987"],
+    "tag_EN": []
   }
 ]

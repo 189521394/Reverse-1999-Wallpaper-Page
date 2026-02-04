@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--初始化-->
-    <link rel="stylesheet" href="css/search/initialize.css">
     <meta charset="UTF-8">
     <title>筛选壁纸</title>
+    <!--=============================================↓CSS和JS部分↓=============================================-->
+    <!--====================初始化====================-->
+    <!--初始化-->
+    <link rel="stylesheet" href="css/search/initialize.css">
+    <!--主题色切换-->
+    <script src="js/search/switchTheme.js" defer></script>
+    <!--保存和读取用户设置-->
+    <script src="js/search/saveUserSettings.js" defer></script>
+
+    <!--====================dock栏====================-->
+    <!--dock栏-->
+    <link rel="stylesheet" href="css/search/dock.css">
+    <!--dock栏淡入淡出-->
+    <script src="js/search/dock.js" defer></script>
+
+    <!--====================图片展示部分====================-->
+    <!--遮罩层-->
+    <link rel="stylesheet" href="css/search/overlay.css">
+    <!--图片展示框架-->
+    <link rel="stylesheet" href="css/search/showIMGS.css">
+    <!--每张图片的样式-->
+    <link rel="stylesheet" href="css/search/imgs.css">
+    <!--图片查看动画-->
+    <script src="js/search/imgAnimation.js" defer></script>
+    <!--图片下方展示的标签的样式-->
+    <link rel="stylesheet" href="css/search/returnTag.css">
+    <!--图片下方标签，拦截竖向滚动修改为横向滚动-->
+    <script src="js/search/scrollListener.js" defer></script>
+    <!--让图片下方的标签可以添加到筛选池，以供筛选-->
+    <script src="js/search/itemListener/addTagFromPic.js" defer></script>
+
+    <!--====================数据操作，显示逻辑====================-->
+    <!--获取筛选结果-->
+    <script src="js/search/dataOperationsLayer/getURL.js" defer></script>
+    <!--获取标签集-->
+    <script src="js/search/dataOperationsLayer/getTag.js" defer></script>
+    <!--根据结果展示壁纸-->
+    <script src="js/search/Display/DisplayImg.js" defer></script>
+    <!--显示隐藏图片下方的标签-->
+    <script src="js/search/Display/showTag.js" defer></script>
+    <script src="js/search/Display/hideTag.js" defer></script>
+
+    <!--====================筛选器框架====================-->
+    <!--筛选器样式-->
+    <link rel="stylesheet" href="css/search/filterFrame/Filter.css">
+    <!--标签组列表-->
+    <link rel="stylesheet" href="css/search/filterFrame/tagList.css">
+    <!--预定义的所有标签-->
+    <script src="js/search/tagPool.js" defer></script>
+    <!--等待用户选择的标签池-->
+    <link rel="stylesheet" href="css/search/filterFrame/tagPool.css">
+    <!--被选中的标签-->
+    <link rel="stylesheet" href="css/search/filterFrame/submitPool.css">
+    <!--控制面板-->
+    <link rel="stylesheet" href="css/search/filterFrame/control.css">
+
+    <!--====================标签操作====================-->
+    <!--加载各种类型的标签-->
+    <script src="js/search/itemListener/tagList.js" defer></script>
+    <!--添加标签-->
+    <script src="js/search/itemListener/chooseTag.js" defer></script>
+    <!--删除标签-->
+    <script src="js/search/itemListener/removeTag.js" defer></script>
+    <!--提交筛选-->
+    <script src="js/search/submit.js" defer></script>
+    <!--清空筛选-->
+    <script src="js/search/clean.js" defer></script>
+    <!--轶事的特殊样式，比较宽-->
+    <script src="js/search/switchWide.js" defer></script>
+
+    <!--====================设置部分====================-->
+    <!--设置逻辑-->
+    <script src="js/search/setting.js" defer></script>
+    <!--设置外观-->
+    <link rel="stylesheet" href="css/search/set.css">
+    <!--设置里面的按钮，外观部分-->
+    <link rel="stylesheet" href="css/search/setButton.css">
+    <!--=============================================↑CSS和JS部分↑=============================================-->
 </head>
 <body>
     <header>
@@ -125,70 +201,3 @@
     </div>
 </body>
 </html>
-<!--主题色切换-->
-<script src="js/search/switchTheme.js"></script>
-<!--保存和读取用户设置-->
-<script src="js/search/saveUserSettings.js"></script>
-
-<!--dock栏-->
-<link rel="stylesheet" href="css/search/dock.css">
-<!--dock栏淡入淡出-->
-<script src="js/search/dock.js"></script>
-
-<!--图片展示框架-->
-<link rel="stylesheet" href="css/search/showIMGS.css">
-<!--每张图片的样式-->
-<link rel="stylesheet" href="css/search/imgs.css">
-
-<!--获取筛选结果-->
-<script src="js/search/dataOperationsLayer/getURL.js"></script>
-<!--获取标签集-->
-<script src="js/search/dataOperationsLayer/getTag.js"></script>
-<!--根据结果集展示壁纸-->
-<script src="js/search/Display/DisplayImg.js"></script>
-<!--显示隐藏标签-->
-<script src="js/search/Display/showTag.js"></script>
-<script src="js/search/Display/hideTag.js"></script>
-<!--图片返回的标签样式-->
-<link rel="stylesheet" href="css/search/returnTag.css">
-<!--底部图片标签，拦截滚动修改为横向滚动-->
-<script src="js/search/scrollListener.js"></script>
-<!--给底部标签栏添加功能-->
-<script src="js/search/itemListener/addTagFromPic.js"></script>
-
-<!--筛选器样式-->
-<link rel="stylesheet" href="css/search/filterFrame/Filter.css">
-<!--标签组列表-->
-<link rel="stylesheet" href="css/search/filterFrame/tagList.css">
-<!--预定义的所有标签-->
-<script src="js/search/tagPool.js"></script>
-<!--等待用户选择的标签池-->
-<link rel="stylesheet" href="css/search/filterFrame/tagPool.css">
-<!--被选中的标签-->
-<link rel="stylesheet" href="css/search/filterFrame/submitPool.css">
-<!--控制面板-->
-<link rel="stylesheet" href="css/search/filterFrame/control.css">
-
-<!--角色筛选-->
-<script src="js/search/itemListener/tagList.js"></script>
-<!--添加标签-->
-<script src="js/search/itemListener/chooseTag.js"></script>
-<!--删除标签-->
-<script src="js/search/itemListener/removeTag.js"></script>
-<!--提交筛选-->
-<script src="js/search/submit.js"></script>
-<!--清空筛选-->
-<script src="js/search/clean.js"></script>
-<!--轶事的特殊样式，比较宽-->
-<script src="js/search/switchWide.js"></script>
-
-<!--图片预览动画-->
-<script src="js/search/imgAnimation.js"></script>
-<!--遮罩层-->
-<link rel="stylesheet" href="css/search/overlay.css">
-<!--设置逻辑-->
-<script src="js/search/setting.js"></script>
-<!--设置外观-->
-<link rel="stylesheet" href="css/search/set.css">
-<!--设置里面的按钮，外观部分-->
-<link rel="stylesheet" href="css/search/setButton.css">
