@@ -3791,7 +3791,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_maxituanyanchu.png",
-    "tag_ZH": ["轶事", "库珀花环·末日与末日之后", "1987","亮色"],
+    "tag_ZH": ["轶事", "库珀花环·末日与末日之后", "1987","亮色","库珀花环"],
     "tag_EN": []
   },
   {
@@ -3857,6 +3857,496 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_zougangsi.png",
     "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987","亮色","库珀花环"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_aerkana1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_aerkana2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_animusi1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_animusi2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_banguangbanying.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_bashetou.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_beiying1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_beiying3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_bingshan1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_bingshan3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_caxue.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_caxue2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daoying1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daoying3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_dazhan.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daziji.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_deluosiyisheng.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fadianbao.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fadianbaoshichang1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fadianbaoshichang2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fangche1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fangche2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fenlie1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fumo.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_haipingmian1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_haipingmian2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_haipingmian3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_haipingmian4.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_haipingmian5.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_hongshui.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_jiandie.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_jiandui1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_jiejiekanditu.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_jitan.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_jiushensong.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_kandaoxueshan.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_longdanxiang.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_men1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_men2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_mianjiandimu.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_mianjiandimu1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_molideer1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_ningwangshenyuan.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_nuodika.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_qigou.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_shenshou.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_shenshou1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_shenshou2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_shenzhan.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tansuo1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tansuo3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_taotuodemen.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tietie1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen10.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen11.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen12.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen4a.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen5.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen9.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian10.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian4.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian5.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian6.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian7.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian8.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian9.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_wumingzhe.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xianchang1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xianchang2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xianchang3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xianchang4.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xingchuan.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xue1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xue2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xue3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xuedi.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xuedi1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueji1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueji3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueji4.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueji5.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueji6.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueye1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueye2.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueye3.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueyuan.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueyuan1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_yanjing.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_yingjiu.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_ys_kanjila.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_yuzhong.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_zg.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_zhuahuo1.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_zufu.png",
+    "tag_ZH": ["主线剧情", "复乐园", "1991"],
     "tag_EN": []
   }
 ]
