@@ -153,7 +153,9 @@ let characterPool = [
     "指针",
     "含章鼎",
     "科兹洛夫",
-    "塞洛尼"
+    "塞洛尼",
+    "阿尼姆斯",
+    "弗里莱"
 ]
 
 let mainLinePool = [

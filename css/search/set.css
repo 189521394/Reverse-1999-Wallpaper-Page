@@ -48,8 +48,22 @@
 }
 /*添加滚动条*/
 #setBox {
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
+}
+#setBox::-webkit-scrollbar {
+    display: initial;
+    width: 8px;
+}
+#setBox::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
+    border-radius: 0;
+}
+#setBox::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
+}
+#setBox::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
 }
 
 

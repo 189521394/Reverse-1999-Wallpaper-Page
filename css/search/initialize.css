@@ -28,9 +28,26 @@ body {
     visibility: hidden;
 }
 
-/*隐藏滚动条*/
-::-webkit-scrollbar {
-    display: none;
+/*开启常驻的滚动条*/
+/*亮色模式的所有滚动条都有问题，下次修复*/
+/*设置框架的边距也有问题，下次修复*/
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    display: initial;
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
+    border-radius: 0;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
+}
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
 }
 
 /*加载字体*/
