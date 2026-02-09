@@ -2816,7 +2816,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_duizhi.png",
-    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","暗色","洛佩拉","莫莉德尔"],
+    "tag_ZH": ["主线剧情", "忧郁的热带", "轶事","莫莉德尔·冰原时隙","1990","暗色","洛佩拉","莫莉德尔"],
     "tag_EN": []
   },
   {
@@ -2841,7 +2841,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_luopeila.png",
-    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","暗色","洛佩拉"],
+    "tag_ZH": ["主线剧情", "忧郁的热带","轶事","莫莉德尔·冰原时隙", "1990","暗色","洛佩拉"],
     "tag_EN": []
   },
   {
@@ -2956,7 +2956,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_yongbao.png",
-    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","亮色","莫莉德尔","洛佩拉"],
+    "tag_ZH": ["主线剧情", "忧郁的热带", "轶事","莫莉德尔·冰原时隙","1990","亮色","莫莉德尔","洛佩拉"],
     "tag_EN": []
   },
   {
@@ -3891,7 +3891,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_beiying1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","诺谛卡"],
+    "tag_ZH": ["主线剧情", "复乐园", "轶事","诺谛卡·虚无的倒影","1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -3901,7 +3901,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_bingshan1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","诺谛卡"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -3921,12 +3921,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daoying1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","暗色","诺谛卡"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daoying3.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -3941,7 +3941,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_deluosiyisheng.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","兀尔德","德洛丝"],
     "tag_EN": []
   },
   {
@@ -4056,7 +4056,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_men2.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","暗色"],
     "tag_EN": []
   },
   {
@@ -4075,8 +4075,13 @@
     "tag_EN": []
   },
   {
+    "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_molideer2_zone.png",
+    "tag_ZH": ["轶事", "莫莉德尔·冰原时隙", "1991","暗色","莫莉德尔"],
+    "tag_EN": []
+  },
+  {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_ningwangshenyuan.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4201,7 +4206,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tujian7.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","诺谛卡"],
+    "tag_ZH": ["主线剧情", "复乐园", "轶事","诺谛卡·虚无的倒影","1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4241,7 +4246,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xingchuan.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","暗色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4321,7 +4326,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_yanjing.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4331,7 +4336,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_ys_kanjila.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "坎吉拉·在路上", "1991","亮色","坎吉拉"],
     "tag_EN": []
   },
   {
@@ -4351,7 +4356,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_zufu.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
