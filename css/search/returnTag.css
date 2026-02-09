@@ -2,11 +2,12 @@
 #returnTag {
     position: fixed;
 
-    width: 100vw;
+    width: 100%;
     height: auto;
     bottom: 0;
     padding: 10px;
 
+    /*标准提示框颜色*/
     background-color: #F3E9E3;
 
     z-index: var(--z-showTags);
@@ -85,18 +86,18 @@
 }
 #returnTag::-webkit-scrollbar {
     display: initial;
-    height: 10px;
+    height: 8px;
+}
+#returnTag::-webkit-scrollbar-track {
+    /* 滚动条轨道 */
+    background: rgba(0, 0, 0, 0.2);
 }
 #returnTag::-webkit-scrollbar-thumb {
-    /* 滑块颜色 */
-    background: rgba(128, 128, 128, 0.6);
+    /* 滚动条滑块 */
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 0;
 }
 #returnTag::-webkit-scrollbar-thumb:hover {
     /* 悬停效果 */
-    background: rgba(128, 128, 128, 0.9);
-}
-#returnTag::-webkit-scrollbar-track {
-    /* 滚动条轨道 */
-    background: rgba(128, 128, 128, 0.3);
+    background: rgba(0, 0, 0, 0.6);
 }

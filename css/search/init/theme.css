@@ -1,69 +1,5 @@
-/*重置边距*/
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*设置flex布局*/
-body {
-    width: 100vw;
-    min-height: 155vh;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-
-    background-color: var(--pageBGC);
-
-    /*防止页面左上角出现鼠标焦点*/
-    user-select: none;
-}
-
-/*初始化一些设置，防止元素闪现*/
-.switch {
-    display: none;
-}
-#returnTag {
-    visibility: hidden;
-}
-
-/*开启常驻的滚动条*/
-/*亮色模式的所有滚动条都有问题，下次修复*/
-/*设置框架的边距也有问题，下次修复*/
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-body::-webkit-scrollbar {
-    display: initial;
-    width: 8px;
-}
-body::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
-    border-radius: 0;
-}
-body::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
-}
-body::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
-}
-
-/*加载字体*/
-@font-face {
-    font-family: "思源宋体-Medium";
-    src: url("/font/Font-Medium.otf") format("opentype");
-    font-weight: auto;
-    font-style: auto;
-}
-body {
-    font-family: 思源宋体-Medium, sans-serif;
-}
-
-
-
 /*主题色控制*/
+/*一部分在深色和暗色没有变化的颜色未列出，单独控制*/
 /*默认风格，暗色模式*/
 :root {
     /* 页面大背景 */
@@ -110,6 +46,15 @@ body {
 
     /* 图片阴影 */
     --imgShadowColor: #5c5c5c;
+
+    /* 滚动条轨道 */
+    --scrollBarTrack: rgba(255, 255, 255, 0.3);
+
+    /* 滚动条滑块 */
+    --scrollBarThumb: rgba(255, 255, 255, 0.6);
+
+    /* 滚动条滑块hover */
+    --scrollBarHover: rgba(255, 255, 255, 0.9);
 }
 /*手动亮色模式*/
 :root[data-theme='light'] {
@@ -157,7 +102,17 @@ body {
 
     /* 图片阴影 */
     --imgShadowColor: rgba(92, 86, 69, 0.3);
+
+    /* 滚动条轨道 */
+    --scrollBarTrack: rgba(0, 0, 0, 0.2);
+
+    /* 滚动条滑块 */
+    --scrollBarThumb: rgba(0, 0, 0, 0.4);
+
+    /* 滚动条滑块hover */
+    --scrollBarHover: rgba(0, 0, 0, 0.6);
 }
+/*自动亮色模式*/
 @media (prefers-color-scheme: light) {
     :root:not([data-theme="dark"]) {
         /* 页面大背景 */
@@ -204,46 +159,48 @@ body {
 
         /* 图片阴影 */
         --imgShadowColor: rgba(92, 86, 69, 0.3);
+
+        /* 滚动条轨道 */
+        --scrollBarTrack: rgba(0, 0, 0, 0.2);
+
+        /* 滚动条滑块 */
+        --scrollBarThumb: rgba(0, 0, 0, 0.4);
+
+        /* 滚动条滑块hover */
+        --scrollBarHover: rgba(0, 0, 0, 0.6);
     }
 }
 /*主题切换动画*/
 body {
     transition: background-color 250ms;
 }
-* {
-    transition-property: background-color, border-color, color, box-shadow;
-    transition-duration: 250ms;
+#Filter {
+    transition: background-color 250ms;
 }
-
-
-
-/*index层级管理*/
-/*显示在遮罩上面的任何东西图层都要比遮罩高*/
-:root {
-    /*基础图片显示层*/
-    --z-base: 10;
-
-    /*遮罩层，背景遮罩*/
-    --z-overlay: 50;
-
-    /*设置自带的框架，在设置层背面贴着*/
-    --z-setBack: 90;
-
-    /*图片显示和设置显示，同级高度，都要比遮罩高*/
-    --z-imgAndSet: 100;
-
-    /*图片下方的图片标签显示区，在图片上面*/
-    --z-showTags: 110;
-
-    /*设置里面的按钮背景，在设置之上*/
-    --z-buttonBorder: 110;
-
-    /*设置里面的滑块，在背景上面，但是要比按钮文本低*/
-    --z-buttonSlider: 120;
-
-    /*设置按钮文本，比滑块高，做出透明效果*/
-    --z-buttonText: 130;
-
-    /*左侧dock栏，可以控制页面跳转，显示图层较高*/
-    --z-dock: 300;
+#control {
+    transition: background-color 250ms;
+}
+#select {
+    transition: background-color 250ms;
+}
+#tagList {
+    transition: background-color 250ms, border-color 250ms;
+}
+.item {
+    transition: background-color 250ms, color 250ms;
+}
+#submitPool {
+    transition: background-color 250ms, border-color 250ms;
+}
+#tagPool {
+    transition: background-color 250ms, border-color 250ms;
+}
+#result {
+    transition: color 250ms;
+}
+.buttons {
+    transition: border-color 250ms;
+}
+.imgs {
+    transition: background-color 250ms, box-shadow 250ms;
 }

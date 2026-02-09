@@ -76,7 +76,7 @@ function setAnimation() {
             img.style.setProperty('--scale', scale);
 
             // 添加激活类和遮罩
-            document.body.style.overflow = "hidden";
+            toggleScrollLock(true);
             overlay.classList.add('show');
             img.classList.add('active');
             activeImg = img;
@@ -97,7 +97,7 @@ function setAnimation() {
             activeImg.classList.remove('active');
             activeImg = null;
         }
-        document.body.style.overflow = "";
+        toggleScrollLock(false);
         overlay.classList.remove('show');
         // 隐藏图片标签
         if (showTags.checked) {

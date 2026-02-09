@@ -1,0 +1,109 @@
+/*重置边距*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*设置flex布局*/
+body {
+    width: 100%;
+    min-height: 155vh;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--pageBGC);
+
+    /*防止页面左上角出现鼠标焦点*/
+    user-select: none;
+}
+
+/*初始化一些设置，防止元素闪现*/
+.switch {
+    display: none;
+}
+#returnTag {
+    visibility: hidden;
+}
+
+/*加载字体*/
+@font-face {
+    font-family: "思源宋体-Medium";
+    src: url("/font/Font-Medium.otf") format("opentype");
+    font-weight: auto;
+    font-style: auto;
+}
+body {
+    font-family: 思源宋体-Medium, sans-serif;
+}
+
+
+
+/*全局滚动条代码*/
+/*设置框架的边距也有问题，下次修复*/
+html {
+    /* 强制垂直滚动条轨道永远存在，无论内容是否溢出 */
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /* 预留滚动条的空间,即使滚动条不显示，也会留出那 8px 的位置，防止内容跳动 */
+    scrollbar-gutter: stable;
+}
+/*锁定模式的代码，临时关闭滚动条*/
+html.lock-screen {
+    overflow: hidden !important;
+    height: 100vh; /* 防止某些移动端浏览器穿透 */
+}
+/*设置页面的滚动条*/
+html::-webkit-scrollbar {
+    display: initial;
+    width: 6px;
+}
+/*对通用滚动条样式进行封装*/
+.custom-scroll::-webkit-scrollbar-track {
+    background: var(--scrollBarTrack);  /* 滚动条轨道 */
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: var(--scrollBarThumb); /* 滑块颜色 */
+    border-radius: 0;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollBarHover); /* 悬停效果 */
+}
+/*样式调用只需要加上class，写在html文件中*/
+/*有些特殊元素(如设置)拥有特殊的滚动条样式，不需要加*/
+
+
+
+/*index层级管理*/
+/*显示在遮罩上面的任何东西图层都要比遮罩高*/
+:root {
+    /*基础图片显示层*/
+    --z-base: 10;
+
+    /*遮罩层，背景遮罩*/
+    --z-overlay: 50;
+
+    /*设置自带的框架，在设置层背面贴着*/
+    --z-setBack: 90;
+
+    /*图片显示和设置显示，同级高度，都要比遮罩高*/
+    --z-imgAndSet: 100;
+
+    /*图片下方的图片标签显示区，在图片上面*/
+    --z-showTags: 110;
+
+    /*设置里面的按钮背景，在设置之上*/
+    --z-buttonBorder: 110;
+
+    /*设置里面的滑块，在背景上面，但是要比按钮文本低*/
+    --z-buttonSlider: 120;
+
+    /*设置按钮文本，比滑块高，做出透明效果*/
+    --z-buttonText: 130;
+
+    /*左侧dock栏，可以控制页面跳转，显示图层较高*/
+    --z-dock: 300;
+}

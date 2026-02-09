@@ -37,17 +37,7 @@
 }
 #tagPool::-webkit-scrollbar {
     display: initial;
-    width: 8px;
-}
-#tagPool::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
-    border-radius: 0;
-}
-#tagPool::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
-}
-#tagPool::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
+    width: 6px;
 }
 
 

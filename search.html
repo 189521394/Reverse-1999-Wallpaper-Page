@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="custom-scroll">
 <head>
     <meta charset="UTF-8">
     <title>筛选壁纸</title>
     <!--=============================================↓CSS和JS部分↓=============================================-->
     <!--====================初始化====================-->
     <!--初始化-->
-    <link rel="stylesheet" href="css/search/initialize.css">
-    <!--主题色切换-->
+    <link rel="stylesheet" href="css/search/init/initialize.css">
+    <!--主题和主题切换-->
+    <link rel="stylesheet" href="css/search/init/theme.css">
     <script src="js/search/switchTheme.js" defer></script>
     <!--保存和读取用户设置-->
     <script src="js/search/saveUserSettings.js" defer></script>
+    <!--遮罩层滚动切换器-->
+    <script src="js/search/toggleScrollLock.js"></script>
 
     <!--====================dock栏====================-->
     <!--dock栏-->
@@ -20,7 +23,7 @@
 
     <!--====================图片展示部分====================-->
     <!--遮罩层-->
-    <link rel="stylesheet" href="css/search/overlay.css">
+    <link rel="stylesheet" href="css/search/init/overlay.css">
     <!--图片展示框架-->
     <link rel="stylesheet" href="css/search/showIMGS.css">
     <!--每张图片的样式-->
@@ -101,7 +104,7 @@
     </header>
     <div id="Filter">
         <div id="filterBox">
-            <div id="tagList">
+            <div id="tagList" class="custom-scroll">
                 <div id="character" class="item">按角色筛选</div>
                 <div id="mainLine" class="item">按主线章节筛选</div>
                 <div id="event" class="item">按活动章节筛选</div>
@@ -111,10 +114,10 @@
                 <div id="lightAndDark" class="item">按亮色/暗色筛选</div>
                 <div id="special" class="item">按特殊标签筛选</div>
             </div>
-            <div id="tagPool">
+            <div id="tagPool" class="custom-scroll">
                 <!--动态追加待选标签-->
             </div>
-            <div id="submitPool">
+            <div id="submitPool" class="custom-scroll">
                 <!--动态追加已选标签-->
             </div>
         </div>
@@ -135,64 +138,66 @@
     </div>
     <!--默认隐藏的设置层-->
     <div id="set">
-        <div id="setBox">
-            <div id="setList">
-                <div id="setTitle" class="title">设置</div>
-                <div class="line"></div>
-                <label class="tips">
-                    精确筛选
-                    <input type="checkbox" id="preciseScreening" class="switch">
-                    <div class="buttonBorder">
-                        <div class="OFF buttonText">OFF</div>
-                        <div class="ON buttonText">ON</div>
-                        <div id="PSSlider" class="buttonSlider"></div>
-                    </div>
-                </label>
-                <label class="tips">
-                    清空筛选标签的同时清空筛选结果
-                    <input type="checkbox" id="cleanAll" class="switch">
-                    <div class="buttonBorder">
-                        <div class="OFF buttonText">OFF</div>
-                        <div class="ON buttonText">ON</div>
-                        <div id="CASlider" class="buttonSlider"></div>
-                    </div>
-                </label>
-                <label class="tips">
-                    在图片下方显示图片的标签
-                    <input type="checkbox" id="showTags" class="switch">
-                    <div class="buttonBorder">
-                        <div class="OFF buttonText">OFF</div>
-                        <div class="ON buttonText">ON</div>
-                        <div id="STSlider" class="buttonSlider"></div>
-                    </div>
-                </label>
-                <label class="tips">
-                    主题色跟随系统
-                    <input type="checkbox" id="autoSwitchTheme" class="switch">
-                    <div class="buttonBorder">
-                        <div class="OFF buttonText">OFF</div>
-                        <div class="ON buttonText">ON</div>
-                        <div id="ASTSlider" class="buttonSlider"></div>
-                    </div>
-                </label>
-                <label class="tips">
-                    手动切换暗色/亮色
-                    <input type="checkbox" id="manualSwitchTheme" class="switch">
-                    <div class="buttonBorder">
-                        <div class="OFF buttonText">OFF</div>
-                        <div class="ON buttonText">ON</div>
-                        <div id="MSTSlider" class="buttonSlider"></div>
-                    </div>
-                </label>
-            </div>
-            <div id="tipList">
-                <div id="tipTitle" class="title">使用说明</div>
-                <div class="line"></div>
-                <div class="tips">单击可以添加/移除筛选标签</div>
-                <div class="tips">[关于时间线] 本人时间有限，并没有认真考据，大部分数据都是从网上搜来的</div>
-                <div class="tips">[关于图片来源] 图片来自游戏解包文件(解包工作并不是我完成的)</div>
-                <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
-                <div class="tips">[版本号] 开发预览版</div>
+        <div id="setFrame">
+            <div id="setBox" class="custom-scroll">
+                <div id="setList">
+                    <div id="setTitle" class="title">设置</div>
+                    <div class="line"></div>
+                    <label class="tips">
+                        精确筛选
+                        <input type="checkbox" id="preciseScreening" class="switch">
+                        <div class="buttonBorder">
+                            <div class="OFF buttonText">OFF</div>
+                            <div class="ON buttonText">ON</div>
+                            <div id="PSSlider" class="buttonSlider"></div>
+                        </div>
+                    </label>
+                    <label class="tips">
+                        清空筛选标签的同时清空筛选结果
+                        <input type="checkbox" id="cleanAll" class="switch">
+                        <div class="buttonBorder">
+                            <div class="OFF buttonText">OFF</div>
+                            <div class="ON buttonText">ON</div>
+                            <div id="CASlider" class="buttonSlider"></div>
+                        </div>
+                    </label>
+                    <label class="tips">
+                        在图片下方显示图片的标签
+                        <input type="checkbox" id="showTags" class="switch">
+                        <div class="buttonBorder">
+                            <div class="OFF buttonText">OFF</div>
+                            <div class="ON buttonText">ON</div>
+                            <div id="STSlider" class="buttonSlider"></div>
+                        </div>
+                    </label>
+                    <label class="tips">
+                        主题色跟随系统
+                        <input type="checkbox" id="autoSwitchTheme" class="switch">
+                        <div class="buttonBorder">
+                            <div class="OFF buttonText">OFF</div>
+                            <div class="ON buttonText">ON</div>
+                            <div id="ASTSlider" class="buttonSlider"></div>
+                        </div>
+                    </label>
+                    <label class="tips">
+                        手动切换暗色/亮色
+                        <input type="checkbox" id="manualSwitchTheme" class="switch">
+                        <div class="buttonBorder">
+                            <div class="OFF buttonText">OFF</div>
+                            <div class="ON buttonText">ON</div>
+                            <div id="MSTSlider" class="buttonSlider"></div>
+                        </div>
+                    </label>
+                </div>
+                <div id="tipList">
+                    <div id="tipTitle" class="title">使用说明</div>
+                    <div class="line"></div>
+                    <div class="tips">单击可以添加/移除筛选标签</div>
+                    <div class="tips">[关于时间线] 本人时间有限，并没有认真考据，大部分数据都是从网上搜来的</div>
+                    <div class="tips">[关于图片来源] 图片来自游戏解包文件(解包工作并不是我完成的)</div>
+                    <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
+                    <div class="tips">[版本号] 开发预览版</div>
+                </div>
             </div>
         </div>
     </div>

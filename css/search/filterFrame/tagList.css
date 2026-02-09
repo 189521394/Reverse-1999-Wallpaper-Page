@@ -23,17 +23,16 @@
 .item {
     background-color: var(--showListBGC);
     color: var(--fontColor);
-    transition: background-color 250ms, color 250ms;
 }
 .item:hover {
     background-color: #ffffff;
     color: var(--fontHoverColor);
-    transition: background-color 250ms, color 250ms;
+    transition: background-color 150ms, color 150ms;
 }
 .item:active {
     background-color: #d2d2d2;
     color: var(--fontHoverColor);
-    transition: background-color 250ms, color 250ms;
+    transition: background-color 150ms, color 150ms;
 }
 
 
@@ -41,15 +40,5 @@
 /*为列表开启滚动条*/
 #tagList::-webkit-scrollbar {
     display: initial;
-    width: 8px;
-}
-#tagList::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
-    border-radius: 0;
-}
-#tagList::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
-}
-#tagList::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
+    width: 6px;
 }

@@ -3,22 +3,22 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0);
+    backdrop-filter: brightness(100%) blur(0px);
 
     /*这个图层必须比元素(img,button,...)的hover小，不然会闪烁*/
     z-index: var(--z-overlay);
     /*让鼠标穿过遮罩层*/
     pointer-events: none;
 
-    will-change: background;
-    transition: background 250ms ease;
+    will-change: backdrop-filter;
+    transition: backdrop-filter 250ms ease;
 }
 #overlay.show {
     /*禁止鼠标穿过遮罩层*/
     pointer-events: auto;
 
-    background: rgba(0, 0, 0, 0.7);
-    transition: background 250ms ease;
+    backdrop-filter: brightness(60%) blur(20px);
+    transition: backdrop-filter 250ms ease;
 }

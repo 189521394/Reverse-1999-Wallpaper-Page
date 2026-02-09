@@ -20,17 +20,7 @@
 }
 #submitPool::-webkit-scrollbar {
     display: initial;
-    width: 8px;
-}
-#submitPool::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
-    border-radius: 0;
-}
-#submitPool::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
-}
-#submitPool::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
+    width: 6px;
 }
 
 

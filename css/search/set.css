@@ -18,7 +18,10 @@
 }
 
 
+/*设置框架，为了边距裁切而存在*/
+#setFrame {
 
+}
 /*设置页面*/
 #setBox {
     width: 55vw;
@@ -36,12 +39,13 @@
 }
 /*设置页面出现*/
 #setBox.show {
-    background: #F3E9E3;
+    /*标准对话框颜色*/
+    background: #d3d1cf;
     /*禁止鼠标穿过设置层*/
     pointer-events: auto;
 
     opacity: 1;
-    box-shadow: 0 0 15px 5px #191919;
+    box-shadow: 0 0 30px 3px rgba(64, 64, 64, 0.6);
 
     will-change: background, opacity;
     transition: background 250ms, opacity 250ms;
@@ -53,19 +57,21 @@
 }
 #setBox::-webkit-scrollbar {
     display: initial;
-    width: 8px;
+    width: 6px;
+}
+#setBox::-webkit-scrollbar-track {
+    /* 滚动条轨道 */
+    background: rgba(0, 0, 0, 0.2);
 }
 #setBox::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.6); /* 滑块颜色 */
+    /* 滚动条滑块 */
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 0;
 }
 #setBox::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.9); /* 悬停效果 */
+    /* 悬停效果 */
+    background: rgba(0, 0, 0, 0.6);
 }
-#setBox::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.3);  /* 滚动条轨道 */
-}
-
 
 
 /*详细配置*/
@@ -79,7 +85,7 @@
     width: auto;
     background-color: black;
 }
-/*设置框架*/
+/*提示文本框架*/
 #tipList {
     margin-top: 60px;
 }
