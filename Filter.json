@@ -3951,12 +3951,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fadianbaoshichang1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","暗色","诺谛卡","特殊CG"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fadianbaoshichang2.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","暗色","诺谛卡","特殊CG"],
     "tag_EN": []
   },
   {
@@ -3971,7 +3971,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fenlie1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","暗色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4051,7 +4051,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_men1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","特殊CG"],
     "tag_EN": []
   },
   {
@@ -4061,7 +4061,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_mianjiandimu.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","诺谛卡","特殊CG"],
     "tag_EN": []
   },
   {
@@ -4131,7 +4131,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_tietie1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4266,7 +4266,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xuedi.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色"],
     "tag_EN": []
   },
   {
@@ -4301,17 +4301,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueye1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueye2.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueye3.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色"],
     "tag_EN": []
   },
   {
@@ -4346,7 +4346,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_zg.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
+    "tag_ZH": ["主线剧情", "复乐园", "1991","暗色","诺谛卡","特殊CG"],
     "tag_EN": []
   },
   {
@@ -4360,11 +4360,6 @@
     "tag_EN": []
   },
   {
-    "file": "resource/singlebg/storybg/story_bg/2_8/2_7_bg_docu1.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
-    "tag_EN": []
-  },
-  {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_7_bg_docu2.png",
     "tag_ZH": ["主线剧情", "复乐园", "1991","暗色"],
     "tag_EN": []
@@ -4372,11 +4367,6 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_7_bg_docu3.png",
     "tag_ZH": ["主线剧情", "复乐园", "1991","亮色"],
-    "tag_EN": []
-  },
-  {
-    "file": "resource/singlebg/storybg/story_bg/2_8/2_7_bg_docu4.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991"],
     "tag_EN": []
   },
   {
