@@ -1,9 +1,28 @@
-// 定义函数
+// 定义滑块跳转函数
+function moveSliderTo(element) {
+    let slider = document.getElementById("activeSlider");
+
+    // 设置滑块的height和top
+    slider.style.height = element.offsetHeight + "px";
+    slider.style.top = element.offsetTop + "px";
+}
+// 定义获取标签函数
 function getTag(loadButtonID,targetObjectPool) {
     let box = document.getElementById("tagPool");
     let element = document.getElementById(loadButtonID);
 
     element.addEventListener("click",function (){
+        // 滑块动画控制
+        // 先移除其他的active
+        document.querySelectorAll('.item').forEach(item => item.classList.remove('active'));
+
+        // 给自己添加active
+        element.classList.add('active');
+
+        // 动画移动过去
+        moveSliderTo(element);
+
+        // 实际逻辑控制
         // 先清空再追加
         box.replaceChildren();
 
@@ -47,3 +66,6 @@ getTag("lightAndDark",lightAndDarkPool);
 
 // 特殊标签筛选
 getTag("special",specialPool);
+
+// 添加默认选项，按主线章节筛选
+document.getElementById("mainLine").click();

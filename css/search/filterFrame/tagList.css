@@ -1,4 +1,5 @@
 #tagList {
+    position: relative;
     background-color: var(--showListBGC);
 }
 /*自动添加滚动条*/
@@ -12,27 +13,58 @@
 
 
 
-/*设置每个选项的基础外观*/
+/*设置每个选项的基础样式*/
 .item {
-    padding: 3px 15px 3px 15px;
+    position: relative;
     user-select: none;
+    z-index: var(--z-text);
+
+    padding: 3px 15px 3px 15px;
     text-align: center;
     font-size: 25px;
 }
 /*设置被选择的动画*/
 .item {
-    background-color: var(--showListBGC);
+    background-color: transparent;
     color: var(--fontColor);
 }
 .item:hover {
-    background-color: #ffffff;
+    /*要加优先级，不然点一下hover会被.active覆盖，很奇怪*/
+    background-color: #ffffff !important;
     color: var(--fontHoverColor);
     transition: background-color 150ms, color 150ms;
 }
+
+/*这个是动画按下激活，仅在按下时生效*/
 .item:active {
-    background-color: #d2d2d2;
+    /*要加优先级，确保按下已经激活的按钮时有反馈*/
+    background-color: #d2d2d2 !important;
     color: var(--fontHoverColor);
     transition: background-color 150ms, color 150ms;
+}
+
+/*这个是激活状态，激活后一直生效，直到切换标签被移除*/
+.item.active {
+    background-color: transparent;
+    color: var(--fontHoverColor);
+    transition: background-color 150ms, color 150ms;
+}
+
+/*设置滑块样式*/
+#activeSlider {
+    position: absolute;
+    z-index: var(--z-textSlider);
+
+    left: 10px;
+    right: 10px;
+    /*height和top都由js负责*/
+    height: 0;
+    top: 0;
+
+    background-color: #ffffff;
+
+    transition: top 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
+                height 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
 

@@ -1,4 +1,7 @@
+/*初始化*/
 #submitPool {
+    position: relative;
+
     width: 32vw;
     height: 40vh;
     background-color: var(--showTagBGC);
@@ -6,7 +9,26 @@
 
     padding: 10px;
 }
+/*定义提示文本*/
+#submitPool::before {
+    content: "请选择需要筛选的标签";
 
+    /*居中*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    color: var(--fontColor);
+    transition: color 250ms;
+}
+/*当里面有元素时删除文本*/
+/*让前景色和背景色相同，达到删除效果，方便动画渐变*/
+#submitPool:not(:empty)::before {
+    color: var(--showTagBGC);
+    transition: color 250ms;
+}
 
 
 /*定义布局样式*/
