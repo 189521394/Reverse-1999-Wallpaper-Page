@@ -4498,5 +4498,145 @@
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_zhuisha1.png",
     "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","亮色","玛丽安娜","施特林"],
     "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_aimaxixue.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_baolisideyouhuo.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_baolisishangche.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_caxue.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_gaosiniao.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_gaosiniaochuchang.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_gaosiniaofenxi.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_huochekaimen.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_kongbugaosiniao.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_kongxinmuxiahu.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_liechexueshou1.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_liechezhangzhanshi.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_linqiyeshumei.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_meigula.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_tongdao.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_xixueguijiazu1.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeibeibang.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeibeibang1.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeichujian.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeidanren.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeigenban.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeiguancai.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan2.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan3.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeitiaowu.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeitietie.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeizhengyan.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_ys_fugaoren.png",
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_EN": []
   }
 ]
