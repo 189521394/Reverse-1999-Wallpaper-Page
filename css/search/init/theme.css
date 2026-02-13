@@ -92,13 +92,13 @@
     --goldLine: #8c8268;
 
     /* 图片背景板颜色 */
-    --imgLiningColor: #f0f0f0;
+    --imgLiningColor: #e8e8e8;
 
     /* 图片边框 */
-    --imgBorderColor: #6d6555;
+    --imgBorderColor: #b8b09c;
 
     /* 图片Hover边框 */
-    --imgHoverBorderColor: #e0e0d0;
+    --imgHoverBorderColor: #D16430;
 
     /* 图片阴影 */
     --imgShadowColor: rgba(92, 86, 69, 0.3);
@@ -149,13 +149,13 @@
         --goldLine: #8c8268;
 
         /* 图片背景板颜色 */
-        --imgLiningColor: #f0f0f0;
+        --imgLiningColor: #e8e8e8;
 
         /* 图片边框 */
-        --imgBorderColor: #6d6555;
+        --imgBorderColor: #b8b09c;
 
         /* 图片Hover边框 */
-        --imgHoverBorderColor: #e0e0d0;
+        --imgHoverBorderColor: #D16430;
 
         /* 图片阴影 */
         --imgShadowColor: rgba(92, 86, 69, 0.3);

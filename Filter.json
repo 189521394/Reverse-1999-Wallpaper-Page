@@ -3316,12 +3316,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_daxizhidao.png",
-    "tag_ZH": ["活动剧情", "唐人街影话", "1991","亮色","梁月","菲林士多","官方PV"],
+    "tag_ZH": ["活动剧情", "唐人街影话", "1991","亮色","梁月","菲林士多","社区图像"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_fangjian.png",
-    "tag_ZH": ["活动剧情", "唐人街影话", "1991","暗色","菲林士多","官方PV"],
+    "tag_ZH": ["活动剧情", "唐人街影话", "1991","暗色","菲林士多","社区图像"],
     "tag_EN": []
   },
   {
@@ -3366,7 +3366,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_liangyuepianchang.png",
-    "tag_ZH": ["活动剧情", "唐人街影话", "1991","暗色","梁月","官方PV"],
+    "tag_ZH": ["活动剧情", "唐人街影话", "1991","暗色","梁月","社区图像"],
     "tag_EN": []
   },
   {
@@ -3486,12 +3486,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_zhenren1.png",
-    "tag_ZH": ["活动剧情", "唐人街影话", "1991","亮色","奇星","官方PV"],
+    "tag_ZH": ["活动剧情", "唐人街影话", "1991","亮色","奇星","社区图像"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_zhenren2.png",
-    "tag_ZH": ["活动剧情", "唐人街影话", "1991","暗色","奇星","官方PV"],
+    "tag_ZH": ["活动剧情", "唐人街影话", "1991","暗色","奇星","社区图像"],
     "tag_EN": []
   },
   {
@@ -3561,7 +3561,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_kuangye.png",
-    "tag_ZH": ["主线剧情","疯癫与文明","未知时间","亮色","虚构集","特殊CG"],
+    "tag_ZH": ["主线剧情","疯癫与文明","未知时间","亮色","虚构集","社区图像"],
     "tag_EN": []
   },
   {
@@ -3626,7 +3626,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_yanjing.png",
-    "tag_ZH": ["主线剧情", "疯癫与文明", "1991","亮色","虚构集","特殊CG"],
+    "tag_ZH": ["主线剧情", "疯癫与文明", "1991","亮色","虚构集","社区图像"],
     "tag_EN": []
   },
   {
@@ -3817,11 +3817,6 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_siweidiantang.png",
     "tag_ZH": ["轶事", "冷周六·间隔月", "1987","亮色","冷周六"],
-    "tag_EN": []
-  },
-  {
-    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_taotuodemen.png",
-    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987","亮色","特殊CG"],
     "tag_EN": []
   },
   {
@@ -4051,7 +4046,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_men1.png",
-    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","特殊CG"],
+    "tag_ZH": ["轶事", "诺谛卡·虚无的倒影", "1991","亮色","社区图像"],
     "tag_EN": []
   },
   {
@@ -4501,142 +4496,147 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_aimaxixue.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","告死鸟","艾玛"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_baolisideyouhuo.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓","鲍里斯"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_baolisishangche.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_caxue.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_gaosiniao.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["轶事", "告死鸟·冷铁", "1912","亮色","伊格丽卡"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_gaosiniaochuchang.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","告死鸟"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_gaosiniaofenxi.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","告死鸟","塞梅尔维斯"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_huochekaimen.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","艾玛"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_kongbugaosiniao.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","告死鸟"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_kongxinmuxiahu.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓","空心木"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_liechexueshou1.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_liechezhangzhanshi.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","亮色","告死鸟"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_linqiyeshumei.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","艾玛","告死鸟","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_meigula.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_tongdao.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_xixueguijiazu1.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeibeibang.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeibeibang1.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeichujian.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛","1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeidanren.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeigenban.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","社区图像"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeiguancai.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan2.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["轶事", "野树莓·灵魂影映", "1912","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan3.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["轶事", "野树莓·灵魂影映", "1912","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan_zone.png",
+    "tag_ZH": ["轶事", "野树莓·灵魂影映", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeitiaowu.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeitietie.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓","艾玛"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeizhengyan.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_ys_fugaoren.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912"],
+    "tag_ZH": ["轶事", "讣告人·墓碑博物馆", "1912","亮色","讣告人"],
     "tag_EN": []
   }
 ]
