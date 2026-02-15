@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/search/init/theme.css">
     <script src="js/search/switchTheme.js" defer></script>
     <!--保存和读取用户设置-->
-    <script src="js/search/saveUserSettings.js" defer></script>
+    <script src="js/search/userSettings/settingsSystem.js" defer></script>
     <!--遮罩层滚动切换器-->
-    <script src="js/search/toggleScrollLock.js"></script>
+    <script src="js/search/toggleScrollLock.js" defer></script>
 
     <!--====================dock栏====================-->
     <!--dock栏-->
@@ -70,22 +70,33 @@
     <!--删除标签-->
     <script src="js/search/itemListener/removeTag.js" defer></script>
     <!--提交筛选-->
-    <script src="js/search/submit.js" defer></script>
+    <script src="js/search/control/submit.js" defer></script>
     <!--清空筛选-->
-    <script src="js/search/clean.js" defer></script>
+    <script src="js/search/control/clean.js" defer></script>
     <!--轶事的特殊样式，比较宽-->
     <script src="js/search/switchWide.js" defer></script>
 
     <!--====================设置部分====================-->
     <!--设置逻辑-->
-    <script src="js/search/setting.js" defer></script>
+    <script src="js/search/control/setting.js" defer></script>
     <!--设置外观-->
     <link rel="stylesheet" href="css/search/set.css">
     <!--设置里面的按钮，外观部分-->
     <link rel="stylesheet" href="css/search/setButton.css">
+
+    <!--====================其他部分====================-->
+    <!--回到顶部样式与逻辑-->
+    <link rel="stylesheet" href="css/search/toTop.css">
+    <script src="js/search/autoHide.js" defer></script>
+    <!--允许选择文本逻辑-->
+    <script src="js/search/copyMode.js" defer></script>
+    <!--加载选项列表-->
+    <!--列表内有函数引用，写到最后-->
+    <script src="js/search/userSettings/SETTINGS_CONFIG.js" defer></script>
     <!--=============================================↑CSS和JS部分↑=============================================-->
 </head>
 <body>
+    <div id="location0"><!--藏起来的回到顶部锚点--></div>
     <header>
         <div id="dock">
             <div id="welcome"   class="menu"    onclick="">
@@ -105,14 +116,14 @@
     <div id="Filter">
         <div id="filterBox">
             <div id="tagList" class="custom-scroll">
-                <div id="character" class="item">按角色筛选</div>
-                <div id="mainLine" class="item">按主线章节筛选</div>
-                <div id="event" class="item">按活动章节筛选</div>
-                <div id="anecdote" class="item">按轶事筛选</div>
-                <div id="version" class="item">按版本号筛选</div>
-                <div id="year" class="item">按时间线筛选</div>
-                <div id="lightAndDark" class="item">按亮色/暗色筛选</div>
-                <div id="special" class="item">按特殊标签筛选</div>
+                <div id="character" class="item allow-copy">按角色筛选</div>
+                <div id="mainLine" class="item allow-copy">按主线章节筛选</div>
+                <div id="event" class="item allow-copy">按活动章节筛选</div>
+                <div id="anecdote" class="item allow-copy">按轶事筛选</div>
+                <div id="version" class="item allow-copy">按版本号筛选</div>
+                <div id="year" class="item allow-copy">按时间线筛选</div>
+                <div id="lightAndDark" class="item allow-copy">按亮色/暗色筛选</div>
+                <div id="special" class="item allow-copy">按特殊标签筛选</div>
                 <div id="activeSlider"></div>
             </div>
             <!--动态追加待选标签-->
@@ -171,8 +182,17 @@
                         </div>
                     </label>
                     <label class="tips">
+                        允许选择文本
+                        <input type="checkbox" id="allowCopy" class="switch">
+                        <div class="buttonBorder">
+                            <div class="OFF buttonText">OFF</div>
+                            <div class="ON buttonText">ON</div>
+                            <div id="COPYSlider" class="buttonSlider"></div>
+                        </div>
+                    </label>
+                    <label class="tips">
                         主题色跟随系统
-                        <input type="checkbox" id="autoSwitchTheme" class="switch">
+                        <input type="checkbox" id="autoSwitchTheme" class="switch" checked>
                         <div class="buttonBorder">
                             <div class="OFF buttonText">OFF</div>
                             <div class="ON buttonText">ON</div>
@@ -204,6 +224,9 @@
     </div>
     <div id="select">
         <!--动态追加筛选结果-->
+    </div>
+    <div id="toTop" class="hide" onclick="toTop('location0')">
+        ↑<!--回到顶部-->
     </div>
 </body>
 </html>

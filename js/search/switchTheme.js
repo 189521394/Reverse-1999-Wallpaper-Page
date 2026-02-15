@@ -1,4 +1,4 @@
-// 该函数调用在 saveUserSettings.js 文件中，当用户调整深色按钮时会调用该函数
+// 该函数调用在 settingsSystem.js 文件中，当用户调整深色按钮时会调用该函数
 function switchTheme() {
     const autoSwitchTheme = document.getElementById("autoSwitchTheme").checked;
     const manualSwitchTheme = document.getElementById("manualSwitchTheme").checked;

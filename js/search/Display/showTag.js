@@ -52,7 +52,7 @@ async function showTag(targetURL) {
         let div = document.createElement("div");
 
         div.textContent = Tags[i];
-        div.className = "tags";
+        div.className = "tags allow-copy";
 
         cache.appendChild(div);
     }

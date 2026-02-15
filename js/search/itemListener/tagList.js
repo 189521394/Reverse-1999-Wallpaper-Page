@@ -12,7 +12,7 @@ function getTag(loadButtonID,targetObjectPool) {
     let element = document.getElementById(loadButtonID);
 
     element.addEventListener("click",function (){
-        // 滑块动画控制
+        // =================滑块动画控制=================
         // 先移除其他的active
         document.querySelectorAll('.item').forEach(item => item.classList.remove('active'));
 
@@ -22,7 +22,7 @@ function getTag(loadButtonID,targetObjectPool) {
         // 动画移动过去
         moveSliderTo(element);
 
-        // 实际逻辑控制
+        // =================实际逻辑控制=================
         // 先清空再追加
         box.replaceChildren();
 
@@ -33,7 +33,7 @@ function getTag(loadButtonID,targetObjectPool) {
             let div = document.createElement("div");
 
             div.textContent = targetObjectPool[i];
-            div.className = "waiting";
+            div.className = "waiting allow-copy";
 
             // 先放到虚拟对象里面
             cache.appendChild(div);

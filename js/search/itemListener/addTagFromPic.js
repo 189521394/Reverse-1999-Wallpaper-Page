@@ -7,7 +7,8 @@ document.getElementById("returnTag").addEventListener("click",function (e) {
 
     let newTag = tag.cloneNode(true);
     // 替换class，适配新的父元素
-    newTag.classList.replace("tags", "waiting");
+    newTag.classList.remove("tags");
+    newTag.classList.add("waiting");
 
     target.appendChild(newTag);
 });

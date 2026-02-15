@@ -19,6 +19,10 @@ body {
     /*防止页面左上角出现鼠标焦点*/
     user-select: none;
 }
+/*允许复制模式*/
+body.mode-copy .allow-copy {
+    user-select: text !important;
+}
 
 /*初始化一些设置，防止元素闪现*/
 .switch {
