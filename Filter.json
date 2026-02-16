@@ -3556,7 +3556,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_kanshu.png",
-    "tag_ZH": ["主线剧情", "疯癫与文明", "1991","暗色","十四行诗","维尔汀","虚构集","百合花"],
+    "tag_ZH": ["主线剧情", "疯癫与文明", "1991","暗色","十四行诗","维尔汀","虚构集"],
     "tag_EN": []
   },
   {
@@ -4756,7 +4756,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeitietie.png",
-    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓","艾玛"],
+    "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","野树莓","艾玛","百合花"],
     "tag_EN": []
   },
   {
@@ -4767,6 +4767,321 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_ys_fugaoren.png",
     "tag_ZH": ["轶事", "讣告人·墓碑博物馆", "1912","亮色","讣告人"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_01.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","灰调蓝","费利西安"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_02.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_04.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_06.png",
+    "tag_ZH": ["轶事", "贝丽尔·命运的雨季", "1936","暗色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_07.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_08.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔","费利西安"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_10.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚","罗西教授","文森特"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_11.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","费利西安","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_13.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_14.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_15.png",
+    "tag_ZH": ["轶事", "灰调蓝·无烧", "1936","亮色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_16.png",
+    "tag_ZH": ["轶事", "灰调蓝·无烧", "1936","亮色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_17.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","灰调蓝","费利西安"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_18.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_19.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔","罗西教授","阿尼姆斯"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_20.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","费利西安","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_21.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","灰调蓝","西莉亚","社区图像"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_22.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_25.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_26.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_27.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_28.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_29.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_30.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_31.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_32.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","文森特"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_33.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","文森特"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_34.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","文森特"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_35.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝","西莉亚","文森特"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_36.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_37.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝","社区图像"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_38.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_39.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_40.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_41.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_42.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_43.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_44.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_45.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","文森特"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_46.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔","特殊CG"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_47.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_48.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔","社区图像"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_50.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","贝丽尔","社区图像"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_51.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_53.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_54.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_55.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_56.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚","罗西教授"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_57.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚","罗西教授"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_58.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_59.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_60.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_61.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_62.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_63.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_65.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","西莉亚"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_72.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","贝丽尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_73.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_76.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色","灰调蓝"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_77.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_rouge1.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","无声综合症"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_rouge2.png",
+    "tag_ZH": ["活动剧情", "迁流的盛宴", "1936","暗色","无声综合症"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_ys_madierda.png",
+    "tag_ZH": ["轶事", "玛蒂尔达·交接日", "1936","亮色","玛蒂尔达"],
     "tag_EN": []
   }
 ]

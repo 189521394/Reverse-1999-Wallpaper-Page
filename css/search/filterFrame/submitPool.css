@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*编码不能删，因为下面那个content里面显示的中文，如果删了会乱码*/
 /*初始化*/
 #submitPool {
     position: relative;
