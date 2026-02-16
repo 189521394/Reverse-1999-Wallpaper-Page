@@ -4495,6 +4495,136 @@
     "tag_EN": []
   },
   {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_01.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","暗色","艾吉奥·奥迪托雷"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_02.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色","艾吉奥·奥迪托雷","APPLe"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_03.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色","艾吉奥·奥迪托雷","苏芙比","莱昂纳多","维尔汀","多人合照"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_04.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","暗色","维尔汀","卡珊德拉"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_05.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","卡珊德拉","吟游诗人"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_06.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","暗色","阿利克西欧斯"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_07.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","暗色","APPLe","莱昂纳多"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_09.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_10.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","APPLe"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_11.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色","艾吉奥·奥迪托雷"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_12.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_13.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_14.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","星锑","维尔汀","APPLe"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_15.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_17.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_18.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","维尔汀","卡珊德拉"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_20.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","星锑","维尔汀"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_22.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","卡珊德拉"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_23.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","卡珊德拉"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_24.png",
+    "tag_ZH": ["活动剧情", "入雅典记", "未知时间","亮色","APPLe"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_26.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","暗色","艾吉奥·奥迪托雷","APPLe"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_27.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","暗色","艾吉奥·奥迪托雷","APPLe","特殊CG"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_28.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色","艾吉奥·奥迪托雷"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_29.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色","艾吉奥·奥迪托雷"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_31.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","亮色","艾吉奥·奥迪托雷"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_32.png",
+    "tag_ZH": ["活动剧情", "翡冷翠之春", "未知时间","暗色","艾吉奥·奥迪托雷"],
+    "tag_EN": []
+  },
+  {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_aimaxixue.png",
     "tag_ZH": ["活动剧情", "长夜鸣笛", "1912","暗色","告死鸟","艾玛"],
     "tag_EN": []
