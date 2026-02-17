@@ -2801,7 +2801,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_aifu.png",
-    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","亮色","德洛丝","兀尔德","维尔汀"],
+    "tag_ZH": ["主线剧情", "忧郁的热带","远征记", "1990","亮色","德洛丝","兀尔德","维尔汀"],
     "tag_EN": []
   },
   {
@@ -2951,7 +2951,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_yisheng.png",
-    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","亮色","兀尔德","德洛丝"],
+    "tag_ZH": ["主线剧情", "忧郁的热带","远征记", "1990","亮色","兀尔德","德洛丝"],
     "tag_EN": []
   },
   {
@@ -2986,7 +2986,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_zhengyan1.png",
-    "tag_ZH": ["主线剧情", "忧郁的热带", "1990","亮色","维尔汀"],
+    "tag_ZH": ["主线剧情", "忧郁的热带","远征记", "1990","亮色","维尔汀"],
     "tag_EN": []
   },
   {
@@ -3680,11 +3680,6 @@
     "tag_EN": []
   },
   {
-    "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_chengjidan.png",
-    "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987","亮色","特殊CG"],
-    "tag_EN": []
-  },
-  {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_chengshidenghuo.png",
     "tag_ZH": ["活动剧情", "1987宇宙组曲", "1987","暗色","远旅"],
     "tag_EN": []
@@ -3971,7 +3966,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fumo.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","兀尔德","德洛丝"],
+    "tag_ZH": ["主线剧情", "复乐园", "远征记","1991","亮色","兀尔德","德洛丝"],
     "tag_EN": []
   },
   {
@@ -4276,7 +4271,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueji3.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","兀尔德","德洛丝"],
+    "tag_ZH": ["主线剧情", "复乐园","远征记", "1991","亮色","兀尔德","德洛丝"],
     "tag_EN": []
   },
   {
@@ -4286,7 +4281,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xueji5.png",
-    "tag_ZH": ["主线剧情", "复乐园", "1991","亮色","兀尔德","德洛丝"],
+    "tag_ZH": ["主线剧情", "复乐园","远征记", "1991","亮色","兀尔德","德洛丝"],
     "tag_EN": []
   },
   {
@@ -4376,122 +4371,122 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_aiguozhe.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上","轶事","玛丽安娜·谋杀始于清晨", "1918","暗色","玛丽安娜"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上","轶事","玛丽安娜·谋杀始于清晨", "1920","暗色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_bodou1.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","玛丽安娜"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_diyuzhimen.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","卡戎","玛丽安娜"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","卡戎","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_duizhi1.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_duizhi3_zone.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","玛丽安娜"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_duizhi4_zone.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","玛丽安娜"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_fating1.png",
-    "tag_ZH": ["轶事", "玛丽安娜·谋杀始于清晨", "1918","暗色","玛丽安娜"],
+    "tag_ZH": ["轶事", "玛丽安娜·谋杀始于清晨", "1920","暗色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_fating2.png",
-    "tag_ZH": ["轶事", "玛丽安娜·谋杀始于清晨", "1918","亮色","玛丽安娜"],
+    "tag_ZH": ["轶事", "玛丽安娜·谋杀始于清晨", "1920","亮色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_fushi1.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","玛尔纱"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","玛尔纱"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_fushi2.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","玛尔纱"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","玛尔纱"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_fushi3.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_gaobie.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","亮色","艾伯哈特","卡戎"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","亮色","艾伯哈特","卡戎"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_karong1.png",
-    "tag_ZH": ["轶事", "卡戎·三重赋格", "1918","暗色","卡戎"],
+    "tag_ZH": ["轶事", "卡戎·三重赋格", "1920","暗色","卡戎"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_karong2.png",
-    "tag_ZH": ["轶事", "卡戎·三重赋格", "1918","暗色","卡戎"],
+    "tag_ZH": ["轶事", "卡戎·三重赋格", "1920","暗色","卡戎"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_liaotian.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","卡戎","布劳恩少校"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","卡戎","布劳恩少校"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_malianna.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色","玛丽安娜"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_map1.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_map2.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","暗色"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_qixing.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","亮色","玛尔纱","玛丽安娜","百合花"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","亮色","玛尔纱","玛丽安娜","百合花"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_shesha1.png",
-    "tag_ZH": ["轶事", "玛丽安娜·谋杀始于清晨", "1918","亮色","玛丽安娜"],
+    "tag_ZH": ["轶事", "玛丽安娜·谋杀始于清晨", "1920","亮色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_yanhua.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","亮色"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_ys_tannante.png",
-    "tag_ZH": ["轶事", "坦南特·钻石游戏", "1918","亮色","温妮弗雷德","坦南特"],
+    "tag_ZH": ["轶事", "坦南特·钻石游戏", "1920","亮色","温妮弗雷德","坦南特"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_zhandi.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "轶事","玛丽安娜·谋杀始于清晨","1918","暗色","玛丽安娜"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "轶事","玛丽安娜·谋杀始于清晨","1920","暗色","玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_zhuisha1.png",
-    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1918","亮色","玛丽安娜","施特林"],
+    "tag_ZH": ["主线剧情", "行于漫漫长路上", "1920","亮色","玛丽安娜","施特林"],
     "tag_EN": []
   },
   {
@@ -5082,6 +5077,211 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_ys_madierda.png",
     "tag_ZH": ["轶事", "玛蒂尔达·交接日", "1936","亮色","玛蒂尔达"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_01.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","红弩箭"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_02.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","伊戈尔","玛尔纱","红弩箭"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_04.png",
+    "tag_ZH": ["轶事", "伊戈尔·风暴前夜", "1920","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_05.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","玛尔纱"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_05_fix.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","玛尔纱","梅蕾尔","手动修复"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_06_zone.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","玛尔纱","梅蕾尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_07.png",
+    "tag_ZH": ["轶事", "玛尔纱·以骑士之名", "1920","亮色","玛尔纱"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_08.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","玛尔纱"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_09.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","玛尔纱"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_10.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","维尔汀","十四行诗"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_11.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","玛尔纱","十四行诗"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_12.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","伊戈尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_13.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","卡戎","格鲁托夫"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_14.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","维尔汀"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_15.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_16.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","伊戈尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_17.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_21.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","210","888","玛尔塔","兀尔德","多人合照"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_22.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","210","888","玛尔塔","兀尔德","多人合照"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_23.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","伊戈尔","红弩箭"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_24.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","卡戎"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_25.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","斯捷尔诺娃","伊戈尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_26.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","梅蕾尔","玛尔纱"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_27.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","玛尔纱"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_28.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","伊戈尔","社区图像"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_29.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","斯捷尔诺娃"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_30.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_07.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_31.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","伊戈尔","伊万"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_32.png",
+    "tag_ZH": ["轶事", "伊戈尔·风暴前夜", "1920","暗色","伊戈尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_33.png",
+    "tag_ZH": ["轶事", "伊戈尔·风暴前夜", "1920","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_34.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","格鲁托夫","卡戎"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_35.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","伊万","维尔汀","红弩箭"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_36.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","维尔汀","特殊CG"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_37.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","卡戎"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_38.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_39.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","玛尔纱"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_40.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_41.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","亮色","卡戎"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_42.png",
+    "tag_ZH": ["主线剧情", "远征记", "1920","暗色","伊戈尔"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_ys_molideer.png",
+    "tag_ZH": ["轶事", "莫莉德尔·在高山下", "1920","亮色","莫莉德尔"],
     "tag_EN": []
   }
 ]
