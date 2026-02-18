@@ -5,8 +5,7 @@ const R2_DOMAIN = "https://pub-ebded49967fb4d42b70fd6fa38d875f9.r2.dev";
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
 async function loadURL(targetTag) {
-    const meta = await fetch("Filter.json");
-    const data = await meta.json();
+    const data = await loadToMemory();
     const isPrecise = document.getElementById("preciseScreening").checked;
 
     // 决定图片路径

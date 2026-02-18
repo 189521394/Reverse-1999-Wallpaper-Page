@@ -10,7 +10,8 @@ header {
 }
 /*居中外框*/
 header {
-    display: flex;
+    /*先关了，填坑后续再说*/
+    display: none;
     justify-content: center;
     align-items: center;
 }
