@@ -58,6 +58,9 @@ getTag("event",eventPool);
 // 角色轶事筛选
 getTag("anecdote",anecdotePool);
 
+// 按版本号筛选
+getTag("version",versionCodePool);
+
 // 按时间线筛选
 getTag("year",yearPool);
 

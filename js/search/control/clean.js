@@ -8,6 +8,7 @@ function clean() {
         target.replaceChildren();
         box.replaceChildren();
         result.textContent = "0个筛选结果";
+        alreadySubmit = false;
     } else {
         target.replaceChildren();
     }

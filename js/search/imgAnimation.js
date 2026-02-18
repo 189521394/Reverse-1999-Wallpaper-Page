@@ -1,6 +1,8 @@
 // 它的调用在 图片被追加进去之后
 // 详见文件：DisplayImg.js
 // 因为图片是动态获取的，如果直接调用，会获取不到图片
+// 同时，它只接收图片列表，给传进来的图片添加点击预览动画
+// 因为如果一张图绑定两个一样的监听器会出bug
 
 // 看一下用户是否需要查看标签
 // 如果查看标签，图片显示布局也需要修改
@@ -8,14 +10,17 @@ const showTags = document.getElementById("showTags");
 // 不可以直接在这写checked，在代码里面写元素的checked可以动态调用，热刷新
 // 如果在这里写了checked，每次修改都需要手动提交筛选才生效
 
-function setAnimation() {
-    const imgs = document.querySelectorAll('.imgs');
-    const overlay = document.getElementById('overlay');
-    // 记录当前哪张图被放大了
-    let activeImg = null;
+// 记录当前哪张图被放大了
+let activeImg = null;
 
-    imgs.forEach(img => {
-        img.addEventListener('click', () => {
+function setAnimation(imgList) {
+    const overlay = document.getElementById('overlay');
+
+    imgList.forEach(img => {
+        img.addEventListener('click', (e) => {
+            // 加上e防止冒泡，虽然不知道为什么
+            e.stopPropagation();
+
             // 如果当前点击的图已经是激活状态，则关闭
             if (img.classList.contains('active')) {
                 closeImage();
@@ -89,7 +94,10 @@ function setAnimation() {
     });
 
     // 点击遮罩层关闭
-    overlay.addEventListener('click', closeImage);
+    if (!overlay.hasAttribute('listener-already-exists')) {
+        overlay.addEventListener('click', closeImage);
+        overlay.setAttribute('listener-already-exists', 'true');
+    }
 
     // 关闭函数
     function closeImage() {
