@@ -1,0 +1,34 @@
+/*初始化*/
+#setItem {
+    position: absolute;
+    width: 20vw;
+    height: 80vh;
+    left: 2vw;
+    background-color: #252525;
+
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    z-index: var(--z-setItem);
+    box-shadow: 0 0 9px 3px var(--setSmallShadow);
+}
+
+
+
+/*通用样式*/
+.setItem:first-child {
+    margin-top: 30px;
+}
+.setItem {
+    margin-top: 20px;
+    width: auto;
+    height: 8vh;
+    background-color: #d3d1cf;
+}
+/*文本控制*/
+.setItem {
+    font-size: 30px;
+    line-height: 8vh;
+    text-align: center;
+}

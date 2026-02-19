@@ -1,0 +1,39 @@
+/*设置框架，控制整个设置的显示隐藏*/
+/*所有元素都包含在内*/
+
+/*初始化*/
+#setFrame {
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+/*帮助子元素定位*/
+#setFrame {
+    position: relative;
+}
+/*设置布局方式*/
+#setFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*隐藏样式*/
+#setFrame {
+    opacity: 0;
+
+    will-change: opacity;
+    transition: opacity 250ms;
+}
+/*显示样式*/
+#setFrame.show {
+    /*禁止鼠标穿过设置层*/
+    pointer-events: auto;
+
+    opacity: 1;
+
+    will-change: opacity;
+    transition: opacity 250ms;
+}

@@ -1,54 +1,17 @@
-/*设置背景*/
-/*基础样式*/
-#set {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-    pointer-events: none;
-    z-index: var(--z-setBack);
-}
-/*布局*/
-#set {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*设置框架，为了边距裁切而存在*/
-#setFrame {
-
-}
-/*设置页面*/
+/*设置内容部分*/
+/*这里面展示的是设置的内容，选项卡，提示文本等*/
 #setBox {
     width: 55vw;
-    height: 60vh;
-    background: rgba(0, 0, 0, 0);
+    /*不填写高度，由父元素控制*/
+    background: transparent;
     z-index: var(--z-imgAndSet);
-    padding: 20px;
     box-sizing: border-box;
 
     overflow: hidden;
-    opacity: 0;
-
-    will-change: background, opacity;
-    transition: background 250ms, opacity 250ms;
 }
-/*设置页面出现*/
-#setBox.show {
-    /*标准对话框颜色*/
-    background: #d3d1cf;
-    /*禁止鼠标穿过设置层*/
-    pointer-events: auto;
-
-    opacity: 1;
-    box-shadow: 0 0 30px 3px rgba(64, 64, 64, 0.6);
-
-    will-change: background, opacity;
-    transition: background 250ms, opacity 250ms;
+/*添加一个小边框，防止滚动条贴靠到元素上*/
+#setBox {
+    padding-right: 12px;
 }
 /*添加滚动条*/
 #setBox {

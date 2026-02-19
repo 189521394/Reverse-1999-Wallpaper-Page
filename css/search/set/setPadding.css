@@ -1,0 +1,18 @@
+/*设置外层的一个框架，充当设置内容的边距*/
+#setPadding {
+    width: 80vw;
+    height: 70vh;
+    /*标准弹窗颜色*/
+    background-color: #d3d1cf;
+    z-index: var(--z-setBG);
+
+    box-shadow: 0 0 30px 3px var(--setBigShadow);
+}
+/*控制内容的位置*/
+#setPadding {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 20px;
+}

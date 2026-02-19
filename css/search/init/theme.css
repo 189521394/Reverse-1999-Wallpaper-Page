@@ -55,6 +55,12 @@
 
     /* 滚动条滑块hover */
     --scrollBarHover: rgba(255, 255, 255, 0.9);
+
+    /*窗口大阴影*/
+    --setBigShadow: rgba(0, 0, 0, 0.6);
+
+    /*窗口小阴影*/
+    --setSmallShadow: rgba(0, 0, 0, 0.9);
 }
 /*手动亮色模式*/
 :root[data-theme='light'] {
@@ -111,6 +117,12 @@
 
     /* 滚动条滑块hover */
     --scrollBarHover: rgba(0, 0, 0, 0.6);
+
+    /*窗口大阴影*/
+    --setBigShadow: rgba(0, 0, 0, 0.6);
+
+    /*窗口小阴影*/
+    --setSmallShadow: rgba(0, 0, 0, 0.9);
 }
 /*自动亮色模式*/
 @media (prefers-color-scheme: light) {
@@ -168,6 +180,12 @@
 
         /* 滚动条滑块hover */
         --scrollBarHover: rgba(0, 0, 0, 0.6);
+
+        /*窗口大阴影*/
+        --setBigShadow: rgba(0, 0, 0, 0.6);
+
+        /*窗口小阴影*/
+        --setSmallShadow: rgba(0, 0, 0, 0.9);
     }
 }
 /*主题切换动画*/
@@ -203,4 +221,10 @@ body {
 }
 .imgs {
     transition: background-color 250ms, box-shadow 250ms;
+}
+#setPadding {
+    transition: box-shadow 250ms;
+}
+#setItem {
+    transition: box-shadow 250ms;
 }
