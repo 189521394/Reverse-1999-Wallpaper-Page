@@ -1,0 +1,11 @@
+/*提示和按钮文本*/
+.tips {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 22px;
+    /*防止多行文本挤在一起，用auto*/
+    height: auto;
+    margin-top: 10px;
+}

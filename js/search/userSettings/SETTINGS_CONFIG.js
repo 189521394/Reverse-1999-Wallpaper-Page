@@ -29,5 +29,10 @@ const SETTINGS_CONFIG = [
         animation: "MSTSlider",
         callback: switchTheme,
         conflictWith: ["autoSwitchTheme"]
+    },
+    {
+        logic: "copyFileName",
+        animation: "CFNSlider",
+        callback: null
     }
 ]

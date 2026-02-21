@@ -1,8 +1,8 @@
 #Filter {
     width: 85vw;
-    height: 60vh;
+    height: 70vh;
     background-color: var(--filterBoxBGC);
-    margin-top: 12vh;
+    margin-top: 15vh;
 }
 /*flex布局*/
 #Filter {

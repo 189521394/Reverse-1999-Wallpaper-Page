@@ -1,3 +1,4 @@
+/*=======================================滑块按钮，可以开关=======================================*/
 /*真实选项按钮样式*/
 .switch {
     width: 100px;
@@ -61,4 +62,18 @@
     will-change: background-color,left;
     transition: background-color 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
                 left 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+/*=======================================点击按钮，只是简单的点击=======================================*/
+/*按钮框架*/
+.clickButton {
+    background-color: #D16430;
+    width: 160px;
+    height: 34px;
+}
+/*排版*/
+.clickButton {
+    line-height: 34px;
+    text-align: center;
+    font-size: 28px;
+    z-index: var(--z-buttonBorder);
 }

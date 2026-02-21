@@ -25,10 +25,18 @@
     width: auto;
     height: 8vh;
     background-color: #d3d1cf;
+
+    transition: background-color 250ms;
 }
 /*文本控制*/
 .setItem {
     font-size: 30px;
     line-height: 8vh;
     text-align: center;
+}
+/*激活样式*/
+.setItem.active {
+    background-color: var(--controlButtonBGC);
+
+    transition: background-color 250ms;
 }

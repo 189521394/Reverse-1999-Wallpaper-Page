@@ -1,0 +1,21 @@
+#searchButton {
+    width: 7em;
+    height: 44px;
+    margin-left: 20px;
+
+    background-color: var(--controlButtonBGC);
+    transition: background-color 250ms;
+}
+#searchButton {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+#searchButton:hover {
+    background-color: #ffffff;
+    transition: background-color 250ms;
+}
+#searchButton:active {
+    background-color: #d2d2d2;
+    transition: background-color 250ms;
+}

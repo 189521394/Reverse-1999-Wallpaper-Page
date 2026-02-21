@@ -54,6 +54,16 @@
     <!--滚动到底部自动加载更多-->
     <script src="js/search/Display/loadMore.js" defer></script>
 
+    <!--====================搜索框部分====================-->
+    <!--框架-->
+    <link rel="stylesheet" href="css/search/searchFrame/frame.css">
+    <!--文本输入框-->
+    <link rel="stylesheet" href="css/search/searchFrame/input.css">
+    <!--通过搜索框筛选-->
+    <script src="js/search/filterWithText/executeFilter.js" defer></script>
+    <!--搜索按钮-->
+    <link rel="stylesheet" href="css/search/searchFrame/searchButton.css">
+
     <!--====================筛选器框架====================-->
     <!--筛选器样式-->
     <link rel="stylesheet" href="css/search/filterFrame/Filter.css">
@@ -93,10 +103,18 @@
     <link rel="stylesheet" href="css/search/set/setPadding.css">
     <!--设置左侧切换项目-->
     <link rel="stylesheet" href="css/search/set/setItem.css">
-    <!--设置里面的内容-->
+    <!--设置内容框架-->
     <link rel="stylesheet" href="css/search/set/setBox.css">
     <!--设置框架-->
     <link rel="stylesheet" href="css/search/set/setFrame.css">
+    <!--动态加载设置内容-->
+    <script src="js/search/userSettings/loadSetContent.js" defer></script>
+    <!--每个tab分开控制-->
+    <link rel="stylesheet" href="css/search/set/setContent/about.css">
+    <link rel="stylesheet" href="css/search/set/setContent/debug.css">
+    <link rel="stylesheet" href="css/search/set/setContent/mail.css">
+    <link rel="stylesheet" href="css/search/set/setContent/preference.css">
+    <link rel="stylesheet" href="css/search/set/setContent/tips.css">
 
     <!--====================其他部分====================-->
     <!--回到顶部样式与逻辑-->
@@ -128,6 +146,12 @@
         </div>
     </header>
     <div id="Filter">
+        <div id="searchFrame">
+            <label id="fuckLabel">
+                <input type="text" id="input" placeholder='活动剧情 远旅' autofocus>
+                <span id="searchButton">提交(Enter)</span>
+            </label>
+        </div>
         <div id="filterBox">
             <div id="tagList" class="custom-scroll">
                 <div id="character" class="item allow-copy">按角色筛选</div>
@@ -164,82 +188,109 @@
     <!--默认隐藏的设置层-->
     <div id="setBackground">
         <div id="setFrame">
+            <!--设置tab栏-->
             <div id="setItem">
-                <div id="preference" class="setItem">用户偏好</div>
-                <div id="tips" class="setItem">使用说明</div>
+                <div id="preference" class="setItem" data-Content="setList">用户偏好</div>
+                <div id="tips" class="setItem" data-Content="tipList">使用说明</div>
                 <div id="mail" class="setItem">邮件</div>
-                <div id="about" class="setItem">关于</div>
-                <div id="deBug" class="setItem">开发者选项</div>
+                <div id="about" class="setItem" data-Content="aboutList">关于</div>
+                <div id="deBug" class="setItem" data-Content="debugList">开发者选项</div>
             </div>
             <div id="setPadding">
+                <!--所有设置内容，都在box内-->
                 <div id="setBox" class="custom-scroll">
-                    <div id="setList">
-                        <div id="setTitle" class="title">设置</div>
+                    <div id="setList" class="setContent">
+                        <div id="generalTitle" class="title topTitle">通用</div>
                         <div class="line"></div>
+                        <!--label里面的span只是为了编译器不会显示警告，无特殊意义-->
                         <label class="tips">
                             精确筛选
                             <input type="checkbox" id="preciseScreening" class="switch">
-                            <div class="buttonBorder">
-                                <div class="OFF buttonText">OFF</div>
-                                <div class="ON buttonText">ON</div>
-                                <div id="PSSlider" class="buttonSlider"></div>
-                            </div>
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="PSSlider" class="buttonSlider"></span>
+                            </span>
                         </label>
                         <label class="tips">
                             清空筛选标签的同时清空筛选结果
                             <input type="checkbox" id="cleanAll" class="switch">
-                            <div class="buttonBorder">
-                                <div class="OFF buttonText">OFF</div>
-                                <div class="ON buttonText">ON</div>
-                                <div id="CASlider" class="buttonSlider"></div>
-                            </div>
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="CASlider" class="buttonSlider"></span>
+                            </span>
                         </label>
                         <label class="tips">
                             在图片下方显示图片的标签
                             <input type="checkbox" id="showTags" class="switch">
-                            <div class="buttonBorder">
-                                <div class="OFF buttonText">OFF</div>
-                                <div class="ON buttonText">ON</div>
-                                <div id="STSlider" class="buttonSlider"></div>
-                            </div>
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="STSlider" class="buttonSlider"></span>
+                            </span>
                         </label>
                         <label class="tips">
                             允许选择文本
                             <input type="checkbox" id="allowCopy" class="switch">
-                            <div class="buttonBorder">
-                                <div class="OFF buttonText">OFF</div>
-                                <div class="ON buttonText">ON</div>
-                                <div id="COPYSlider" class="buttonSlider"></div>
-                            </div>
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="COPYSlider" class="buttonSlider"></span>
+                            </span>
                         </label>
+                        <div id="themeTitle" class="title">主题控制</div>
+                        <div class="line"></div>
                         <label class="tips">
                             主题色跟随系统
                             <input type="checkbox" id="autoSwitchTheme" class="switch" checked>
-                            <div class="buttonBorder">
-                                <div class="OFF buttonText">OFF</div>
-                                <div class="ON buttonText">ON</div>
-                                <div id="ASTSlider" class="buttonSlider"></div>
-                            </div>
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="ASTSlider" class="buttonSlider"></span>
+                            </span>
                         </label>
                         <label class="tips">
                             手动切换暗色/亮色
                             <input type="checkbox" id="manualSwitchTheme" class="switch">
-                            <div class="buttonBorder">
-                                <div class="OFF buttonText">OFF</div>
-                                <div class="ON buttonText">ON</div>
-                                <div id="MSTSlider" class="buttonSlider"></div>
-                            </div>
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="MSTSlider" class="buttonSlider"></span>
+                            </span>
                         </label>
                     </div>
-                    <div id="tipList">
-                        <div id="tipTitle" class="title">使用说明</div>
+                    <div id="tipList" class="setContent">
+                        <div id="tipTitle" class="title topTitle">使用说明</div>
                         <div class="line"></div>
                         <div class="tips">单击可以添加/移除筛选标签</div>
-                        <div class="tips">[关于时间线] 本人时间有限，并没有认真考据，大部分数据都是从网上搜来的</div>
-                        <div class="tips">[关于图片来源] 图片来自游戏解包文件(解包工作并不是我完成的)</div>
+                        <div class="tips">所有展示的图像均为未经压缩的原图，可以直接右键复制，图像质量与下载的完全一致</div>
+                    </div>
+                    <div id="aboutList" class="setContent">
+                        <div id="aboutTitle" class="title topTitle">关于</div>
+                        <div class="line"></div>
+                        <div class="tips">[关于时间线] 数据来源于网络，本人并没有认真考据</div>
+                        <div class="tips">[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)</div>
                         <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
                         <div class="tips">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
-                        <div class="tips">[当前版本状态] 已完成内容更新</div>
+                        <div class="tips">[当前版本状态] 内容已经与官方同步，基础功能尚未完成</div>
+                    </div>
+                    <div id="debugList" class="setContent">
+                        <div id="debugTitle" class="title topTitle">开发者选项</div>
+                        <div class="line"></div>
+                        <label class="tips">
+                            快速复制文件名称
+                            <input type="checkbox" id="copyFileName" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="CFNSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <div class="tips">
+                            重置所有设置项(施工中)
+                            <span class="clickButton">重置</span>
+                        </div>
                     </div>
                 </div>
             </div>

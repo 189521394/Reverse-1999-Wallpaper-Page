@@ -13,6 +13,9 @@
 #setBox {
     padding-right: 12px;
 }
+
+
+
 /*添加滚动条*/
 #setBox {
     overflow-y: scroll;
@@ -37,28 +40,38 @@
 }
 
 
+
 /*详细配置*/
-/*标题样式*/
+/*通用标题*/
 .title {
     font-size: 30px;
 }
-/*分割线样式*/
+/*通用分割线*/
 .line {
     height: 1px;
     width: auto;
     background-color: black;
 }
-/*提示文本框架*/
-#tipList {
+
+
+
+/*设置显示控制*/
+.setContent {
+    opacity: 0;
+    display: none;
+    will-change: opacity, display;
+    transition: opacity 250ms;
+}
+.setContent.show {
+    opacity: 1;
+    display: block;
+    will-change: opacity, display;
+    transition: opacity 250ms;
+}
+/*通用标题控制，首个标题不需要上边距*/
+.title {
     margin-top: 60px;
 }
-/*提示和按钮文本*/
-.tips {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    font-size: 22px;
-    height: 35px;
-    margin-top: 10px;
+.topTitle {
+    margin-top: 0 !important;
 }

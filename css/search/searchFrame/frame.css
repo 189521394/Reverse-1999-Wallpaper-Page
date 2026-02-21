@@ -1,0 +1,25 @@
+/*初始化*/
+#searchFrame {
+    width: 85vw;
+    height: 10vh;
+    background-color: var(--controlBGC);
+    box-sizing: border-box;
+    border: 1px solid transparent;
+
+    transition: border 150ms,background-color 250ms;
+}
+#searchFrame:hover {
+    border: 1px solid var(--goldLine);
+    transition: border 150ms,background-color 250ms;
+}
+/*控制居中*/
+#searchFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fuckLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
