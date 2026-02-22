@@ -22,6 +22,11 @@
     padding: 3px 15px 3px 15px;
     text-align: center;
     font-size: 25px;
+
+    /*禁止换行，超出自动省略*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*设置被选择的动画*/
 .item {

@@ -4,8 +4,17 @@ const R2_DOMAIN = "https://pub-ebded49967fb4d42b70fd6fa38d875f9.r2.dev";
 // 判断当前是否在本地运行 (localhost调试)
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
+// 开发调试，即时刷新
+const fastUpdate = document.getElementById("fastUpdate");
+
 async function loadURL(targetTag) {
-    const data = await loadToMemory();
+    let data;
+    if (fastUpdate.checked) {
+        const meta = await fetch("Filter.json");
+        data = await meta.json();
+    } else {
+        data = await loadToMemory();
+    }
     const isPrecise = document.getElementById("preciseScreening").checked;
 
     // 决定图片路径

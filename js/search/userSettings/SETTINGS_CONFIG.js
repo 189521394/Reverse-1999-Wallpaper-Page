@@ -34,5 +34,10 @@ const SETTINGS_CONFIG = [
         logic: "copyFileName",
         animation: "CFNSlider",
         callback: null
+    },
+    {
+        logic: "fastUpdate",
+        animation: "FUSlider",
+        callback: null
     }
 ]

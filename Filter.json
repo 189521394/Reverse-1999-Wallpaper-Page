@@ -281,12 +281,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_jinmieranniliaotian.png",
-    "tag_ZH": ["1.2", "活动剧情", "绿湖噩梦", "1971", "亮色", "金蜜儿", "百合花"],
+    "tag_ZH": ["1.2", "活动剧情", "绿湖噩梦", "1971", "亮色", "安妮", "金蜜儿", "百合花"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_jinmieranniliaotian2.png",
-    "tag_ZH": ["1.2", "活动剧情", "绿湖噩梦", "1971", "亮色", "金蜜儿", "百合花"],
+    "tag_ZH": ["1.2", "活动剧情", "绿湖噩梦", "1971", "亮色", "安妮", "金蜜儿", "百合花"],
     "tag_EN": []
   },
   {
@@ -631,22 +631,22 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zuihoudewancan1.png",
-    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照"],
+    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照", "苏芙比", "卡森", "斯奈德", "十四行诗", "维尔汀", "槲寄生", "X", "星锑", "APPLe"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zuihoudewancan2.png",
-    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照"],
+    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照", "苏芙比", "斯奈德", "十四行诗", "维尔汀", "槲寄生", "X", "星锑", "APPLe"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zuihoudewancan3.png",
-    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照"],
+    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照", "苏芙比", "斯奈德", "十四行诗", "维尔汀", "槲寄生", "X", "星锑", "APPLe"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zuihoudewancan4.png",
-    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照"],
+    "tag_ZH": ["1.0", "主线剧情", "夜色温柔", "1929", "暗色", "多人合照", "苏芙比", "十四行诗", "斯奈德", "维尔汀", "槲寄生", "X", "星锑", "APPLe"],
     "tag_EN": []
   },
   {
@@ -696,7 +696,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_lutianwutai.png",
-    "tag_ZH": ["1.0", "主线剧情", "故事一无所有", "1987", "亮色", "多人合照"],
+    "tag_ZH": ["1.0", "主线剧情", "故事一无所有", "1987", "亮色", "多人合照", "小梅斯梅尔", "伊莎贝拉", "十四行诗", "维尔汀"],
     "tag_EN": []
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/cg_datuanyuan.png",
-    "tag_ZH": ["1.0", "主线剧情", "老虎的金黄", "1913", "亮色", "多人合照"],
+    "tag_ZH": ["1.0", "主线剧情", "老虎的金黄", "1913", "亮色", "多人合照", "红弩箭", "槲寄生", "APPLe", "星锑", "维尔汀", "苏芙比"],
     "tag_EN": []
   },
   {
@@ -4496,7 +4496,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_03.png",
-    "tag_ZH": ["SP01", "活动剧情", "翡冷翠之春", "未知时间", "亮色", "艾吉奥·奥迪托雷", "苏芙比", "莱昂纳多", "维尔汀", "多人合照"],
+    "tag_ZH": ["SP01", "活动剧情", "翡冷翠之春", "未知时间", "亮色", "艾吉奥·奥迪托雷", "APPLe", "苏芙比", "莱昂纳多", "维尔汀", "多人合照"],
     "tag_EN": []
   },
   {

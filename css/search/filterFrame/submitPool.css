@@ -24,6 +24,9 @@
     font-size: 30px;
     color: var(--fontColor);
     transition: color 250ms;
+
+    /*禁止换行*/
+    white-space: nowrap;
 }
 /*当里面有元素时删除文本*/
 /*让前景色和背景色相同，达到删除效果，方便动画渐变*/

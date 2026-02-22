@@ -148,7 +148,7 @@
     <div id="Filter">
         <div id="searchFrame">
             <label id="fuckLabel">
-                <input type="text" id="input" placeholder='活动剧情 远旅' autofocus>
+                <input type="text" id="input" placeholder='输入标签 空格分隔' autofocus>
                 <span id="searchButton">提交(Enter)</span>
             </label>
         </div>
@@ -273,7 +273,7 @@
                         <div class="tips">[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)</div>
                         <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
                         <div class="tips">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
-                        <div class="tips">[当前版本状态] 内容已经与官方同步，基础功能尚未完成</div>
+                        <div class="tips">[当前版本状态] 内容已经与官方同步，基础功能正在建设</div>
                     </div>
                     <div id="debugList" class="setContent">
                         <div id="debugTitle" class="title topTitle">开发者选项</div>
@@ -285,6 +285,15 @@
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
                                 <span id="CFNSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <label class="tips">
+                            重复发送Filter请求
+                            <input type="checkbox" id="fastUpdate" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="FUSlider" class="buttonSlider"></span>
                             </span>
                         </label>
                         <div class="tips">

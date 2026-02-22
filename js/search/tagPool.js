@@ -178,7 +178,9 @@ let characterPool = [
     "鹭鸶剪",
     "程和光",
     "惠姑",
-    "任仙子"
+    "任仙子",
+    "伊莎贝拉",
+    "安妮"
 ]
 
 let mainLinePool = [

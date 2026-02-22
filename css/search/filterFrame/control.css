@@ -48,15 +48,15 @@
     font-size: 30px;
     user-select: none;
 
-    transition: background-color 150ms;
+    transition: background-color 250ms;
 }
 .buttons:hover {
     background-color: #ffffff;
-    transition: background-color 150ms;
+    transition: background-color 250ms;
 }
 .buttons:active {
     background-color: #d2d2d2;
-    transition: background-color 150ms;
+    transition: background-color 250ms;
 }
 
 

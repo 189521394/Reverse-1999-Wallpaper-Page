@@ -1,16 +1,19 @@
 #searchButton {
     width: 7em;
-    height: 44px;
+    height: 40px;
     margin-left: 20px;
+    border: 1px solid var(--goldLine);
 
     background-color: var(--controlButtonBGC);
     transition: background-color 250ms;
 }
+/*文本控制*/
 #searchButton {
     font-size: 30px;
     line-height: 40px;
     text-align: center;
 }
+/*点击效果*/
 #searchButton:hover {
     background-color: #ffffff;
     transition: background-color 250ms;
