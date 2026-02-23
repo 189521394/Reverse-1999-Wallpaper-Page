@@ -1,0 +1,89 @@
+/* 外层容器相对定位 */
+#inputWrapper {
+    position: relative;
+}
+
+/* 提示框基础样式 */
+#inputTips {
+    display: none;
+    position: absolute;
+    /*显示在父元素的底部*/
+    top: 100%;
+    left: 0;
+    /* 和输入框同宽 */
+    width: 100%;
+    height: 170px;
+}
+/*扩展样式*/
+#inputTips {
+    background-color: var(--showTagBGC);
+    border: 1px solid var(--imgBorderColor);
+    box-sizing: border-box;
+    z-index: var(--z-base);
+
+    /* 为左侧的翻页竖线留出空间 */
+    /*该变量和下方的翻页区宽度同步，如果要修改必须同时修改*/
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+/* 左侧竖线和翻页区，基础样式 */
+#turn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    border-right: 1px solid var(--imgBorderColor);
+}
+/*箭头控制*/
+#turn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--filterBoxBGC);
+}
+
+/* 翻页箭头基础样式 */
+#previous, #next {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--fontColor);
+    user-select: none;
+    visibility: hidden;
+}
+
+#previous:hover, #next:hover {
+    color: var(--fontHoverColor);
+    background-color: #ffffff;
+}
+
+/* 控制箭头的显示隐藏，具体逻辑在js里面 */
+#inputTips[data-has-prev="true"] #previous {
+    visibility: visible;
+}
+#inputTips[data-has-next="true"] #next {
+    visibility: visible;
+}
+
+/* 候选词单项样式 */
+.words {
+    height: 34px; /* 必须和上面计算的总高度匹配 */
+    line-height: 34px;
+    padding: 0 10px;
+    color: var(--fontColor);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 高亮选中状态 */
+.words.active, .words:hover {
+    background-color: #ffffff;
+    color: var(--fontHoverColor);
+}

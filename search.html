@@ -16,6 +16,8 @@
     <script src="js/search/userSettings/settingsSystem.js" defer></script>
     <!--遮罩层滚动切换器-->
     <script src="js/search/toggleScrollLock.js" defer></script>
+    <!--预定义的所有标签-->
+    <script src="js/search/tagPool.js" defer></script>
 
     <!--====================dock栏====================-->
     <!--dock栏-->
@@ -63,14 +65,16 @@
     <script src="js/search/filterWithText/executeFilter.js" defer></script>
     <!--搜索按钮-->
     <link rel="stylesheet" href="css/search/searchFrame/searchButton.css">
+    <!--输入提示外观-->
+    <link rel="stylesheet" href="css/search/searchFrame/inputTips.css">
+    <!--输入提示逻辑-->
+    <script src="js/search/filterWithText/InputAssistant.js" defer></script>
 
     <!--====================筛选器框架====================-->
     <!--筛选器样式-->
     <link rel="stylesheet" href="css/search/filterFrame/Filter.css">
     <!--标签组列表-->
     <link rel="stylesheet" href="css/search/filterFrame/tagList.css">
-    <!--预定义的所有标签-->
-    <script src="js/search/tagPool.js" defer></script>
     <!--等待用户选择的标签池-->
     <link rel="stylesheet" href="css/search/filterFrame/tagPool.css">
     <!--被选中的标签-->
@@ -147,10 +151,18 @@
     </header>
     <div id="Filter">
         <div id="searchFrame">
-            <label id="fuckLabel">
-                <input type="text" id="input" placeholder='输入标签 空格分隔' autofocus>
-                <span id="searchButton">提交(Enter)</span>
-            </label>
+            <div id="fuckLabel">
+                <div id="inputWrapper">
+                    <input type="text" id="input" placeholder='输入标签 空格分隔' aria-label="搜索输入框" autofocus>
+                    <div id="inputTips">
+                        <div id="turn">
+                            <div id="previous">↑</div>
+                            <div id="next">↓</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="searchButton">提交(Enter)</div>
+            </div>
         </div>
         <div id="filterBox">
             <div id="tagList" class="custom-scroll">
