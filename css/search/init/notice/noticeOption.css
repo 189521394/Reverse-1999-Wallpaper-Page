@@ -1,0 +1,68 @@
+/*框架*/
+#noticeOption {
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+}
+/*按钮布局*/
+#noticeOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+
+/*通用按钮样式*/
+.option {
+    width: 350px;
+    height: 60px;
+    box-sizing: border-box;
+    /*用于控制视觉中心*/
+    margin-bottom: 11vh;
+
+    box-shadow: 0 0 14px 4px var(--setBigShadow);
+    will-change: box-shadow, filter;
+    transition: box-shadow 250ms, filter 250ms;
+}
+/*文本控制*/
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    line-height: 60px;
+}
+/*边框控制*/
+.option {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--goldLine);
+}
+/*阴影状态/动画控制*/
+.option:hover {
+    box-shadow: 0 0 20px 1px var(--setBigShadow);
+    transition: box-shadow 250ms, filter 250ms;
+}
+.option:active {
+    box-shadow: 0 0 7px 2px var(--setBigShadow);
+    transition: box-shadow 150ms, filter 150ms;
+}
+
+
+/*颜色状态控制*/
+#CANCEL {
+    background-color: #e6e6e6;
+}
+#CONFIRM {
+    background-color: var(--controlButtonBGC);
+}
+/*通过filter统一控制*/
+#CANCEL:hover, #CONFIRM:hover {
+    filter: brightness(1.1);
+}
+#CANCEL:active, #CONFIRM:active {
+    filter: brightness(0.95);
+}

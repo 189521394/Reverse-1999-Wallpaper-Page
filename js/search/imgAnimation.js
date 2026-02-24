@@ -14,7 +14,7 @@ const showTags = document.getElementById("showTags");
 let activeImg = null;
 
 function setAnimation(imgList) {
-    const overlay = document.getElementById('overlay');
+    const overlay = document.getElementById('imgOverlay');
 
     imgList.forEach(img => {
         img.addEventListener('click', (e) => {

@@ -1,4 +1,4 @@
-#overlay {
+#imgOverlay {
     /*定义初始样式，铺满全屏*/
     position: fixed;
     top: 0;
@@ -16,7 +16,7 @@
     will-change: backdrop-filter;
     transition: backdrop-filter 250ms ease;
 }
-#overlay.show {
+#imgOverlay.show {
     /*禁止鼠标穿过遮罩层*/
     pointer-events: auto;
 

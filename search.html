@@ -23,7 +23,15 @@
     <!--提示框框架-->
     <link rel="stylesheet" href="css/search/init/notice/noticeBox.css">
     <!--提示框逻辑封装-->
-    <script src="js/search/notice.js"></script>
+    <script src="js/search/Dialog/notice.js" defer></script>
+    <!--提示内容-->
+    <link rel="stylesheet" href="css/search/init/notice/noticeContent.css">
+    <!--选项-->
+    <link rel="stylesheet" href="css/search/init/notice/noticeOption.css">
+    <!--提示文本-->
+    <link rel="stylesheet" href="css/search/init/notice/noticeTitle.css">
+    <!--清空本地存储提示-->
+    <script src="js/search/Dialog/reset.js" defer></script>
 
     <!--====================dock栏====================-->
     <!--dock栏-->
@@ -326,8 +334,8 @@
                             </span>
                         </label>
                         <div class="tips">
-                            重置所有设置项(施工中)
-                            <span class="clickButton">重置</span>
+                            重置所有设置项
+                            <span class="clickButton" onclick="reset()">重置</span>
                         </div>
                     </div>
                 </div>
@@ -342,14 +350,14 @@
     </div>
     <!--遮罩层-->
     <!--仅用于img的遮罩，因为img显示的时候没有外框，需要单独创建遮罩-->
-    <div id="overlay"></div>
+    <div id="imgOverlay"></div>
     <!--提示层(通用提示)-->
     <div id="noticeBox">
-        <div id="noticeTitle"></div>
+        <div id="noticeTitle">提 示</div>
         <div id="noticeContent"></div>
         <div id="noticeOption">
-            <div id="CANCEL">取消</div>
-            <div id="CONFIRM">确定</div>
+            <div id="CANCEL" class="option">取消</div>
+            <div id="CONFIRM" class="option">确定</div>
         </div>
     </div>
 </body>
