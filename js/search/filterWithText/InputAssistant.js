@@ -7,10 +7,13 @@ const allTagsPool = [
     ...versionCodePool, ...yearPool, ...lightAndDarkPool, ...specialPool
 ];
 
+// 作为下面函数和监听器的公共变量，不需要重复引入
 const inputBox = document.getElementById('input');
 const inputTips = document.getElementById('inputTips');
 
 // 状态变量
+// 提示框的显示状态
+let tipsStatus = false;
 // 当前匹配到的所有词
 let filteredTags = [];
 // 当前页码
@@ -33,7 +36,7 @@ inputBox.addEventListener('input', function() {
 
     if (!currentWord) {
         // 如果没有输入，直接返回
-        inputTips.style.display = 'none';
+        showInputTips(false);
         return;
     }
 
@@ -42,7 +45,7 @@ inputBox.addEventListener('input', function() {
 
     if (matches.length === 0) {
         // 没匹配到
-        inputTips.style.display = 'none';
+        showInputTips(false);
         return;
     }
 
@@ -99,7 +102,7 @@ function renderTips() {
     inputTips.setAttribute('data-has-prev', hasPrev);
     inputTips.setAttribute('data-has-next', hasNext);
 
-    inputTips.style.display = 'block';
+    showInputTips(true);
 }
 
 // 把用户选择的词汇添加到文本框
@@ -121,7 +124,7 @@ function selectTag(wordIndex) {
     // 最终结果：前半部分 + 后半部分
     inputBox.value = newTextBefore + textAfterCursor;
 
-    inputTips.style.display = 'none';
+    showInputTips(false);
 
     // 保持焦点，并把光标放在补全的词的后面
     setTimeout(() => {
@@ -132,7 +135,7 @@ function selectTag(wordIndex) {
 
 // 键盘快捷键监听逻辑
 inputBox.addEventListener('keydown', function(e) {
-    if (inputTips.style.display !== 'block') return; // 没显示提示框时不接管
+    if (tipsStatus === false) return; // 没显示提示框时不接管
 
     // 计算当前显示的提示词数量
     const currentDisplayedCount = Math.min(itemsPerPage, filteredTags.length - currentPage * itemsPerPage);
@@ -215,10 +218,22 @@ inputTips.addEventListener('mousedown', function(e) {
 document.addEventListener('mousedown', function(e) {
     // 如果点的既不是输入框，也不是提示框，就隐藏
     if (e.target !== inputBox && !inputTips.contains(e.target)) {
-        inputTips.style.display = 'none';
+        showInputTips(false);
     } else if (e.target === inputBox){
-        // 打开不需要刷新，省心，虽然会遗留一条
+        // 打开不需要刷新，省心，虽然会遗留一条提示词
         // 这是特性，当历史记录用了，就酱
-        inputTips.style.display = 'block';
+        showInputTips(true);
     }
 });
+
+// 封装函数，控制提示框显示
+function showInputTips(boolean) {
+    tipsStatus = boolean;
+    if (boolean) {
+        inputTips.style.height = '170px';
+        inputTips.style.borderWidth = '0px 1px 1px 1px';
+    } else {
+        inputTips.style.height = '0';
+        inputTips.style.borderWidth = '0px';
+    }
+}

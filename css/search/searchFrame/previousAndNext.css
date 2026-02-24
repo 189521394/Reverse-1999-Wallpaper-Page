@@ -1,0 +1,59 @@
+/* 左侧翻页区，基础样式 */
+#turn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    border-right: 1px solid var(--imgBorderColor);
+}
+/*箭头控制*/
+#turn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*让箭头显示在上下两端*/
+    justify-content: space-between;
+    background-color: var(--filterBoxBGC);
+}
+
+
+
+/* 翻页箭头基础样式 */
+#previous, #next {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--fontColor);
+    user-select: none;
+    /*透明度控制显示隐藏，有动画*/
+    opacity: 0;
+
+    transition: color 250ms, background-color 250ms, opacity 250ms;
+}
+/*箭头浮过样式*/
+#previous:hover, #next:hover {
+    color: var(--fontHoverColor);
+    background-color: #ffffff;
+    transition: color 250ms, background-color 250ms, opacity 250ms;
+}
+/*箭头点击样式*/
+#previous:active, #next:active {
+    color: var(--fontHoverColor);
+    background-color: #d2d2d2;
+    transition: color 250ms, background-color 250ms, opacity 250ms;
+}
+
+
+
+/* 控制箭头的显示隐藏，具体逻辑在js里面 */
+#inputTips[data-has-prev="true"] #previous {
+    opacity: 1;
+    transition: color 250ms, background-color 250ms, opacity 250ms;
+}
+#inputTips[data-has-next="true"] #next {
+    opacity: 1;
+    transition: color 250ms, background-color 250ms, opacity 250ms;
+}

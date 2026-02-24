@@ -9,5 +9,7 @@
 /*文本控制*/
 #input {
     font-size: 32px;
-    line-height: 40px;
+    /*normal是为了防止选中文本时文本位置变化*/
+    line-height: normal;
+    font-family: inherit;
 }

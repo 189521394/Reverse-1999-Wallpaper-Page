@@ -1,15 +1,21 @@
 function clean() {
-    let target = document.getElementById("submitPool");
-    let isAll = document.getElementById("cleanAll").checked;
-    let box = document.getElementById("select");
-    let result = document.getElementById("result");
+    const target = document.getElementById("submitPool");
+    const isResult = document.getElementById("cleanResult").checked;
+    const isText = document.getElementById("cleanText").checked;
 
-    if (isAll) {
-        target.replaceChildren();
-        box.replaceChildren();
+    const result = document.getElementById("result");
+    const imgBox = document.getElementById("select");
+    const inputBox = document.getElementById("input");
+
+    target.replaceChildren();
+
+    if (isResult) {
+        imgBox.replaceChildren();
         result.textContent = "0个筛选结果";
         alreadySubmit = false;
-    } else {
-        target.replaceChildren();
+    }
+
+    if (isText) {
+        inputBox.value = "";
     }
 }

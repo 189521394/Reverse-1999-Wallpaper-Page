@@ -5,8 +5,13 @@ const SETTINGS_CONFIG = [
         callback: null
     },
     {
-        logic: "cleanAll",
-        animation: "CASlider",
+        logic: "cleanResult",
+        animation: "CRSlider",
+        callback: null
+    },
+    {
+        logic: "cleanText",
+        animation: "CTSlider",
         callback: null
     },
     {
