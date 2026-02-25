@@ -27,7 +27,6 @@
     text-align: center;
 
     color: var(--fontColor);
-    user-select: none;
     /*透明度控制显示隐藏，有动画*/
     opacity: 0;
 

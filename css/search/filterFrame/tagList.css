@@ -16,7 +16,6 @@
 /*设置每个选项的基础样式*/
 .item {
     position: relative;
-    user-select: none;
     z-index: var(--z-text);
 
     padding: 3px 15px 3px 15px;

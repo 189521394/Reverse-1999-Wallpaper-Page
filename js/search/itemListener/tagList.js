@@ -33,7 +33,7 @@ function getTag(loadButtonID,targetObjectPool) {
             let div = document.createElement("div");
 
             div.textContent = targetObjectPool[i];
-            div.className = "waiting allow-copy";
+            div.className = "waiting";
 
             // 先放到虚拟对象里面
             cache.appendChild(div);

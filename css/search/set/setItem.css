@@ -1,9 +1,9 @@
 /*初始化*/
 #setItem {
     position: absolute;
-    width: 20vw;
+    width: 21vw;
     height: 80vh;
-    left: 2vw;
+    left: 20px;
     background-color: #252525;
 
     box-sizing: border-box;
@@ -24,9 +24,16 @@
     margin-top: 20px;
     width: auto;
     height: 8vh;
-    background-color: #d3d1cf;
 
-    transition: background-color 250ms;
+    background-color: #d3d1cf;
+    transition: background-color 250ms, border-color 250ms;
+}
+/*边框控制*/
+.setItem {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d3d1cf;
 }
 /*文本控制*/
 .setItem {
@@ -36,7 +43,8 @@
 }
 /*激活样式*/
 .setItem.active {
+    border-color: var(--goldLine);
     background-color: var(--controlButtonBGC);
 
-    transition: background-color 250ms;
+    transition: background-color 250ms, border-color 250ms;
 }

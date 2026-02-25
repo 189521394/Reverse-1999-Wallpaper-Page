@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/search/init/notice/noticeTitle.css">
     <!--清空本地存储提示-->
     <script src="js/search/Dialog/reset.js" defer></script>
+    <!--文本框快捷键提示-->
+    <script src="js/search/Dialog/shortcutKey.js" defer></script>
 
     <!--====================dock栏====================-->
     <!--dock栏-->
@@ -85,6 +87,8 @@
     <script src="js/search/filterWithText/InputAssistant.js" defer></script>
     <!--切换候选词-->
     <link rel="stylesheet" href="css/search/searchFrame/previousAndNext.css">
+    <!--快捷键提示-->
+    <link rel="stylesheet" href="css/search/searchFrame/shortcutKey.css">
 
     <!--====================筛选器框架====================-->
     <!--筛选器样式-->
@@ -135,6 +139,8 @@
     <link rel="stylesheet" href="css/search/set/setContent/mail.css">
     <link rel="stylesheet" href="css/search/set/setContent/preference.css">
     <link rel="stylesheet" href="css/search/set/setContent/tips.css">
+    <!--快速复制-->
+    <script src="js/search/copyContact.js" defer></script>
 
     <!--====================其他部分====================-->
     <!--回到顶部样式与逻辑-->
@@ -177,19 +183,20 @@
                         </div>
                     </div>
                 </div>
+                <div id="ShortcutKey" onclick="showKey()">!</div>
                 <div id="searchButton">提交(Enter)</div>
             </div>
         </div>
         <div id="filterBox">
             <div id="tagList" class="custom-scroll">
-                <div id="character" class="item allow-copy">按角色筛选</div>
-                <div id="mainLine" class="item allow-copy">按主线章节筛选</div>
-                <div id="event" class="item allow-copy">按活动章节筛选</div>
-                <div id="anecdote" class="item allow-copy">按轶事筛选</div>
-                <div id="version" class="item allow-copy">按版本号筛选</div>
-                <div id="year" class="item allow-copy">按时间线筛选</div>
-                <div id="lightAndDark" class="item allow-copy">按亮色/暗色筛选</div>
-                <div id="special" class="item allow-copy">按特殊标签筛选</div>
+                <div id="character" class="item">按角色筛选</div>
+                <div id="mainLine" class="item">按主线章节筛选</div>
+                <div id="event" class="item">按活动章节筛选</div>
+                <div id="anecdote" class="item">按轶事筛选</div>
+                <div id="version" class="item">按版本号筛选</div>
+                <div id="year" class="item">按时间线筛选</div>
+                <div id="lightAndDark" class="item">按亮色/暗色筛选</div>
+                <div id="special" class="item">按特殊标签筛选</div>
                 <div id="activeSlider"></div>
             </div>
             <!--动态追加待选标签-->
@@ -218,7 +225,7 @@
             <div id="setItem">
                 <div id="preference" class="setItem" data-Content="setList">用户偏好</div>
                 <div id="tips" class="setItem" data-Content="tipList">使用说明</div>
-                <div id="mail" class="setItem">邮件</div>
+                <div id="mail" class="setItem" data-Content="mailList">邮件</div>
                 <div id="about" class="setItem" data-Content="aboutList">关于</div>
                 <div id="deBug" class="setItem" data-Content="debugList">开发者选项</div>
             </div>
@@ -248,7 +255,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            允许选择文本
+                            允许选择所有文本
                             <input type="checkbox" id="allowCopy" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -302,6 +309,35 @@
                         <div class="line"></div>
                         <div class="tips">单击可以添加/移除筛选标签</div>
                         <div class="tips">所有展示的图像均为未经压缩的原图，可以直接右键复制，图像质量与下载的完全一致</div>
+                        <div class="tips">邮件附件里面的内容是可以复制的，未来可能会添加...兑换码？</div>
+                    </div>
+                    <div id="mailList" class="setContent">
+                        <div id="mail0" class="mail">
+                            <div class="mailHead">
+                                <div class="mailInfo">
+                                    <div class="mailTitle">内容更新进度</div>
+                                    <div class="mailSender">发件人：暖茶与风</div>
+                                    <div class="mailDate">时间：2026年2月26日</div>
+                                </div>
+                                <div class="STAMP">STAMP</div>
+                            </div>
+                            <div class="line"></div>
+                            <!--邮件内容必须按特殊格式写，让浏览器原封不动的渲染上去-->
+                            <div class="mailContent">
+    亲爱的司辰：
+    关于3.5版本《绿松石蛇俱乐部》的帷幕正缓缓拉开，此刻的筹备进度如下：
+        ◦ 官方发布更新通知 ✔
+        ◦ 游戏更新 ！
+        ◦ 等待底片冲洗 ✘
+        ◦ 整理画片 ✘
+        ◦ 发布更新 ✘
+    尚未拼凑完整的画片正等待着重见天日。这或许是个需要些许耐心的时刻，愿这短暂的等待能为您带来更完美的重逢。请耐心等待。
+                            </div>
+                            <div class="mailAttachment">
+                                <div class="attachmentText">ATTACHMENT</div>
+                                <div class="attachmentContent">——EMPTY——</div>
+                            </div>
+                        </div>
                     </div>
                     <div id="aboutList" class="setContent">
                         <div id="aboutTitle" class="title topTitle">关于</div>
@@ -311,6 +347,13 @@
                         <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
                         <div class="tips">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
                         <div class="tips">[当前版本状态] 内容已经与官方同步，基础功能正在建设</div>
+                        <div id="otherTitle" class="title">其他信息</div>
+                        <div class="line"></div>
+                        <div class="tips"><a href="https://github.com/189521394/Reverse-1999-Wallpaper-Page" target="_blank">[GitHub]</a></div>
+                        <div class="tips" id="contact">
+                            [联系我] 2221771663@qq.com
+                            <span class="clickButton" id="copyButton" onclick="copyContact()">复制</span>
+                        </div>
                     </div>
                     <div id="debugList" class="setContent">
                         <div id="debugTitle" class="title topTitle">开发者选项</div>

@@ -8,8 +8,6 @@
     box-sizing: border-box;
     margin-bottom: 20vh;
     padding: 10px;
-
-    user-select: none;
 }
 /*设置布局*/
 #select {

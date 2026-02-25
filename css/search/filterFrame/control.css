@@ -46,7 +46,6 @@
 
     text-align: center;
     font-size: 30px;
-    user-select: none;
 
     transition: background-color 250ms;
 }

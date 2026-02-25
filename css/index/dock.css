@@ -28,9 +28,6 @@ header {
     width: auto;
     height: 120vh;
     backdrop-filter: blur(100px);
-
-    /*不允许用户选择*/
-    user-select: none;
 }
 /*内框阴影*/
 #dock{

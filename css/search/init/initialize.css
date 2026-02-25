@@ -20,8 +20,14 @@ body {
     user-select: none;
 }
 /*允许复制模式*/
-body.mode-copy .allow-copy {
+/*body的所有子元素强制可以复制*/
+body.mode-copy * {
     user-select: text !important;
+}
+/*替换掉系统的蓝底白字*/
+::selection {
+    background-color: #7b6f55;
+    color: #e3d1b3;
 }
 
 

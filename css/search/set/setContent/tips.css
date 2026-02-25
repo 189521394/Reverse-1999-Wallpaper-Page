@@ -9,3 +9,10 @@
     height: auto;
     margin-top: 10px;
 }
+/*联系方式允许复制*/
+#contact {
+    user-select: text;
+}
+#copyButton {
+    user-select: none;
+}

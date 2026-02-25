@@ -1,0 +1,82 @@
+/*===============================================邮件整体===============================================*/
+.mail {
+    height: 600px;
+    width: auto;
+}
+/*用于附件定位，置底*/
+.mail {
+    position: relative;
+}
+/*===============================================邮件头===============================================*/
+.mailHead {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+/*统一控制邮件信息*/
+.mailInfo {
+    margin-left: 10px;
+}
+/*标题，发件人和日期*/
+.mailTitle {
+    font-size: 30px;
+}
+.mailSender {
+    font-size: 20px;
+    color: #5D533C;
+}
+.mailDate {
+    font-size: 20px;
+    color: #5D533C;
+}
+/*邮票控制，紧贴底部*/
+.STAMP {
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    line-height: 45px;
+    font-size: 45px;
+}
+/*===============================================邮件内容===============================================*/
+.mailContent {
+    font-size: 20px;
+    /*禁止自动折叠HTML里面的空格和换行*/
+    white-space: pre-wrap;
+}
+/*===============================================附件===============================================*/
+.mailAttachment {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 100px;
+}
+/*小文本定位*/
+.attachmentText {
+    transform: translateY(-100%);
+    font-size: 13px;
+    color: rgba(107, 107, 107, 0.7);
+}
+/*制作特殊边框*/
+.mailAttachment {
+    /*铅笔灰色*/
+    border: 1px dashed rgba(107, 107, 107, 0.7);
+    /*不规整圆角*/
+    border-radius: 12px 5px 8px 13px / 7px 11px 15px 6px;
+    box-sizing: border-box;
+}
+/*附件内容位置*/
+.attachmentContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*附件内容文本*/
+.attachmentContent {
+    user-select: text;
+    font-size: 30px;
+    color: rgba(107, 107, 107, 0.7);
+}

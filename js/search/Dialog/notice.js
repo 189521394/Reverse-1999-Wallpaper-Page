@@ -21,6 +21,7 @@ function showDialog(showText, notice) {
 
         // 显示对话框
         dialogBox.classList.add("show");
+        toggleScrollLock(true);
 
         // 处理返回值
         const handleCONFIRM = () => {
@@ -38,6 +39,7 @@ function showDialog(showText, notice) {
             cancelButton.removeEventListener("click", handleCANCEL);
             // 隐藏对话框
             dialogBox.classList.remove("show");
+            toggleScrollLock(false);
         };
 
         // 添加监听器，等待点击
