@@ -16,6 +16,21 @@
 
 
 
+/*动画控制*/
+#setBox {
+    opacity: 0;
+
+    will-change: opacity;
+    transition: opacity 250ms ease-in-out 0ms;
+}
+#setBox.show {
+    opacity: 1;
+
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
 /*添加滚动条*/
 #setBox {
     overflow-y: scroll;

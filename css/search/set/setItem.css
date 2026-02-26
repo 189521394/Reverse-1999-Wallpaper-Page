@@ -26,7 +26,7 @@
     height: 8vh;
 
     background-color: #d3d1cf;
-    transition: background-color 250ms, border-color 250ms;
+    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
 }
 /*边框控制*/
 .setItem {
@@ -46,5 +46,37 @@
     border-color: var(--goldLine);
     background-color: var(--controlButtonBGC);
 
-    transition: background-color 250ms, border-color 250ms;
+    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
+}
+
+
+
+/*动画控制*/
+#setItem {
+    /*参数说明*/
+    /*perspective摄像机距离，1000px不要动，解释较为复杂*/
+    /*translateX向右偏移距离，不宜太多，太多动画看起来很傻*/
+    /*rotateY按照y轴旋转*/
+    transform: perspective(1000px) translateX(100px) rotateY(-90deg);
+    transform-origin: left center;
+
+    will-change: transform;
+    transition: transform 250ms cubic-bezier(0.23, 1.0, 0.32, 1.0);
+}
+#setItem.show {
+    transform: perspective(1000px) translateX(0) rotateY(0deg);
+
+    transition: transform 500ms cubic-bezier(0.23, 1.0, 0.32, 1.0);
+}
+/*内容动画控制*/
+.setItem {
+    opacity: 0;
+
+    will-change: opacity;
+    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
+}
+.setItem.show {
+    opacity: 1;
+
+    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 250ms;
 }

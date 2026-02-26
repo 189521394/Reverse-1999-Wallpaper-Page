@@ -27,3 +27,18 @@
     /*支持多行文本*/
     white-space: pre-wrap;
 }
+/*动画控制*/
+#noticeContent {
+    /*scale控制宽度，transform控制高度*/
+    scale: 0 1;
+    transform: scaleY(0.05);
+
+    will-change: transform, scale;
+    transition: transform 125ms ease 0ms, scale 125ms ease 125ms;
+}
+#noticeContent.show {
+    scale: 1 1;
+    transform: scaleY(1);
+
+    transition: scale 125ms ease 0ms, transform 125ms ease 125ms;
+}

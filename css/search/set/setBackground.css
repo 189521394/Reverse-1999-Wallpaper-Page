@@ -40,5 +40,5 @@
 
     backdrop-filter: brightness(60%) blur(30px);
     opacity: 1;
-    transition: backdrop-filter 250ms, opacity 250ms;
+    transition: backdrop-filter 500ms, opacity 250ms;
 }

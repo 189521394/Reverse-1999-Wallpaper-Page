@@ -52,6 +52,7 @@
 }
 
 
+
 /*颜色状态控制*/
 #CANCEL {
     background-color: #e6e6e6;
@@ -64,5 +65,20 @@
     filter: brightness(1.1);
 }
 #CANCEL:active, #CONFIRM:active {
-    filter: brightness(0.95);
+    filter: brightness(0.9);
+}
+
+
+
+/*动画控制*/
+#noticeOption {
+    transform: translateY(-50px);
+
+    will-change: transform;
+    transition: transform 250ms;
+}
+#noticeOption.show {
+    transform: translateY(0);
+
+    transition: transform 250ms;
 }

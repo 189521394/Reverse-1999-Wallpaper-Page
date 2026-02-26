@@ -22,3 +22,15 @@
     font-size: 50px;
     color: #e3d1b3;
 }
+/*动画控制*/
+#noticeTitle {
+    transform: translateY(50px);
+
+    will-change: transform;
+    transition: transform 250ms;
+}
+#noticeTitle.show {
+    transform: translateY(0);
+
+    transition: transform 250ms;
+}

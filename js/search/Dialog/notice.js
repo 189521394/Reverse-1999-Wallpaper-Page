@@ -3,14 +3,33 @@
 
 // 引入公共对象
 const dialogBox = document.getElementById("noticeBox");
-const showTextBox = document.getElementById("noticeContent");
+const noticeTitle = document.getElementById("noticeTitle");
+const noticeContent = document.getElementById("noticeContent");
+const noticeOption = document.getElementById("noticeOption");
+
 const cancelButton = document.getElementById("CANCEL");
 const confirmButton = document.getElementById("CONFIRM");
 
+// 控制动画细节
+function dialogAnimation(boolean) {
+    if (boolean) {
+        dialogBox.classList.add("show");
+        noticeTitle.classList.add("show");
+        noticeContent.classList.add("show");
+        noticeOption.classList.add("show");
+    } else {
+        noticeTitle.classList.remove("show");
+        noticeContent.classList.remove("show");
+        noticeOption.classList.remove("show");
+        dialogBox.classList.remove("show");
+    }
+}
+
+// 主对话框逻辑
 function showDialog(showText, notice) {
     return new Promise((resolve) => {
         // 设置文本
-        showTextBox.textContent = showText;
+        noticeContent.textContent = showText;
 
         // 确定对话框性质
         if (notice) {
@@ -20,7 +39,7 @@ function showDialog(showText, notice) {
         }
 
         // 显示对话框
-        dialogBox.classList.add("show");
+        dialogAnimation(true);
         toggleScrollLock(true);
 
         // 处理返回值
@@ -38,7 +57,7 @@ function showDialog(showText, notice) {
             confirmButton.removeEventListener("click", handleCONFIRM);
             cancelButton.removeEventListener("click", handleCANCEL);
             // 隐藏对话框
-            dialogBox.classList.remove("show");
+            dialogAnimation(false);
             toggleScrollLock(false);
         };
 
