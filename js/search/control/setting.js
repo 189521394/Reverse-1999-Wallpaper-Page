@@ -5,7 +5,7 @@ const setBox = document.getElementById("setBox");
 const setItems = document.querySelectorAll(".setItem");
 
 // 封装动画
-function setAnimation(boolean) {
+function setAni(boolean) {
     if (boolean) {
         setBackground.classList.add('show');
         setItem.classList.add('show');
@@ -24,12 +24,12 @@ function setAnimation(boolean) {
 function openSettings() {
     // 滚动锁定，防止背景滚动
     toggleScrollLock(true);
-    setAnimation(true);
+    setAni(true);
 }
 
 function closeSettings() {
     toggleScrollLock(false);
-    setAnimation(false);
+    setAni(false);
 }
 
 setBackground.addEventListener('click', function (event) {
