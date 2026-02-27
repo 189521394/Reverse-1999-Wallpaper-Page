@@ -48,6 +48,8 @@ function loadMoreImages() {
 
         // 加上懒加载属性，浏览器会自动管理下载
         img.loading = "lazy";
+        // 添加跨域身份请求
+        img.crossOrigin = "anonymous";
 
         cache.appendChild(img);
         imgList.push(img);

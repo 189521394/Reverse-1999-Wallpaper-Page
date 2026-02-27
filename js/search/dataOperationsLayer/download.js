@@ -10,7 +10,9 @@ async function download() {
 
     // 尝试下载
     try {
-        const response = await fetch(imgURL);
+        // 添加时间戳，让浏览器强制绕过缓存，从服务器申请图片
+        const bypassCacheUrl = imgURL + (imgURL.includes('?') ? '&' : '?') + '_t=' + new Date().getTime();
+        const response = await fetch(bypassCacheUrl);
         const blob = await response.blob();
 
         // 内存中生成专属链接并点击下载
