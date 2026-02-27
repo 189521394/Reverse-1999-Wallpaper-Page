@@ -54,6 +54,11 @@
     /*撑大添加10px边距*/
     padding: 0 13px;
 
+    /*解决一个因为打开调试模式出现的bug*/
+    /*tag在走json（即时更新）的情况下，文本有概率超出边框*/
+    /*虽然也不怎么需要修复...*/
+    flex-shrink: 0;
+
     /*文本设置*/
     text-align: center;
     font-size: 18px;

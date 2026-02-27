@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function hideToTopButton() {
         // 获取视口高度
         const vh = window.innerHeight;
-        // 计算 62vh 对应的像素值
-        const threshold = vh * 0.62;
+        // 计算 vh 对应的像素值
+        // 这里的vh对应着，从控制栏上边距开始算起，向上到顶部的高度值，如果变化需要更新
+        const threshold = vh * 0.75;
 
         // 获取当前垂直滚动距离
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
