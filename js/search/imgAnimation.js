@@ -9,6 +9,7 @@
 const showTags = document.getElementById("showTags");
 // 不可以直接在这写checked，在代码里面写元素的checked可以动态调用，热刷新
 // 如果在这里写了checked，每次修改都需要手动提交筛选才生效
+const downloadButton = document.getElementById("download");
 
 // 记录当前哪张图被放大了
 let activeImg = null;
@@ -18,7 +19,7 @@ function setAnimation(imgList) {
 
     imgList.forEach(img => {
         img.addEventListener('click', (e) => {
-            // 加上e防止冒泡，虽然不知道为什么
+            // 加上e防止冒泡
             e.stopPropagation();
 
             // 如果当前点击的图已经是激活状态，则关闭
@@ -85,6 +86,7 @@ function setAnimation(imgList) {
             overlay.classList.add('show');
             img.classList.add('active');
             activeImg = img;
+            downloadButton.classList.remove("hide");
 
             // 显示图片标签
             if (showTags.checked) {
@@ -107,6 +109,7 @@ function setAnimation(imgList) {
         }
         toggleScrollLock(false);
         overlay.classList.remove('show');
+        downloadButton.classList.add("hide");
         // 隐藏图片标签
         if (showTags.checked) {
             hideTag();

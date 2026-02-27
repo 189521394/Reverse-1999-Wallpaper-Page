@@ -146,6 +146,9 @@
     <!--回到顶部样式与逻辑-->
     <link rel="stylesheet" href="css/search/toTop.css">
     <script src="js/search/autoHide.js" defer></script>
+    <!--文件下载样式与逻辑-->
+    <link rel="stylesheet" href="css/search/download.css">
+    <script src="js/search/dataOperationsLayer/download.js" defer></script>
     <!--允许选择文本逻辑-->
     <script src="js/search/copyMode.js" defer></script>
     <!--加载选项列表-->
@@ -390,6 +393,9 @@
     </div>
     <div id="toTop" class="hide" onclick="toTop('location0')">
         ↑<!--回到顶部-->
+    </div>
+    <div id="download" class="hide" onclick="download()">
+        ↓<!--下载文件-->
     </div>
     <!--遮罩层-->
     <!--仅用于img的遮罩，因为img显示的时候没有外框，需要单独创建遮罩-->

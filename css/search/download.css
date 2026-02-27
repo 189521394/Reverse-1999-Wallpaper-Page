@@ -1,0 +1,36 @@
+/*初始样式*/
+#download {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    /*显示高度，图片之上*/
+    z-index: var(--z-showTags);
+
+    background-color: var(--controlButtonBGC);
+    color: var(--fontHoverColor);
+    opacity: 1;
+    transition: background-color 250ms, color 250ms, opacity 250ms;
+}
+/*居中内容*/
+#download {
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+#download:hover {
+    background-color: #ffffff;
+    color: var(--fontHoverColor);
+    transition: background-color 250ms, color 250ms;
+}
+#download:active {
+    background-color: #d2d2d2;
+    transition: background-color 250ms, color 250ms;
+}
+/*默认隐藏*/
+#download.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms;
+}
