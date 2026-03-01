@@ -236,17 +236,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zhanlipinxiangce2.png",
-    "tag_ZH": ["1.1", "轶事", "梅兰妮·以盗制盗", "1966", "亮色", "梅兰妮"],
+    "tag_ZH": ["1.1", "轶事", "梅兰妮·以盗制盗", "未知时间", "亮色", "梅兰妮"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_meilannizhuaren.png",
-    "tag_ZH": ["1.1", "轶事", "梅兰妮·以盗制盗", "1966", "暗色", "梅兰妮"],
+    "tag_ZH": ["1.1", "轶事", "梅兰妮·以盗制盗", "未知时间", "暗色", "梅兰妮"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_xiaogouyadianxueyuan.png",
-    "tag_ZH": ["1.1", "轶事", "皮克勒斯·小狗与流浪汉", "1966", "亮色", "皮克勒斯"],
+    "tag_ZH": ["1.1", "轶事", "皮克勒斯·小狗与流浪汉", "未知时间", "亮色", "皮克勒斯"],
     "tag_EN": []
   },
   {
@@ -356,22 +356,22 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_geimamakanbing1.png",
-    "tag_ZH": ["1.2", "轶事", "牙仙·旧齿与陈痕", "1971", "暗色"],
+    "tag_ZH": ["1.2", "轶事", "牙仙·旧齿与陈痕", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_geimamakanbing2.png",
-    "tag_ZH": ["1.2", "轶事", "牙仙·旧齿与陈痕", "1971", "暗色", "牙仙"],
+    "tag_ZH": ["1.2", "轶事", "牙仙·旧齿与陈痕", "未知时间", "暗色", "牙仙"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_yaxiandaren.png",
-    "tag_ZH": ["1.2", "轶事", "牙仙·旧齿与陈痕", "1971", "亮色", "牙仙"],
+    "tag_ZH": ["1.2", "轶事", "牙仙·旧齿与陈痕", "未知时间", "亮色", "牙仙"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_jiexikabiye.png",
-    "tag_ZH": ["1.2", "轶事", "洁西卡·飞跃旧屋之墙", "1971", "亮色", "洁西卡"],
+    "tag_ZH": ["1.2", "轶事", "洁西卡·飞跃旧屋之墙", "未知时间", "亮色", "洁西卡"],
     "tag_EN": []
   },
   {
@@ -511,32 +511,32 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zongmaojiulang.png",
-    "tag_ZH": ["1.3", "轶事", "鬃毛沙砾·晃铃响于山谷", "1966", "暗色", "鬃毛沙砾"],
+    "tag_ZH": ["1.3", "轶事", "鬃毛沙砾·晃铃响于山谷", "未知时间", "暗色", "鬃毛沙砾"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zongmaoshaligouhuoqian.png",
-    "tag_ZH": ["1.3", "轶事", "鬃毛沙砾·晃铃响于山谷", "1966", "亮色", "鬃毛沙砾"],
+    "tag_ZH": ["1.3", "轶事", "鬃毛沙砾·晃铃响于山谷", "未知时间", "亮色", "鬃毛沙砾"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_mojingtuoren.png",
-    "tag_ZH": ["1.3", "轶事", "鬃毛沙砾·晃铃响于山谷", "1966", "暗色", "鬃毛沙砾"],
+    "tag_ZH": ["1.3", "轶事", "鬃毛沙砾·晃铃响于山谷", "未知时间", "暗色", "鬃毛沙砾"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_dianrangaozhi1.png",
-    "tag_ZH": ["1.3", "轶事", "伽菈波那·尘埃与星的边界", "1966", "暗色", "伽菈波那"],
+    "tag_ZH": ["1.3", "轶事", "伽菈波那·尘埃与星的边界", "未知时间", "暗色", "伽菈波那"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_dianrangaozhi2.png",
-    "tag_ZH": ["1.3", "轶事", "伽菈波那·尘埃与星的边界", "1966", "暗色", "伽菈波那"],
+    "tag_ZH": ["1.3", "轶事", "伽菈波那·尘埃与星的边界", "未知时间", "暗色", "伽菈波那"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_yangwangxingkong.png",
-    "tag_ZH": ["1.3", "轶事", "伽菈波那·尘埃与星的边界", "1966", "暗色", "伽菈波那"],
+    "tag_ZH": ["1.3", "轶事", "伽菈波那·尘埃与星的边界", "未知时间", "暗色", "伽菈波那"],
     "tag_EN": []
   },
   {
@@ -916,17 +916,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_37celian1.png",
-    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "2007", "亮色", "37"],
+    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "未知时间", "亮色", "37"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_37celian2.png",
-    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "2007", "亮色", "37"],
+    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "未知时间", "亮色", "37"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_37celian3.png",
-    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "2007", "亮色", "37"],
+    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "未知时间", "亮色", "37"],
     "tag_EN": []
   },
   {
@@ -956,37 +956,37 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_61.png",
-    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "2007", "暗色", "6"],
+    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "未知时间", "暗色", "6"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_62.png",
-    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "2007", "暗色", "6"],
+    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "未知时间", "暗色", "6"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_64.png",
-    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "2007", "亮色", "6"],
+    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "未知时间", "亮色", "6"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_6kanchuangwai.png",
-    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "2007", "亮色", "6"],
+    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "未知时间", "亮色", "6"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_6kanshu1.png",
-    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "2007", "亮色", "6"],
+    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "未知时间", "亮色", "6"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_6kanshu2.png",
-    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "2007", "亮色", "6"],
+    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "未知时间", "亮色", "6"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_6kanshu3.png",
-    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "2007", "亮色", "6"],
+    "tag_ZH": ["1.4", "轶事", "6·漫漫之夜行迹", "未知时间", "亮色", "6"],
     "tag_EN": []
   },
   {
@@ -1026,12 +1026,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_haitanshang1.png",
-    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "2007", "亮色", "多人合照", "37", "6", "210", "苏菲亚"],
+    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "未知时间", "亮色", "多人合照", "37", "6", "210", "苏菲亚"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_haitanshang2.png",
-    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "2007", "亮色", "多人合照", "37", "6", "210", "苏菲亚"],
+    "tag_ZH": ["1.4", "轶事", "37·沙粒的记忆", "未知时间", "亮色", "多人合照", "37", "6", "210", "苏菲亚"],
     "tag_EN": []
   },
   {
@@ -1171,17 +1171,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/at_wuxingzheweixiukai1.png",
-    "tag_ZH": ["1.4", "轶事", "雾行者·奥利弗的故事", "2007", "暗色"],
+    "tag_ZH": ["1.4", "轶事", "雾行者·奥利弗的故事", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/at_wuxingzheweixiukai2.png",
-    "tag_ZH": ["1.4", "轶事", "雾行者·奥利弗的故事", "2007", "暗色"],
+    "tag_ZH": ["1.4", "轶事", "雾行者·奥利弗的故事", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/at_xialishangtai.png",
-    "tag_ZH": ["1.4", "轶事", "夏利·戏剧与戏剧", "2007", "暗色", "夏利"],
+    "tag_ZH": ["1.4", "轶事", "夏利·戏剧与戏剧", "未知时间", "暗色", "夏利"],
     "tag_EN": []
   },
   {
@@ -1386,12 +1386,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_dongkanchuan1.png",
-    "tag_ZH": ["1.6", "轶事", "冬·重返人间", "1912", "亮色", "冬"],
+    "tag_ZH": ["1.6", "轶事", "冬·重返人间", "未知时间", "亮色", "冬"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_dongkanchuan2.png",
-    "tag_ZH": ["1.6", "轶事", "冬·重返人间", "1912", "亮色", "冬"],
+    "tag_ZH": ["1.6", "轶事", "冬·重返人间", "未知时间", "亮色", "冬"],
     "tag_EN": []
   },
   {
@@ -1411,17 +1411,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianbeiying1.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "亮色", "葛天"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "亮色", "葛天"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianbeiying2.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "亮色", "葛天"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "亮色", "葛天"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianbeiying3.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "亮色", "葛天"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "亮色", "葛天"],
     "tag_EN": []
   },
   {
@@ -1441,37 +1441,37 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getiancitang1.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "暗色", "葛天"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "暗色", "葛天"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getiancitang2.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "暗色", "葛天"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "暗色", "葛天"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianfeixiang1.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "暗色", "葛天"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "暗色", "葛天"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianfeixiang2.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "暗色", "葛天"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "暗色", "葛天"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianhuaishu1.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "亮色"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianhuaishu2.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "亮色"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianhuaishu3.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "亮色"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
@@ -1546,12 +1546,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_niaogu1.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "暗色"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_niaogu2.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "暗色"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
@@ -1561,17 +1561,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_quniangpaobu1.png",
-    "tag_ZH": ["1.6", "轶事", "曲娘·曲香蒙求", "1912", "亮色", "曲娘"],
+    "tag_ZH": ["1.6", "轶事", "曲娘·曲香蒙求", "未知时间", "亮色", "曲娘"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_quniangpaobu2.png",
-    "tag_ZH": ["1.6", "轶事", "曲娘·曲香蒙求", "1912", "亮色", "曲娘"],
+    "tag_ZH": ["1.6", "轶事", "曲娘·曲香蒙求", "未知时间", "亮色", "曲娘"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_quniangyouhun.png",
-    "tag_ZH": ["1.6", "轶事", "曲娘·曲香蒙求", "1912", "暗色", "曲娘"],
+    "tag_ZH": ["1.6", "轶事", "曲娘·曲香蒙求", "未知时间", "暗色", "曲娘"],
     "tag_EN": []
   },
   {
@@ -1611,12 +1611,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_shushengqidao.png",
-    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "1912", "亮色"],
+    "tag_ZH": ["1.6", "轶事", "葛天·天下有风", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_xingzhiyanxiyang.png",
-    "tag_ZH": ["1.6", "轶事", "星之眼·庸碌喜剧", "1912", "亮色", "星之眼"],
+    "tag_ZH": ["1.6", "轶事", "星之眼·庸碌喜剧", "未知时间", "亮色", "星之眼"],
     "tag_EN": []
   },
   {
@@ -1656,47 +1656,47 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_beihoudemen1.png",
-    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "1914", "暗色", "伊索尔德"],
+    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "未知时间", "暗色", "伊索尔德"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_beihoudemen2.png",
-    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "1914", "暗色", "伊索尔德"],
+    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "未知时间", "暗色", "伊索尔德"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_beihoudemen3.png",
-    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "1914", "暗色", "伊索尔德"],
+    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "未知时间", "暗色", "伊索尔德"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chuangzhongwangshi1.png",
-    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "1914", "亮色"],
+    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chuangzhongwangshi2.png",
-    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "1914", "亮色"],
+    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chuangzhongwangshi3.png",
-    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "1914", "亮色"],
+    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chudengtaji1.png",
-    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "1914", "亮色", "马库斯", "霍夫曼"],
+    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "未知时间", "亮色", "马库斯", "霍夫曼"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chudengtaji2.png",
-    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "1914", "亮色", "马库斯", "霍夫曼"],
+    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "未知时间", "亮色", "马库斯", "霍夫曼"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chudengtaji3.png",
-    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "1914", "亮色", "马库斯"],
+    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "未知时间", "亮色", "马库斯"],
     "tag_EN": []
   },
   {
@@ -1911,7 +1911,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_shalemei.png",
-    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "1914", "亮色", "伊索尔德"],
+    "tag_ZH": ["1.7", "轶事", "伊索尔德·小房间", "未知时间", "亮色", "伊索尔德"],
     "tag_EN": []
   },
   {
@@ -1931,7 +1931,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_texiao1.png",
-    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "1914", "亮色", "伊索尔德"],
+    "tag_ZH": ["1.7", "轶事", "马库斯·灯塔集", "未知时间", "亮色", "伊索尔德"],
     "tag_EN": []
   },
   {
@@ -1946,22 +1946,22 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_weixiukaiyishi1.png",
-    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "1914", "亮色", "未锈铠", "雾行者", "APPLe", "泥鯭的士"],
+    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "未知时间", "亮色", "未锈铠", "雾行者", "APPLe", "泥鯭的士"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_weixiukaiyishi2.png",
-    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "1914", "亮色", "未锈铠"],
+    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "未知时间", "亮色", "未锈铠"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_weixiukaiyishi3.png",
-    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "1914", "亮色"],
+    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_xyishi.png",
-    "tag_ZH": ["1.7", "轶事", "X·齿轮的意志", "1914", "亮色", "X"],
+    "tag_ZH": ["1.7", "轶事", "X·齿轮的意志", "未知时间", "亮色", "X"],
     "tag_EN": []
   },
   {
@@ -1986,12 +1986,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_ys_weixiukaiyishi1.png",
-    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "1914", "亮色", "未锈铠", "雾行者", "APPLe", "泥鯭的士"],
+    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "未知时间", "亮色", "未锈铠", "雾行者", "APPLe", "泥鯭的士"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_ys_weixiukaiyishi2.png",
-    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "1914", "亮色", "未锈铠"],
+    "tag_ZH": ["1.7", "轶事", "未锈铠·第九条美德", "未知时间", "亮色", "未锈铠"],
     "tag_EN": []
   },
   {
@@ -2036,7 +2036,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_biewutaqiu.png",
-    "tag_ZH": ["1.8", "轶事", "北方哨歌·银线结", "1996", "暗色", "北方哨歌"],
+    "tag_ZH": ["1.8", "轶事", "北方哨歌·银线结", "未知时间", "暗色", "北方哨歌"],
     "tag_EN": []
   },
   {
@@ -2146,7 +2146,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_weila.png",
-    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "1996", "亮色", "维拉", "阿夫西维"],
+    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "未知时间", "亮色", "维拉", "阿夫西维"],
     "tag_EN": []
   },
   {
@@ -2156,17 +2156,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_weiladenggao1.png",
-    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "1996", "亮色", "维拉"],
+    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "未知时间", "亮色", "维拉"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_weiladenggao2.png",
-    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "1996", "亮色", "维拉"],
+    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "未知时间", "亮色", "维拉"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_weiladenggao3.png",
-    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "1996", "亮色", "维拉"],
+    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "未知时间", "亮色", "维拉"],
     "tag_EN": []
   },
   {
@@ -2176,7 +2176,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_xuediyuanjing.png",
-    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "1996", "亮色"],
+    "tag_ZH": ["1.8", "轶事", "维拉·黎明依旧到来", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
@@ -2186,17 +2186,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_ys_dongzhongdezhongren.png",
-    "tag_ZH": ["1.8", "轶事", "芝诺·风吹乌哈拉", "1996", "暗色", "红弩箭"],
+    "tag_ZH": ["1.8", "轶事", "芝诺·风吹乌哈拉", "未知时间", "暗色", "红弩箭"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_ys_wennixiaowu1.png",
-    "tag_ZH": ["1.8", "轶事", "温妮弗雷德·致温妮弗雷德", "1996", "亮色"],
+    "tag_ZH": ["1.8", "轶事", "温妮弗雷德·致温妮弗雷德", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_ys_wennixiaowu2.png",
-    "tag_ZH": ["1.8", "轶事", "温妮弗雷德·致温妮弗雷德", "1996", "亮色"],
+    "tag_ZH": ["1.8", "轶事", "温妮弗雷德·致温妮弗雷德", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
@@ -2266,7 +2266,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_haianbianluxi.png",
-    "tag_ZH": ["1.9", "轶事", "露西·飞渡往日", "1914", "亮色", "露西"],
+    "tag_ZH": ["1.9", "轶事", "露西·飞渡往日", "未知时间", "亮色", "露西"],
     "tag_EN": []
   },
   {
@@ -2301,7 +2301,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_jisuijingzi.png",
-    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "1914", "暗色", "卡卡尼亚"],
+    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "未知时间", "暗色", "卡卡尼亚"],
     "tag_EN": []
   },
   {
@@ -2326,22 +2326,22 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_kanjingpian1.png",
-    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "1914", "亮色", "卡卡尼亚"],
+    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "未知时间", "亮色", "卡卡尼亚"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_kanjingpian2.png",
-    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "1914", "亮色", "卡卡尼亚"],
+    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "未知时间", "亮色", "卡卡尼亚"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_kanjingpian3.png",
-    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "1914", "亮色", "卡卡尼亚"],
+    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "未知时间", "亮色", "卡卡尼亚"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_kanjingpian4.png",
-    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "1914", "亮色", "卡卡尼亚"],
+    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "未知时间", "亮色", "卡卡尼亚"],
     "tag_EN": []
   },
   {
@@ -2466,17 +2466,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_suijingzi.png",
-    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "1914", "暗色", "卡卡尼亚"],
+    "tag_ZH": ["1.9", "轶事", "卡卡尼亚·犹在镜中", "未知时间", "暗色", "卡卡尼亚"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_ys_saimeierweisi.png",
-    "tag_ZH": ["1.9", "轶事", "塞梅尔维斯·第三种苏醒", "1914", "亮色", "塞梅尔维斯"],
+    "tag_ZH": ["1.9", "轶事", "塞梅尔维斯·第三种苏醒", "未知时间", "亮色", "塞梅尔维斯"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_ys_xiaochunqueer.png",
-    "tag_ZH": ["1.9", "轶事", "小春雀儿·字母的研究", "1914", "亮色", "小春雀儿"],
+    "tag_ZH": ["1.9", "轶事", "小春雀儿·字母的研究", "未知时间", "亮色", "小春雀儿"],
     "tag_EN": []
   },
   {
@@ -2511,7 +2511,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_jiujinshanxiaozi.png",
-    "tag_ZH": ["2.0", "轶事", "J·旧金山小子", "1990", "亮色", "J", "贝克特"],
+    "tag_ZH": ["2.0", "轶事", "J·旧金山小子", "未知时间", "亮色", "J", "贝克特"],
     "tag_EN": []
   },
   {
@@ -2531,7 +2531,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_kuanghuanye.png",
-    "tag_ZH": ["2.0", "轶事", "环状水星·第一千夜", "1990", "暗色", "环状水星"],
+    "tag_ZH": ["2.0", "轶事", "环状水星·第一千夜", "未知时间", "暗色", "环状水星"],
     "tag_EN": []
   },
   {
@@ -2571,12 +2571,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_ys_lalaquan.png",
-    "tag_ZH": ["2.0", "轶事", "拉拉泉·只有泉水知道", "1990", "亮色", "拉拉泉"],
+    "tag_ZH": ["2.0", "轶事", "拉拉泉·只有泉水知道", "未知时间", "亮色", "拉拉泉"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_ys_sufubiqima.png",
-    "tag_ZH": ["2.0", "轶事", "苏芙比·淑女的守则", "1990", "暗色", "苏芙比"],
+    "tag_ZH": ["2.0", "轶事", "苏芙比·淑女的守则", "未知时间", "暗色", "苏芙比"],
     "tag_EN": []
   },
   {
@@ -2841,12 +2841,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_mingling1.png",
-    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "1990", "亮色"],
+    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_mingling2.png",
-    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "1990", "暗色"],
+    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
@@ -2856,7 +2856,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_nana.png",
-    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "1990", "亮色", "天使娜娜"],
+    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "未知时间", "亮色", "天使娜娜"],
     "tag_EN": []
   },
   {
@@ -2896,12 +2896,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_qiangjinana1.png",
-    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "1990", "暗色", "天使娜娜"],
+    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "未知时间", "暗色", "天使娜娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_qiangjinana2.png",
-    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "1990", "暗色", "天使娜娜"],
+    "tag_ZH": ["2.2", "轶事", "天使娜娜·十月无晴天", "未知时间", "暗色", "天使娜娜"],
     "tag_EN": []
   },
   {
@@ -2911,7 +2911,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_shifu1.png",
-    "tag_ZH": ["2.2", "轶事", "洛佩拉·向雨林深处", "1990", "亮色"],
+    "tag_ZH": ["2.2", "轶事", "洛佩拉·向雨林深处", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
@@ -2956,22 +2956,22 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_ys_bingqilin1.png",
-    "tag_ZH": ["2.2", "轶事", "37·乘法轴上的一天", "1990", "亮色"],
+    "tag_ZH": ["2.2", "轶事", "37·乘法轴上的一天", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_ys_bingqilin2.png",
-    "tag_ZH": ["2.2", "轶事", "37·乘法轴上的一天", "1990", "亮色"],
+    "tag_ZH": ["2.2", "轶事", "37·乘法轴上的一天", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_ys_meisimeier1.png",
-    "tag_ZH": ["2.2", "轶事", "小梅斯梅尔·长夜未逝", "1990", "亮色", "多萝西娅", "多人合照"],
+    "tag_ZH": ["2.2", "轶事", "小梅斯梅尔·长夜未逝", "未知时间", "亮色", "多萝西娅", "多人合照"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_ys_meisimeier2.png",
-    "tag_ZH": ["2.2", "轶事", "小梅斯梅尔·长夜未逝", "1990", "亮色", "多萝西娅", "小梅斯梅尔", "多人合照"],
+    "tag_ZH": ["2.2", "轶事", "小梅斯梅尔·长夜未逝", "未知时间", "亮色", "多萝西娅", "小梅斯梅尔", "多人合照"],
     "tag_EN": []
   },
   {
@@ -3046,7 +3046,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_shizijie.png",
-    "tag_ZH": ["2.3", "轶事", "纸信圈儿·夜游十字街", "1935", "亮色", "纸信圈儿"],
+    "tag_ZH": ["2.3", "轶事", "纸信圈儿·夜游十字街", "未知时间", "亮色", "纸信圈儿"],
     "tag_EN": []
   },
   {
@@ -3081,7 +3081,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_ys_huanzhuangshuixing.png",
-    "tag_ZH": ["2.3", "轶事", "环状水星·“黄金”与悲喜剧", "1935", "亮色"],
+    "tag_ZH": ["2.3", "轶事", "环状水星·“黄金”与悲喜剧", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
@@ -3236,7 +3236,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_wuerlixixingyun.png",
-    "tag_ZH": ["2.4", "轶事", "乌尔里希·深空波", "1991", "暗色", "哑谜", "乌尔里希"],
+    "tag_ZH": ["2.4", "轶事", "乌尔里希·深空波", "未知时间", "暗色", "哑谜", "乌尔里希"],
     "tag_EN": []
   },
   {
@@ -3266,7 +3266,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_yanzou1.png",
-    "tag_ZH": ["2.4", "轶事", "芭卡洛儿·河港与海之间", "1991", "暗色", "芭卡洛儿"],
+    "tag_ZH": ["2.4", "轶事", "芭卡洛儿·河港与海之间", "未知时间", "暗色", "芭卡洛儿"],
     "tag_EN": []
   },
   {
@@ -3281,7 +3281,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_ys_xingti.png",
-    "tag_ZH": ["2.4", "轶事", "星锑·最佳乐队", "1991", "亮色", "星锑"],
+    "tag_ZH": ["2.4", "轶事", "星锑·最佳乐队", "未知时间", "亮色", "星锑"],
     "tag_EN": []
   },
   {
@@ -3326,7 +3326,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_huojiang.png",
-    "tag_ZH": ["2.5", "轶事", "菲林士多·洛基", "1991", "亮色", "菲林士多"],
+    "tag_ZH": ["2.5", "轶事", "菲林士多·洛基", "未知时间", "亮色", "菲林士多"],
     "tag_EN": []
   },
   {
@@ -3336,7 +3336,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_kaiche.png",
-    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "1991", "亮色", "梁月"],
+    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "未知时间", "亮色", "梁月"],
     "tag_EN": []
   },
   {
@@ -3346,17 +3346,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_liang1.png",
-    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "1991", "暗色", "梁月"],
+    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "未知时间", "暗色", "梁月"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_liang2.png",
-    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "1991", "暗色", "梁月"],
+    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "未知时间", "暗色", "梁月"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_liangyuebenpao.png",
-    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "1991", "暗色", "梁月"],
+    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "未知时间", "暗色", "梁月"],
     "tag_EN": []
   },
   {
@@ -3391,7 +3391,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_pianchang2.png",
-    "tag_ZH": ["2.5", "轶事", "菲林士多·洛基", "1991", "暗色", "菲林士多"],
+    "tag_ZH": ["2.5", "轶事", "菲林士多·洛基", "未知时间", "暗色", "菲林士多"],
     "tag_EN": []
   },
   {
@@ -3436,12 +3436,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_summon.png",
-    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "1991", "暗色", "梁月"],
+    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "未知时间", "暗色", "梁月"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_tiaoxialai.png",
-    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "1991", "亮色", "梁月"],
+    "tag_ZH": ["2.5", "轶事", "梁月·种瓜得瓜", "未知时间", "亮色", "梁月"],
     "tag_EN": []
   },
   {
@@ -3461,7 +3461,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_ys_lily.png",
-    "tag_ZH": ["2.5", "轶事", "泥鯭的士·鬼马探灵记", "1991", "暗色", "泥鯭的士"],
+    "tag_ZH": ["2.5", "轶事", "泥鯭的士·鬼马探灵记", "未知时间", "暗色", "泥鯭的士"],
     "tag_EN": []
   },
   {
@@ -3516,17 +3516,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_buzaihu1.png",
-    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "1991", "亮色", "虚构集"],
+    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "未知时间", "亮色", "虚构集"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_buzaihu2.png",
-    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "1991", "亮色", "虚构集"],
+    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "未知时间", "亮色", "虚构集"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_buzaihu3.png",
-    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "1991", "亮色", "虚构集"],
+    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "未知时间", "亮色", "虚构集"],
     "tag_EN": []
   },
   {
@@ -3616,7 +3616,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_xugouji2.png",
-    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "1991", "亮色", "虚构集"],
+    "tag_ZH": ["2.6", "轶事", "虚构集·《荣耀废墟与隐喻指南》", "未知时间", "亮色", "虚构集"],
     "tag_EN": []
   },
   {
@@ -3646,12 +3646,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_bakaluoer1.png",
-    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "1987", "亮色", "芭卡洛儿"],
+    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "未知时间", "亮色", "芭卡洛儿"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_bakaluoer2.png",
-    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "1987", "亮色", "芭卡洛儿"],
+    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "未知时间", "亮色", "芭卡洛儿"],
     "tag_EN": []
   },
   {
@@ -3706,7 +3706,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_gouhuo.png",
-    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "1987", "暗色", "塞洛尼", "图图石子", "卡穆塔", "多人合照"],
+    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "未知时间", "暗色", "塞洛尼", "图图石子", "卡穆塔", "多人合照"],
     "tag_EN": []
   },
   {
@@ -3716,7 +3716,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_haimian.png",
-    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "1987", "暗色"],
+    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
@@ -3781,7 +3781,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_maxituanyanchu.png",
-    "tag_ZH": ["2.7", "轶事", "库珀花环·末日与末日之后", "1987", "亮色", "库珀花环"],
+    "tag_ZH": ["2.7", "轶事", "库珀花环·末日与末日之后", "未知时间", "亮色", "库珀花环"],
     "tag_EN": []
   },
   {
@@ -3806,7 +3806,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_siweidiantang.png",
-    "tag_ZH": ["2.7", "轶事", "冷周六·间隔月", "1987", "亮色", "冷周六"],
+    "tag_ZH": ["2.7", "轶事", "冷周六·间隔月", "未知时间", "亮色", "冷周六"],
     "tag_EN": []
   },
   {
@@ -3816,12 +3816,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_yanmo.png",
-    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "1987", "暗色", "图图石子"],
+    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "未知时间", "暗色", "图图石子"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_ys_tutushizi.png",
-    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "1987", "亮色", "图图石子"],
+    "tag_ZH": ["2.7", "轶事", "图图石子·海风的往事", "未知时间", "亮色", "图图石子"],
     "tag_EN": []
   },
   {
@@ -3886,7 +3886,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_bingshan1.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "亮色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "亮色", "诺谛卡"],
     "tag_EN": []
   },
   {
@@ -3906,12 +3906,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daoying1.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "暗色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "暗色", "诺谛卡"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daoying3.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "亮色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "亮色", "诺谛卡"],
     "tag_EN": []
   },
   {
@@ -3956,7 +3956,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_fenlie1.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "暗色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "暗色", "诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4036,12 +4036,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_men1.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "亮色", "社区图像"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "亮色", "社区图像"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_men2.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "暗色"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
@@ -4061,12 +4061,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_molideer2_zone.png",
-    "tag_ZH": ["2.8", "轶事", "莫莉德尔·冰原时隙", "1991", "暗色", "莫莉德尔"],
+    "tag_ZH": ["2.8", "轶事", "莫莉德尔·冰原时隙", "未知时间", "暗色", "莫莉德尔"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_ningwangshenyuan.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "亮色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "亮色", "诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4231,7 +4231,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_xingchuan.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "暗色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "暗色", "诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4311,7 +4311,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_yanjing.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "亮色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "亮色", "诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4321,7 +4321,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_ys_kanjila.png",
-    "tag_ZH": ["2.8", "轶事", "坎吉拉·在路上", "1991", "亮色", "坎吉拉"],
+    "tag_ZH": ["2.8", "轶事", "坎吉拉·在路上", "未知时间", "亮色", "坎吉拉"],
     "tag_EN": []
   },
   {
@@ -4341,7 +4341,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_zufu.png",
-    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "1991", "亮色", "诺谛卡"],
+    "tag_ZH": ["2.8", "轶事", "诺谛卡·虚无的倒影", "未知时间", "亮色", "诺谛卡"],
     "tag_EN": []
   },
   {
@@ -4396,12 +4396,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_fating1.png",
-    "tag_ZH": ["3.0", "轶事", "玛丽安娜·谋杀始于清晨", "1920", "暗色", "玛丽安娜"],
+    "tag_ZH": ["3.0", "轶事", "玛丽安娜·谋杀始于清晨", "未知时间", "暗色", "玛丽安娜"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_fating2.png",
-    "tag_ZH": ["3.0", "轶事", "玛丽安娜·谋杀始于清晨", "1920", "亮色", "玛丽安娜"],
+    "tag_ZH": ["3.0", "轶事", "玛丽安娜·谋杀始于清晨", "未知时间", "亮色", "玛丽安娜"],
     "tag_EN": []
   },
   {
@@ -4426,12 +4426,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_karong1.png",
-    "tag_ZH": ["3.0", "轶事", "卡戎·三重赋格", "1920", "暗色", "卡戎"],
+    "tag_ZH": ["3.0", "轶事", "卡戎·三重赋格", "未知时间", "暗色", "卡戎"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_karong2.png",
-    "tag_ZH": ["3.0", "轶事", "卡戎·三重赋格", "1920", "暗色", "卡戎"],
+    "tag_ZH": ["3.0", "轶事", "卡戎·三重赋格", "未知时间", "暗色", "卡戎"],
     "tag_EN": []
   },
   {
@@ -4461,7 +4461,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_shesha1.png",
-    "tag_ZH": ["3.0", "轶事", "玛丽安娜·谋杀始于清晨", "1920", "亮色", "玛丽安娜"],
+    "tag_ZH": ["3.0", "轶事", "玛丽安娜·谋杀始于清晨", "未知时间", "亮色", "玛丽安娜"],
     "tag_EN": []
   },
   {
@@ -4471,7 +4471,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_ys_tannante.png",
-    "tag_ZH": ["3.0", "轶事", "坦南特·钻石游戏", "1920", "亮色", "温妮弗雷德", "坦南特"],
+    "tag_ZH": ["3.0", "轶事", "坦南特·钻石游戏", "未知时间", "亮色", "温妮弗雷德", "坦南特"],
     "tag_EN": []
   },
   {
@@ -4636,7 +4636,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_gaosiniao.png",
-    "tag_ZH": ["3.1", "轶事", "告死鸟·冷铁", "1912", "亮色", "伊格丽卡"],
+    "tag_ZH": ["3.1", "轶事", "告死鸟·冷铁", "未知时间", "亮色", "伊格丽卡"],
     "tag_EN": []
   },
   {
@@ -4726,17 +4726,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan2.png",
-    "tag_ZH": ["3.1", "轶事", "野树莓·灵魂影映", "1912", "暗色"],
+    "tag_ZH": ["3.1", "轶事", "野树莓·灵魂影映", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan3.png",
-    "tag_ZH": ["3.1", "轶事", "野树莓·灵魂影映", "1912", "暗色"],
+    "tag_ZH": ["3.1", "轶事", "野树莓·灵魂影映", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeimuyuan_zone.png",
-    "tag_ZH": ["3.1", "轶事", "野树莓·灵魂影映", "1912", "暗色", "野树莓"],
+    "tag_ZH": ["3.1", "轶事", "野树莓·灵魂影映", "未知时间", "暗色", "野树莓"],
     "tag_EN": []
   },
   {
@@ -4756,7 +4756,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_ys_fugaoren.png",
-    "tag_ZH": ["3.1", "轶事", "讣告人·墓碑博物馆", "1912", "亮色", "讣告人"],
+    "tag_ZH": ["3.1", "轶事", "讣告人·墓碑博物馆", "未知时间", "亮色", "讣告人"],
     "tag_EN": []
   },
   {
@@ -4776,7 +4776,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_06.png",
-    "tag_ZH": ["3.2", "轶事", "贝丽尔·命运的雨季", "1936", "暗色", "贝丽尔"],
+    "tag_ZH": ["3.2", "轶事", "贝丽尔·命运的雨季", "未知时间", "暗色", "贝丽尔"],
     "tag_EN": []
   },
   {
@@ -4811,12 +4811,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_15.png",
-    "tag_ZH": ["3.2", "轶事", "灰调蓝·无烧", "1936", "亮色", "灰调蓝"],
+    "tag_ZH": ["3.2", "轶事", "灰调蓝·无烧", "未知时间", "亮色", "灰调蓝"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_16.png",
-    "tag_ZH": ["3.2", "轶事", "灰调蓝·无烧", "1936", "亮色", "灰调蓝"],
+    "tag_ZH": ["3.2", "轶事", "灰调蓝·无烧", "未知时间", "亮色", "灰调蓝"],
     "tag_EN": []
   },
   {
@@ -5071,7 +5071,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_ys_madierda.png",
-    "tag_ZH": ["3.2", "轶事", "玛蒂尔达·交接日", "1936", "亮色", "玛蒂尔达"],
+    "tag_ZH": ["3.2", "轶事", "玛蒂尔达·交接日", "未知时间", "亮色", "玛蒂尔达"],
     "tag_EN": []
   },
   {
@@ -5086,7 +5086,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_04.png",
-    "tag_ZH": ["3.3", "轶事", "伊戈尔·风暴前夜", "1920", "暗色"],
+    "tag_ZH": ["3.3", "轶事", "伊戈尔·风暴前夜", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
@@ -5106,7 +5106,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_07.png",
-    "tag_ZH": ["3.3", "轶事", "玛尔纱·以骑士之名", "1920", "亮色", "玛尔纱"],
+    "tag_ZH": ["3.3", "轶事", "玛尔纱·以骑士之名", "未知时间", "亮色", "玛尔纱"],
     "tag_EN": []
   },
   {
@@ -5221,12 +5221,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_32.png",
-    "tag_ZH": ["3.3", "轶事", "伊戈尔·风暴前夜", "1920", "暗色", "伊戈尔"],
+    "tag_ZH": ["3.3", "轶事", "伊戈尔·风暴前夜", "未知时间", "暗色", "伊戈尔"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_33.png",
-    "tag_ZH": ["3.3", "轶事", "伊戈尔·风暴前夜", "1920", "暗色"],
+    "tag_ZH": ["3.3", "轶事", "伊戈尔·风暴前夜", "未知时间", "暗色"],
     "tag_EN": []
   },
   {
@@ -5276,7 +5276,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_ys_molideer.png",
-    "tag_ZH": ["3.3", "轶事", "莫莉德尔·在高山下", "1920", "亮色", "莫莉德尔"],
+    "tag_ZH": ["3.3", "轶事", "莫莉德尔·在高山下", "未知时间", "亮色", "莫莉德尔"],
     "tag_EN": []
   },
   {
