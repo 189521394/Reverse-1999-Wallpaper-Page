@@ -61,6 +61,41 @@ function initSettingsSystem() {
                 });
             }
 
+            // 处理依赖
+            if (currentState === true && config.dependsOn) {
+                // 场景 A：子元素打开了，父元素必须打开
+                config.dependsOn.forEach((parentID) => {
+                    const parentConfig = SETTINGS_CONFIG.find(c => c.logic === parentID);
+                    if (parentConfig) {
+                        const parentCheckbox = document.getElementById(parentConfig.logic);
+                        const parentSlider = document.getElementById(parentConfig.animation);
+
+                        // 如果父级没开，强制把它拉起来
+                        if (!parentCheckbox.checked) {
+                            parentCheckbox.checked = true;
+                            parentSlider.classList.add("active");
+                            localStorage.setItem(parentConfig.logic, "true");
+                        }
+                    }
+                });
+            } else if (currentState === false) {
+                // 场景 B：父元素关闭了，子元素也要关闭
+                // 当一个开关被关闭时，查找对应的子元素，如果存在则关闭
+                SETTINGS_CONFIG.forEach((otherConfig) => {
+                    if (otherConfig.dependsOn && otherConfig.dependsOn.includes(config.logic)) {
+                        const childCheckbox = document.getElementById(otherConfig.logic);
+                        const childSlider = document.getElementById(otherConfig.animation);
+
+                        // 如果子级还开着，强制关掉它
+                        if (childCheckbox.checked) {
+                            childCheckbox.checked = false;
+                            childSlider.classList.remove("active");
+                            localStorage.setItem(otherConfig.logic, "false");
+                        }
+                    }
+                });
+            }
+
             // 处理回调函数
             // 如果callback里面有函数，就执行
             if (typeof config.callback === "function") {

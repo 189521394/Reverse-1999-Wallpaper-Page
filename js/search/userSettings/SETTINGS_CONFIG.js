@@ -25,6 +25,17 @@ const SETTINGS_CONFIG = [
         callback: copyMode
     },
     {
+        logic: "autoReplace",
+        animation: "ARSlider",
+        callback: null
+    },
+    {
+        logic: "autoReplaceAndSubmit",
+        animation: "ARASSlider",
+        callback: null,
+        dependsOn: ["autoReplace"]
+    },
+    {
         logic: "autoSwitchTheme",
         animation: "ASTSlider",
         callback: switchTheme

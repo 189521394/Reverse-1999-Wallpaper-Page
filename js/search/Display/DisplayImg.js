@@ -1,6 +1,6 @@
 let allOutSet = [];   // 用来存筛选出来的所有图片链接
 let currentLoaded = 0;   // 记录当前已经显示了多少张
-const BATCH_SIZE = 48;   // 每次加载多少张 (50 是个比较舒服的数字)
+const BATCH_SIZE = 48;   // 每次加载多少张
 
 // ================= DisplayImg =================
 async function DisplayImg(tags) {

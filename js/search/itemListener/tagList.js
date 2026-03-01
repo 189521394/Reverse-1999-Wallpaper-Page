@@ -7,7 +7,7 @@ function moveSliderTo(element) {
     slider.style.top = element.offsetTop + "px";
 }
 // 定义获取标签函数
-function getTag(loadButtonID,targetObjectPool) {
+function getTag(loadButtonID, targetObjectPool) {
     let box = document.getElementById("tagPool");
     let element = document.getElementById(loadButtonID);
 
@@ -34,6 +34,9 @@ function getTag(loadButtonID,targetObjectPool) {
 
             div.textContent = targetObjectPool[i];
             div.className = "waiting";
+
+            // 标记分类属性
+            div.setAttribute("data-category", loadButtonID);
 
             // 先放到虚拟对象里面
             cache.appendChild(div);
