@@ -20,7 +20,7 @@ async function DisplayImg(tags) {
     // 重置计数器
     currentLoaded = 0;
 
-    // 加载第一批图片
+    // 加载一批图片
     loadMoreImages();
 }
 
@@ -34,7 +34,7 @@ function loadMoreImages() {
     let box = document.getElementById("select");
     let cache = document.createDocumentFragment();
 
-    // 计算这一批的结束位置 (要么是加48张，要么是到了最后一张)
+    // 计算这一批的结束位置 (要么是加x张，要么是到了最后一张)
     let endLimit = Math.min(currentLoaded + BATCH_SIZE, allOutSet.length);
 
     // 创建数组用于存储新增的图片

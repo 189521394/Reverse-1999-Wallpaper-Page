@@ -8,6 +8,7 @@ const autoReplaceList = [
 ]
 const autoReplace = document.getElementById("autoReplace");
 const autoReplaceAndSubmit = document.getElementById("autoReplaceAndSubmit");
+const autoSubmit = document.getElementById("autoSubmit");
 
 document.getElementById("tagPool").addEventListener("click",function (e) {
     let target = document.getElementById("submitPool");
@@ -36,8 +37,9 @@ document.getElementById("tagPool").addEventListener("click",function (e) {
                     existingSameCategoryTags[i].remove();
                 }
 
-                // 检查是否需要自动提交筛选
-                if (autoReplaceAndSubmit.checked) {
+                // 检查提交操作方式
+                // 同类自动提交 或 默认自动提交
+                if (autoReplaceAndSubmit.checked || autoSubmit.checked) {
                     // 直接调用最顶层提交函数
                     submit();
                 }
@@ -47,4 +49,8 @@ document.getElementById("tagPool").addEventListener("click",function (e) {
     }
     // 追加新标签
     target.appendChild(tag.cloneNode(true));
+    // 默认自动提交
+    if (autoSubmit.checked) {
+        submit();
+    }
 });

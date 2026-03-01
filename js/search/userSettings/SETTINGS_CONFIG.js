@@ -36,6 +36,11 @@ const SETTINGS_CONFIG = [
         dependsOn: ["autoReplace"]
     },
     {
+        logic: "autoSubmit",
+        animation: "ASSlider",
+        callback: null
+    },
+    {
         logic: "autoSwitchTheme",
         animation: "ASTSlider",
         callback: switchTheme
