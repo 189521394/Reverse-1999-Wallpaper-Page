@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+    /*主页样式*/
+    body.tab-wallpaper {
+        /*调整body高度*/
+        min-height: auto;
+
+        /*隐藏图形化筛选框*/
+        #filterBox {
+            display: none;
+        }
+        /*调整筛选背景位置*/
+        #Filter {
+            width: 100vw;
+            height: auto;
+            margin-top: 0;
+        }
+        /*放大搜索框架*/
+        #searchFrame {
+            width: 100%;
+        }
+        /*隐藏控制面板，不在主页显示*/
+        #control {
+            display: none;
+        }
+        /*隐藏按键提示，手机不需要*/
+        #ShortcutKey {
+            display: none;
+        }
+        /*图片展示背景，宽度顶满屏幕*/
+        #select {
+            width: 100%;
+            height: 90vh;
+            margin-bottom: 0;
+        }
+        /*图片展示方式*/
+        #select {
+            grid-template-columns: repeat(2, minmax(20vw, 1fr));
+        }
+        /*隐藏enter提示*/
+        .pc-only {
+            display: none;
+        }
+        /*锁定按钮大小*/
+        #searchButton {
+            white-space: nowrap;
+        }
+    }
+}

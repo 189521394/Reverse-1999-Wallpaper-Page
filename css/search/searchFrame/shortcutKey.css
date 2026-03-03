@@ -2,6 +2,7 @@
 #ShortcutKey {
     height: 40px;
     width: 40px;
+    flex-shrink: 0;
 
     background-color: var(--tagBGC);
     transition: background-color 250ms;

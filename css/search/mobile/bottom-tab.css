@@ -14,10 +14,10 @@
     /*样式*/
     #mobileTab {
         width: 100vw;
-        height: 100px;
+        height: 60px;
         bottom: 0;
         left: 0;
-        background-color: var(--showTagBGC);
+        background-color: var(--controlBGC);
     }
     /*按钮样式*/
     .tabButton {

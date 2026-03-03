@@ -5,6 +5,7 @@
     height: 50px;
     bottom: 20px;
     right: 20px;
+    z-index: var(--z-search);
 
     background-color: var(--controlButtonBGC);
     color: var(--fontHoverColor);

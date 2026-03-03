@@ -4,6 +4,8 @@
     height: 10vh;
     background-color: var(--controlBGC);
     box-sizing: border-box;
+    /*不要被图片盖住(移动端)*/
+    z-index: var(--z-search);
     border: 1px solid transparent;
 
     transition: border 150ms,background-color 250ms;
