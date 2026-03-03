@@ -2,6 +2,8 @@
 <html lang="en" class="custom-scroll">
 <head>
     <meta charset="UTF-8">
+    <!--声明手机ui-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>筛选壁纸</title>
     <!--=============================================↓CSS和JS部分↓=============================================-->
     <!--====================初始化====================-->
@@ -142,6 +144,14 @@
     <!--快速复制-->
     <script src="js/search/copyContact.js" defer></script>
 
+    <!--====================手机端tab====================-->
+    <!--外观-->
+    <link rel="stylesheet" href="css/search/mobile/bottom-tab.css">
+    <!--切换逻辑-->
+    <script src="js/search/mobile/tabSwitch.js" defer></script>
+    <!--初始化-->
+    <link rel="stylesheet" href="css/search/mobile/init.css">
+
     <!--====================其他部分====================-->
     <!--回到顶部样式与逻辑-->
     <link rel="stylesheet" href="css/search/toTop.css">
@@ -187,7 +197,7 @@
                     </div>
                 </div>
                 <div id="ShortcutKey" onclick="showKey()">!</div>
-                <div id="searchButton">提交(Enter)</div>
+                <div id="searchButton">提交<span class="pc-only">(Enter)</span></div>
             </div>
         </div>
         <div id="filterBox">
@@ -437,6 +447,11 @@
             <div id="CANCEL" class="option">取消</div>
             <div id="CONFIRM" class="option">确定</div>
         </div>
+    </div>
+    <div id="mobileTab">
+        <div id="wallpaper" class="tabButton" onclick="switchWallpaper()">浏览</div>
+        <div id="selectTag" class="tabButton">筛选</div>
+        <div id="set" class="tabButton">设置</div>
     </div>
 </body>
 </html>

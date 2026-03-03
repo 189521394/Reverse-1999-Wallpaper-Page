@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+    /*页面样式*/
+    #filterBox {
+        display: none;
+    }
+    #Filter {
+        width: 100vw;
+        height: auto;
+        margin-top: 0;
+    }
+    #searchFrame {
+        width: 100%;
+    }
+    #control {
+        display: none;
+    }
+    .pc-only {
+        display: none;
+    }
+}

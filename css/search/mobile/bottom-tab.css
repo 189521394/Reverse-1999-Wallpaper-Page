@@ -1,0 +1,30 @@
+#mobileTab {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    /*显示*/
+    #mobileTab {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        z-index: var(--z-dock);
+        position: fixed;
+    }
+    /*样式*/
+    #mobileTab {
+        width: 100vw;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--showTagBGC);
+    }
+    /*按钮样式*/
+    .tabButton {
+        color: var(--fontColor);
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+    }
+}
