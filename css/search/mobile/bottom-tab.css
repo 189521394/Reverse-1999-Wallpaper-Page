@@ -14,10 +14,22 @@
     /*样式*/
     #mobileTab {
         width: 100vw;
-        height: 60px;
+        height: 70px;
         bottom: 0;
         left: 0;
         background-color: var(--controlBGC);
+    }
+    /*不滑动样式*/
+    #mobileTab {
+        transform: translateY(0);
+
+        transition: transform 250ms;
+    }
+    /*下滑样式*/
+    #mobileTab.down {
+        transform: translateY(100%);
+
+        transition: transform 250ms;
     }
     /*按钮样式*/
     .tabButton {
