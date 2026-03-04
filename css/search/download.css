@@ -13,21 +13,27 @@
     opacity: 1;
     transition: background-color 250ms, color 250ms, opacity 250ms;
 }
+
 /*居中内容*/
 #download {
     line-height: 50px;
     font-size: 40px;
     text-align: center;
 }
-#download:hover {
-    background-color: #ffffff;
-    color: var(--fontHoverColor);
-    transition: background-color 250ms, color 250ms;
+
+@media (hover: hover) {
+    #download:hover {
+        background-color: #ffffff;
+        color: var(--fontHoverColor);
+        transition: background-color 250ms, color 250ms;
+    }
 }
+
 #download:active {
     background-color: #d2d2d2;
     transition: background-color 250ms, color 250ms;
 }
+
 /*默认隐藏*/
 #download.hide {
     opacity: 0;

@@ -7,6 +7,7 @@
     height: 100%;
     border-right: 1px solid var(--imgBorderColor);
 }
+
 /*箭头控制*/
 #turn {
     display: flex;
@@ -18,9 +19,8 @@
 }
 
 
-
 /* 翻页箭头基础样式 */
-#previous, #next {
+.switchTips {
     width: 100%;
     font-size: 14px;
     line-height: 24px;
@@ -32,19 +32,22 @@
 
     transition: color 250ms, background-color 250ms, opacity 250ms;
 }
+
 /*箭头浮过样式*/
-#previous:hover, #next:hover {
-    color: var(--fontHoverColor);
-    background-color: #ffffff;
-    transition: color 250ms, background-color 250ms, opacity 250ms;
+@media (hover: hover) {
+    .switchTips:hover {
+        color: var(--fontHoverColor);
+        background-color: #ffffff;
+        transition: color 250ms, background-color 250ms, opacity 250ms;
+    }
 }
+
 /*箭头点击样式*/
-#previous:active, #next:active {
+.switchTips:active {
     color: var(--fontHoverColor);
     background-color: #d2d2d2;
     transition: color 250ms, background-color 250ms, opacity 250ms;
 }
-
 
 
 /* 控制箭头的显示隐藏，具体逻辑在js里面 */
@@ -52,6 +55,7 @@
     opacity: 1;
     transition: color 250ms, background-color 250ms, opacity 250ms;
 }
+
 #inputTips[data-has-next="true"] #next {
     opacity: 1;
     transition: color 250ms, background-color 250ms, opacity 250ms;

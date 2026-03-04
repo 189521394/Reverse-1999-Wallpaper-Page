@@ -8,18 +8,21 @@
     z-index: var(--z-search);
     border: 1px solid transparent;
 
-    transition: border 150ms,background-color 250ms;
+    transition: border 150ms, background-color 250ms;
 }
+
 #searchFrame:hover {
     border: 1px solid var(--goldLine);
-    transition: border 150ms,background-color 250ms;
+    transition: border 150ms, background-color 250ms;
 }
+
 /*控制居中*/
 #searchFrame {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #fuckLabel {
     max-width: 85vw;
     display: flex;

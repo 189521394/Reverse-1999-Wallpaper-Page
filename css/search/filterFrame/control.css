@@ -5,34 +5,36 @@
     box-sizing: border-box;
     border: 1px solid transparent;
 
-    transition: border 150ms,background-color 250ms;
+    transition: border 150ms, background-color 250ms;
 }
+
 #control {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 #control:hover {
     border: 1px solid var(--goldLine);
-    transition: border 150ms,background-color 250ms;
+    transition: border 150ms, background-color 250ms;
 }
-
-
 
 /*设置按钮大小*/
 #clean {
     width: 6.8em;
 }
+
 #submit {
     width: 4.8em;
 }
+
 #setButton {
     width: 7.8em;
 }
+
 #result {
     color: var(--fontColor);
 }
-
 
 
 .buttons {
@@ -49,15 +51,18 @@
 
     transition: background-color 250ms;
 }
-.buttons:hover {
-    background-color: #ffffff;
-    transition: background-color 250ms;
+
+@media (hover: hover) {
+    .buttons:hover {
+        background-color: #ffffff;
+        transition: background-color 250ms;
+    }
 }
+
 .buttons:active {
     background-color: #d2d2d2;
     transition: background-color 250ms;
 }
-
 
 
 /*设置结果样式*/
@@ -66,6 +71,7 @@
     margin-right: auto;
     margin-left: 30px;
 }
+
 #result {
     width: 10em;
     height: 1.4em;

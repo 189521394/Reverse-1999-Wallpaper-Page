@@ -12,21 +12,27 @@
     opacity: 1;
     transition: background-color 250ms, color 250ms, opacity 250ms;
 }
+
 /*居中内容*/
 #toTop {
     line-height: 50px;
     font-size: 40px;
     text-align: center;
 }
-#toTop:hover {
-    background-color: #ffffff;
-    color: var(--fontHoverColor);
-    transition: background-color 250ms, color 250ms;
+
+@media (hover: hover) {
+    #toTop:hover {
+        background-color: #ffffff;
+        color: var(--fontHoverColor);
+        transition: background-color 250ms, color 250ms;
+    }
 }
+
 #toTop:active {
     background-color: #d2d2d2;
     transition: background-color 250ms, color 250ms;
 }
+
 /*默认隐藏，达到固定高度才显示*/
 #toTop.hide {
     opacity: 0;

@@ -1,5 +1,5 @@
 /*重置边距*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,17 +19,18 @@ body {
     /*防止页面左上角出现鼠标焦点*/
     user-select: none;
 }
+
 /*允许复制模式*/
 /*body的所有子元素强制可以复制*/
 body.mode-copy * {
     user-select: text !important;
 }
+
 /*替换掉系统的蓝底白字*/
 ::selection {
     background-color: #7b6f55;
     color: #e3d1b3;
 }
-
 
 
 /*加载字体*/
@@ -39,10 +40,10 @@ body.mode-copy * {
     font-weight: auto;
     font-style: auto;
 }
+
 body {
     font-family: 思源宋体-Medium, sans-serif;
 }
-
 
 
 /*全局滚动条代码*/
@@ -54,27 +55,35 @@ html {
     /* 预留滚动条的空间,即使滚动条不显示，也会留出那 8px 的位置，防止内容跳动 */
     scrollbar-gutter: stable;
 }
+
 /*锁定模式的代码，临时关闭滚动条*/
 html.lock-screen {
     overflow: hidden !important;
     height: 100vh; /* 防止某些移动端浏览器穿透 */
 }
+
 /*设置页面的滚动条*/
 html::-webkit-scrollbar {
     display: initial;
     width: 6px;
 }
+
 /*对通用滚动条样式进行封装*/
 .custom-scroll::-webkit-scrollbar-track {
-    background: var(--scrollBarTrack);  /* 滚动条轨道 */
+    background: var(--scrollBarTrack); /* 滚动条轨道 */
 }
+
 .custom-scroll::-webkit-scrollbar-thumb {
     background: var(--scrollBarThumb); /* 滑块颜色 */
     border-radius: 0;
 }
-.custom-scroll::-webkit-scrollbar-thumb:hover {
-    background: var(--scrollBarHover); /* 悬停效果 */
+
+@media (hover: hover) {
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background: var(--scrollBarHover); /* 悬停效果 */
+    }
 }
+
 /*样式调用只需要加上class，写在html文件中*/
 /*有些特殊元素(如设置)拥有特殊的滚动条样式，不需要加*/
 

@@ -8,6 +8,7 @@
 
     background: transparent;
 }
+
 #prev {
     width: 24px;
     height: 50px;
@@ -16,6 +17,7 @@
     backdrop-filter: blur(50px);
     border-radius: 5px 0 0 5px;
 }
+
 #next {
     width: 24px;
     height: 50px;
@@ -26,17 +28,21 @@
 }
 
 /*鼠标浮上样式*/
-.switchButton:hover{
-    box-shadow: 0 0 30px -10px #000;
-    transition: box-shadow 250ms;
+@media (hover: hover) {
+    .switchButton:hover {
+        box-shadow: 0 0 30px -10px #000;
+        transition: box-shadow 250ms;
+    }
 }
+
 /*鼠标点击样式*/
-.switchButton:active{
+.switchButton:active {
     box-shadow: 0 0 10px -5px #000;
     transition: box-shadow 1ms;
 }
+
 /*鼠标消失样式*/
-.switchButton{
+.switchButton {
     box-shadow: none;
     transition: box-shadow 250ms;
 }

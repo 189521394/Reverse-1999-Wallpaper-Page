@@ -9,11 +9,11 @@
 
     overflow: hidden;
 }
+
 /*添加一个小边框，防止滚动条贴靠到元素上*/
 #setBox {
     padding-right: 12px;
 }
-
 
 
 /*动画控制*/
@@ -23,6 +23,7 @@
     will-change: opacity;
     transition: opacity 250ms ease-in-out 0ms;
 }
+
 #setBox.show {
     opacity: 1;
 
@@ -30,30 +31,34 @@
 }
 
 
-
 /*添加滚动条*/
 #setBox {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
 #setBox::-webkit-scrollbar {
     display: initial;
     width: 6px;
 }
+
 #setBox::-webkit-scrollbar-track {
     /* 滚动条轨道 */
     background: rgba(0, 0, 0, 0.2);
 }
+
 #setBox::-webkit-scrollbar-thumb {
     /* 滚动条滑块 */
     background: rgba(0, 0, 0, 0.4);
     border-radius: 0;
 }
-#setBox::-webkit-scrollbar-thumb:hover {
-    /* 悬停效果 */
-    background: rgba(0, 0, 0, 0.6);
-}
 
+@media (hover: hover) {
+    #setBox::-webkit-scrollbar-thumb:hover {
+        /* 悬停效果 */
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
 
 
 /*详细配置*/
@@ -61,13 +66,13 @@
 .title {
     font-size: 30px;
 }
+
 /*通用分割线*/
 .line {
     height: 1px;
     width: auto;
     background-color: black;
 }
-
 
 
 /*设置显示控制*/
@@ -77,16 +82,19 @@
     will-change: opacity, display;
     transition: opacity 250ms;
 }
+
 .setContent.show {
     opacity: 1;
     display: block;
     will-change: opacity, display;
     transition: opacity 250ms;
 }
+
 /*通用标题控制，首个标题不需要上边距*/
 .title {
     margin-top: 100px;
 }
+
 .topTitle {
     margin-top: 0 !important;
 }

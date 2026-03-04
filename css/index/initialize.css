@@ -1,5 +1,5 @@
 /*重置边距*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -16,6 +16,7 @@
     font-weight: auto;
     font-style: auto;
 }
+
 body {
     font-family: 思源宋体-Medium, sans-serif;
 }

@@ -8,7 +8,6 @@
 }
 
 
-
 /*定义布局样式*/
 /*共享布局样式*/
 #tagPool,
@@ -22,7 +21,6 @@
 }
 
 
-
 /*轶事，比较宽的布局样式，js动态添加(switchWide)*/
 #tagPool.wide,
 #submitPool.wide {
@@ -30,16 +28,15 @@
 }
 
 
-
 /*为列表开启滚动条*/
 #tagPool {
     overflow-y: auto;
 }
+
 #tagPool::-webkit-scrollbar {
     display: initial;
     width: 6px;
 }
-
 
 
 /*定义每个标签的样式*/
@@ -59,10 +56,14 @@
     font-size: 18px;
     line-height: 40px;
 }
-.waiting:hover {
-    background-color: #ffffff;
-    transition: background-color 150ms;
+
+@media (hover: hover) {
+    .waiting:hover {
+        background-color: #ffffff;
+        transition: background-color 150ms;
+    }
 }
+
 .waiting:active {
     background-color: #d2d2d2;
     transition: background-color 150ms;

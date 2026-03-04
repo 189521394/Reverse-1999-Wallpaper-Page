@@ -230,7 +230,11 @@ document.addEventListener('mousedown', function(e) {
 function showInputTips(boolean) {
     tipsStatus = boolean;
     if (boolean) {
-        inputTips.style.height = '170px';
+        if (isMobileLayout) {
+            inputTips.style.height = '200px';
+        } else {
+            inputTips.style.height = '170px';
+        }
         inputTips.style.borderWidth = '0px 1px 1px 1px';
     } else {
         inputTips.style.height = '0';

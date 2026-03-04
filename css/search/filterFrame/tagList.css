@@ -2,6 +2,7 @@
     position: relative;
     background-color: var(--showListBGC);
 }
+
 /*自动添加滚动条*/
 #tagList {
     overflow-y: auto;
@@ -10,7 +11,6 @@
 
     border: 1px solid var(--goldLine);
 }
-
 
 
 /*设置每个选项的基础样式*/
@@ -27,16 +27,20 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 /*设置被选择的动画*/
 .item {
     background-color: transparent;
     color: var(--fontColor);
 }
-.item:hover {
-    /*要加优先级，不然点一下hover会被.active覆盖，很奇怪*/
-    background-color: #ffffff !important;
-    color: var(--fontHoverColor);
-    transition: background-color 150ms, color 150ms;
+
+@media (hover: hover) {
+    .item:hover {
+        /*要加优先级，不然点一下hover会被.active覆盖，很奇怪*/
+        background-color: #ffffff !important;
+        color: var(--fontHoverColor);
+        transition: background-color 150ms, color 150ms;
+    }
 }
 
 /*这个是动画按下激活，仅在按下时生效*/
@@ -68,9 +72,8 @@
     background-color: #ffffff;
 
     transition: top 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
-                height 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    height 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
-
 
 
 /*为列表开启滚动条*/

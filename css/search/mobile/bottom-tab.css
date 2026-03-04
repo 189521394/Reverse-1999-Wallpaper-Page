@@ -31,12 +31,34 @@
 
         transition: transform 250ms;
     }
-    /*按钮样式*/
+    /*按钮基础样式*/
     .tabButton {
-        color: var(--fontColor);
-        box-sizing: border-box;
+        width: 70px;
+        height: 35px;
+
         border-style: solid;
         border-width: 1px;
-        border-color: red;
+        border-color: var(--controlButtonBGC);
+    }
+    /*文本控制*/
+    .tabButton {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    /*按钮动画样式*/
+    .tabButton {
+        color: var(--controlButtonBGC);
+
+        transition: background-color 250ms,
+                    color 250ms;
+    }
+    .tabButton.active {
+        background-color: var(--controlButtonBGC);
+        color: var(--fontColor);
+
+        transition: background-color 250ms,
+                    color 250ms;
     }
 }

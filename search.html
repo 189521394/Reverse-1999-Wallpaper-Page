@@ -9,6 +9,8 @@
     <!--====================初始化====================-->
     <!--初始化-->
     <link rel="stylesheet" href="css/search/init/initialize.css">
+    <!--手机布局初始化-->
+    <script src="js/search/mobile/mobile-init.js" defer></script>
     <!--层级管理-->
     <link rel="stylesheet" href="css/search/init/z-index.css">
     <!--主题和主题切换-->
@@ -157,7 +159,7 @@
     <!--====================其他部分====================-->
     <!--回到顶部样式与逻辑-->
     <link rel="stylesheet" href="css/search/toTop.css">
-    <script src="js/search/autoHide.js" defer></script>
+    <script src="js/search/returnTop.js" defer></script>
     <!--文件下载样式与逻辑-->
     <link rel="stylesheet" href="css/search/download.css">
     <script src="js/search/dataOperationsLayer/download.js" defer></script>
@@ -194,8 +196,8 @@
                     <input type="text" id="input" placeholder='输入标签 空格分隔' aria-label="搜索输入框" autofocus>
                     <div id="inputTips">
                         <div id="turn">
-                            <div id="previous">↑</div>
-                            <div id="next">↓</div>
+                            <div id="previous" class="switchTips">↑</div>
+                            <div id="next" class="switchTips">↓</div>
                         </div>
                     </div>
                 </div>
@@ -453,8 +455,8 @@
     </div>
     <div id="mobileTab">
         <div id="wallpaper" class="tabButton" onclick="switchWallpaper()">浏览</div>
-        <div id="selectTag" class="tabButton">筛选</div>
-        <div id="set" class="tabButton">设置</div>
+        <div id="selectTag" class="tabButton" onclick="switchTags()">筛选</div>
+        <div id="set" class="tabButton" onclick="switchSet()">设置</div>
     </div>
 </body>
 </html>

@@ -4,6 +4,7 @@
     --ty: 0px;
     --scale: 1;
 }
+
 /*控制每张图片的大小样式*/
 .imgs {
     width: 100%;
@@ -19,7 +20,6 @@
 }
 
 
-
 /*图片动画控制*/
 /*图片初始样式*/
 .imgs {
@@ -29,28 +29,32 @@
     box-shadow: var(--imgBorderColor) 0 0 0 3px,
                 var(--imgShadowColor) 0 0 10px 3px;
 
+    /*z-index控制图片显示层级，由于普通图片显示层级比active状态低，且比遮罩低，所以设置一个延迟*/
     transition: transform 250ms,
-                z-index 250ms,
                 box-shadow 250ms,
+                z-index 0ms ease 251ms,
                 background-color 250ms;
 
     /*告诉浏览器这些属性将会改变，让浏览器预先渲染，优化性能*/
-    will-change: transform,z-index,box-shadow;
+    will-change: transform, z-index, box-shadow;
 
     /*该缩放值与js动画设置里面的缩放值绑定，两个必须同时修改，不然图片大小会显示异常*/
     transform: scale(0.93);
 }
-/*图片浮过样式*/
-.imgs:hover {
-    z-index: var(--z-imgAndSet);
 
-    box-shadow: var(--imgHoverBorderColor) 0 0 0 3px,
-                var(--imgShadowColor) 0 0 17px 7px;
-    transition: transform 250ms,
-                z-index 250ms,
-                box-shadow 250ms,
-                background-color 250ms;
+/*图片浮过样式*/
+@media (hover: hover) {
+    .imgs:hover {
+        z-index: var(--z-imgAndSet);
+
+        box-shadow: var(--imgHoverBorderColor) 0 0 0 3px,
+                    var(--imgShadowColor) 0 0 17px 7px;
+        transition: transform 250ms,
+                    box-shadow 250ms,
+                    background-color 250ms;
+    }
 }
+
 /*预览大图样式*/
 .imgs.active {
     z-index: var(--z-imgAndSet);
@@ -62,5 +66,9 @@
     box-shadow: var(--imgHoverBorderColor) 0 0 0 1px;
 
     /*使用js计算位移参数*/
-    transform: translate(var(--tx), var(--ty)) scale(var(--scale));
+    transform: translate(var(--tx), var(--ty)) scale(var(--scale)) rotate(90deg);
+
+    transition: transform 250ms,
+                box-shadow 250ms,
+                background-color 250ms;
 }

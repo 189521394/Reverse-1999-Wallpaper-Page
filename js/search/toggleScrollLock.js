@@ -8,3 +8,8 @@ const toggleScrollLock = (isLocked) => {
         htmlTag.classList.remove("lock-screen");
     }
 }
+
+// 查询锁定状态
+const isScrollLocked = () => {
+    return document.documentElement.classList.contains("lock-screen");
+}

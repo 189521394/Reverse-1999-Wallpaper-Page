@@ -9,10 +9,12 @@ let startY = 0;
 // 触摸开始时触发
 container.addEventListener('touchstart', (e) => {
     startY = e.touches[0].clientY;
-});
+}, {passive: true});
 
 // 触摸结束时触发
 container.addEventListener('touchend', (e) => {
+    if (isScrollLocked()) return;
+
     const endY = e.changedTouches[0].clientY;
     // 向下滑动：distance > 0，向上滑动：distance < 0
     const distance = startY - endY;
@@ -22,11 +24,11 @@ container.addEventListener('touchend', (e) => {
 
     if (Math.abs(distance) > threshold) {
         if (distance > 0) {
-            // 向下滑动
+            // 向下滑动(隐藏)
             mobileTab.classList.add("down");
         } else {
-            // 向上滑动
+            // 向上滑动(显示)
             mobileTab.classList.remove("down");
         }
     }
-});
+}, {passive: true});

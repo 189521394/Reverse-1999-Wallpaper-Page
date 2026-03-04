@@ -12,6 +12,7 @@
 
     z-index: var(--z-showTags);
 }
+
 /*布局方式*/
 #returnTag {
     display: flex;
@@ -20,6 +21,7 @@
 
     gap: 10px;
 }
+
 /*变化样式*/
 #returnTag {
     will-change: transform;
@@ -29,6 +31,7 @@
 
     transition: transform 250ms ease, visibility 0s linear 260ms;
 }
+
 /*这里的显示隐藏因为要同时考虑页面加载时元素闪烁问题，所以这么写*/
 /*设置是否可见作为显示隐藏*/
 #returnTag.show {
@@ -47,6 +50,7 @@
     background-color: var(--tagBGC);
     transition: background-color 150ms;
 }
+
 /*文本设置*/
 .tags {
     /*文本禁止换行，超出自动撑大元素*/
@@ -64,18 +68,24 @@
     font-size: 18px;
     line-height: 40px;
 }
-.tags:hover {
-    background-color: #ffffff;
-    transition: background-color 150ms;
+
+@media (hover: hover) {
+    .tags:hover {
+        background-color: #ffffff;
+        transition: background-color 150ms;
+    }
 }
+
 .tags:active {
     background-color: #d2d2d2;
     transition: background-color 150ms;
 }
+
 /*解决溢出时10px被裁切的问题*/
 .tags:first-child {
     margin-left: 10px;
 }
+
 .tags:last-child {
     margin-right: 10px;
 }
@@ -88,20 +98,26 @@
     /*平滑滚动*/
     scroll-behavior: smooth;
 }
+
 #returnTag::-webkit-scrollbar {
     display: initial;
     height: 8px;
 }
+
 #returnTag::-webkit-scrollbar-track {
     /* 滚动条轨道 */
     background: rgba(128, 128, 128, 0.3);
 }
+
 #returnTag::-webkit-scrollbar-thumb {
     /* 滚动条滑块 */
     background: rgba(128, 128, 128, 0.6);
     border-radius: 0;
 }
-#returnTag::-webkit-scrollbar-thumb:hover {
-    /* 悬停效果 */
-    background: rgba(128, 128, 128, 0.9);
+
+@media (hover: hover) {
+    #returnTag::-webkit-scrollbar-thumb:hover {
+        /* 悬停效果 */
+        background: rgba(128, 128, 128, 0.9);
+    }
 }

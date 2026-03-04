@@ -1,7 +1,8 @@
-.IMGcontainer{
+.IMGcontainer {
     background-position: center center;
     background-size: cover;
 }
+
 .IMGcontainer {
     position: absolute;
     height: 100vh;
