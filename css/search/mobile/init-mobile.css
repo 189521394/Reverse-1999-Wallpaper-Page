@@ -113,10 +113,10 @@
         }
 
         /*预览大图样式*/
-        /*.imgs.active {*/
-        /*    !*使用js计算位移参数*!*/
-        /*    transform: translate(var(--tx), var(--ty)) scale(var(--scale)) rotate(90deg);*/
-        /*}*/
+        .imgs.active {
+            /*使用js计算位移参数*/
+            transform: translate(var(--tx), var(--ty)) scale(var(--scale)) rotate(90deg);
+        }
 
         /*回到顶部按钮*/
         #toTop {

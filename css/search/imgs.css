@@ -66,7 +66,7 @@
     box-shadow: var(--imgHoverBorderColor) 0 0 0 1px;
 
     /*使用js计算位移参数*/
-    transform: translate(var(--tx), var(--ty)) scale(var(--scale)) rotate(90deg);
+    transform: translate(var(--tx), var(--ty)) scale(var(--scale));
 
     transition: transform 250ms,
                 box-shadow 250ms,
