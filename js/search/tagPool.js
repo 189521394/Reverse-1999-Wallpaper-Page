@@ -1,5 +1,6 @@
 // 这里角色名称排序
 // 额，是用python手动排序的，算了，就酱，能用
+// 引入js自动排序，以后不再排序了，随便写（仅角色列表）【2026年3月6日】
 let characterPool = [
     "阿莱夫",
     "阿尔古斯",
@@ -182,8 +183,10 @@ let characterPool = [
     "37",
     "6",
     "77",
-    "888"
+    "888",
+    "洛伦兹蝴蝶"
 ]
+characterPool.sort((a, b) => a.localeCompare(b, 'zh-CN'));
 
 // 其余按照游戏更新顺序排序即可
 let mainLinePool = [
@@ -326,6 +329,7 @@ let versionCodePool = [
     "3.2",
     "3.3",
     "3.4",
+    "3.5",
     "SP01"
 ]
 
