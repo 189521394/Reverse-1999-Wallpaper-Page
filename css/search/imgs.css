@@ -37,7 +37,7 @@
                 background-color 250ms;
 
     /*告诉浏览器这些属性将会改变，让浏览器预先渲染，优化性能*/
-    /* will-change: transform, z-index, box-shadow; */
+    will-change: transform, z-index, box-shadow;
 
     /*该缩放值与js动画设置里面的缩放值绑定，两个必须同时修改，不然图片大小会显示异常*/
     transform: scale(0.93);

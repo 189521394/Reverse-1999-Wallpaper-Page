@@ -38,4 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
             cursor.classList.remove('active');
         }
     })
+
+    // ================= 移动端专属：触摸点击特效 =================
+    imgContainer.addEventListener('touchstart', (e) => {
+        // 只有点击图片时才触发
+        if (e.target.closest('.imgs')) {
+            const touch = e.touches[0];
+
+            cursor.style.left = `${touch.clientX}px`;
+            cursor.style.top = `${touch.clientY}px`;
+
+            cursor.classList.add('visible');
+
+            // 参考transition时间
+            setTimeout(() => {
+                cursor.classList.remove('visible');
+            }, 250);
+        }
+    }, { passive: true });
 });

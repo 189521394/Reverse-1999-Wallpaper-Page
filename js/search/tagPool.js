@@ -184,7 +184,12 @@ let characterPool = [
     "6",
     "77",
     "888",
-    "洛伦兹蝴蝶"
+    "洛伦兹蝴蝶",
+    "野木蓝",
+    "拉莫纳",
+    "玛格丽特",
+    "佩雷斯",
+    "穆列尔"
 ]
 characterPool.sort((a, b) => a.localeCompare(b, 'zh-CN'));
 

@@ -4,19 +4,23 @@
 // 同时，它只接收图片列表，给传进来的图片添加点击预览动画
 // 因为如果一张图绑定两个一样的监听器会出bug
 
-// 看一下用户是否需要查看标签
-// 如果查看标签，图片显示布局也需要修改
-const showTags = document.getElementById("showTags");
-// 不可以直接在这写checked，在代码里面写元素的checked可以动态调用，热刷新
 // 如果在这里写了checked，每次修改都需要手动提交筛选才生效
+const showTags = document.getElementById("showTags");
+
 const downloadButton = document.getElementById("download");
+
+// 由于一些浏览器本身的bug，个性化鼠标会和toTop的模糊冲突，所以打开图片要关闭回到顶部按钮
+const toTopBtn = document.getElementById("toTop");
+
+// 图片专属的遮罩层
+const overlay = document.getElementById('imgOverlay');
 
 // 记录当前哪张图被放大了
 let activeImg = null;
+// 记录回到顶部按钮状态
+let topExist = false;
 
 function setAnimation(imgList) {
-    const overlay = document.getElementById('imgOverlay');
-
     imgList.forEach(img => {
         img.addEventListener('click', (e) => {
             // 加上e防止冒泡
@@ -81,18 +85,8 @@ function setAnimation(imgList) {
             img.style.setProperty('--ty', `${moveY}px`);
             img.style.setProperty('--scale', scale);
 
-            // 添加激活类和遮罩
-            toggleScrollLock(true);
-            overlay.classList.add('show');
-            img.classList.add('active');
-            activeImg = img;
-            downloadButton.classList.remove("hide");
-            // document.body.classList.add('image-preview-open');
-
-            // 显示图片标签
-            if (showTags.checked) {
-                showTag(img.src)
-            }
+            // 打开图像
+            openImage(img);
         });
     });
 
@@ -101,20 +95,63 @@ function setAnimation(imgList) {
         overlay.addEventListener('click', closeImage);
         overlay.setAttribute('listener-already-exists', 'true');
     }
+}
 
-    // 关闭函数
-    function closeImage() {
-        if (activeImg) {
-            activeImg.classList.remove('active');
-            activeImg = null;
-        }
-        toggleScrollLock(false);
-        overlay.classList.remove('show');
-        // document.body.classList.remove('image-preview-open');
-        downloadButton.classList.add("hide");
-        // 隐藏图片标签
-        if (showTags.checked) {
-            hideTag();
-        }
+// 关闭图像
+function closeImage() {
+    // 清空记录的图像
+    if (activeImg) {
+        activeImg.classList.remove('active');
+        activeImg = null;
+    }
+
+    // 取消滚动锁定
+    toggleScrollLock(false);
+
+    // 关闭遮罩
+    overlay.classList.remove('show');
+
+    // 隐藏下载按钮
+    downloadButton.classList.add("hide");
+
+    // 恢复回到顶部按钮状态
+    if (topExist) {
+        toTopBtn.classList.remove('hide');
+    }
+
+    // 隐藏图片标签
+    if (showTags.checked) {
+        hideTag();
+    }
+}
+// 开启图像
+function openImage(imgInfo) {
+    // 开启图像
+    imgInfo.classList.add('active');
+
+    // 记录显示图像
+    activeImg = imgInfo;
+
+    // 显示图片标签
+    if (showTags.checked) {
+        showTag(imgInfo.src)
+    }
+
+    // 滚动锁定
+    toggleScrollLock(true);
+
+    // 打开遮罩
+    overlay.classList.add('show');
+
+    // 显示下载按钮
+    downloadButton.classList.remove("hide");
+
+    // 如果回到顶部按钮没被隐藏(显示了)
+    if (!toTopBtn.classList.contains('hide')) {
+        // 隐藏按钮，标记按钮状态
+        topExist = true;
+        toTopBtn.classList.add('hide');
+    } else {
+        topExist = false;
     }
 }
