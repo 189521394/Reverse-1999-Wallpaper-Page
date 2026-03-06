@@ -5471,12 +5471,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_05.png",
-    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间"],
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "暗色", "百夫长"],
     "tag_EN": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_06.png",
-    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间"],
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "暗色", "百夫长"],
     "tag_EN": []
   },
   {
@@ -5561,7 +5561,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_23.png",
-    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间"],
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "亮色", "洛伦兹蝴蝶"],
     "tag_EN": []
   },
   {
@@ -5586,7 +5586,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_28.png",
-    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间"],
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "亮色"],
     "tag_EN": []
   },
   {
@@ -5632,6 +5632,31 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_ys_baifuzhang.png",
     "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_08.png",
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "亮色", "背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_30.png",
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "亮色", "背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_27.png",
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "暗色", "背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_28.png",
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "暗色", "背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_29.png",
+    "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "暗色", "背景图"],
     "tag_EN": []
   }
 ]

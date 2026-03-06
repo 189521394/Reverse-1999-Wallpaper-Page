@@ -87,6 +87,7 @@ function setAnimation(imgList) {
             img.classList.add('active');
             activeImg = img;
             downloadButton.classList.remove("hide");
+            // document.body.classList.add('image-preview-open');
 
             // 显示图片标签
             if (showTags.checked) {
@@ -109,6 +110,7 @@ function setAnimation(imgList) {
         }
         toggleScrollLock(false);
         overlay.classList.remove('show');
+        // document.body.classList.remove('image-preview-open');
         downloadButton.classList.add("hide");
         // 隐藏图片标签
         if (showTags.checked) {

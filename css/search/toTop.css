@@ -39,3 +39,8 @@
     pointer-events: none;
     transition: opacity 250ms;
 }
+/* 图片预览时，回到顶部按钮应被遮罩层完全压住并模糊 */
+/*body.image-preview-open #toTop {*/
+/*    filter: blur(30px);*/
+/*    transition: background-color 250ms, color 250ms, opacity 250ms, filter 250ms;*/
+/*}*/
