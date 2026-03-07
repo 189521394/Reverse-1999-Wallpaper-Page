@@ -31,9 +31,9 @@
 
     /*z-index控制图片显示层级，由于普通图片显示层级比active状态低，且比遮罩低，所以设置一个延迟*/
     /*这个延迟用于退出的时候，防止图片直接闪现到遮罩下面*/
-    transition: transform 250ms ease-in-out,
+    transition: transform 250ms,
                 box-shadow 250ms,
-                z-index 0ms ease 250ms,
+                z-index 0ms 250ms,
                 background-color 250ms;
 
     /*告诉浏览器这些属性将会改变，让浏览器预先渲染，优化性能*/
@@ -50,7 +50,7 @@
 
         box-shadow: var(--imgHoverBorderColor) 0 0 0 3px,
                     var(--imgShadowColor) 0 0 17px 7px;
-        transition: transform 250ms ease-in-out,
+        transition: transform 250ms,
                     box-shadow 250ms,
                     background-color 250ms;
     }
@@ -69,7 +69,7 @@
     /*使用js计算位移参数*/
     transform: translate(var(--tx), var(--ty)) scale(var(--scale));
 
-    transition: transform 250ms ease-in-out,
+    transition: transform 250ms,
                 box-shadow 250ms,
                 background-color 250ms;
 }

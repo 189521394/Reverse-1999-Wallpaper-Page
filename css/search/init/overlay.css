@@ -14,12 +14,12 @@
     pointer-events: none;
 
     will-change: backdrop-filter;
-    transition: backdrop-filter 250ms ease;
+    transition: backdrop-filter 250ms;
 }
 #imgOverlay.show {
     /*禁止鼠标穿过遮罩层*/
     pointer-events: auto;
 
     backdrop-filter: brightness(60%) blur(30px);
-    transition: backdrop-filter 250ms ease;
+    transition: backdrop-filter 250ms;
 }

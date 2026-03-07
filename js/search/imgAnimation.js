@@ -130,17 +130,20 @@ function calculateAnimation(imgInfo) {
     const moveY = viewportCenterY - imgCenterY;
 
     // 提取图片真实大小，用于移动端图片显示
-    const naturalRatio = imgInfo.naturalWidth / imgInfo.naturalHeight;
-    const boxRatio = rect.width / rect.height;
+    // 仅在移动端布局进行计算
     let realImgWidth, realImgHeight;
-    if (naturalRatio > boxRatio) {
-        // 图片比盒子更扁，左右撑满，上下有留白
-        realImgWidth = rect.width;
-        realImgHeight = rect.width / naturalRatio;
-    } else {
-        // 图片比盒子更瘦，上下撑满，左右有留白
-        realImgWidth = rect.height * naturalRatio;
-        realImgHeight = rect.height;
+    if (isMobileLayout) {
+        const naturalRatio = imgInfo.naturalWidth / imgInfo.naturalHeight;
+        const boxRatio = rect.width / rect.height;
+        if (naturalRatio > boxRatio) {
+            // 图片比盒子更扁，左右撑满，上下有留白
+            realImgWidth = rect.width;
+            realImgHeight = rect.width / naturalRatio;
+        } else {
+            // 图片比盒子更瘦，上下撑满，左右有留白
+            realImgWidth = rect.height * naturalRatio;
+            realImgHeight = rect.height;
+        }
     }
 
     // 计算缩放比例
