@@ -15,11 +15,6 @@
         /*调整body高度*/
         min-height: 100vh;
         /*=============================上：搜索框=============================*/
-        /*隐藏图形化筛选框*/
-        #filterBox {
-            display: none;
-        }
-
         /*调整筛选背景位置*/
         #Filter {
             width: 100vw;
@@ -39,11 +34,6 @@
         /*搜索框*/
         #fuckLabel {
             margin: 20px 0;
-        }
-
-        /*隐藏搜索按钮enter提示*/
-        .pc-only {
-            display: none;
         }
 
         /*控制按钮大小*/
@@ -90,16 +80,6 @@
         .words {
             height: 40px;
             line-height: 40px;
-        }
-
-        /*隐藏按键提示，手机不需要*/
-        #ShortcutKey {
-            display: none;
-        }
-
-        /*隐藏控制面板，不在主页显示*/
-        #control {
-            display: none;
         }
         /*=============================中：图片展示区=============================*/
         /*图片展示背景，宽度顶满屏幕*/
@@ -151,6 +131,22 @@
         /*=============================下：回到顶部=============================*/
         #toTop {
             bottom: 90px;
+        }
+        /*=============================隐藏其他元素=============================*/
+        #ShortcutKey {
+            display: none;
+        }
+
+        #control {
+            display: none;
+        }
+
+        .pc-only {
+            display: none;
+        }
+
+        #filterBox {
+            display: none;
         }
     }
     /*========================================筛选标签========================================*/
@@ -316,9 +312,45 @@
         }
     }
     /*========================================设置========================================*/
-    body.tab-set {
-        #imgOverlay {
-            display: none;
-        }
+    #imgOverlay {
+        display: none;
+    }
+    #setBackground {
+        align-items: flex-start;
+    }
+    #setFrame {
+        width: 100vw;
+        height: calc(100dvh - 70px);
+    }
+    #setPadding.show {
+        width: 100vw;
+        height: calc(100dvh - 70px);
+
+        padding: 10px;
+    }
+    #setItem.show {
+        left: 0;
+        top: 0;
+        height: calc(100dvh - 70px);
+        width: 80px;
+        padding: 0 3px;
+    }
+    #setItem.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .setItem {
+        font-size: 0;
+    }
+    .setItem:after {
+        content: attr(data-short);
+        font-size: 20px;
+    }
+    .setItem {
+        line-height: 35px;
+        height: 35px;
+        width: 70px;
     }
 }

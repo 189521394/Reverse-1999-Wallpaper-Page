@@ -27,11 +27,13 @@ const allButtonIds = ['wallpaper', 'selectTag', 'set'];
 
 // 三页切换逻辑
 function switchTab(targetClass, targetBtnID, isSet) {
+    // 删除设置切换逻辑，设置作为一个独立悬浮窗存在，而不是第三个页面
     if (!isSet) {
         document.body.classList.remove(...allTabClasses);
         document.body.classList.add(targetClass);
     }
 
+    // tab按钮切换逻辑
     allButtonIds.forEach(id => {
         document.getElementById(id).classList.remove('active');
     });
