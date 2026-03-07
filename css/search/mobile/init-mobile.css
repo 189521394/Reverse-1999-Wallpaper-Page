@@ -109,18 +109,34 @@
 
         /*每个图片的样式*/
         .imgs {
-            height: 18vh;
+            height: 15vh;
         }
 
         /*预览大图样式*/
         .imgs.active {
             /*使用js计算位移参数*/
             transform: translate(var(--tx), var(--ty)) scale(var(--scale)) rotate(90deg);
+
+            /*删除阴影和边框*/
+            box-shadow: transparent 0 0 0 0;
         }
 
         /*回到顶部按钮*/
         #toTop {
             z-index: var(--z-search);
+        }
+
+        /*移动端单独的图片遮罩逻辑*/
+        #imgOverlay {
+            backdrop-filter: none;
+            background-color: transparent;
+
+            will-change: background-color;
+            transition: background-color 250ms ease;
+        }
+        #imgOverlay.show {
+            background-color: var(--imgLiningColor);
+            transition: background-color 250ms ease;
         }
         /*========================================下：回到顶部========================================*/
         #toTop {

@@ -4,56 +4,57 @@ document.addEventListener('DOMContentLoaded', () => {
     // 获取存储图片的父容器
     const imgContainer = document.getElementById("select");
 
-    // 基础样式
-    imgContainer.addEventListener('mousemove', (e) => {
-        // CSS transform: translate(-50%, -50%)对齐圆心
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-    });
+    if (!isMobileLayout) {
+        // 基础样式
+        imgContainer.addEventListener('mousemove', (e) => {
+            // CSS transform: translate(-50%, -50%)对齐圆心
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
 
-    // 鼠标浮上
-    imgContainer.addEventListener('mouseover', (e) => {
-        if (e.target.closest('.imgs')) {
-            cursor.classList.add('visible');
-        }
-    });
+        // 鼠标浮上
+        imgContainer.addEventListener('mouseover', (e) => {
+            if (e.target.closest('.imgs')) {
+                cursor.classList.add('visible');
+            }
+        });
 
-    // 鼠标离开
-    imgContainer.addEventListener('mouseout', (e) => {
-        if (e.target.closest('.imgs')) {
-            cursor.classList.remove('visible');
-        }
-    });
-
-    // 鼠标按下
-    imgContainer.addEventListener('mousedown', (e) => {
-        if (e.target.closest('.imgs')) {
-            cursor.classList.add('active');
-        }
-    });
-
-    // 鼠标松开
-    imgContainer.addEventListener('mouseup', (e) => {
-        if (e.target.closest('.imgs')) {
-            cursor.classList.remove('active');
-        }
-    })
-
-    // ================= 移动端专属：触摸点击特效 =================
-    imgContainer.addEventListener('touchstart', (e) => {
-        // 只有点击图片时才触发
-        if (e.target.closest('.imgs')) {
-            const touch = e.touches[0];
-
-            cursor.style.left = `${touch.clientX}px`;
-            cursor.style.top = `${touch.clientY}px`;
-
-            cursor.classList.add('visible');
-
-            // 参考transition时间
-            setTimeout(() => {
+        // 鼠标离开
+        imgContainer.addEventListener('mouseout', (e) => {
+            if (e.target.closest('.imgs')) {
                 cursor.classList.remove('visible');
-            }, 250);
-        }
-    }, { passive: true });
+            }
+        });
+
+        // 鼠标按下
+        imgContainer.addEventListener('mousedown', (e) => {
+            if (e.target.closest('.imgs')) {
+                cursor.classList.add('active');
+            }
+        });
+
+        // 鼠标松开
+        imgContainer.addEventListener('mouseup', (e) => {
+            if (e.target.closest('.imgs')) {
+                cursor.classList.remove('active');
+            }
+        })
+    } else {
+        imgContainer.addEventListener('touchstart', (e) => {
+            // 只有点击图片时才触发
+            if (e.target.closest('.imgs')) {
+                const touch = e.touches[0];
+
+                cursor.style.left = `${touch.clientX}px`;
+                cursor.style.top = `${touch.clientY}px`;
+
+                cursor.classList.add('visible');
+
+                // 参考transition时间 + 10ms
+                setTimeout(() => {
+                    cursor.classList.remove('visible');
+                }, 260);
+            }
+        }, { passive: true });
+    }
 });
