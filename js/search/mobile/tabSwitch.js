@@ -10,9 +10,6 @@ function switchTags() {
     closeSettings();
     switchTab('tab-tags', 'selectTag');
 
-    // 点一下按主线筛选，防止错位
-    document.getElementById("mainLine").click();
-
     // 防止tab隐藏
     toggleScrollLock(true);
 }
@@ -24,9 +21,11 @@ function switchSet() {
     toggleScrollLock(true);
 }
 
+// 每个页面的信息
 const allTabClasses = ['tab-wallpaper', 'tab-tags', 'tab-set'];
 const allButtonIds = ['wallpaper', 'selectTag', 'set'];
 
+// 三页切换逻辑
 function switchTab(targetClass, targetBtnID, isSet) {
     if (!isSet) {
         document.body.classList.remove(...allTabClasses);
@@ -38,3 +37,10 @@ function switchTab(targetClass, targetBtnID, isSet) {
     });
     document.getElementById(targetBtnID).classList.add('active');
 }
+
+// 给筛选挂个监听器，且只有首次触发，后续不需要
+document.getElementById("selectTag").addEventListener('click', () => {
+    // 点一下按主线筛选，防止错位
+    // 点过直接丢掉，因为用户可能选择了自己需要的选项
+    document.getElementById("mainLine").click();
+}, {once: true});

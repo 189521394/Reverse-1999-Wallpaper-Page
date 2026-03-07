@@ -19,6 +19,13 @@
         left: 0;
         background-color: var(--controlBGC);
     }
+    /*边框控制*/
+    #mobileTab {
+        box-sizing: border-box;
+        border-color: var(--goldLine);
+        border-width: 1px 0 0 0;
+        border-style: solid;
+    }
     /*不滑动样式*/
     #mobileTab {
         transform: translateY(0);
