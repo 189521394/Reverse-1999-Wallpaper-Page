@@ -159,28 +159,36 @@
         height: auto;
         min-height: auto;
         /*=============================框架=============================*/
-        /*大框架*/
+        /*大框架，包括控制栏*/
         #Filter {
             width: 100vw;
+            /*70高度是tab的高度*/
             height: calc(100dvh - 70px);
             margin-top: 0;
         }
         /*框架布局*/
         #Filter {
             display: grid;
+            /*80是控制栏，1fr填满剩余空间*/
+            /*竖向布局*/
             grid-template-rows: 1fr 80px;
         }
 
-        /*小框架*/
+        /*小框架，筛选区*/
         #filterBox {
             width: 100vw;
+            /*1fr配合100%填满空间*/
+            /*因为电脑布局里面写过一次，所以重新写*/
             height: 100%;
-
+        }
+        /*筛选区布局*/
+        #filterBox {
             display: flex;
             flex-direction: column;
             position: relative;
         }
         /*=============================标签列表=============================*/
+        /*隐藏原有文本，用伪元素显示短文本*/
         .item {
             font-size: 0;
             padding: 3px;
@@ -188,19 +196,22 @@
         .item:after {
             content: attr(data-short);
             font-size: 16px;
-            padding: 3px;
+            padding: 0;
         }
 
+        /*摘出绝对定位，脱离文档流*/
         #tagList {
-            padding: 3px;
-            box-sizing: border-box;
-
             position: absolute;
             left: 0;
             top: 0;
             height: 100%;
             width: var(--width-left-list);
         }
+        #tagList {
+            padding: 3px;
+            box-sizing: border-box;
+        }
+        /*调整滑块新位置*/
         #activeSlider {
             left: 3px;
             right: 3px;
@@ -208,6 +219,7 @@
         /*=============================选择和提交=============================*/
         /*控制显示位置*/
         #tagPool, #submitPool {
+            /*给左侧列表空出空间*/
             margin-left: var(--width-left-list);
             width: calc(100% - var(--width-left-list));
             box-sizing: border-box;
@@ -224,7 +236,9 @@
             line-height: 30px;
             font-size: 14px;
         }
+
         /*高度控制*/
+        /*让他们占满屏幕*/
         #tagPool {
             height: calc(100dvh - 150px - var(--height-submit));
         }
@@ -233,6 +247,7 @@
         }
 
         /*控制边框*/
+        /*不能有双边框，会变成2px*/
         #tagPool {
             border-width: 1px 1px 0 0;
         }
@@ -263,15 +278,18 @@
         #control {
             width: 100vw;
             height: 80px;
-            flex-shrink: 0;
         }
         /*边框控制*/
         #control {
             border-width: 0 1px 0 1px;
+            border-style: solid;
+            border-color: var(--goldLine);
         }
         #result {
             font-size: 16px;
         }
+
+        /*隐藏普通文本，用伪元素替代*/
         .buttons {
             font-size: 0;
             border-radius: 0;
