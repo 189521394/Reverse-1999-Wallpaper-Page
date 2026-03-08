@@ -326,7 +326,7 @@
         width: 100vw;
         height: calc(100dvh - 70px);
 
-        padding: 10px;
+        padding: 5px;
     }
     #setItem.show {
         left: 0;
@@ -340,6 +340,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #setBox {
+        /*11px是右侧父元素padding + 滚动条 + 自己的padding*/
+        width: calc(100vw - 80px - 11px);
+        padding-right: 5px;
+    }
+    #setBox::-webkit-scrollbar {
+        width: 3px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .tips {
+        font-size: 14px;
+    }
+    .buttonBorder {
+        zoom: 0.80;
     }
     .setItem {
         font-size: 0;
