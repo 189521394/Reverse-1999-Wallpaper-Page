@@ -312,9 +312,7 @@
         }
     }
     /*========================================设置========================================*/
-    #imgOverlay {
-        display: none;
-    }
+    /*=============================框架=============================*/
     #setBackground {
         align-items: flex-start;
     }
@@ -328,19 +326,72 @@
 
         padding: 5px;
     }
+    /*=============================设置菜单=============================*/
+    /*基础样式*/
     #setItem.show {
         left: 0;
         top: 0;
         height: calc(100dvh - 70px);
-        width: 80px;
+        width: 100vw;
         padding: 0 3px;
     }
+    /*内容布局*/
     #setItem.show {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+
+        transition: height 250ms;
     }
+    /*菜单收起时的样式*/
+    #setItem.roll {
+        height: 60px;
+
+        transition: height 250ms;
+    }
+
+    /*========菜单控制========*/
+    /*形态1：默认样式*/
+    .setItem {
+        line-height: 60px;
+        height: 60px;
+        width: 80vw;
+
+        background-color: #252525;
+        border-color: var(--controlButtonBGC);
+        color: var(--controlButtonBGC);
+
+        transition: width 250ms, height 250ms, background-color 250ms, color 250ms, margin 250ms, border 250ms, opacity 250ms, font-size 250ms;
+    }
+    /*形态2：顶部菜单*/
+    .setItem.active {
+        color: var(--fontColor);
+
+        width: 100vw;
+        height: 60px;
+        margin-top: 0;
+        transition: width 250ms, height 250ms, background-color 250ms, color 250ms, margin 250ms, border 250ms, opacity 250ms, font-size 250ms;
+    }
+    /*形态3：待命菜单*/
+    .setItem.activeWait {
+        color: var(--fontColor);
+        height: 60px;
+        background-color: var(--controlButtonBGC);
+
+        transition: width 250ms, height 250ms, background-color 250ms, color 250ms, margin 250ms, border 250ms, opacity 250ms, font-size 250ms;
+    }
+    /*形态4：隐藏*/
+    .setItem.hide {
+        height: 0;
+        margin-top: 0;
+        border-width: 0;
+        opacity: 0;
+        font-size: 0;
+
+        transition: width 150ms, height 150ms, background-color 150ms, color 150ms, margin 150ms, border 150ms, opacity 150ms, font-size 150ms;
+    }
+    /*=============================设置内容=============================*/
     #setBox {
         /*11px是右侧父元素padding + 滚动条 + 自己的padding*/
         width: calc(100vw - 80px - 11px);
@@ -349,6 +400,8 @@
     #setBox::-webkit-scrollbar {
         width: 3px;
     }
+
+    /*内容大小控制*/
     .title {
         font-size: 20px;
     }
@@ -357,17 +410,6 @@
     }
     .buttonBorder {
         zoom: 0.80;
-    }
-    .setItem {
-        font-size: 0;
-    }
-    .setItem:after {
-        content: attr(data-short);
-        font-size: 20px;
-    }
-    .setItem {
-        line-height: 35px;
-        height: 35px;
-        width: 70px;
+        flex-shrink: 0;
     }
 }

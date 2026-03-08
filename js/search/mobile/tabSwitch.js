@@ -17,6 +17,8 @@ function switchTags() {
 // 设置页
 function switchSet() {
     openSettings();
+    // 关掉开启的图片，防止覆盖
+    closeImage();
     switchTab('tab-set', 'set', true);
     toggleScrollLock(true);
 }
