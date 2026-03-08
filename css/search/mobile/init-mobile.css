@@ -333,7 +333,9 @@
         top: 0;
         height: calc(100dvh - 70px);
         width: 100vw;
+
         padding: 0 3px;
+        box-shadow: transparent 0 0 0 0;
     }
     /*内容布局*/
     #setItem.show {
@@ -357,6 +359,7 @@
         line-height: 60px;
         height: 60px;
         width: 80vw;
+        font-size: 25px;
 
         background-color: #252525;
         border-color: var(--controlButtonBGC);
@@ -371,6 +374,7 @@
         width: 100vw;
         height: 60px;
         margin-top: 0;
+
         transition: width 250ms, height 250ms, background-color 250ms, color 250ms, margin 250ms, border 250ms, opacity 250ms, font-size 250ms;
     }
     /*形态3：待命菜单*/
@@ -394,8 +398,9 @@
     /*=============================设置内容=============================*/
     #setBox {
         /*11px是右侧父元素padding + 滚动条 + 自己的padding*/
-        width: calc(100vw - 80px - 11px);
+        width: 100vw;
         padding-right: 5px;
+        margin-top: 60px;
     }
     #setBox::-webkit-scrollbar {
         width: 3px;
@@ -406,10 +411,40 @@
         font-size: 20px;
     }
     .tips {
-        font-size: 14px;
+        font-size: 16px;
     }
+
+    /*开关大小*/
     .buttonBorder {
         zoom: 0.80;
         flex-shrink: 0;
     }
+
+    /*========邮件========*/
+    .mailInfo {
+        margin-left: 5px;
+    }
+    .mailContent {
+        font-size: 18px;
+    }
+    .STAMP {
+        line-height: 30px;
+        height: 30px;
+        font-size: 30px;
+
+        margin-right: 5px;
+    }
+    .attachmentContent {
+        font-size: 20px;
+    }
+    .mailAttachment {
+        height: 80px;
+    }
+
+    /*点击按钮*/
+    .clickButton {
+        zoom: 0.8;
+    }
+
+    /*========================================提示框========================================*/
 }

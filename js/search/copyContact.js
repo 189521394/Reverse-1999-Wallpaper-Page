@@ -4,7 +4,7 @@ async function copyContact() {
     let mail = "2221771663@qq.com";
 
     try {
-        await navigator.clipboard.writeText(mail);
+        await copyText(mail);
         copyButton.textContent = "复制成功";
         copyButton.style.backgroundColor = "#ffffff";
 
@@ -15,6 +15,7 @@ async function copyContact() {
     } catch (err) {
         copyButton.textContent = "复制失败";
         copyButton.style.backgroundColor = "#ff0000";
+        console.log(err);
 
         setTimeout(() => {
             copyButton.textContent = "复制";
