@@ -26,7 +26,7 @@ function dialogAnimation(boolean) {
 }
 
 // 主对话框逻辑
-function showDialog(showText, notice) {
+function showDialog(showText, notice, once) {
     return new Promise((resolve) => {
         // 设置文本
         noticeContent.textContent = showText;
