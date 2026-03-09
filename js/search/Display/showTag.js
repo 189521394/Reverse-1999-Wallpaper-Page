@@ -33,7 +33,7 @@ async function showTag(targetURL) {
             e.stopPropagation();
 
             // 执行复制到剪切板
-            await navigator.clipboard.writeText(fileName);
+            await copyText(fileName);
 
             // 变成“已复制”1秒钟
             let originalText = copyBtn.textContent;
@@ -49,6 +49,7 @@ async function showTag(targetURL) {
         // 将这个特殊标签添加到最前面
         cache.appendChild(copyBtn);
     }
+    // 调试就不加try了，自己修
     // ======================================调试结束======================================
 
     for (let i = 0; i < Tags.length; i++) {
@@ -65,3 +66,33 @@ async function showTag(targetURL) {
     // 放在最后显示动画
     showBox.classList.add("show");
 }
+
+
+
+// 复制文本函数
+const copyText = async (text) => {
+    // 如果在 localhost 或 HTTPS 环境，直接用现代 API
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(text);
+    }
+
+    // 如果在局域网 HTTP 环境，使用老式黑科技
+    return new Promise((resolve, reject) => {
+        let textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.top = "-99999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            document.execCommand('copy');
+            resolve();
+        } catch (err) {
+            reject(err);
+        } finally {
+            document.body.removeChild(textArea);
+        }
+    });
+};
