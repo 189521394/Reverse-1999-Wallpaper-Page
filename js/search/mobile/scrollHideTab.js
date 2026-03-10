@@ -2,17 +2,19 @@
 const container = document.documentElement
 // 获取tab栏
 const mobileTab = document.getElementById("mobileTab");
+// 获取用户选项
+const onlyTopShowTab = document.getElementById("onlyTopShowTab");
 
+
+
+// =============按照触摸动作显示=============
 // 记录触摸开始时的Y坐标
 let startY = 0;
 
-// 触摸开始时触发
-container.addEventListener('touchstart', (e) => {
+function touchStart(e) {
     startY = e.touches[0].clientY;
-}, {passive: true});
-
-// 触摸结束时触发
-container.addEventListener('touchend', (e) => {
+}
+function touchEnd(e) {
     if (isScrollLocked()) return;
 
     const endY = e.changedTouches[0].clientY;
@@ -31,4 +33,51 @@ container.addEventListener('touchend', (e) => {
             mobileTab.classList.remove("down");
         }
     }
-}, {passive: true});
+}
+function inTop() {
+    // =============仅在顶部显示tab=============
+    // 判定为顶部的像素值
+    const threshold = 5;
+
+    // 获取当前垂直滚动距离
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    // 如果滚动距离 >= 固定值
+    if (scrollTop >= threshold) {
+        // 隐藏
+        mobileTab.classList.add("down");
+    } else {
+        // 显示
+        mobileTab.classList.remove("down");
+    }
+}
+function touchShow() {
+    // =============按照触摸动作显示=============
+    window.removeEventListener('scroll', inTop);
+
+    // 绑定触摸事件
+    container.addEventListener('touchstart', touchStart, {passive: true});
+    container.addEventListener('touchend', touchEnd, {passive: true});
+}
+function onlyTop() {
+    // =============仅在顶部显示tab=============
+    container.removeEventListener('touchstart', touchStart);
+    container.removeEventListener('touchend', touchEnd);
+
+    window.addEventListener('scroll', inTop);
+    // 切换时刷新一次
+    inTop();
+}
+
+
+
+// 按钮变化时执行
+function refreshTab() {
+    if (onlyTopShowTab.checked) {
+        onlyTop();
+    } else {
+        touchShow();
+    }
+}
+// 页面刷新时执行一次
+window.addEventListener('DOMContentLoaded', refreshTab);

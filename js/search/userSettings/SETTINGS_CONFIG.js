@@ -43,7 +43,7 @@ const SETTINGS_CONFIG = [
     {
         logic: "onlyTopShowTab",
         animation: "OTSTSlider",
-        callback: null,
+        callback: refreshTab,
     },
     {
         logic: "autoSwitchTheme",
