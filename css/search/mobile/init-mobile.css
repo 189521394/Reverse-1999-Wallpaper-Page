@@ -154,6 +154,9 @@
         /*=============================body=============================*/
         height: auto;
         min-height: auto;
+
+        /*隐藏滚动条，防止浏览进度发生变化*/
+        overflow: hidden;
         /*=============================框架=============================*/
         /*大框架，包括控制栏*/
         #Filter {
@@ -161,6 +164,12 @@
             /*70高度是tab的高度*/
             height: calc(100dvh - 70px);
             margin-top: 0;
+        }
+        /*固定框架，防止切换高度异常*/
+        #Filter {
+            position: fixed;
+            top: 0;
+            left: 0;
         }
         /*框架布局*/
         #Filter {
@@ -308,7 +317,15 @@
         }
         /*=============================隐藏其他元素=============================*/
         #select {
-            display: none;
+            /*不使用display，为了保留浏览进度*/
+            opacity: 0;
+            z-index: -1;
+
+            /*禁止穿透触摸*/
+            pointer-events: none;
+
+            /*不可见*/
+            visibility: hidden;
         }
         #setButton {
             display: none;

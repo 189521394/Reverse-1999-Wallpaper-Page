@@ -34,13 +34,22 @@ function touchEnd(e) {
         }
     }
 }
+// =============仅在顶部显示tab=============
 function inTop() {
-    // =============仅在顶部显示tab=============
+    // 获取当前页面位置
+    const body = document.body;
+    if (body.classList.contains('tab-tags') || setBackground.classList.contains('show')) {
+        // 在tag和设置要常驻，set是特殊状态
+        mobileTab.classList.remove("down");
+        return;
+    }
+
     // 判定为顶部的像素值
     const threshold = 5;
 
     // 获取当前垂直滚动距离
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
 
     // 如果滚动距离 >= 固定值
     if (scrollTop >= threshold) {
@@ -54,6 +63,9 @@ function inTop() {
 function touchShow() {
     // =============按照触摸动作显示=============
     window.removeEventListener('scroll', inTop);
+
+    // 打开自动显出tab
+    mobileTab.classList.remove("down");
 
     // 绑定触摸事件
     container.addEventListener('touchstart', touchStart, {passive: true});
