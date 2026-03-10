@@ -16,3 +16,7 @@ mobileQuery.addEventListener('change', (e) => {
         window.location.reload();
     }
 });
+
+// 一个唯一计数器
+// 这个计数器非常重要，但是写在这个文件中了，因为我不想重新开一个文件
+let lockCounter = 0;

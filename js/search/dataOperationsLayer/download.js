@@ -40,7 +40,7 @@ async function download() {
             a.click();
         } catch (error) {
             console.error(error);
-            showDialog("下载失败，未知错误，详情查看控制台。", true);
+            showDialog("下载失败，未知错误，详情已打印至控制台。", true);
         }
     }
 }

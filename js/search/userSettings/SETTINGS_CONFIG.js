@@ -1,17 +1,8 @@
 const SETTINGS_CONFIG = [
+    // ================================通用================================
     {
         logic: "preciseScreening",
         animation: "PSSlider",
-        callback: null
-    },
-    {
-        logic: "cleanResult",
-        animation: "CRSlider",
-        callback: null
-    },
-    {
-        logic: "cleanText",
-        animation: "CTSlider",
         callback: null
     },
     {
@@ -40,11 +31,18 @@ const SETTINGS_CONFIG = [
         animation: "ASSlider",
         callback: null
     },
+    // ================================移动端设置================================
     {
         logic: "onlyTopShowTab",
         animation: "OTSTSlider",
         callback: refreshTab,
     },
+    {
+        logic: "clickToWallpaper",
+        animation: "CTWSlider",
+        callback: null,
+    },
+    // ================================主题控制================================
     {
         logic: "autoSwitchTheme",
         animation: "ASTSlider",
@@ -56,6 +54,18 @@ const SETTINGS_CONFIG = [
         callback: switchTheme,
         conflictWith: ["autoSwitchTheme"]
     },
+    // ================================清空按钮控制================================
+    {
+        logic: "cleanResult",
+        animation: "CRSlider",
+        callback: null
+    },
+    {
+        logic: "cleanText",
+        animation: "CTSlider",
+        callback: null
+    },
+    // ================================开发者选项================================
     {
         logic: "copyFileName",
         animation: "CFNSlider",

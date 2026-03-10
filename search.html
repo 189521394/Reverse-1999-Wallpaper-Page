@@ -22,6 +22,8 @@
     <script src="js/search/toggleScrollLock.js" defer></script>
     <!--预定义的所有标签-->
     <script src="js/search/tagPool.js" defer></script>
+    <!--只会显示一次的对话框-->
+    <script src="js/search/mobile/once-tips.js" defer></script>
 
     <!--====================系统提示组件(也属于初始化，较多)====================-->
     <!--提示框框架-->
@@ -253,6 +255,7 @@
             <div id="setPadding">
                 <!--所有设置内容，都在box内-->
                 <div id="setBox" class="custom-scroll">
+                    <!--主设置内容在此-->
                     <div id="setList" class="setContent">
                         <div id="generalTitle" class="title topTitle">通用</div>
                         <div class="line"></div>
@@ -320,6 +323,15 @@
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
                                 <span id="OTSTSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <label class="tips">
+                            (点击)提交后自动切换至浏览页
+                            <input type="checkbox" id="clickToWallpaper" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="CTWSlider" class="buttonSlider"></span>
                             </span>
                         </label>
                         <div id="themeTitle" class="title">主题控制</div>

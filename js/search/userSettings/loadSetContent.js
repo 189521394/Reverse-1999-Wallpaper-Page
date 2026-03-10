@@ -7,11 +7,18 @@ setItem.addEventListener("click", function(e) {
     // 点到空白处返回，防止控制台刷红
     if (!clickTab) return;
 
+    // ================移动端首次点击，弹出提示================
+    if (isMobileLayout) {
+        returnMenu();
+    }
+    // ================移动端首次点击，弹出提示================
+
     // 状态判断
     const isRolled = setItem.classList.contains("roll");
     const isAlreadyActive = clickTab.classList.contains("active");
 
-    // ==========================展开菜单（从标题返回全屏列表）==========================
+    // ==========================展开菜单(移动端)==========================
+    // 如果是移动端布局且 点击的按钮已经被激活且 菜单已经收起来
     if (isMobileLayout && isAlreadyActive && isRolled) {
         // 打开菜单
         setItem.classList.remove("roll");
@@ -43,6 +50,8 @@ setItem.addEventListener("click", function(e) {
     if (waitingTab) {
         waitingTab.classList.remove("activeWait");
     }
+    // 清理后才可以点击新元素
+    // 接下来的逻辑是(移动端)收起菜单，收起不需要的元素
 
     // 移动端排版控制
     if (isMobileLayout) {
