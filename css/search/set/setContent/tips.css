@@ -8,6 +8,7 @@
     /*防止多行文本挤在一起，用auto*/
     height: auto;
     margin-top: 10px;
+    color: var(--fontColor);
 }
 
 /*联系方式允许复制*/

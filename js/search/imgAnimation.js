@@ -19,6 +19,7 @@ const overlay = document.getElementById('imgOverlay');
 let activeImg = null;
 // 记录回到顶部按钮状态
 let topExist = false;
+const wallpaperLockID = "wallpaper_lock_" + (++lockCounter);
 
 function setAnimation(imgList) {
     imgList.forEach(img => {
@@ -61,7 +62,7 @@ function closeImage() {
     }
 
     // 取消滚动锁定
-    toggleScrollLock(false);
+    releaseScrollLock(wallpaperLockID);
 
     // 关闭遮罩
     overlay.classList.remove('show');
@@ -88,7 +89,7 @@ function openImage(imgInfo) {
     activeImg = imgInfo;
 
     // 滚动锁定
-    toggleScrollLock(true);
+    requestScrollLock(wallpaperLockID);
 
     // 打开遮罩
     overlay.classList.add('show');

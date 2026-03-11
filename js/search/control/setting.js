@@ -21,14 +21,16 @@ function setAni(boolean) {
     }
 }
 
+const setLockID = "set_lock_id";
+
 function openSettings() {
     // 滚动锁定，防止背景滚动
-    toggleScrollLock(true);
+    requestScrollLock(setLockID);
     setAni(true);
 }
 
 function closeSettings() {
-    toggleScrollLock(false);
+    releaseScrollLock(setLockID)
     setAni(false);
 }
 

@@ -40,8 +40,6 @@ function showDialog(showText, notice, hash) {
         }
     }
     return new Promise((resolve) => {
-        // 保存屏幕锁定状态，对话框关闭要还原
-        let ScrollLockState;
         // 设置文本
         noticeContent.textContent = showText;
 
@@ -61,8 +59,9 @@ function showDialog(showText, notice, hash) {
 
         // 显示对话框
         dialogAnimation(true);
-        ScrollLockState = isScrollLocked();
-        toggleScrollLock(true);
+        // 申请锁定屏幕
+        const lockID = "dialog_" + (++lockCounter)
+        requestScrollLock(lockID);
 
         // 处理返回值
         const handleCONFIRM = () => {
@@ -83,8 +82,8 @@ function showDialog(showText, notice, hash) {
             // 隐藏对话框
             dialogAnimation(false);
 
-            // 恢复锁定状态
-            toggleScrollLock(ScrollLockState);
+            // 释放锁定屏幕
+            releaseScrollLock(lockID);
         };
 
         // 添加监听器，等待点击

@@ -3,7 +3,8 @@
     width: 80vw;
     height: 70vh;
     /*标准弹窗颜色*/
-    background-color: #d3d1cf;
+    /*background-color: #d3d1cf;*/
+    background-color: var(--showTagBGC);
     z-index: var(--z-setBG);
 
     box-shadow: 0 0 30px 3px var(--setBigShadow);

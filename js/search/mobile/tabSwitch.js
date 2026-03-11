@@ -1,17 +1,20 @@
+const tagPageLockID = "tag_page_" + (++lockCounter);
 // 浏览页
 function switchWallpaper() {
     closeSettings();
     switchTab('tab-wallpaper', 'wallpaper');
-    toggleScrollLock(false);
+
+    releaseScrollLock(tagPageLockID);
 }
 
 // 标签页
 function switchTags() {
     closeSettings();
+    closeImage();
     switchTab('tab-tags', 'selectTag');
 
     // 防止tab隐藏
-    toggleScrollLock(true);
+    requestScrollLock(tagPageLockID);
 }
 
 // 设置页
@@ -20,7 +23,7 @@ function switchSet() {
     // 关掉开启的图片，防止覆盖
     closeImage();
     switchTab('tab-set', 'set', true);
-    toggleScrollLock(true);
+    // 设置自带锁，不需要申请锁定
 }
 
 // 每个页面的信息

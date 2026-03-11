@@ -25,7 +25,6 @@ const submitBtn = document.getElementById("submit");
 const clickToWallpaper = document.getElementById("clickToWallpaper");
 submitBtn.addEventListener("click", ()=> {
     if (isMobileLayout && clickToWallpaper.checked) {
-        // 一会修改
         switchWallpaper();
     }
 });

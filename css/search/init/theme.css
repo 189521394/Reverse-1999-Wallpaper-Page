@@ -61,6 +61,9 @@
 
     /*窗口小阴影*/
     --setSmallShadow: rgba(0, 0, 0, 0.9);
+
+    /*链接颜色*/
+    --linkColor: #00ff00;
 }
 /*手动亮色模式*/
 :root[data-theme='light'] {
@@ -123,6 +126,9 @@
 
     /*窗口小阴影*/
     --setSmallShadow: rgba(0, 0, 0, 0.9);
+
+    /*链接颜色*/
+    --linkColor: #0000ff;
 }
 /*自动亮色模式*/
 @media (prefers-color-scheme: light) {
@@ -186,6 +192,9 @@
 
         /*窗口小阴影*/
         --setSmallShadow: rgba(0, 0, 0, 0.9);
+
+        /*链接颜色*/
+        --linkColor: #0000ff;
     }
 }
 /*主题切换动画*/

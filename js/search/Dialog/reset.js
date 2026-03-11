@@ -5,8 +5,5 @@ async function reset() {
         // 清空且刷新
         localStorage.clear();
         location.reload();
-    } else {
-        // 点取消之后重新锁定一下，因为对话框会取消锁定
-        toggleScrollLock(true);
     }
 }

@@ -27,16 +27,17 @@
 /*标题，发件人和日期*/
 .mailTitle {
     font-size: 30px;
+    color: var(--fontColor);
 }
 
 .mailSender {
     font-size: 20px;
-    color: #5D533C;
+    color: var(--tagBGC);
 }
 
 .mailDate {
     font-size: 20px;
-    color: #5D533C;
+    color: var(--tagBGC);
 }
 
 /*邮票控制，紧贴底部*/
@@ -46,6 +47,8 @@
     align-items: flex-end;
     line-height: 45px;
     font-size: 45px;
+
+    color: var(--fontColor);
 }
 
 /*===============================================邮件内容===============================================*/
@@ -53,6 +56,8 @@
     font-size: 20px;
     /*禁止自动折叠HTML里面的空格和换行*/
     white-space: pre-wrap;
+
+    color: var(--fontColor);
 }
 
 /*===============================================附件===============================================*/

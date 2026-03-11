@@ -65,13 +65,14 @@
 /*通用标题*/
 .title {
     font-size: 30px;
+    color: var(--fontColor);
 }
 
 /*通用分割线*/
 .line {
     height: 1px;
     width: auto;
-    background-color: black;
+    background-color: var(--fontColor);
 }
 
 
