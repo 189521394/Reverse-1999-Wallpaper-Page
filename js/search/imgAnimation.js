@@ -121,9 +121,9 @@ function calculateAnimation(imgInfo) {
     const imgCenterY = rect.top + rect.height / 2;
 
     // 获取屏幕中心点坐标
-    const viewportCenterX = window.innerWidth / 2;
-    // 设置高度偏移量(仅pc)，由用户选项决定
+    // 设置高度偏移量，由用户选项决定
     let offsetUp = showTags.checked ? window.innerHeight * 0.03 : 0;
+    const viewportCenterX = window.innerWidth / 2;
     const viewportCenterY = (window.innerHeight / 2) - offsetUp;
 
     // 计算需要移动的距离
