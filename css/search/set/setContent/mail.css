@@ -32,12 +32,12 @@
 
 .mailSender {
     font-size: 20px;
-    color: var(--tagBGC);
+    color: var(--controlButtonBGC);
 }
 
 .mailDate {
     font-size: 20px;
-    color: var(--tagBGC);
+    color: var(--controlButtonBGC);
 }
 
 /*邮票控制，紧贴底部*/

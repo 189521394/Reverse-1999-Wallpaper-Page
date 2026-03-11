@@ -44,19 +44,19 @@
 
 #setBox::-webkit-scrollbar-track {
     /* 滚动条轨道 */
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--scrollBarTrack);
 }
 
 #setBox::-webkit-scrollbar-thumb {
     /* 滚动条滑块 */
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--scrollBarThumb);
     border-radius: 0;
 }
 
 @media (hover: hover) {
     #setBox::-webkit-scrollbar-thumb:hover {
         /* 悬停效果 */
-        background: rgba(0, 0, 0, 0.6);
+        background: var(--scrollBarHover);
     }
 }
 
