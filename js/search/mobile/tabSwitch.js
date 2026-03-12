@@ -1,12 +1,12 @@
 const tagPageLockID = "tag_page_" + (++lockCounter);
 // 浏览页
 function switchWallpaper() {
-    hideToTopButton();
-
     closeSettings();
     switchTab('tab-wallpaper', 'wallpaper');
 
     releaseScrollLock(tagPageLockID);
+
+    updateToTopBtnVisibility();
 }
 
 // 标签页
@@ -17,6 +17,8 @@ function switchTags() {
 
     // 防止tab隐藏
     requestScrollLock(tagPageLockID);
+
+    updateToTopBtnVisibility();
 }
 
 // 设置页

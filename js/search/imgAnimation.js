@@ -7,18 +7,16 @@
 // 如果在这里写了checked，每次修改都需要手动提交筛选才生效
 const showTags = document.getElementById("showTags");
 
+// 下载按钮
 const downloadButton = document.getElementById("download");
-
-// 由于一些浏览器本身的bug，个性化鼠标会和toTop的模糊冲突，所以打开图片要关闭回到顶部按钮
-const toTopBtn = document.getElementById("toTop");
 
 // 图片专属的遮罩层
 const overlay = document.getElementById('imgOverlay');
 
 // 记录当前哪张图被放大了
 let activeImg = null;
-// 记录回到顶部按钮状态
-let topExist = false;
+
+// 屏幕滚动锁定id
 const wallpaperLockID = "wallpaper_lock_" + (++lockCounter);
 
 function setAnimation(imgList) {
@@ -70,10 +68,8 @@ function closeImage() {
     // 隐藏下载按钮
     downloadButton.classList.add("hide");
 
-    // 恢复回到顶部按钮状态
-    if (topExist) {
-        toTopBtn.classList.remove('hide');
-    }
+    // 更新回到顶部按钮状态
+    updateToTopBtnVisibility();
 
     // 隐藏图片标签
     if (showTags.checked) {
@@ -97,14 +93,8 @@ function openImage(imgInfo) {
     // 显示下载按钮
     downloadButton.classList.remove("hide");
 
-    // 如果回到顶部按钮没被隐藏(显示了)
-    if (!toTopBtn.classList.contains('hide')) {
-        // 隐藏按钮，标记按钮状态
-        topExist = true;
-        toTopBtn.classList.add('hide');
-    } else {
-        topExist = false;
-    }
+    // 更新回到顶部按钮状态
+    updateToTopBtnVisibility();
 
     // 显示图片标签
     if (showTags.checked) {
