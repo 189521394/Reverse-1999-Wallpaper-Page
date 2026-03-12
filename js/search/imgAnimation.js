@@ -166,6 +166,7 @@ function calculateAnimation(imgInfo) {
         scaleX = (window.innerWidth * baseRatio * baseScale) / realImgHeight;
         scaleY = (window.innerHeight * baseRatio * baseScale) / realImgWidth;
     } else {
+        // pc端
         scaleX = (window.innerWidth * baseRatio * baseScale) / rect.width;
         scaleY = (window.innerHeight * baseRatio * baseScale) / rect.height;
     }

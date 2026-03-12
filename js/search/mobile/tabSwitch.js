@@ -1,6 +1,8 @@
 const tagPageLockID = "tag_page_" + (++lockCounter);
 // 浏览页
 function switchWallpaper() {
+    hideToTopButton();
+
     closeSettings();
     switchTab('tab-wallpaper', 'wallpaper');
 

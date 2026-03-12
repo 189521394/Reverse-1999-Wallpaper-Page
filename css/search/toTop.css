@@ -10,7 +10,7 @@
     background-color: var(--controlButtonBGC);
     color: var(--fontHoverColor);
     opacity: 1;
-    transition: background-color 250ms, color 250ms, opacity 250ms;
+    transition: background-color 250ms, color 250ms, opacity 250ms, bottom 250ms;
 }
 
 /*居中内容*/

@@ -6,6 +6,9 @@
 
     /*提交结果标签的结构高度*/
     --height-submit: 25dvh;
+
+    /*根据tab状态控制元素位置*/
+    --bottom-for-tab: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -130,7 +133,45 @@
         }
         /*=============================下：回到顶部和标签显示=============================*/
         #toTop {
-            bottom: 90px;
+            bottom: calc(var(--bottom-for-tab) + 20px);
+
+            transition: background-color 250ms, color 250ms, opacity 250ms, bottom 250ms;
+        }
+
+        /*间距*/
+        #returnTag {
+            padding: 8px 8px 10px 8px;
+            gap: 8px;
+        }
+        /*边框*/
+        #returnTag {
+            border-style: solid;
+            border-width: 1px 0 0 0;
+            border-color: var(--goldLine);
+        }
+        /*根据tab控制显示位置*/
+        #returnTag {
+            margin-bottom: var(--bottom-for-tab);
+        }
+        /*首位左右边距*/
+        .tags:first-child {
+            margin-left: 8px;
+        }
+        .tags:last-child {
+            margin-right: 8px;
+        }
+        .tags {
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+
+            min-width: 100px;
+            width: auto;
+        }
+
+        /*滚动条*/
+        #returnTag::-webkit-scrollbar {
+            height: 10px;
         }
         /*=============================隐藏其他元素=============================*/
         #ShortcutKey {
