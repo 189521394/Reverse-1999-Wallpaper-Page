@@ -13,7 +13,7 @@
 }
 /*定义提示文本*/
 #submitPool::before {
-    content: "请选择需要筛选的标签";
+    content: "选择标签";
 
     /*居中*/
     position: absolute;
