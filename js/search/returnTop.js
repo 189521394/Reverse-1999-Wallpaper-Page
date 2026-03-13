@@ -4,6 +4,7 @@ function toTop(elementId) {
     element.scrollIntoView({
         behavior:"smooth"
     });
+    refreshTab();
 }
 
 let toTopBtn = null;
