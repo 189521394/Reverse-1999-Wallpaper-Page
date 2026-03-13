@@ -13,6 +13,16 @@
     z-index: var(--z-setItem);
     box-shadow: 0 0 9px 3px var(--setSmallShadow);
 }
+/*右下角小字*/
+#r1999 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#r1999 {
+    color: var(--goldLine);
+    transition: color 250ms, opacity 250ms;
+}
 
 
 /*通用样式*/
