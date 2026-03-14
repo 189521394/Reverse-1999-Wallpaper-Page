@@ -1,5 +1,5 @@
 // 定义 R2 域名
-const R2_DOMAIN = "https://pub-ebded49967fb4d42b70fd6fa38d875f9.r2.dev";
+const R2_DOMAIN = "https://img.r9wallpaper.org";
 
 // 判断当前是否在本地运行 (localhost/局域网调试)
 const isLocal =
