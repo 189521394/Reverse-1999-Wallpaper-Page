@@ -34,15 +34,8 @@ body.mode-copy * {
 
 
 /*加载字体*/
-@font-face {
-    font-family: "思源宋体-Medium";
-    src: url("/font/Font-Medium.otf") format("opentype");
-    font-weight: auto;
-    font-style: auto;
-}
-
 body {
-    font-family: 思源宋体-Medium, sans-serif;
+    font-family: Source Han Serif CN Medium, sans-serif;
 }
 
 
