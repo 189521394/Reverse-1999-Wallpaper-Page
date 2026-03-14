@@ -84,6 +84,17 @@ html::-webkit-scrollbar {
     }
 }
 
+/*==============苹果设备效果==============*/
+/*点击遮罩*/
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+/*微小样式*/
+button, input, select, textarea {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 /*样式调用只需要加上class，写在html文件中*/
 /*有些特殊元素(如设置)拥有特殊的滚动条样式，不需要加*/
 
