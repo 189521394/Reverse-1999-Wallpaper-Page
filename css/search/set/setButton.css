@@ -1,3 +1,24 @@
+/*==============================控制按钮大小==============================*/
+:root {
+    --btn-border-width: 160px;
+    --btn-border-height: 30px;
+    --btn-gap: 2px;
+    --btn-slide-font-size: 22px;
+    --btn-click-font-size: 28px;
+
+    /*减去上下边距或者左右边距，2*2 = 4*/
+    --btn-inner-gap: calc(var(--btn-gap) * 2);
+
+    /*内部单个元素，等于边框大小除2(两个元素)再减去边距(左右两个边距2 * 2)*/
+    --btn-single-ele-width: calc((var(--btn-border-width) / 2) - var(--btn-inner-gap));
+    --btn-single-ele-height: calc(var(--btn-border-height) - var(--btn-inner-gap));
+    /*激活左侧边距，总宽度除2 + 自己的 2px 边框*/
+    --btn-slide-active-left: calc((var(--btn-border-width) / 2) + var(--btn-gap));
+
+    /*点击按钮，比普通滑块高 4px*/
+    --btn-click-height: calc(var(--btn-border-height) + var(--btn-inner-gap));
+}
+
 /*=======================================滑块按钮，可以开关=======================================*/
 /*真实选项按钮样式*/
 .switch {
@@ -10,8 +31,8 @@
 /*按钮框架*/
 .buttonBorder {
     background-color: #404040;
-    width: 160px;
-    height: 30px;
+    width: var(--btn-border-width);
+    height: var(--btn-border-height);
 }
 
 /*设置定位逻辑和排版*/
@@ -26,15 +47,16 @@
 
 /*实现边框统一控制*/
 .buttonBorder {
-    padding: 2px;
+    padding: var(--btn-gap);
     box-sizing: border-box;
 }
 
 /*统一控制按钮文本*/
 .buttonText {
-    width: 76px;
-    height: 26px;
-    line-height: 26px;
+    width: var(--btn-single-ele-width);
+    height: var(--btn-single-ele-height);
+    line-height: var(--btn-single-ele-height);
+    font-size: var(--btn-slide-font-size);
     text-align: center;
     z-index: var(--z-buttonText);
 
@@ -47,10 +69,10 @@
 /*同时，绝对定位也不会受到父元素的padding影响，所以这里需要写left和top，不然滑块会紧贴父元素*/
 .buttonSlider {
     position: absolute;
-    left: 2px;
-    top: 2px;
-    width: 76px;
-    height: 26px;
+    left: var(--btn-gap);
+    top: var(--btn-gap);
+    width: var(--btn-single-ele-width);
+    height: var(--btn-single-ele-height);
 
     z-index: var(--z-buttonSlider);
 
@@ -63,7 +85,7 @@
 /*滑块激活状态*/
 .buttonSlider.active {
     background-color: #D16430;
-    left: 82px;
+    left: var(--btn-slide-active-left);
 
     will-change: background-color, left;
     transition: background-color 250ms cubic-bezier(0.770, 0.000, 0.175, 1.000),
@@ -74,9 +96,12 @@
 /*按钮框架*/
 .clickButton {
     background-color: #D16430;
-    width: 160px;
-    height: 34px;
+    width: var(--btn-border-width);
+    height: var(--btn-click-height);
     box-sizing: border-box;
+
+    /*要写字体颜色，不然会从父元素继承*/
+    color: #0a0a0a;
 
     transition: background-color 250ms;
 }
@@ -90,9 +115,9 @@
 
 /*排版*/
 .clickButton {
-    line-height: 34px;
+    line-height: var(--btn-click-height);
     text-align: center;
-    font-size: 28px;
+    font-size: var(--btn-click-font-size);
     z-index: var(--z-buttonBorder);
 }
 

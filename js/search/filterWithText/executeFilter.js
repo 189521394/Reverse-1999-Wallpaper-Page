@@ -12,6 +12,8 @@ function executeFilter() {
     DisplayImg(select);
     // 并标记上加载变量
     alreadySubmit = true;
+    // 标记首次推荐
+    alreadyRecommend = true;
 }
 
 // 点击搜索触发

@@ -7,6 +7,11 @@ const allTagsPool = [
     ...versionCodePool, ...yearPool, ...lightAndDarkPool, ...specialPool
 ];
 
+// 默认推荐
+const recommendTags = ["1987宇宙组曲", "地球上最后的夜晚", "鹭鸶剪", "夜色温柔", "疯癫与文明"];
+// 首次推荐标记
+let alreadyRecommend = false;
+
 // 作为下面函数和监听器的公共变量，不需要重复引入
 const inputBox = document.getElementById('input');
 const inputTips = document.getElementById('inputTips');
@@ -34,8 +39,15 @@ inputBox.addEventListener('input', function() {
     // 精准获取光标正在修改的词
     const currentWord = wordsArray[wordsArray.length - 1];
 
-    if (!currentWord) {
-        // 如果没有输入，直接返回
+    if (!currentWord && !alreadyRecommend) {
+        // 如果没有输入，且没有提交过，展示推荐标签
+        filteredTags = recommendTags;
+        currentPage = 0;
+        selectedIndex = 0;
+        renderTips();
+        return;
+    } else if (!currentWord) {
+        // 提交过了，不需要展示推荐
         showInputTips(false);
         return;
     }
@@ -220,6 +232,13 @@ document.addEventListener('mousedown', function(e) {
     if (e.target !== inputBox && !inputTips.contains(e.target)) {
         showInputTips(false);
     } else if (e.target === inputBox){
+        // 如果是第一次打开（当前没有任何候选词），且输入框是空的，且没有推荐过，就加载默认词
+        if (filteredTags.length === 0 && inputBox.value.trim() === '' && !alreadyRecommend) {
+            filteredTags = recommendTags;
+            currentPage = 0;
+            selectedIndex = 0;
+            renderTips();
+        }
         // 打开不需要刷新，省心，虽然会遗留一条提示词
         // 这是特性，当历史记录用了，就酱
         showInputTips(true);

@@ -1,17 +1,25 @@
 @charset "UTF-8";
 /*编码不能删，因为下面那个content里面显示的中文，如果删了会乱码*/
-:root {
-    /*标签页左侧列表宽度*/
-    --width-left-list: 80px;
-
-    /*提交结果标签的结构高度*/
-    --height-submit: 25dvh;
-
-    /*根据tab状态控制元素位置*/
-    --bottom-for-tab: 0;
-}
 
 @media screen and (max-width: 768px) {
+    :root {
+        /*标签页左侧列表宽度*/
+        --width-left-list: 80px;
+
+        /*提交结果标签的结构高度*/
+        --height-submit: 25dvh;
+
+        /*根据tab状态控制元素位置*/
+        --bottom-for-tab: 0;
+
+        /*==================设置按钮大小控制==================*/
+        /*弃用，DPR无法对齐😅😅😅*/
+        /*--btn-border-width: 128px;*/
+        /*--btn-border-height: 24px;*/
+        /*--btn-gap: 2px;*/
+        /*--btn-slide-font-size: 17px;*/
+        /*--btn-click-font-size: 22px;*/
+    }
     /*========================================主页样式========================================*/
     body.tab-wallpaper {
         /*=============================body=============================*/
@@ -91,6 +99,34 @@
             min-height: 90vh;
             height: auto;
             margin-bottom: 20vh;
+        }
+
+        /*空状态引导*/
+        #select::before {
+            content: "没有符合条件的图像\A尝试输入或筛选";
+
+            font-size: 24px;
+            color: var(--fontColor);
+            opacity: 1;
+
+            transition: opacity 250ms;
+
+            /*自动换行*/
+            white-space: pre-wrap;
+        }
+        /*布局控制*/
+        #select::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+        /*当里面有元素时删除文本*/
+        #select:not(:empty)::before {
+            opacity: 0;
+            transition: opacity 250ms;
         }
 
         /*图片展示方式*/
@@ -513,7 +549,18 @@
 
     /*开关大小*/
     .buttonBorder {
-        zoom: 0.80;
+        transform: scale(0.8);
+        transform-origin: right center;
+        /*消除幽灵边距*/
+        margin-left: -32px;
+        flex-shrink: 0;
+    }
+    /*点击按钮*/
+    .clickButton {
+        transform: scale(0.8);
+        transform-origin: right center;
+        /*消除幽灵边距*/
+        margin-left: -32px;
         flex-shrink: 0;
     }
 
@@ -537,12 +584,6 @@
     .mailAttachment {
         height: 80px;
     }
-
-    /*点击按钮*/
-    .clickButton {
-        zoom: 0.8;
-    }
-
     /*========================================提示框========================================*/
     #noticeBox {
         height: calc(100dvh - 70px);
