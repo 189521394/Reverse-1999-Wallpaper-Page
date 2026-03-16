@@ -15,13 +15,7 @@ const animation = 800
 let isAnimating = false;
 
 // 图片集合，存储所有显示的图片
-const imgList = [
-            "../Reverse-1999-CN-Asset-HD/Home/1_7_at_chudengtaji1.png",
-            "../Reverse-1999-CN-Asset-HD/Home/1_9_at_shatangaobie1.png",
-            "../Reverse-1999-CN-Asset-HD/Home/2_6_at_hangchuan.png",
-            "../Reverse-1999-CN-Asset-HD/Home/2_7_at_yuanlv.png",
-            "../Reverse-1999-CN-Asset-HD/Home/2_8_at_yuzhong.png"
-        ]
+const imgList = []
 
 current.style.backgroundImage = `url(${imgList[index]})`;
 

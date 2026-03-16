@@ -1,0 +1,29 @@
+#redirect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#redirect {
+    background-color: #0a0a0a;
+    color: #D16430;
+    font-size: 30px;
+    user-select: none;
+}
+#redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#dock {
+    display: none;
+    visibility: hidden;
+}
+body {
+    overflow: hidden;
+}
