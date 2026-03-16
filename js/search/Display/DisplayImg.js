@@ -14,6 +14,12 @@ async function DisplayImg(tags) {
     // 显示结果数量
     result.textContent = quantity + "个筛选结果";
 
+    // 清空结果之前先停止网络流下载
+    const allImg = document.querySelectorAll(".imgs");
+    allImg.forEach((img) => {
+        img.src = "";
+        img.removeAttribute('src');
+    });
     // 清空现有内容
     box.replaceChildren();
 
