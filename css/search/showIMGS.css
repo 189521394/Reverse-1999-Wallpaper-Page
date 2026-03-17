@@ -18,3 +18,8 @@
     justify-content: stretch;
     align-content: start;
 }
+
+/*当处于简洁模式时隐藏文本*/
+.conciseMode #select::before {
+    opacity: 0 !important;
+}

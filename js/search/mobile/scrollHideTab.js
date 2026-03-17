@@ -91,5 +91,3 @@ function refreshTab() {
         touchShow();
     }
 }
-// 页面刷新时执行一次
-window.addEventListener('DOMContentLoaded', refreshTab);

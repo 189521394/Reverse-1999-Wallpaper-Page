@@ -35,6 +35,10 @@
     opacity: 0;
     transition: opacity 250ms;
 }
+/*当处于简洁模式时隐藏文本*/
+.conciseMode #submitPool::before {
+    opacity: 0 !important;
+}
 
 
 /*定义布局样式*/

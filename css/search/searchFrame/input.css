@@ -4,7 +4,7 @@
     outline: none;
     border: 1px solid var(--imgBorderColor);
 
-    transition: background-color 250ms;
+    transition: color 250ms, background-color 250ms;
 }
 /*文本控制*/
 #input {
@@ -12,4 +12,10 @@
     /*normal是为了防止选中文本时文本位置变化*/
     line-height: normal;
     font-family: inherit;
+}
+
+/*当处于简洁模式时隐藏文本*/
+.conciseMode #input::placeholder {
+    color: transparent !important;
+    transition: color 250ms, background-color 250ms;
 }

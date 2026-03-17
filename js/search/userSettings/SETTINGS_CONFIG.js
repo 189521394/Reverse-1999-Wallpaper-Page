@@ -34,7 +34,7 @@ const SETTINGS_CONFIG = [
     {
         logic: "hideTips",
         animation: "HTSlider",
-        callback: null
+        callback: conciseMode
     },
     // ================================移动端设置================================
     {

@@ -107,6 +107,8 @@ function initSettingsSystem() {
     // 初始化之后要刷新一些东西
     switchTheme();
     copyMode();
+    refreshTab();
+    conciseMode();
 }
 
 // 页面加载的时候初始化
