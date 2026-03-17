@@ -31,6 +31,11 @@ const SETTINGS_CONFIG = [
         animation: "ASSlider",
         callback: null
     },
+    {
+        logic: "hideTips",
+        animation: "HTSlider",
+        callback: null
+    },
     // ================================移动端设置================================
     {
         logic: "onlyTopShowTab",
