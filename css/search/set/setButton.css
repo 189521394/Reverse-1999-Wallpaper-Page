@@ -4,6 +4,7 @@
     --btn-border-height: 30px;
     --btn-gap: 2px;
     --btn-slide-font-size: 22px;
+    --btn-theme-font-size: 20px;
     --btn-click-font-size: 28px;
 
     /*减去上下边距或者左右边距，2*2 = 4*/
@@ -61,6 +62,11 @@
     z-index: var(--z-buttonText);
 
     color: #404040;
+}
+
+/*特殊的按钮文本*/
+.theme-text {
+    font-size: var(--btn-theme-font-size);
 }
 
 /*滑块*/

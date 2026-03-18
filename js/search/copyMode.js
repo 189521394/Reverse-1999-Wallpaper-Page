@@ -1,3 +1,4 @@
+// 允许复制文本
 function copyMode() {
     const allow = document.getElementById("allowCopy").checked;
 

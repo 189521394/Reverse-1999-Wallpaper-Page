@@ -13,42 +13,44 @@ const downloadButton = document.getElementById("download");
 // 图片专属的遮罩层
 const overlay = document.getElementById('imgOverlay');
 
+// 获取图片容器
+const imgContainer = document.getElementById("select");
+
 // 记录当前哪张图被放大了
 let activeImg = null;
 
 // 屏幕滚动锁定id
 const wallpaperLockID = "wallpaper_lock_" + (++lockCounter);
 
-function setAnimation(imgList) {
-    imgList.forEach(img => {
-        img.addEventListener('click', (e) => {
-            // 防止冒泡
-            e.stopPropagation();
+imgContainer.addEventListener('click', (e) => {
+    // 检查点击的是不是图片
+    const img = e.target.closest('.imgs');
+    if (!img) return;
 
-            // 如果当前点击的图已经是激活状态，则关闭
-            if (img.classList.contains('active')) {
-                closeImage();
-                return;
-            }
+    // 防止图片未加载完成时计算出错
+    if (!img.complete || img.naturalWidth === 0) return;
 
-            // 如果有其他图开着，先关掉
-            if (activeImg) {
-                activeImg.classList.remove('active');
-            }
+    e.stopPropagation();
 
-            // 计算图像位置
-            calculateAnimation(img);
-
-            // 打开图像
-            openImage(img);
-        });
-    });
-
-    // 点击遮罩层关闭
-    if (!overlay.hasAttribute('listener-already-exists')) {
-        overlay.addEventListener('click', closeImage);
-        overlay.setAttribute('listener-already-exists', 'true');
+    // 如果当前点击的图已经是激活状态，则关闭
+    if (img.classList.contains('active')) {
+        closeImage();
+        return;
     }
+
+    // 如果有其他图开着，先关掉
+    if (activeImg) {
+        activeImg.classList.remove('active');
+    }
+
+    // 计算图像位置并打开
+    calculateAnimation(img);
+    openImage(img);
+});
+
+// 点击遮罩关闭
+if (overlay) {
+    overlay.addEventListener('click', closeImage);
 }
 
 // 关闭图像
@@ -103,6 +105,12 @@ function openImage(imgInfo) {
 }
 // 图片最终样式计算
 function calculateAnimation(imgInfo) {
+    // 防止在图片未加载完成时点击导致除以 0 (Infinity) 崩溃
+    if (!imgInfo.complete || imgInfo.naturalWidth === 0) {
+        // 拒绝放大未加载好的图片
+        return;
+    }
+
     // 获取图片的详细信息
     const rect = imgInfo.getBoundingClientRect();
 

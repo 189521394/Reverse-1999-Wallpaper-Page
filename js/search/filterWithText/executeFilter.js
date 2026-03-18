@@ -5,7 +5,10 @@ function executeFilter() {
     let rawText = input.value.trim();
 
     // 如果没输入，执行清空操作
-    if (rawText === "") clean();
+    if (rawText === "") {
+        clean();
+        return;
+    }
 
     // 把内容按照空格分割，存入数组，进行筛选
     let select = rawText.split(/\s+/);
