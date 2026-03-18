@@ -21,12 +21,6 @@ const SETTINGS_CONFIG = [
         callback: null
     },
     {
-        logic: "autoReplaceAndSubmit",
-        animation: "ARASSlider",
-        callback: null,
-        dependsOn: ["autoReplace"]
-    },
-    {
         logic: "autoSubmit",
         animation: "ASSlider",
         callback: null

@@ -7,7 +7,6 @@ const autoReplaceList = [
     "year"
 ]
 const autoReplace = document.getElementById("autoReplace");
-const autoReplaceAndSubmit = document.getElementById("autoReplaceAndSubmit");
 const autoSubmit = document.getElementById("autoSubmit");
 
 document.getElementById("tagPool").addEventListener("click",function (e) {
@@ -37,9 +36,8 @@ document.getElementById("tagPool").addEventListener("click",function (e) {
                     existingSameCategoryTags[i].remove();
                 }
 
-                // 检查提交操作方式
-                // 同类自动提交 或 默认自动提交
-                if (autoReplaceAndSubmit.checked || autoSubmit.checked) {
+                // 检查自动提交
+                if (autoSubmit.checked) {
                     // 直接调用最顶层提交函数
                     submit();
                 }

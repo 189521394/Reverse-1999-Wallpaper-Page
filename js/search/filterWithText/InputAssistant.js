@@ -47,8 +47,6 @@ inputBox.addEventListener('input', function() {
         renderTips();
         return;
     } else if (!currentWord) {
-        // 提交过了，不需要展示推荐
-        showInputTips(false);
         return;
     }
 
@@ -56,8 +54,6 @@ inputBox.addEventListener('input', function() {
     let matches = allTagsPool.filter(tag => tag.toLowerCase().includes(currentWord.toLowerCase()));
 
     if (matches.length === 0) {
-        // 没匹配到
-        showInputTips(false);
         return;
     }
 
@@ -135,8 +131,6 @@ function selectTag(wordIndex) {
 
     // 最终结果：前半部分 + 后半部分
     inputBox.value = newTextBefore + textAfterCursor;
-
-    showInputTips(false);
 
     // 保持焦点，并把光标放在补全的词的后面
     setTimeout(() => {
@@ -259,4 +253,16 @@ function showInputTips(boolean) {
         inputTips.style.height = '0';
         inputTips.style.borderWidth = '0px';
     }
+}
+
+//======================================移动端======================================
+if (isMobileLayout) {
+    // 只要用户在屏幕上滑动了手指，且当前焦点在输入框里
+    window.addEventListener('touchmove', function() {
+        // document.activeElement 可以获取当前拥有焦点的元素
+        if (document.activeElement === inputBox) {
+            inputBox.blur();      // 失去焦点
+            showInputTips(false); // 关闭提示框
+        }
+    }, { passive: true });
 }
