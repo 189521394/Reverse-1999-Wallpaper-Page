@@ -2,16 +2,17 @@
 /*初始化*/
 header {
     position: fixed;
-    top: -10vh;
+    top: 0;
     left: 0;
     width: auto;
-    height: 120vh;
+    height: 100vh;
     z-index: var(--z-dock);
 }
 
 /*居中外框*/
 header {
-    display: flex;
+    /*先关了，填坑后续再说*/
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -28,7 +29,7 @@ header {
 /*内框样式*/
 #dock {
     width: auto;
-    height: 120vh;
+    height: 100vh;
     backdrop-filter: blur(100px);
 }
 

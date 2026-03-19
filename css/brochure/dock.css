@@ -2,17 +2,16 @@
 /*初始化*/
 header {
     position: fixed;
-    top: 0;
+    top: -10vh;
     left: 0;
     width: auto;
-    height: 100vh;
+    height: 120vh;
     z-index: var(--z-dock);
 }
 
 /*居中外框*/
 header {
-    /*先关了，填坑后续再说*/
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -29,7 +28,7 @@ header {
 /*内框样式*/
 #dock {
     width: auto;
-    height: 100vh;
+    height: 120vh;
     backdrop-filter: blur(100px);
 }
 
@@ -49,7 +48,6 @@ header {
 
 /*图片样式（临时统一控制，没图标资源）*/
 .menu_img {
-    content: url("../../pic/light/light.svg");
     border-radius: 10px;
 }
 
