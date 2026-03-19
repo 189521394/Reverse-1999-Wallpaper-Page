@@ -25,15 +25,15 @@
 }
 
 
-/*通用样式*/
+/*首个元素样式*/
 .setItem:first-child {
     margin-top: 30px;
 }
-
+/*通用样式*/
 .setItem {
     margin-top: 20px;
     width: auto;
-    height: 8vh;
+    height: 70px;
 
     background-color: #d3d1cf;
     transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
@@ -50,7 +50,7 @@
 /*文本控制*/
 .setItem {
     font-size: 30px;
-    line-height: 8vh;
+    line-height: 70px;
     text-align: center;
 }
 

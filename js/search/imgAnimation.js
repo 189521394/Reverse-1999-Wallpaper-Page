@@ -28,7 +28,7 @@ imgContainer.addEventListener('click', (e) => {
     if (!img) return;
 
     // 防止图片未加载完成时计算出错
-    if (!img.complete || img.naturalWidth === 0) return;
+    if (img.naturalWidth === 0) return;
 
     e.stopPropagation();
 
@@ -106,7 +106,7 @@ function openImage(imgInfo) {
 // 图片最终样式计算
 function calculateAnimation(imgInfo) {
     // 防止在图片未加载完成时点击导致除以 0 (Infinity) 崩溃
-    if (!imgInfo.complete || imgInfo.naturalWidth === 0) {
+    if (imgInfo.naturalWidth === 0) {
         // 拒绝放大未加载好的图片
         return;
     }

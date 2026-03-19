@@ -48,7 +48,6 @@ header {
 
 /*图片样式（临时统一控制，没图标资源）*/
 .menu_img {
-    content: url("../../pic/light/light.svg");
     border-radius: 10px;
 }
 
