@@ -27,16 +27,16 @@ imgContainer.addEventListener('click', (e) => {
     const img = e.target.closest('.imgs');
     if (!img) return;
 
-    // 防止图片未加载完成时计算出错
-    if (img.naturalWidth === 0) return;
-
-    e.stopPropagation();
-
     // 如果当前点击的图已经是激活状态，则关闭
     if (img.classList.contains('active')) {
         closeImage();
         return;
     }
+
+    // 防止图片未加载完成时计算出错
+    if (img.naturalWidth === 0) return;
+
+    e.stopPropagation();
 
     // 如果有其他图开着，先关掉
     if (activeImg) {
@@ -58,6 +58,7 @@ function closeImage() {
     // 清空记录的图像
     if (activeImg) {
         activeImg.classList.remove('active');
+        activeImg.src = activeImg.dataset.thumb;
         activeImg = null;
     }
 
@@ -80,8 +81,23 @@ function closeImage() {
 }
 // 开启图像
 function openImage(imgInfo) {
+    // 取出原图
+    let rawPath = imgInfo.dataset.original;
+
     // 开启图像
     imgInfo.classList.add('active');
+
+    // 加载状态
+    imgInfo.classList.add('is-loading');
+    // 监听加载，这个代码是加载完成后执行的
+    imgInfo.onload = () => {
+        imgInfo.classList.remove('is-loading');
+        imgInfo.onload = null; // 销毁监听器，释放内存
+    };
+
+    // 删除自带的src，瞬间替换新的，做到逐行加载，同时背景作为保底，防止闪现
+    imgInfo.removeAttribute('src');
+    imgInfo.src = rawPath;
 
     // 记录显示图像
     activeImg = imgInfo;

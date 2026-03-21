@@ -58,12 +58,44 @@ document.addEventListener('DOMContentLoaded', () => {
             isMouseDown = false;
             updateCursorState();
         });
+
+        // 拖拽汇报
+        window.addEventListener('drag', (e) => {
+            if (e.clientX !== 0 || e.clientY !== 0) {
+                lastX = e.clientX;
+                lastY = e.clientY;
+                updateCursorState();
+            }
+        });
         // 拖拽结束汇报
         // 浏览器原生拖拽会吞掉 mouseup，但会触发 dragend
         window.addEventListener('dragend', () => {
             isMouseDown = false; // 强行解除按下状态
             updateCursorState();
         });
+
+        // 鼠标离开浏览器窗口汇报
+        document.addEventListener('mouseleave', () => {
+            // 鼠标出网页边界，隐藏
+            cursor.classList.remove('visible');
+            cursor.classList.remove('active');
+            isMouseDown = false; // 顺手防一手在外面松开鼠标的 Bug
+        });
+
+        // 鼠标重新进入浏览器窗口汇报
+        document.addEventListener('mouseenter', (e) => {
+            // 鼠标回来，获取最新坐标
+            lastX = e.clientX;
+            lastY = e.clientY;
+
+            // 如果用户是从外面按着鼠标拖进来的，确保状态同步
+            if (e.buttons === 1) {
+                isMouseDown = true;
+            }
+
+            updateCursorState();
+        });
+
         // 滚动汇报
         // 被动监听，提升滚动性能
         window.addEventListener('scroll', updateCursorState, { passive: true });

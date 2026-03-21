@@ -38,6 +38,9 @@
     /* 图片背景板颜色 */
     --imgLiningColor: #101010;
 
+    /*图片加载背景色*/
+    --imgLoadingBlendColor: #202020;
+
     /* 图片边框 */
     --imgBorderColor: #4a5d75;
 
@@ -99,6 +102,9 @@
 
     /* 图片背景板颜色 */
     --imgLiningColor: #e8e8e8;
+
+    /*图片加载背景色*/
+    --imgLoadingBlendColor: #a0a0a0;
 
     /* 图片边框 */
     --imgBorderColor: #b8b09c;
@@ -162,6 +168,9 @@
 
         /* 图片背景板颜色 */
         --imgLiningColor: #e8e8e8;
+
+        /*图片加载背景色*/
+        --imgLoadingBlendColor: #a0a0a0;
 
         /* 图片边框 */
         --imgBorderColor: #b8b09c;

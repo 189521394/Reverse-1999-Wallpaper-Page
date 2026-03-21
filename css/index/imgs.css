@@ -13,17 +13,22 @@
 
     /*显示方式：完整显示且保留黑边*/
     object-fit: contain;
-    background-color: var(--imgLiningColor);
 
     /*设置鼠标样式*/
     cursor: zoom-in;
 }
-
+/*控制背景缩略图*/
+.imgs {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /*图片动画控制*/
 /*图片初始样式*/
 .imgs {
     z-index: var(--z-base);
+    background-color: var(--imgLiningColor);
 
     /*第一个阴影作为边框，第二个作为阴影*/
     box-shadow: var(--imgBorderColor) 0 0 0 3px,
@@ -42,6 +47,14 @@
     /*该缩放值与js动画设置里面的缩放值绑定，两个必须同时修改，不然图片大小会显示异常*/
     transform: scale(0.93) translateZ(0);
 }
+.imgs.is-loading {
+    background-color: var(--imgLoadingBlendColor) !important;
+    background-blend-mode: multiply;
+
+    transition: transform 250ms,
+                box-shadow 250ms,
+                background-color 250ms;
+}
 
 /*图片浮过样式*/
 @media (hover: hover) {
@@ -59,6 +72,7 @@
 /*预览大图样式*/
 .imgs.active {
     z-index: var(--z-imgAndSet);
+    background-color: var(--imgLiningColor);
     /*鼠标缩小样式*/
     cursor: zoom-out;
     object-fit: contain;

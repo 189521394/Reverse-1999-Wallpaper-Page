@@ -45,9 +45,24 @@ function loadMoreImages() {
 
     // 只处理从 currentLoaded 到 endLimit 这一小段
     for (let i = currentLoaded; i < endLimit; i++) {
+        // 无损原图
+        let originalPath = allOutSet[i];
+        // 缩略图
+        let thumbPath = originalPath
+            .replace("resource/", "resource/thumbnails/")
+            .replace(/\.png$/i, ".webp");
+
         let img = document.createElement("img");
         img.className = "imgs";
-        img.src = allOutSet[i];
+
+        // 显示和背景都是缩略图
+        img.src = thumbPath;
+        img.style.backgroundImage = `url(${thumbPath})`;
+
+        // 保存原图路径
+        img.dataset.original = originalPath;
+        // 保存缩略图路径
+        img.dataset.thumb = thumbPath;
 
         // 加上懒加载属性，浏览器会自动管理下载
         img.loading = "lazy";
