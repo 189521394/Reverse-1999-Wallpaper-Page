@@ -57,7 +57,7 @@ function loadMoreImages() {
 
         // 显示和背景都是缩略图
         img.src = thumbPath;
-        img.style.backgroundImage = `url(${thumbPath})`;
+        img.style.backgroundImage = `url('${thumbPath}?t=bg')`;
 
         // 保存原图路径
         img.dataset.original = originalPath;
