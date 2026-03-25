@@ -47,14 +47,6 @@
     /*该缩放值与js动画设置里面的缩放值绑定，两个必须同时修改，不然图片大小会显示异常*/
     transform: scale(0.93) translateZ(0);
 }
-.imgs.is-loading {
-    background-color: var(--imgLoadingBlendColor) !important;
-    background-blend-mode: multiply;
-
-    transition: transform 250ms,
-                box-shadow 250ms,
-                background-color 250ms;
-}
 
 /*图片浮过样式*/
 @media (hover: hover) {

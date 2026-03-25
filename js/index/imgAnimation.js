@@ -22,6 +22,7 @@ let activeImg = null;
 // 屏幕滚动锁定id
 const wallpaperLockID = "wallpaper_lock_" + (++lockCounter);
 
+// ================================== 图片展示核心逻辑 ==================================
 imgContainer.addEventListener('click', (e) => {
     // 检查点击的是不是图片
     const img = e.target.closest('.imgs');
@@ -52,13 +53,138 @@ imgContainer.addEventListener('click', (e) => {
 if (overlay) {
     overlay.addEventListener('click', closeImage);
 }
+// ================================== 获取图片和进度 ==================================
+async function fetchImageWithProgress(url, imgElement) {
+    // 创建图片专属进度条
+    if (!(imgElement.dataset.loadStatus)) {
+        // 获取模板
+        const template = document.getElementById("progressTemplate");
+        // 用于存储私有进度条的父元素
+        const barFolder = document.getElementById("progressFolder");
 
-// 关闭图像
+        // 克隆模板
+        const selfTrack = template.cloneNode(true);
+        const selfBar = selfTrack.querySelector(".progressBar");
+        selfTrack.removeAttribute("id");
+        // 把进度条存入专属文件夹
+        barFolder.appendChild(selfTrack);
+
+        // 把进度条和图片绑定在一起
+        imgElement.exclusiveTrack = selfTrack;
+        imgElement.exclusiveBar = selfBar;
+    }
+
+    if (imgElement.dataset.loadStatus === "finished") {
+        return;
+    }
+
+    if (imgElement.dataset.loadStatus === "loading") {
+        imgElement.exclusiveTrack.classList.remove('hide');
+        return;
+    }
+
+    // 标记正在加载
+    imgElement.dataset.loadStatus = "loading";
+
+    // 显示进度条
+    imgElement.exclusiveTrack.classList.remove('hide');
+
+    // 网络请求
+    try {
+        // 发起请求
+        const response = await fetch(url, { mode: 'cors' });
+
+        if (!response.ok) {
+            throw new Error(`HTTPS 错误: ${response.status}`);
+        }
+
+        // 获取总大小
+        const imgLength = response.headers.get('content-length');
+
+        // 10是进制单位，代表十进制
+        const total = parseInt(imgLength, 10);
+        let loaded = 0;
+
+        // 记录上一次打印的整数百分比
+        let lastLoggedPercent = -1;
+
+        // 下载进度监控
+        const reader = response.body.getReader();
+        const chunks = [];
+
+        while (true) {
+            const { done, value } = await reader.read();
+
+            if (done) {
+                break;
+            }
+
+            chunks.push(value);
+            loaded += value.length;
+
+            if (total) {
+                // 计算当前的整数百分比
+                const currentPercent = Math.floor((loaded / total) * 100);
+
+                // 只有当整数百分比发生变化时，才更新
+                if (currentPercent > lastLoggedPercent) {
+                    lastLoggedPercent = currentPercent; // 更新记录
+
+                    // 更新进度条
+                    imgElement.exclusiveBar.style.transform = `translateX(${-(100 - currentPercent)}vw)`;
+                }
+            } else {
+                // 防雷：如果没拿到 Content-Length，就按接收次数限流打印
+                if (chunks.length % 10 === 0) {
+                    console.log(`⏳ 已下载: ${(loaded / 1024 / 1024).toFixed(2)} MB`);
+                }
+            }
+        }
+
+        // 把数据拼接为图像
+        const blob = new Blob(chunks, { type: response.headers.get('content-type') || 'image/webp' });
+
+        // 生成本地虚拟链接
+        const objectURL = URL.createObjectURL(blob);
+
+        // 显示出图像
+        imgElement.src = objectURL;
+
+        // blob存起来
+        imgElement.dataset.blobURL = objectURL;
+
+        // 标记已经加载
+        imgElement.dataset.loadStatus = "finished";
+
+        // 隐藏进度条
+        imgElement.exclusiveTrack.classList.add('hide');
+
+        // 隐藏后销毁进度条
+        setTimeout(() => {
+            imgElement.exclusiveTrack.remove();
+            delete imgElement.exclusiveTrack;
+            delete imgElement.exclusiveBar;
+        }, 110);
+    } catch (error) {
+        console.error('获取对象失败：', error);
+        showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
+        imgElement.src = url;
+    }
+}
+// ================================== 关闭图像 ==================================
 function closeImage() {
+    // 隐藏全部进度条
+    document.getElementById("progressFolder").querySelectorAll(".downloadTrack").forEach((e) => {e.classList.add('hide');});
+
+    // 清理内存
+    if (activeImg.dataset.blobURL) {
+        URL.revokeObjectURL(activeImg.dataset.blobURL);
+        delete activeImg.dataset.blobURL;
+    }
+
     // 清空记录的图像
     if (activeImg) {
         activeImg.classList.remove('active');
-        activeImg.src = activeImg.dataset.thumb;
         activeImg = null;
     }
 
@@ -79,7 +205,7 @@ function closeImage() {
         hideTag();
     }
 }
-// 开启图像
+// ================================== 开启图像 ==================================
 function openImage(imgInfo) {
     // 取出原图
     let rawPath = imgInfo.dataset.original;
@@ -87,17 +213,8 @@ function openImage(imgInfo) {
     // 开启图像
     imgInfo.classList.add('active');
 
-    // 加载状态
-    imgInfo.classList.add('is-loading');
-    // 监听加载，这个代码是加载完成后执行的
-    imgInfo.onload = () => {
-        imgInfo.classList.remove('is-loading');
-        imgInfo.onload = null; // 销毁监听器，释放内存
-    };
-
-    // 删除自带的src，瞬间替换新的，做到逐行加载，同时背景作为保底，防止闪现
-    imgInfo.removeAttribute('src');
-    imgInfo.src = rawPath;
+    // 加载原图
+    fetchImageWithProgress(rawPath, imgInfo);
 
     // 记录显示图像
     activeImg = imgInfo;
@@ -119,7 +236,7 @@ function openImage(imgInfo) {
         showTag(imgInfo.src)
     }
 }
-// 图片最终样式计算
+// ================================== 图片动画计算 ==================================
 function calculateAnimation(imgInfo) {
     // 防止在图片未加载完成时点击导致除以 0 (Infinity) 崩溃
     if (imgInfo.naturalWidth === 0) {

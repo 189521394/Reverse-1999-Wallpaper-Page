@@ -105,7 +105,7 @@ def build_project():
             shutil.copy2(item, dst_path)
 
     print(f"构建成功！🎉")
-    print(f"你的开发目录未受影响。CF Pages 将自动发布 dist/ 中的内容。")
+    print(f"cloudflare 将自动发布 /dist 中的内容。")
 
 if __name__ == '__main__':
     build_project()

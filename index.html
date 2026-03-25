@@ -170,8 +170,10 @@
     <link rel="stylesheet" href="css/index/toTop.css">
     <script src="js/index/returnTop.js" defer></script>
     <!--文件下载样式与逻辑-->
-    <link rel="stylesheet" href="css/index/download.css">
+    <link rel="stylesheet" href="css/index/download/download.css">
     <script src="js/index/dataOperationsLayer/download.js" defer></script>
+    <!--图片加载进度条-->
+    <link rel="stylesheet" href="css/index/download/progress.css">
     <!--允许选择文本逻辑-->
     <script src="js/index/copyMode.js" defer></script>
     <!--个性化鼠标样式和逻辑-->
@@ -476,6 +478,12 @@
     <div id="download" class="hide" onclick="download()">
         ↓<!--下载文件-->
     </div>
+    <!--进度条模板-->
+    <div id="progressTemplate" class="progressTrack downloadTrack hide">
+        <div class="progressBar downloadTrack"></div>
+    </div>
+    <!--用于存储图片的私有进度条-->
+    <div id="progressFolder"></div>
     <!--遮罩层-->
     <!--仅用于img的遮罩，因为img显示的时候没有外框，需要单独创建遮罩-->
     <div id="imgOverlay"></div>

@@ -1,0 +1,33 @@
+/*总控进度条和轨道*/
+.downloadTrack {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 5px;
+
+    z-index: var(--z-progressTrack);
+    transition: opacity 250ms;
+}
+/*隐藏*/
+.downloadTrack.hide {
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 250ms 100ms;
+}
+
+/*进度轨道*/
+.progressTrack {
+    background-color: var(--scrollBarTrack);
+}
+
+/*进度条*/
+.progressBar {
+    background-color: var(--controlButtonBGC);
+}
+/*进度条动画*/
+.progressBar {
+    transform: translateX(0);
+    transition: transform ease-out 100ms;
+}
