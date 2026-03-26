@@ -1,20 +1,21 @@
 // 调试开关
 const copyFileName = document.getElementById("copyFileName");
 
-async function showTag(targetURL) {
+async function showTag(element) {
     let showBox = document.getElementById("returnTag");
+    const rawPath = element.dataset.original;
 
     // 先清空，动画放在最后，等里面的标签准备完毕了再加载动画，不然动画会抽搐
     showBox.replaceChildren();
 
-    let Tags = await loadTag(targetURL);
+    let Tags = await loadTag(rawPath);
     let cache = document.createDocumentFragment();
 
     // ======================================调试模式：快速复制文件名称======================================
     if (copyFileName.checked) {
         // 提取文件名
         // 使用 decodeURIComponent 防止文件名中有中文乱码
-        let fileName = decodeURIComponent(targetURL.substring(targetURL.lastIndexOf('/') + 1));
+        let fileName = decodeURIComponent(rawPath.substring(rawPath.lastIndexOf('/') + 1));
 
         // 创建特殊标签元素
         let copyBtn = document.createElement("div");
@@ -81,7 +82,7 @@ const copyText = async (text) => {
         let textArea = document.createElement("textarea");
         textArea.value = text;
         textArea.style.position = "fixed";
-        textArea.style.top = "-99999px";
+        textArea.style.top = "-999vh";
         document.body.appendChild(textArea);
         textArea.focus();
         textArea.select();

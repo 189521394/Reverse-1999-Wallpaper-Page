@@ -167,7 +167,7 @@
             background-color: var(--imgLiningColor);
             transition: background-color 250ms ease;
         }
-        /*=============================下：回到顶部和标签显示=============================*/
+        /*=============================下：回到顶部/标签显示/进度条=============================*/
         #toTop {
             bottom: calc(var(--bottom-for-tab) + 20px);
 
@@ -203,6 +203,11 @@
 
             min-width: 100px;
             width: auto;
+        }
+
+        /*进度条*/
+        .downloadTrack {
+            margin-bottom: var(--bottom-for-tab);
         }
 
         /*滚动条*/

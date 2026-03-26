@@ -1,8 +1,4 @@
-// 它的调用在 图片被追加进去之后
-// 详见文件：DisplayImg.js
-// 因为图片是动态获取的，如果直接调用，会获取不到图片
-// 同时，它只接收图片列表，给传进来的图片添加点击预览动画
-// 因为如果一张图绑定两个一样的监听器会出bug
+// 管理图片展开大图动画，图片加载进度条
 
 // 如果在这里写了checked，每次修改都需要手动提交筛选才生效
 const showTags = document.getElementById("showTags");
@@ -21,6 +17,9 @@ let activeImg = null;
 
 // 屏幕滚动锁定id
 const wallpaperLockID = "wallpaper_lock_" + (++lockCounter);
+
+// 异常标记，每次网页刷新只更新一次
+let throwErr = true;
 
 // ================================== 图片展示核心逻辑 ==================================
 imgContainer.addEventListener('click', (e) => {
@@ -55,7 +54,7 @@ if (overlay) {
 }
 // ================================== 获取图片和进度 ==================================
 async function fetchImageWithProgress(url, imgElement) {
-    // 创建图片专属进度条
+    // 创建图片专属进度条(如果图片没加载过)
     if (!(imgElement.dataset.loadStatus)) {
         // 获取模板
         const template = document.getElementById("progressTemplate");
@@ -65,6 +64,7 @@ async function fetchImageWithProgress(url, imgElement) {
         // 克隆模板
         const selfTrack = template.cloneNode(true);
         const selfBar = selfTrack.querySelector(".progressBar");
+        // 移除id，使用class，防止报错
         selfTrack.removeAttribute("id");
         // 把进度条存入专属文件夹
         barFolder.appendChild(selfTrack);
@@ -79,6 +79,8 @@ async function fetchImageWithProgress(url, imgElement) {
     }
 
     if (imgElement.dataset.loadStatus === "loading") {
+        // 如果正在加载，就重新显示进度条，继续加载
+        // 同时直接返回，不需要二次加载
         imgElement.exclusiveTrack.classList.remove('hide');
         return;
     }
@@ -95,6 +97,8 @@ async function fetchImageWithProgress(url, imgElement) {
         const response = await fetch(url, { mode: 'cors' });
 
         if (!response.ok) {
+            // 这个注释只是为了不让ide标黄
+            // noinspection ExceptionCaughtLocallyJS
             throw new Error(`HTTPS 错误: ${response.status}`);
         }
 
@@ -115,10 +119,8 @@ async function fetchImageWithProgress(url, imgElement) {
         while (true) {
             const { done, value } = await reader.read();
 
-            if (done) {
-                break;
-            }
-
+            if (done) break;
+            // 下载进度记录
             chunks.push(value);
             loaded += value.length;
 
@@ -130,13 +132,17 @@ async function fetchImageWithProgress(url, imgElement) {
                 if (currentPercent > lastLoggedPercent) {
                     lastLoggedPercent = currentPercent; // 更新记录
 
-                    // 更新进度条
+                    // 更新私有进度条
                     imgElement.exclusiveBar.style.transform = `translateX(${-(100 - currentPercent)}vw)`;
                 }
             } else {
-                // 防雷：如果没拿到 Content-Length，就按接收次数限流打印
+                // 如果没拿到 Content-Length，就按接收次数限流打印
+                if (throwErr) {
+                    throwErr = false;
+                    showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
+                }
                 if (chunks.length % 10 === 0) {
-                    console.log(`⏳ 已下载: ${(loaded / 1024 / 1024).toFixed(2)} MB`);
+                    console.log(`获取文件大小失败，已下载: ${(loaded / 1024 / 1024).toFixed(2)} MB`);
                 }
             }
         }
@@ -164,23 +170,26 @@ async function fetchImageWithProgress(url, imgElement) {
             imgElement.exclusiveTrack.remove();
             delete imgElement.exclusiveTrack;
             delete imgElement.exclusiveBar;
-        }, 110);
+        }, 400);
     } catch (error) {
         console.error('获取对象失败：', error);
-        showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
+        // 控制这个提示框只能显示一次
+        if (throwErr) {
+            throwErr = false;
+            showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
+        }
         imgElement.src = url;
     }
 }
 // ================================== 关闭图像 ==================================
 function closeImage() {
     // 隐藏全部进度条
-    document.getElementById("progressFolder").querySelectorAll(".downloadTrack").forEach((e) => {e.classList.add('hide');});
-
-    // 清理内存
-    if (activeImg.dataset.blobURL) {
-        URL.revokeObjectURL(activeImg.dataset.blobURL);
-        delete activeImg.dataset.blobURL;
-    }
+    document
+        .getElementById("progressFolder")
+        .querySelectorAll(".progressTrack")
+        .forEach((e) => {
+            e.classList.add('hide');
+        });
 
     // 清空记录的图像
     if (activeImg) {
@@ -213,8 +222,8 @@ function openImage(imgInfo) {
     // 开启图像
     imgInfo.classList.add('active');
 
-    // 加载原图
-    fetchImageWithProgress(rawPath, imgInfo);
+    // 加载原图，结果保存，下载逻辑要用
+    imgInfo.fetchResult = fetchImageWithProgress(rawPath, imgInfo);
 
     // 记录显示图像
     activeImg = imgInfo;
@@ -233,7 +242,7 @@ function openImage(imgInfo) {
 
     // 显示图片标签
     if (showTags.checked) {
-        showTag(imgInfo.src)
+        showTag(imgInfo)
     }
 }
 // ================================== 图片动画计算 ==================================

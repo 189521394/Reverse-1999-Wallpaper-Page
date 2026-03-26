@@ -6,7 +6,8 @@
     width: 100vw;
     height: 5px;
 
-    z-index: var(--z-progressTrack);
+    /*在标签上层*/
+    z-index: var(--z-buttonSlider);
     transition: opacity 250ms;
 }
 /*隐藏*/
