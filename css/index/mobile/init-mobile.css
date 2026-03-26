@@ -209,6 +209,16 @@
         .downloadTrack {
             margin-bottom: var(--bottom-for-tab);
         }
+        /*进度条位置*/
+        .downloadTrack {
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100vh;
+        }
+        .progressBar {
+            transform: translateY(0);
+        }
 
         /*滚动条*/
         #returnTag::-webkit-scrollbar {

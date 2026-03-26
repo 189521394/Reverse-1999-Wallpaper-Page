@@ -133,7 +133,11 @@ async function fetchImageWithProgress(url, imgElement) {
                     lastLoggedPercent = currentPercent; // 更新记录
 
                     // 更新私有进度条
-                    imgElement.exclusiveBar.style.transform = `translateX(${-(100 - currentPercent)}vw)`;
+                    if (!isMobileLayout) {
+                        imgElement.exclusiveBar.style.transform = `translateX(${-(100 - currentPercent)}vw)`;
+                    } else {
+                        imgElement.exclusiveBar.style.transform = `translateY(${-(100 - currentPercent)}vh)`;
+                    }
                 }
             } else {
                 // 如果没拿到 Content-Length，就按接收次数限流打印
