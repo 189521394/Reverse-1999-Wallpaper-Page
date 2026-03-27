@@ -5,7 +5,7 @@ async function copyContact() {
 
     try {
         await copyText(mail);
-        copyButton.textContent = "复制成功";
+        copyButton.textContent = "✔";
         copyButton.style.backgroundColor = "#ffffff";
 
         setTimeout(() => {
@@ -13,8 +13,8 @@ async function copyContact() {
             copyButton.style.backgroundColor = "";
         }, 3000);
     } catch (err) {
-        copyButton.textContent = "复制失败";
-        copyButton.style.backgroundColor = "#ff0000";
+        copyButton.textContent = "✘";
+        copyButton.style.backgroundColor = "#ffffff";
         console.log(err);
 
         setTimeout(() => {

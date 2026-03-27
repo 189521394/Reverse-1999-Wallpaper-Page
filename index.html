@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <!--声明手机ui-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Reverse-1999-Wallpaper</title>
+    <!--元信息-->
+    <title>Reverse: 1999 Wallpapers</title>
+    <meta name="description" content="专注《重返未来：1999》(Reverse: 1999) 的高清壁纸图库。提供精美的游戏官方壁纸，支持快速筛选与免费下载。">
+    <meta name="keywords" content="Reverse 1999, 重返未来1999, 1999壁纸, wallpapers, 游戏壁纸, 二次元壁纸">
+    <meta property="og:url" content="https://r9wallpaper.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reverse: 1999 Wallpapers | 重返未来：1999 高清壁纸站">
+    <meta property="og:description" content="专注《重返未来：1999》(Reverse: 1999) 的高清壁纸图库。提供精美的游戏官方壁纸，支持快速筛选与免费下载。">
+    <meta property="og:image" content="https://r9wallpaper.org/favicon.png">
     <link rel="icon" type="image/png" href="favicon.png">
     <!--=============================================↓CSS和JS部分↓=============================================-->
     <!--====================初始化====================-->
@@ -12,6 +20,8 @@
     <link rel="stylesheet" href="font/result.css">
     <!--初始化-->
     <link rel="stylesheet" href="css/index/init/initialize.css">
+    <!--预加载筛选文件-->
+    <link rel="preload" href="Filter.json" as="fetch" crossorigin="anonymous">
     <!--手机布局初始化-->
     <script src="js/index/mobile/mobile-init.js" defer></script>
     <!--层级管理-->
@@ -182,6 +192,8 @@
     <!--加载选项列表-->
     <!--列表内有函数引用，写到最后-->
     <script src="js/index/userSettings/SETTINGS_CONFIG.js" defer></script>
+    <!--分享按钮-->
+    <script src="js/index/share.js" defer></script>
     <!--=============================================↑CSS和JS部分↑=============================================-->
 </head>
 <!--添加默认主页面(移动端)-->
@@ -431,6 +443,21 @@
                         <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
                         <div class="tips">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
                         <div class="tips">[当前版本状态] 内容已经与官方同步，基础功能即将完成</div>
+                        <div id="shareTitle" class="title">分享</div>
+                        <div class="line"></div>
+                        <label class="tips">
+                            分享时附带筛选标签
+                            <input type="checkbox" id="shareWithTag" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="SWTSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <div class="tips" id="share">
+                            分享这部分见闻...
+                            <span class="clickButton" id="shareButton">分享</span>
+                        </div>
                         <div id="otherTitle" class="title">其他信息</div>
                         <div class="line"></div>
                         <div class="tips"><a href="https://github.com/189521394/Reverse-1999-Wallpaper-Page" target="_blank" id="github">[GitHub]</a></div>

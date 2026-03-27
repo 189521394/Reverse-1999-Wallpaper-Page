@@ -64,6 +64,12 @@ const SETTINGS_CONFIG = [
         animation: "CTSlider",
         callback: null
     },
+    // ================================关于================================
+    {
+        logic: "shareWithTag",
+        animation: "SWTSlider",
+        callback: null
+    },
     // ================================开发者选项================================
     {
         logic: "copyFileName",

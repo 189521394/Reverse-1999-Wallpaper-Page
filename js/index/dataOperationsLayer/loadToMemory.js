@@ -35,3 +35,6 @@ async function loadToMemory() {
 
     return loadPromise;
 }
+
+// 页面加载到这里时，立刻开始加载json文件
+loadToMemory();
