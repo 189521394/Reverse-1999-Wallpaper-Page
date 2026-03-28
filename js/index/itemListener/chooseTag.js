@@ -16,6 +16,9 @@ document.getElementById("tagPool").addEventListener("click",function (e) {
     // 防止点击空白处报错
     if (!tag) return;
 
+    // 标记筛选模式
+    window.currentActiveSearchMode = 'tag';
+
     // 是否需要替换
     if (autoReplace.checked) {
         // 获取标签分类
@@ -47,7 +50,8 @@ document.getElementById("tagPool").addEventListener("click",function (e) {
     }
     // 追加新标签
     target.appendChild(tag.cloneNode(true));
-    // 默认自动提交
+
+    // 自动提交
     if (autoSubmit.checked) {
         submit();
     }

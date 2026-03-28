@@ -2,6 +2,9 @@ let pool = document.getElementById("submitPool");
 // 加载锁定，因为清空之后滚动还会触发加载，所以增加一个锁定
 // 只有在提交之后，清空之前，进行加载
 let alreadySubmit = false;
+// 保存筛选模式
+// 可选值：'none' | 'text' | 'tag'
+window.currentActiveSearchMode = 'none';
 
 function submit() {
     // =================移动端一次性对话框=================
@@ -16,6 +19,8 @@ function submit() {
     }
     DisplayImg(select);
     alreadySubmit = true;
+    // 标记筛选模式
+    window.currentActiveSearchMode = 'tag';
 }
 
 

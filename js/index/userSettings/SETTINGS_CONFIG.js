@@ -66,6 +66,11 @@ const SETTINGS_CONFIG = [
     },
     // ================================关于================================
     {
+        logic: "shareWithAPI",
+        animation: "SWASlider",
+        callback: null
+    },
+    {
         logic: "shareWithTag",
         animation: "SWTSlider",
         callback: null

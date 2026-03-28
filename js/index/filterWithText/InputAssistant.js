@@ -30,6 +30,9 @@ let selectedIndex = 0;
 
 // 监听输入框打字
 inputBox.addEventListener('input', function() {
+    // 标记筛选模式
+    window.currentActiveSearchMode = 'text';
+
     // 获取光标位置
     const cursor = this.selectionStart;
     // 只截取光标前面的文本
@@ -175,6 +178,9 @@ inputBox.addEventListener('keydown', function(e) {
         }
     }
     else if (e.key === 'Tab') { // 选中单词
+        // 标记筛选模式
+        window.currentActiveSearchMode = 'text';
+
         e.preventDefault(); // 阻止切走焦点
         selectTag(selectedIndex);
     }
@@ -211,6 +217,9 @@ inputTips.addEventListener('mousedown', function(e) {
         }
     }
     else if (e.target.classList.contains('words')) { // 点击候选词
+        // 标记筛选模式
+        window.currentActiveSearchMode = 'text';
+
         // 找到点的是第几个
         const wordElements = Array.from(inputTips.querySelectorAll('.words'));
         const clickedIndex = wordElements.indexOf(e.target);

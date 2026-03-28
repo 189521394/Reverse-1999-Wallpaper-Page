@@ -17,6 +17,8 @@ function executeFilter() {
     alreadySubmit = true;
     // 标记首次推荐
     alreadyRecommend = true;
+    // 标记筛选模式
+    window.currentActiveSearchMode = 'text';
 }
 
 // 点击搜索触发
