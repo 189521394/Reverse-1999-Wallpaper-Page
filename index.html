@@ -162,6 +162,8 @@
     <script src="js/index/copyContact.js" defer></script>
     <!--简洁模式-->
     <script src="js/index/conciseMode.js" defer></script>
+    <!--网页的一部分英文文本-->
+    <link rel="stylesheet" href="css/index/engContent.css">
 
     <!--====================手机端代码====================-->
     <!--外观-->
@@ -280,7 +282,7 @@
                 <div id="setBox" class="custom-scroll">
                     <!--主设置内容在此-->
                     <div id="setList" class="setContent">
-                        <div id="generalTitle" class="title topTitle">通用</div>
+                        <div id="generalTitle" class="title topTitle">通用/<span class="engContent">General</span></div>
                         <div class="line"></div>
                         <!--label里面的span只是为了编译器不会显示警告，无特殊意义-->
                         <label class="tips">
@@ -337,7 +339,7 @@
                                 <span id="HTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <div id="mobileTitle" class="title">适用于移动端的选项</div>
+                        <div id="mobileTitle" class="title">适用于移动端的选项/<span class="engContent">Mobile Options</span></div>
                         <div class="line"></div>
                         <label class="tips">
                             仅在顶部时显示Tab栏
@@ -357,7 +359,7 @@
                                 <span id="CTWSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <div id="themeTitle" class="title">主题控制</div>
+                        <div id="themeTitle" class="title">主题控制/<span class="engContent">Theme</span></div>
                         <div class="line"></div>
                         <label class="tips">
                             跟随系统
@@ -377,7 +379,7 @@
                                 <span id="MSTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <div id="clearTitle" class="title">清空按钮控制</div>
+                        <div id="clearTitle" class="title">清空按钮控制/<span class="engContent">Clear Button Control</span></div>
                         <div class="line"></div>
                         <label class="tips">
                             同时清空筛选结果
@@ -399,7 +401,7 @@
                         </label>
                     </div>
                     <div id="tipList" class="setContent">
-                        <div id="tipTitle" class="title topTitle">使用说明</div>
+                        <div id="tipTitle" class="title topTitle">使用说明/<span class="engContent">Guide</span></div>
                         <div class="line"></div>
                         <div class="tips">单击可以添加/移除筛选标签</div>
                         <div class="tips">图片下方的标签可点击，点击后会添加到筛选池</div>
@@ -437,14 +439,14 @@
                         </div>
                     </div>
                     <div id="aboutList" class="setContent">
-                        <div id="aboutTitle" class="title topTitle">关于</div>
+                        <div id="aboutTitle" class="title topTitle">关于/<span class="engContent">About</span></div>
                         <div class="line"></div>
                         <div class="tips">[关于时间线] 数据来源于网络，本人并没有认真考据</div>
                         <div class="tips">[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)</div>
                         <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
                         <div class="tips">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
                         <div class="tips">[当前版本状态] 内容已经与官方同步，基础功能即将完成</div>
-                        <div id="shareTitle" class="title">分享</div>
+                        <div id="shareTitle" class="title">分享/<span class="engContent">Share</span></div>
                         <div class="line"></div>
                         <label class="tips">
                             使用系统API
@@ -468,16 +470,16 @@
                             分享这部分见闻...
                             <span class="clickButton" id="shareButton">分享</span>
                         </div>
-                        <div id="otherTitle" class="title">其他信息</div>
+                        <div id="otherTitle" class="title">其他信息/<span class="engContent">Additional Info</span></div>
                         <div class="line"></div>
-                        <div class="tips"><a href="https://github.com/189521394/Reverse-1999-Wallpaper-Page" target="_blank" id="github">[GitHub]</a></div>
+                        <div class="tips" id="superLink">在<a href="https://github.com/189521394/Reverse-1999-Wallpaper-Page" target="_blank" id="github">[GitHub]</a>查看此项目</div>
                         <div class="tips" id="contact">
                             [联系我] 2221771663@qq.com
                             <span class="clickButton" id="copyButton" onclick="copyContact()">复制</span>
                         </div>
                     </div>
                     <div id="debugList" class="setContent">
-                        <div id="debugTitle" class="title topTitle">开发者选项</div>
+                        <div id="debugTitle" class="title topTitle">开发者选项/<span class="engContent">Developer Options</span></div>
                         <div class="line"></div>
                         <div class="tips" id="redTips">[提示] 启用某些选项可能会造成奇怪的bug。</div>
                         <label class="tips">

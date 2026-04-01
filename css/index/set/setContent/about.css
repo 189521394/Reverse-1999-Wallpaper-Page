@@ -1,3 +1,6 @@
 #github {
     color: var(--controlButtonBGC);
 }
+#superLink {
+    display: block;
+}
