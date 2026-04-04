@@ -12,12 +12,22 @@ function setAni(boolean) {
         setPadding.classList.add('show');
         setBox.classList.add('show');
         setItems.forEach((element) => {element.classList.add('show');});
+
+        const clone = document.querySelector(".clone-item");
+        if (clone) {
+            clone.classList.remove("global-hide");
+        }
     } else {
         setBackground.classList.remove('show');
         setItem.classList.remove('show');
         setPadding.classList.remove('show');
         setBox.classList.remove('show');
         setItems.forEach((element) => {element.classList.remove('show');});
+
+        const clone = document.querySelector(".clone-item");
+        if (clone) {
+            clone.classList.add('global-hide');
+        }
     }
 }
 
