@@ -502,53 +502,28 @@
     }
 
     /*========菜单控制========*/
-    /*形态1：默认样式*/
+    /*默认样式*/
     .setItem {
         line-height: 60px;
         height: 60px;
         width: 80vw;
         font-size: 25px;
 
-        background-color: #252525;
-        border-color: var(--controlButtonBGC);
         color: var(--controlButtonBGC);
-
-        /*transition: width 250ms, height 250ms, background-color 250ms, color 250ms, margin 250ms, border 250ms, opacity 250ms, font-size 250ms;*/
     }
-    /*形态2：顶部菜单*/
+    /*顶部菜单*/
     .setItem.active {
         color: var(--fontColor);
-
-        width: 100vw;
-        height: 60px;
-        margin-top: 0;
-
-        /*transition: width 250ms, height 250ms, background-color 250ms, color 250ms, margin 250ms, border 250ms, opacity 250ms, font-size 250ms;*/
     }
-    /*形态3：待命菜单*/
+    /*待命菜单*/
     .setItem.activeWait {
         color: var(--fontColor);
         height: 60px;
         background-color: var(--controlButtonBGC);
-
-        /*transition: width 250ms, height 250ms, background-color 250ms, color 250ms, margin 250ms, border 250ms, opacity 250ms, font-size 250ms;*/
-    }
-    /*形态4：隐藏*/
-    .setItem.hide {
-        height: 0;
-        margin-top: 0;
-        border-width: 0;
-        opacity: 0;
-        font-size: 0;
-
-        /*transition: width 150ms, height 150ms, background-color 150ms, color 150ms, margin 150ms, border 150ms, opacity 150ms, font-size 150ms;*/
     }
 
-    /* ============================================================== */
-    /* ==================== 新增结构兼容与动画补丁 ==================== */
-    /* ============================================================== */
-
-    /* 1. 将原有的背景色转移给专门的背景图层 */
+    /*=============================设置选项-实体控制=============================*/
+    /*  */
     .setItem {
         position: relative;
         background-color: transparent !important;
@@ -578,41 +553,39 @@
         pointer-events: none;
     }
 
-    /* 2. 修复状态颜色继承 */
+    /* 激活时的背景色 */
     .setItem.active .setItem-bg,
     .setItem.activeWait .setItem-bg {
         background-color: var(--controlButtonBGC);
-        border-color: transparent;
     }
+    /*激活时的文本颜色*/
     .setItem.active .setItem-text,
     .setItem.activeWait .setItem-text {
         color: var(--fontColor);
     }
 
-    /* 3. 设置页面背景动画时序控制 */
+    /* 设置页面背景动画时序控制 */
     #setItem {
-        /* 菜单收回时，背景无延迟，立马平移下来 */
         transition: transform 250ms;
     }
     #setItem.shifted {
-        /* 修正平移距离：保留顶部克隆体的高度 */
+        /* 60px保留顶部设置栏 */
         transform: translateY(calc(-100% + 60px));
         pointer-events: none;
-        /* 菜单展开时，背景延迟100ms升起，让选项克隆体先飞 */
         transition: transform 250ms;
     }
 
     .setItem.hidden-item {
         opacity: 0;
         pointer-events: none;
-        /* 选中元素时，其他元素极速消失，避免穿帮 */
+        /* 选中元素时，其他元素需要快速消失 */
         transition: opacity 50ms ease;
     }
 
-    /* 4. 移动端克隆体专用动画样式 */
+    /*=============================克隆体控制=============================*/
     .clone-item {
-        position: fixed; /* 脱离文档流，在最顶层飞 */
-        z-index: 9999;
+        position: fixed;
+        z-index: var(--z-buttonText);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -620,38 +593,36 @@
         margin: 0;
         padding: 0;
         font-size: 25px;
-        cursor: pointer;
-
+    }
+    .clone-item {
         will-change: transform;
 
-        /* 1. 初始化 Y 轴飞行变量 */
+        /* x和y都会移动，融合两个位移变量 */
         --flip-y: 0px;
-
-        /* 2. 融合 X 轴基础位置(0) 和 Y 轴变量 */
         transform: translate(0px, var(--flip-y));
 
-        /* 注意：这里【绝对不给】任何 transition！确保克隆瞬间无残影！ */
+        transition: transform 500ms cubic-bezier(0.23, 1.0, 0.32, 1.0), opacity 250ms;
     }
 
     .clone-item .setItem-bg {
-        background-color: #252525;
+        background-color: var(--controlButtonBGC);
         transform-origin: center;
+
         will-change: transform, background-color;
-        /* 初始状态无动画 */
     }
 
     /* 上下飞行时的过渡效果 */
     .clone-item.clone-animating {
-        transition: transform 250ms cubic-bezier(0.23, 1.0, 0.32, 1.0);
+        transition: transform 250ms;
     }
     .clone-item.clone-animating .setItem-bg {
-        transition: transform 250ms cubic-bezier(0.23, 1.0, 0.32, 1.0), background-color 250ms;
+        transition: transform 250ms, background-color 250ms;
     }
     .clone-item.clone-animating .setItem-text {
         transition: color 250ms;
     }
 
-    /* 关闭页面 */
+    /* 隐藏页面（关闭设置页面） */
     .clone-item.global-hide {
         transform: translate(-150px, var(--flip-y));
         opacity: 0;
@@ -660,15 +631,15 @@
         transition: transform 250ms cubic-bezier(0.23, 1.0, 0.32, 1.0), opacity 250ms;
     }
 
-    /* 克隆飞升后的激活变色 */
+    /* 背景颜色 */
     .clone-item.active-clone .setItem-bg {
         background-color: var(--controlButtonBGC);
-        /*border-color: transparent;*/
     }
+    /*文本颜色*/
     .clone-item.active-clone .setItem-text {
         color: var(--fontColor);
     }
-    /* 瞬间静止法则：不仅自己没动画，连带里面的所有子元素全部剥夺动画能力 */
+    /* 强制删除动画 */
     .force-no-transition,
     .force-no-transition * {
         transition: none !important;
