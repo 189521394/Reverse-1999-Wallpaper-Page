@@ -5,9 +5,6 @@ const shareWithAPI = document.getElementById("shareWithAPI");
 shareBtn.addEventListener('click', async () => {
     // 获取当前网页的链接/图片链接
     const shareURL = generateShareUrl();
-    const shareText =
-        "司辰向您分享了一部分见闻...\n" +
-        `${shareURL}`;
 
     // 使用 Web Share API
     if (shareWithAPI.checked) {
@@ -28,7 +25,7 @@ shareBtn.addEventListener('click', async () => {
         } else {
             // 不支持 Web Share API
             try {
-                await copyText(shareText);
+                await copyText(shareURL);
                 shareSuccess();
                 showDialog("当前环境不支持原生分享，已为您复制链接到剪贴板！", true);
             } catch (err) {
@@ -40,7 +37,7 @@ shareBtn.addEventListener('click', async () => {
         // 只复制到剪切板
     } else {
         try {
-            await copyText(shareText);
+            await copyText(shareURL);
             shareSuccess("已复制");
         } catch (err) {
             console.error('复制失败:', err);

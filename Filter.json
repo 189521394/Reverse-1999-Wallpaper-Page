@@ -5658,5 +5658,140 @@
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_29.png",
     "tag_ZH": ["3.5", "活动剧情", "《绿松石蛇俱乐部》", "未知时间", "暗色", "背景图"],
     "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_01.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "马库斯", "塞梅尔维斯"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_02.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "z"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_03.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_04.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "兔毛手袋", "乌尔里希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_05.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "霍夫曼"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_06.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "哑谜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_07.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "霍夫曼", "哑谜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_08.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "霍夫曼", "哑谜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_10.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_11.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "哑谜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_12.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_13.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜", "霍夫曼"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_14.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_15.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_16.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "哑谜", "乌尔里希", "冷周六", "兔毛手袋", "洛伦兹蝴蝶", "多人合照"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_17.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "哑谜", "霍夫曼"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_19.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_20.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜", "路德维希"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_21.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_22.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_23.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_24.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色", "爱兹拉", "露西", "洛伦兹蝴蝶", "冷周六", "北方哨歌", "库珀花环", "乌尔里希", "阿莱夫", "兔毛手袋", "X", "多人合照"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_25.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "亮色"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_05.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜", "霍夫曼", "背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_06.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜", "霍夫曼", "背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_07.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "哑谜", "霍夫曼", "背景图"],
+    "tag_EN": []
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_17.png",
+    "tag_ZH": ["3.6", "活动剧情", "人们向何处去", "未知时间", "暗色", "背景图"],
+    "tag_EN": []
   }
 ]

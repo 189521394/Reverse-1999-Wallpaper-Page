@@ -189,7 +189,8 @@ let characterPool = [
     "玛格丽特",
     "佩雷斯",
     "穆列尔",
-    "黑鹮"
+    "黑鹮",
+    "路德维希"
 ]
 characterPool.sort((a, b) => a.localeCompare(b, 'zh-CN'));
 
@@ -230,7 +231,8 @@ let eventPool = [
     "长夜鸣笛",
     "迁流的盛宴",
     "不老春",
-    "《绿松石蛇俱乐部》"
+    "《绿松石蛇俱乐部》",
+    "人们向何处去"
 ]
 
 let anecdotePool = [
@@ -339,6 +341,7 @@ let versionCodePool = [
     "3.3",
     "3.4",
     "3.5",
+    "3.6",
     "SP01"
 ]
 
