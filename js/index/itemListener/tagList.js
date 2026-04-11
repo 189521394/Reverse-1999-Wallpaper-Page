@@ -2,10 +2,13 @@
 function moveSliderTo(element) {
     let slider = document.getElementById("activeSlider");
 
-    // 设置滑块的height和top
+    // 设置滑块的height
     slider.style.height = element.offsetHeight + "px";
-    slider.style.top = element.offsetTop + "px";
+
+    // 将 top 替换为 transform: translateY
+    slider.style.transform = `translateY(${element.offsetTop}px)`;
 }
+
 // 定义获取标签函数
 function getTag(loadButtonID, targetObjectPool) {
     let box = document.getElementById("tagPool");
