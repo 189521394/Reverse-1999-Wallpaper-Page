@@ -4,118 +4,139 @@ document.addEventListener('DOMContentLoaded', () => {
     // 获取存储图片的父容器
     const imgContainer = document.getElementById("select");
 
-    if (!isMobileLayout) {
-        // 定义全局状态变量
-        let lastX = 0;
-        let lastY = 0;
-        let isMouseDown = false; // 记录物理鼠标是否按着
+    // 定义全局状态变量
+    let lastX = 0;
+    let lastY = 0;
+    let isMouseDown = false;
+    // 记录交互方式（鼠标触屏切换）
+    let lastInputType = 'mouse';
 
-        // 更新鼠标状态
-        const updateCursorState = () => {
-            // 如果还没拿到坐标，先别乱动
-            if (lastX === 0 && lastY === 0) return;
+    // 更新用户的操作样式
+    const updateCursorState = () => {
+        // 如果当前是触摸操作，强行隐藏鼠标跟随样式
+        if (lastInputType !== 'mouse') {
+            cursor.classList.remove('visible', 'active');
+            return;
+        }
 
-            // 物理位置跟随
-            cursor.style.left = `${lastX}px`;
-            cursor.style.top = `${lastY}px`;
+        // 如果还没拿到坐标，先别乱动
+        if (lastX === 0 && lastY === 0) return;
 
-            // 看看现在坐标底下是什么元素
-            const elementUnderCursor = document.elementFromPoint(lastX, lastY);
+        cursor.style.left = `${lastX}px`;
+        cursor.style.top = `${lastY}px`;
 
-            // 判断底下是不是图片
-            if (elementUnderCursor && elementUnderCursor.closest('.imgs')) {
-                cursor.classList.add('visible');
+        // 看看现在坐标底下是什么元素
+        const elementUnderCursor = document.elementFromPoint(lastX, lastY);
 
-                // 只有底下是图片，且鼠标处于按下状态，才激活 active
-                if (isMouseDown) {
-                    cursor.classList.add('active');
-                } else {
-                    cursor.classList.remove('active');
-                }
+        // 判断底下是不是图片
+        if (elementUnderCursor && elementUnderCursor.closest('.imgs')) {
+            cursor.classList.add('visible');
+
+            // 只有底下是图片，且鼠标处于按下状态，才激活 active
+            if (isMouseDown) {
+                cursor.classList.add('active');
             } else {
-                // 如果底下不是图片，扒掉所有样式
-                cursor.classList.remove('visible');
                 cursor.classList.remove('active');
             }
-        };
+        } else {
+            // 如果底下不是图片，扒掉所有样式
+            cursor.classList.remove('visible', 'active');
+        }
+    };
 
-        // 事件监听器
-        // 鼠标移动汇报
-        window.addEventListener('mousemove', (e) => {
+    // 事件监听器
+    // =========================鼠标操作汇报=========================
+    // 鼠标移动汇报
+    window.addEventListener('pointermove', (e) => {
+        // 动态更新当前输入类型 ('mouse', 'touch', 'pen')
+        lastInputType = e.pointerType;
+
+        if (lastInputType === 'mouse') {
             lastX = e.clientX;
             lastY = e.clientY;
             updateCursorState();
-        });
-        // 鼠标按下汇报
-        window.addEventListener('mousedown', (e) => {
-            if (e.button === 0) { // 只认左键
-                isMouseDown = true;
-                updateCursorState();
-            }
-        });
-        // 鼠标松开汇报 (放在 window 上防止在外面松手监听不到)
-        window.addEventListener('mouseup', () => {
+        }
+    });
+    // 鼠标按下汇报
+    window.addEventListener('pointerdown', (e) => {
+        lastInputType = e.pointerType;
+        if (lastInputType === 'mouse' && e.button === 0) {
+            isMouseDown = true;
+            updateCursorState();
+        }
+    });
+    // 鼠标松开汇报 (放在 window 上防止在外面松手监听不到)
+    window.addEventListener('pointerup', (e) => {
+        if (e.pointerType === 'mouse') {
             isMouseDown = false;
             updateCursorState();
-        });
+        }
+    });
 
-        // 拖拽汇报
-        window.addEventListener('drag', (e) => {
-            if (e.clientX !== 0 || e.clientY !== 0) {
-                lastX = e.clientX;
-                lastY = e.clientY;
-                updateCursorState();
-            }
-        });
-        // 拖拽结束汇报
-        // 浏览器原生拖拽会吞掉 mouseup，但会触发 dragend
-        window.addEventListener('dragend', () => {
-            isMouseDown = false; // 强行解除按下状态
-            updateCursorState();
-        });
-
-        // 鼠标离开浏览器窗口汇报
-        document.addEventListener('mouseleave', () => {
-            // 鼠标出网页边界，隐藏
-            cursor.classList.remove('visible');
-            cursor.classList.remove('active');
-            isMouseDown = false; // 顺手防一手在外面松开鼠标的 Bug
-        });
-
-        // 鼠标重新进入浏览器窗口汇报
-        document.addEventListener('mouseenter', (e) => {
-            // 鼠标回来，获取最新坐标
+    // =========================拖拽汇报=========================
+    // Drag 事件没有 pointerType，所以依靠上一次记录的 lastInputType
+    window.addEventListener('drag', (e) => {
+        if (lastInputType === 'mouse' && (e.clientX !== 0 || e.clientY !== 0)) {
             lastX = e.clientX;
             lastY = e.clientY;
-
-            // 如果用户是从外面按着鼠标拖进来的，确保状态同步
-            if (e.buttons === 1) {
-                isMouseDown = true;
-            }
-
             updateCursorState();
-        });
+        }
+    });
+    // 拖拽结束汇报
+    // 浏览器原生拖拽会吞掉 mouseup，但会触发 dragend
+    window.addEventListener('dragend', () => {
+        if (lastInputType === 'mouse') {
+            isMouseDown = false;
+            updateCursorState();
+        }
+    });
 
-        // 滚动汇报
-        // 被动监听，提升滚动性能
-        window.addEventListener('scroll', updateCursorState, { passive: true });
-        imgContainer.addEventListener('scroll', updateCursorState, { passive: true });
-    } else {
-        imgContainer.addEventListener('touchstart', (e) => {
-            // 只有点击图片时才触发
-            if (e.target.closest('.imgs')) {
-                const touch = e.touches[0];
+    // =========================鼠标和窗口交互汇报=========================
+    // 鼠标离开浏览器窗口汇报
+    document.addEventListener('pointerleave', (e) => {
+        if (e.pointerType === 'mouse') {
+            cursor.classList.remove('visible', 'active');
+            isMouseDown = false;
+        }
+    });
+    // 鼠标重新进入浏览器窗口汇报
+    document.addEventListener('pointerenter', (e) => {
+        lastInputType = e.pointerType;
+        if (lastInputType === 'mouse') {
+            lastX = e.clientX;
+            lastY = e.clientY;
+            if (e.buttons === 1) isMouseDown = true;
+            updateCursorState();
+        }
+    });
 
-                cursor.style.left = `${touch.clientX}px`;
-                cursor.style.top = `${touch.clientY}px`;
+    // =========================滚动汇报=========================
+    // 滚动事件处理
+    const handleScroll = () => {
+        if (lastInputType === 'mouse') {
+            updateCursorState();
+        }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    imgContainer.addEventListener('scroll', handleScroll, { passive: true });
 
-                cursor.classList.add('visible');
+    // =========================单点触摸汇报=========================
+    imgContainer.addEventListener('pointerdown', (e) => {
+        // 如果是鼠标，让上面的鼠标逻辑去管
+        if (e.pointerType === 'mouse') return;
 
-                // 参考transition时间 + 10ms
-                setTimeout(() => {
-                    cursor.classList.remove('visible');
-                }, 260);
-            }
-        }, { passive: true });
-    }
+        // 只有点击图片时才触发
+        if (e.target.closest('.imgs')) {
+            // pointer API 的好处是直接用 e.clientX，不需要去解析 e.touches[0]
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+
+            cursor.classList.add('visible');
+
+            // 参考transition时间 + 10ms
+            setTimeout(() => {
+                cursor.classList.remove('visible');
+            }, 260);
+        }
+    }, { passive: true });
 });

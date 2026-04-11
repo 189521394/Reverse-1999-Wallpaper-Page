@@ -2,10 +2,13 @@
 const R2_DOMAIN = "https://img.r9wallpaper.org";
 
 // 判断当前是否在本地运行 (localhost/局域网调试)
+const hostname = window.location.hostname;
 const isLocal =
-    window.location.hostname === 'localhost' ||
-    window.location.hostname === '127.0.0.1' ||
-    window.location.hostname.startsWith('10.');
+    hostname === 'localhost' ||
+    hostname === '127.0.0.1' ||
+    hostname.startsWith('10.') ||
+    hostname.startsWith('172.') ||
+    hostname.startsWith('192.168.');
 
 // 开发调试，即时刷新
 const fastUpdate = document.getElementById("fastUpdate");
