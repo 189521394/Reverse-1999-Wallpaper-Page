@@ -38,8 +38,9 @@
     <script src="js/index/tagPool.js" defer></script>
     <!--只会显示一次的对话框-->
     <script src="js/index/mobile/once-tips.js" defer></script>
-    <!--语言选择引导-->
+    <!--语言选择外观-->
     <link rel="stylesheet" href="css/index/guide/guide.css">
+    <link rel="stylesheet" href="css/index/guide/guideButton.css">
     <!--语言选择逻辑-->
     <script src="js/index/guide.js" defer></script>
     
@@ -59,7 +60,7 @@
     <!--文本框快捷键提示-->
     <script src="js/index/Dialog/shortcutKey.js" defer></script>
 
-    <!--====================dock栏====================-->
+    <!--====================dock栏(废弃)====================-->
     <!--dock栏-->
     <link rel="stylesheet" href="css/index/dock.css">
     <!--dock栏淡入淡出-->
@@ -548,7 +549,29 @@
     <div id="imgOverlay"></div>
     <!--语言选择页面(其实是引导页面)-->
     <div id="guide">
-        <div id="guideFrame"></div>
+        <div id="guideFrame">
+            <div id="guideTitle">选择语言/Language</div>
+            <div class="guideLine"></div>
+            <div id="choiceFrame">
+                <label id="ZHBox" class="choiceBox">
+                    <span class="radioBorder">
+                        <span id="choiceZH" class="radioConfirm"></span>
+                    </span>
+                    <input type="radio" id="optionZH" name="languageOption" value="zh" checked>
+                    <span class="choiceText">简体中文</span>
+                </label>
+                <label id="ENBox" class="choiceBox">
+                    <span class="radioBorder">
+                        <span id="choiceEN" class="radioConfirm"></span>
+                    </span>
+                    <input type="radio" id="optionEN" name="languageOption" value="en">
+                    <span class="choiceText">English</span>
+                </label>
+            </div>
+            <div class="guideLine"></div>
+            <div id="choiceTips">后续可在设置中更改/You can change this later in Settings.</div>
+            <div id="guideCONFIRM" class="guideOption">确定</div>
+        </div>
     </div>
     <!--提示层(通用提示)-->
     <div id="noticeBox">
