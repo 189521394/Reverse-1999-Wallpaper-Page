@@ -1,0 +1,1 @@
+const guide = document.getElementById('guide');

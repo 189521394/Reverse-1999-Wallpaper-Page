@@ -1,0 +1,29 @@
+#guide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: var(--z-guide);
+    overflow: hidden;
+}
+#guide {
+    background-color: #252525;
+}
+
+/*状态管理*/
+#guide {
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity 250ms;
+    opacity: 0;
+}
+#guide.show {
+    pointer-events: auto;
+    visibility: visible;
+
+    transition: opacity 250ms;
+    opacity: 1;
+}

@@ -4,7 +4,7 @@
 // 引入预设的词库
 const allTagsPool = [
     ...characterPool, ...mainLinePool, ...eventPool, ...anecdotePool,
-    ...versionCodePool, ...yearPool, ...lightAndDarkPool, ...specialPool
+    ...versionCodePool, ...yearPool, ...TonePool, ...specialPool
 ];
 
 // 默认推荐

@@ -71,7 +71,7 @@ getTag("version",versionCodePool);
 getTag("year",yearPool);
 
 // 亮色/暗色筛选
-getTag("lightAndDark",lightAndDarkPool);
+getTag("Tone",TonePool);
 
 // 特殊标签筛选
 getTag("special",specialPool);

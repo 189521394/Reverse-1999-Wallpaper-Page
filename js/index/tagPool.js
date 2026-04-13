@@ -364,7 +364,7 @@ let yearPool = [
     "1996",
 ]
 
-let lightAndDarkPool = [
+let TonePool = [
     "亮色",
     "暗色"
 ]

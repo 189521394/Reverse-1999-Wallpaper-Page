@@ -38,7 +38,11 @@
     <script src="js/index/tagPool.js" defer></script>
     <!--只会显示一次的对话框-->
     <script src="js/index/mobile/once-tips.js" defer></script>
-
+    <!--语言选择引导-->
+    <link rel="stylesheet" href="css/index/guide/guide.css">
+    <!--语言选择逻辑-->
+    <script src="js/index/guide.js" defer></script>
+    
     <!--====================系统提示组件(也属于初始化，较多)====================-->
     <!--提示框框架-->
     <link rel="stylesheet" href="css/index/init/notice/noticeBox.css">
@@ -243,7 +247,7 @@
                 <div id="anecdote" class="item" data-short="轶事">按轶事筛选</div>
                 <div id="version" class="item" data-short="版本号">按版本号筛选</div>
                 <div id="year" class="item" data-short="时间线">按时间线筛选</div>
-                <div id="lightAndDark" class="item" data-short="色调">按亮色/暗色筛选</div>
+                <div id="Tone" class="item" data-short="色调">按色调筛选</div>
                 <div id="special" class="item" data-short="特殊">按特殊标签筛选</div>
                 <div id="activeSlider"></div>
             </div>
@@ -542,6 +546,10 @@
     <!--遮罩层-->
     <!--仅用于img的遮罩，因为img显示的时候没有外框，需要单独创建遮罩-->
     <div id="imgOverlay"></div>
+    <!--语言选择页面(其实是引导页面)-->
+    <div id="guide">
+        <div id="guideFrame"></div>
+    </div>
     <!--提示层(通用提示)-->
     <div id="noticeBox">
         <div id="noticeTitle">提 示</div>
