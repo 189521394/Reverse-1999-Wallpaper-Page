@@ -80,9 +80,10 @@ def build_project():
         shutil.rmtree(dist_dir)
     os.makedirs(dist_dir)
 
-    # 1. 分别处理两个主页面，生成对应的 bundle
+    # 处理页面，生成对应的 bundle
     process_html('propaganda.html', dist_dir)
     process_html('index.html', dist_dir)
+    process_html('404.html', dist_dir)
 
     # 2. 白名单模式：明确指定需要拷贝到线上的资源
     # (忽略了 resource、bat、py 等与线上无关的本地文件)

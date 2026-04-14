@@ -26,27 +26,30 @@ function getTag(loadButtonID, targetObjectPool) {
         moveSliderTo(element);
 
         // =================实际逻辑控制=================
-        // 先清空再追加
-        box.replaceChildren();
+        // 实际逻辑延迟到下一个事件循环
+        setTimeout(() => {
+            // 先清空再追加
+            box.replaceChildren();
 
-        // 创建一个虚拟对象，防止多次触发重绘
-        let cache = document.createDocumentFragment();
+            // 创建一个虚拟对象，防止多次触发重绘
+            let cache = document.createDocumentFragment();
 
-        for (let i = 0; i < targetObjectPool.length; i++) {
-            let div = document.createElement("div");
+            for (let i = 0; i < targetObjectPool.length; i++) {
+                let div = document.createElement("div");
 
-            div.textContent = targetObjectPool[i];
-            div.className = "waiting";
+                div.textContent = targetObjectPool[i];
+                div.className = "waiting";
 
-            // 标记分类属性
-            div.setAttribute("data-category", loadButtonID);
+                // 标记分类属性
+                div.setAttribute("data-category", loadButtonID);
 
-            // 先放到虚拟对象里面
-            cache.appendChild(div);
-        }
+                // 先放到虚拟对象里面
+                cache.appendChild(div);
+            }
 
-        // 把虚拟对象追加进去，仅触发一次重绘
-        box.appendChild(cache)
+            // 把虚拟对象追加进去，仅触发一次重绘
+            box.appendChild(cache)
+        }, 1);
     });
 }
 

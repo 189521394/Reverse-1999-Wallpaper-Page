@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+</head>
+<body>
+    <div id="errCode">ErrorCode: 404</div>
+    <div id="line"></div>
+    <div id="errTips">未知的荒原，连魔精都没有...</div>
+    <a id="return" href="/">离开荒原</a>
+</body>
+</html>
+<style>
+    /*=================初始化=================*/
+    /*替换掉系统的蓝底白字*/
+    ::selection {
+        background-color: #7b6f55;
+        color: #e3d1b3;
+    }
+    * {
+        user-select: none;
+    }
+    #errCode {
+        user-select: text;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        /*消除滚动条*/
+        margin: 0;
+    }
+    body {
+        background-color: #252525;
+        color: #f0f0f0;
+    }
+    /*=================样式=================*/
+    #line {
+        width: 30%;
+        height: 1px;
+        background-color: #f0f0f0;
+        
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #return {
+        color: #D16430;
+        text-decoration: none;
+    }
+    /*=================手机布局=================*/
+    @media screen and (max-width: 768px) {
+        #line {
+            width: 70%;
+        }
+    }
+</style>
