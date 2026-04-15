@@ -41,8 +41,10 @@
     <!--语言选择外观-->
     <link rel="stylesheet" href="css/index/guide/guide.css">
     <link rel="stylesheet" href="css/index/guide/guideButton.css">
+    <link rel="stylesheet" href="css/index/guide/guideDetail.css">
     <!--语言选择逻辑-->
     <script src="js/index/guide.js" defer></script>
+    <script src="js/index/i18n.js" defer></script>
     
     <!--====================系统提示组件(也属于初始化，较多)====================-->
     <!--提示框框架-->
@@ -360,9 +362,10 @@
                                 <span id="HTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
+                        <!--openGuide-->
                         <div class="tips">
                             选择语言(暂不可用)
-                            <span class="clickButton">选择</span>
+                            <span class="clickButton" onclick="">选择</span>
                         </div>
                         <div id="mobileTitle" class="title">适用于移动端的选项/<span class="engContent">Mobile Options</span></div>
                         <div class="line"></div>
@@ -447,7 +450,7 @@
                             <div class="line"></div>
                             <!--邮件内容必须按特殊格式写，让浏览器原封不动的渲染上去-->
                             <!--用于复制的字符-✘-✔-->
-                            <!--每次更新：-->
+                            <!--==============================每次更新：==============================-->
                             <!--版本号，版本名称-->
                             <!--时间-->
                             <!--进度-->

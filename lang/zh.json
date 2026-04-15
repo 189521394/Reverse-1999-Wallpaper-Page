@@ -1,0 +1,10 @@
+{
+  "common": {
+    "confirm": "确定",
+    "cancel": "取消"
+  },
+  "guide": {
+    "title": "选择语言",
+    "tips": "后续可在设置中更改"
+  }
+}
