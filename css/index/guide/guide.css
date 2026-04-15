@@ -78,6 +78,6 @@
 #choiceTips {
     text-align: center;
     font-size: 17px;
-    height: 25px;
+    height: auto;
     line-height: 25px;
 }

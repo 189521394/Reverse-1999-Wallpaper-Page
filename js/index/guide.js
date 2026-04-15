@@ -19,7 +19,7 @@ function openGuide() {
 }
 
 // 初始化页面：读取本地存储，设置默认选项
-function initLanguage() {
+async function initLanguage() {
     // 判断本地是否已经存了语言
     const isFirstVisit = localStorage.getItem("preferredLanguage") === null;
 
@@ -35,6 +35,9 @@ function initLanguage() {
         ZHChecked();
     }
 
+    // 页面加载时先渲染一次
+    await switchLanguage(savedLang);
+
     // 只有第一次来才打开引导页面
     if (isFirstVisit) {
         openGuide();
@@ -47,12 +50,14 @@ function ZHChecked() {
     choiceENApper.classList.remove("checked");
 
     localStorage.setItem("preferredLanguage", "zh");
+    switchLanguage("zh");
 }
 function ENChecked() {
     choiceENApper.classList.add("checked");
     choiceZHApper.classList.remove("checked");
 
     localStorage.setItem("preferredLanguage", "en");
+    switchLanguage("en");
 }
 
 // 监听用户操作

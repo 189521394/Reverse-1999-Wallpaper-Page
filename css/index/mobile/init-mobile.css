@@ -720,4 +720,34 @@
         line-height: 40px;
         font-size: 25px;
     }
+    /*========================================语言选择页面========================================*/
+    #guideFrame {
+        width: 80%;
+    }
+    /*按比例缩小*/
+    .guideOption {
+        width: 170px !important;
+        height: 40px !important;
+        line-height: 40px !important;
+        font-size: 25px !important;
+
+        transform: scale(1) !important;
+    }
+    #guideTitle {
+        font-size: 25px;
+    }
+    .choiceText {
+        font-size: 20px;
+    }
+    .radioBorder {
+        width: 20px;
+        height: 20px;
+    }
+    .radioConfirm {
+        width: 12px;
+        height: 12px;
+    }
+    #choiceTips {
+        font-size: 14px;
+    }
 }

@@ -2,9 +2,5 @@
   "common": {
     "confirm": "CONFIRM",
     "cancel": "CANCEL"
-  },
-  "guide": {
-    "title": "LANGUAGE",
-    "tips": "You can change this later in Settings."
   }
 }
