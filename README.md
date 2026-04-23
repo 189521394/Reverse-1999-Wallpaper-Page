@@ -18,7 +18,7 @@
 
 ## 关于英文版
 
-已在计划内，请稍等，感谢！
+已上线Beta版，基础功能可用
 
 ---
 
@@ -42,6 +42,6 @@ To visit the website, please click [here](https://r9wallpaper.org/) or copy the 
 
 The initial build is complete, and the website has now entered its regular update and iteration phase.
 
-## English Localization
+## About the English Version
 
-An English version of the website is currently planned and in the works. Please stay tuned, and thank you for your patience!
+The Beta version is now live. Basic features are available.
