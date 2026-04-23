@@ -105,21 +105,56 @@ async function initData() {
 
 // 启动系统
 initData();
+
+
+
+// 拉取 JSON 语言包并加载到内存
 // ===========================================显示文本翻译===========================================
+// 内存缓存字典，存入解析好的语言包：{ "zh": {...}, "en": {...} }
+let langPackCache = {};
+// 存储加载状态的 Promise 字典 (防止用户手速太快，连续点击同一个语言导致并发请求)
+let langLoadPromises = {};
+
 // 拉取 JSON 语言包
 async function loadLanguagePack(lang) {
-    try {
-        const response = await fetch(`lang/${lang}.json`);
-        if (!response.ok) {
-            console.log("多语言文件加载失败：", response.status);
-        }
-
-        currentLangPack = await response.json();
-        return currentLangPack;
-    } catch (error) {
-        console.error("多语言文件加载失败：", error);
-        return null;
+    // 1. 命中内存缓存：如果已经加载并解析过，直接秒回
+    if (langPackCache[lang]) {
+        currentLangPack = langPackCache[lang]; // 同步更新全局变量
+        return langPackCache[lang];
     }
+
+    // 2. 命中请求拦截：如果刚好正在拉取这个语言，且还没回来，就排队等待那个 Promise
+    if (langLoadPromises[lang]) {
+        return langLoadPromises[lang];
+    }
+
+    // 3. 真正发起请求，并把这个动作封装成 Promise 存起来
+    langLoadPromises[lang] = (async () => {
+        try {
+            const response = await fetch(`lang/${lang}.json`);
+            if (!response.ok) {
+                console.error(`多语言文件加载失败 (${lang})：`, response.status);
+                return null;
+            }
+
+            const data = await response.json();
+
+            // 存入内存缓存
+            langPackCache[lang] = data;
+            // 更新你原本代码里的全局变量
+            currentLangPack = data;
+
+            return data;
+        } catch (error) {
+            console.error(`多语言文件加载异常 (${lang})：`, error);
+            return null;
+        } finally {
+            // 请求结束（不管成功还是失败），把 Promise 占位符清空，释放内存
+            langLoadPromises[lang] = null;
+        }
+    })();
+
+    return langLoadPromises[lang];
 }
 
 // 解析嵌套的 JSON 键值
