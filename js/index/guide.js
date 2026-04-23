@@ -74,4 +74,4 @@ confirmBtn.addEventListener('click', () => {
 });
 
 // 初始化
-// document.addEventListener('DOMContentLoaded', initLanguage);
+document.addEventListener('DOMContentLoaded', initLanguage);

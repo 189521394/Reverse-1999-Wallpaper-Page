@@ -8,7 +8,7 @@
         "type": "string",
         "description": "文件路径"
       },
-      "tag_ZH": {
+      "tags": {
         "type": "array",
         "description": "适用于1999名词的提示助手，这个不需要遵守顺序写(部分有顺序是因为是从tagPool复制来的)，位置随便，反正能匹配到",
         "items": {
@@ -371,13 +371,13 @@
           ]
         }
       },
-      "tag_EN": {
+      "tone": {
         "type": "array",
         "items": {
           "type": "string"
         }
       }
     },
-    "required": ["file", "tag_ZH"]
+    "required": ["file", "tags"]
   }
 }

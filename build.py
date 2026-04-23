@@ -1,6 +1,8 @@
 import re
 import os
 import shutil
+import json
+import sys
 
 def minify_css(css_text):
     """极简 CSS 压缩：去注释、去换行"""
@@ -18,7 +20,7 @@ def minify_js(js_text):
 
 def process_html(html_file, dist_dir):
     if not os.path.exists(html_file):
-        print(f"警告：找不到 {html_file}")
+        print(f"⚠️ 警告：找不到 {html_file}")
         return
 
     with open(html_file, 'r', encoding='utf-8') as f:
@@ -44,7 +46,7 @@ def process_html(html_file, dist_dir):
             with open(css, 'r', encoding='utf-8') as f:
                 combined_css += minify_css(f.read()) + "\n"
         else:
-            print(f"警告: 找不到 CSS 文件 {css}")
+            print(f"⚠️ 警告: 找不到 CSS 文件 {css}")
 
     combined_js = ""
     for js in js_links:
@@ -52,7 +54,7 @@ def process_html(html_file, dist_dir):
             with open(js, 'r', encoding='utf-8') as f:
                 combined_js += f";\n{minify_js(f.read())}\n"
         else:
-            print(f"警告: 找不到 JS 文件 {js}")
+            print(f"⚠️ 警告: 找不到 JS 文件 {js}")
 
     # 写入 dist 目录
     with open(os.path.join(dist_dir, bundle_css_name), 'w', encoding='utf-8') as f:
@@ -71,6 +73,74 @@ def process_html(html_file, dist_dir):
     with open(os.path.join(dist_dir, html_file), 'w', encoding='utf-8') as f:
         f.write(prod_html)
 
+def compile_filter_json(dist_dir):
+    """
+    【核心预编译环节】: 读取 Filter.json，清洗中文为 ID，并极限压缩
+    """
+    filter_file = 'Filter.json'
+    dict_file = os.path.join('lang', 'tagData.json')
+
+    print("正在编译 Filter.json (中文标签洗白与极限压缩)...")
+
+    if not os.path.exists(dict_file):
+        print(f"❌ 致命错误: 找不到字典文件 {dict_file}")
+        sys.exit(1)
+
+    if not os.path.exists(filter_file):
+        print(f"❌ 致命错误: 找不到数据文件 {filter_file}")
+        sys.exit(1)
+
+    # 1. 构建中文反查表
+    with open(dict_file, 'r', encoding='utf-8') as f:
+        dictionary = json.load(f)
+
+    zh_to_id = {}
+    for tag_id, item in dictionary.items():
+        if 'zh' in item:
+            zh_to_id[item['zh']] = tag_id
+
+    # 2. 处理图片标签数据
+    with open(filter_file, 'r', encoding='utf-8') as f:
+        raw_data = json.load(f)
+
+    compiled_data = []
+    for item in raw_data:
+        new_item = item.copy()
+
+        # 处理 tags
+        new_tags = []
+        for zh_tag in item.get('tags', []):
+            if zh_tag in zh_to_id:
+                new_tags.append(zh_to_id[zh_tag])
+            else:
+                # 触发 Fail Fast 中断机制
+                print(f"\n❌ 构建中断！存在未注册的标签: [{zh_tag}]")
+                print(f"   定位: {item.get('file')}")
+                print(f"   排错指引: 请先在 lang/tagData.json 中补充该词条再打包！\n")
+                sys.exit(1)
+        new_item['tags'] = new_tags
+
+        # 处理 tone
+        new_tones = []
+        for zh_tone in item.get('tone', []):
+            if zh_tone in zh_to_id:
+                new_tones.append(zh_to_id[zh_tone])
+            else:
+                # 触发 Fail Fast 中断机制
+                print(f"\n❌ 构建中断！存在未注册的色调标签: [{zh_tone}]")
+                print(f"   定位: {item.get('file')}")
+                print(f"   排错指引: 请先在 lang/tagData.json 中补充该词条再打包！\n")
+                sys.exit(1)
+        new_item['tone'] = new_tones
+
+        compiled_data.append(new_item)
+
+    # 3. 写入 dist 并极致压缩 (去除所有空格和换行)
+    dist_file = os.path.join(dist_dir, filter_file)
+    with open(dist_file, 'w', encoding='utf-8') as f:
+        # separators=(',', ':') 就是 JSON 极限压缩的魔法参数
+        json.dump(compiled_data, f, ensure_ascii=False, separators=(',', ':'))
+
 def build_project():
     print("开始构建生产环境代码...")
     dist_dir = 'dist'
@@ -80,23 +150,27 @@ def build_project():
         shutil.rmtree(dist_dir)
     os.makedirs(dist_dir)
 
-    # 处理页面，生成对应的 bundle
+    # 1. 预编译 JSON (优先执行，如果报错立刻停机，不用浪费时间往下打包)
+    compile_filter_json(dist_dir)
+
+    # 2. 处理页面，生成对应的 bundle
     process_html('propaganda.html', dist_dir)
     process_html('index.html', dist_dir)
     process_html('404.html', dist_dir)
 
-    # 2. 白名单模式：明确指定需要拷贝到线上的资源
-    # (忽略了 resource、bat、py 等与线上无关的本地文件)
+    # 3. 白名单拷贝
+    # 注意：Filter.json 已经从白名单剔除，因为它被上面的编译器接管并输出到 dist 了
+    # 新增了 'lang' 文件夹，确保线上前端能拉取多语言包
     assets_to_copy = [
         'font',
-        'Filter.json',
-        'favicon.png'
+        'favicon.png',
+        'lang'
     ]
 
     print("正在拷贝必需的静态资源...")
     for item in assets_to_copy:
         if not os.path.exists(item):
-            print(f"警告: 找不到资源 {item}")
+            print(f"⚠️ 警告: 找不到资源 {item}")
             continue
 
         dst_path = os.path.join(dist_dir, item)
@@ -105,8 +179,8 @@ def build_project():
         else:
             shutil.copy2(item, dst_path)
 
-    print(f"构建成功！🎉")
-    print(f"cloudflare 将发布 /dist 中的内容。")
+    print(f"\n🚀 构建成功！🎉")
+    print(f"Cloudflare 将发布 /dist 中的内容。")
 
 if __name__ == '__main__':
     build_project()

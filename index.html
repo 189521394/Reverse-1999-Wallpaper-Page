@@ -34,8 +34,6 @@
     <script src="js/index/userSettings/settingsSystem.js" defer></script>
     <!--遮罩层滚动切换器-->
     <script src="js/index/toggleScrollLock.js" defer></script>
-    <!--预定义的所有标签-->
-    <script src="js/index/tagPool.js" defer></script>
     <!--只会显示一次的对话框-->
     <script src="js/index/mobile/once-tips.js" defer></script>
     <!--语言选择外观-->
@@ -230,7 +228,7 @@
         <div id="searchFrame">
             <div id="fuckLabel">
                 <div id="inputWrapper">
-                    <input type="text" id="input" placeholder='输入标签 空格分隔' aria-label="搜索输入框" autofocus>
+                    <input type="text" id="input" placeholder='输入标签 分号分隔' data-i18n-placeholder="searchWithInput.placeholder" aria-label="搜索输入框" autofocus>
                     <div id="inputTips">
                         <div id="turn">
                             <div id="previous" class="switchTips">↑</div>
@@ -239,34 +237,37 @@
                     </div>
                 </div>
                 <div id="ShortcutKey" onclick="showKey()">!</div>
-                <div id="searchButton">提交<span class="pc-only">(Enter)</span></div>
+                <div id="searchButton" data-i18n="searchWithInput.submit">提交</div>
             </div>
         </div>
         <div id="filterBox">
             <div id="tagList" class="custom-scroll">
-                <div id="character" class="item" data-short="角色">按角色筛选</div>
-                <div id="mainLine" class="item" data-short="主线">按主线章节筛选</div>
-                <div id="event" class="item" data-short="活动">按活动章节筛选</div>
-                <div id="anecdote" class="item" data-short="轶事">按轶事筛选</div>
-                <div id="version" class="item" data-short="版本号">按版本号筛选</div>
-                <div id="year" class="item" data-short="时间线">按时间线筛选</div>
-                <div id="Tone" class="item" data-short="色调">按色调筛选</div>
-                <div id="special" class="item" data-short="特殊">按特殊标签筛选</div>
+                <div id="character" class="item" data-short="角色" data-i18n="searchWithTag.tagList.character" data-i18n-short="searchWithTag.tagList.character-short">按角色筛选</div>
+                <div id="mainLine" class="item" data-short="主线" data-i18n="searchWithTag.tagList.mainLine" data-i18n-short="searchWithTag.tagList.mainLine-short">按主线章节筛选</div>
+                <div id="event" class="item" data-short="活动" data-i18n="searchWithTag.tagList.event" data-i18n-short="searchWithTag.tagList.event-short">按活动章节筛选</div>
+                <div id="anecdote" class="item" data-short="轶事" data-i18n="searchWithTag.tagList.anecdote" data-i18n-short="searchWithTag.tagList.anecdote-short">按轶事筛选</div>
+                <div id="versionCode" class="item" data-short="版本号" data-i18n="searchWithTag.tagList.versionCode" data-i18n-short="searchWithTag.tagList.versionCode-short">按版本号筛选</div>
+                <div id="year" class="item" data-short="时间线" data-i18n="searchWithTag.tagList.year" data-i18n-short="searchWithTag.tagList.year-short">按时间线筛选</div>
+                <div id="Tone" class="item" data-short="色调" data-i18n="searchWithTag.tagList.tone" data-i18n-short="searchWithTag.tagList.tone-short">按色调筛选</div>
+                <div id="special" class="item" data-short="特殊" data-i18n="searchWithTag.tagList.special" data-i18n-short="searchWithTag.tagList.special-short">按特殊标签筛选</div>
                 <div id="activeSlider"></div>
             </div>
             <!--动态追加待选标签-->
             <div id="tagPool" class="custom-scroll"></div>
             <!--动态追加已选标签-->
             <!--这个div里面不要写注释，空格换行也不要，判定empty会算上-->
-            <div id="submitPool" class="custom-scroll"></div>
+            <div id="submitPool" class="custom-scroll" data-i18n-before="searchWithTag.submitPool.tips"></div>
         </div>
         <!--控制筛选面板-->
         <div id="control">
             <!--显示结果数量-->
-            <div id="result">0个筛选结果</div>
-            <div id="setButton" class="buttons" onclick="openSettings()">设置&使用说明</div>
-            <div id="clean" class="buttons" onclick="clean()" data-short="清空">清空筛选标签</div>
-            <div id="submit" class="buttons" onclick="submit()" data-short="提交">提交筛选</div>
+            <div id="resultFrame">
+                <span id="result" data-i18n="controlPanel.result">总计：</span>
+                <span id="resultCount">0</span>
+            </div>
+            <div id="setButton" class="buttons" onclick="openSettings()" data-i18n="controlPanel.preferences">设置</div>
+            <div id="clean" class="buttons" onclick="clean()" data-short="清空" data-i18n="controlPanel.clear" data-i18n-short="controlPanel.clear-short">清空标签</div>
+            <div id="submit" class="buttons" onclick="submit()" data-short="提交" data-i18n="controlPanel.submit" data-i18n-short="controlPanel.submit-short">提交</div>
         </div>
     </div>
     <!--显示图片的所有标签-->
@@ -280,23 +281,23 @@
             <div id="setItem">
                 <div id="preference" class="setItem" data-Content="setList">
                     <div class="setItem-bg"></div>
-                    <div class="setItem-text">用户偏好</div>
+                    <div class="setItem-text" data-i18n="settingsMenu.preferences">用户偏好</div>
                 </div>
                 <div id="tips" class="setItem" data-Content="tipList">
                     <div class="setItem-bg"></div>
-                    <div class="setItem-text">使用说明</div>
+                    <div class="setItem-text" data-i18n="settingsMenu.tips">使用说明</div>
                 </div>
                 <div id="mail" class="setItem" data-Content="mailList">
                     <div class="setItem-bg"></div>
-                    <div class="setItem-text">邮件</div>
+                    <div class="setItem-text" data-i18n="settingsMenu.mail">邮件</div>
                 </div>
                 <div id="about" class="setItem" data-Content="aboutList">
                     <div class="setItem-bg"></div>
-                    <div class="setItem-text">关于</div>
+                    <div class="setItem-text" data-i18n="settingsMenu.about">关于</div>
                 </div>
                 <div id="deBug" class="setItem" data-Content="debugList">
                     <div class="setItem-bg"></div>
-                    <div class="setItem-text">开发者选项</div>
+                    <div class="setItem-text" data-i18n="settingsMenu.devOpt">开发者选项</div>
                 </div>
                 <div id="r1999">Reverse 1999</div>
             </div>
@@ -305,11 +306,14 @@
                 <div id="setBox" class="custom-scroll">
                     <!--主设置内容在此-->
                     <div id="setList" class="setContent">
-                        <div id="generalTitle" class="title topTitle">通用/<span class="engContent">General</span></div>
+                        <div id="generalFrame" class="titleFrame">
+                            <span id="generalTitle" class="title topTitle" data-i18n="settings.preferences.general.title">通用/</span>
+                            <span class="engContent" data-i18n="settings.preferences.general.title-small">General</span>
+                        </div>
                         <div class="line"></div>
                         <!--label里面的span只是为了编译器不会显示警告，无特殊意义-->
                         <label class="tips">
-                            精确筛选
+                            <span data-i18n="settings.preferences.general.precise">精确筛选</span>
                             <input type="checkbox" id="preciseScreening" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -318,7 +322,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            在图片下方显示图片的标签
+                            <span data-i18n="settings.preferences.general.showTag">在图片下方显示图片的标签</span>
                             <input type="checkbox" id="showTags" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -327,7 +331,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            允许选择所有文本
+                            <span data-i18n="settings.preferences.general.selection">允许选择所有文本</span>
                             <input type="checkbox" id="allowCopy" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -336,7 +340,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            同类标签自动替换
+                            <span data-i18n="settings.preferences.general.autoReplace">同类标签自动替换</span>
                             <input type="checkbox" id="autoReplace" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -345,7 +349,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            自动提交
+                            <span data-i18n="settings.preferences.general.autoSubmit">自动提交</span>
                             <input type="checkbox" id="autoSubmit" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -354,7 +358,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            隐藏提示文本
+                            <span data-i18n="settings.preferences.general.hideTips">隐藏提示文本</span>
                             <input type="checkbox" id="hideTips" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -362,15 +366,22 @@
                                 <span id="HTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <!--openGuide-->
-                        <div class="tips">
-                            选择语言(暂不可用)
-                            <span class="clickButton" onclick="">选择</span>
+                        <div id="langFrame" class="titleFrame">
+                            <span id="langTitle" class="title" data-i18n="settings.preferences.lang.title">语言/</span>
+                            <span class="engContent" data-i18n="settings.preferences.lang.title-small">Language</span>
                         </div>
-                        <div id="mobileTitle" class="title">适用于移动端的选项/<span class="engContent">Mobile Options</span></div>
+                        <div class="line"></div>
+                        <div class="tips">
+                            <span data-i18n="settings.preferences.lang.switchLang">切换语言(Beta)</span>
+                            <span class="clickButton" onclick="openGuide()" data-i18n="settings.preferences.lang.switch">切换</span>
+                        </div>
+                        <div id="mobileFrame" class="titleFrame">
+                            <span id="mobileTitle" class="title" data-i18n="settings.preferences.mobile.title">适用于移动端的选项/</span>
+                            <span class="engContent" data-i18n="settings.preferences.mobile.title-small">Mobile Options</span>
+                        </div>
                         <div class="line"></div>
                         <label class="tips">
-                            仅在顶部时显示Tab栏
+                            <span data-i18n="settings.preferences.mobile.tabShow">自动隐藏Tab栏</span>
                             <input type="checkbox" id="onlyTopShowTab" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -379,7 +390,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            (点击)提交后自动切换至浏览页
+                            <span data-i18n="settings.preferences.mobile.autoSwitch">(点击)提交后自动跳转</span>
                             <input type="checkbox" id="clickToWallpaper" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -387,10 +398,13 @@
                                 <span id="CTWSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <div id="themeTitle" class="title">主题控制/<span class="engContent">Theme</span></div>
+                        <div id="themeFrame" class="titleFrame">
+                            <span id="themeTitle" class="title" data-i18n="settings.preferences.theme.title">主题控制/</span>
+                            <span class="engContent" data-i18n="settings.preferences.theme.title-small">Theme</span>
+                        </div>
                         <div class="line"></div>
                         <label class="tips">
-                            跟随系统
+                            <span data-i18n="settings.preferences.theme.auto">跟随系统</span>
                             <input type="checkbox" id="autoSwitchTheme" class="switch" checked>
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -399,7 +413,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            手动控制
+                            <span data-i18n="settings.preferences.theme.manual">手动控制</span>
                             <input type="checkbox" id="manualSwitchTheme" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText theme-text">DARK</span>
@@ -407,10 +421,13 @@
                                 <span id="MSTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <div id="clearTitle" class="title">清空按钮控制/<span class="engContent">Clear Button Control</span></div>
+                        <div id="clearFrame" class="titleFrame">
+                            <span id="clearTitle" class="title" data-i18n="settings.preferences.clear.title">清空按钮控制/</span>
+                            <span class="engContent" data-i18n="settings.preferences.clear.title-small">Clear Button Control</span>
+                        </div>
                         <div class="line"></div>
                         <label class="tips">
-                            同时清空筛选结果
+                            <span data-i18n="settings.preferences.clear.result">同时清空结果</span>
                             <input type="checkbox" id="cleanResult" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -419,7 +436,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            同时清空文本框
+                            <span data-i18n="settings.preferences.clear.input">同时清空文本框</span>
                             <input type="checkbox" id="cleanText" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -434,7 +451,7 @@
                         <div class="tips">单击可以添加/移除筛选标签</div>
                         <div class="tips">图片下方的标签可点击，点击后会添加到筛选池</div>
                         <div class="tips">如果部分图片加载失败，不需要刷新，再次点击提交按钮即可</div>
-                        <div class="tips">文本框为空的状态下点击提交会执行清空操作</div>
+                        <div class="tips">文本框为空的状态下提交会执行清空操作</div>
                         <div class="tips">邮件附件里面的内容是可以复制的，未来可能会添加...兑换码？</div>
                     </div>
                     <div id="mailList" class="setContent">
@@ -477,7 +494,7 @@
                         <div class="tips">[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)</div>
                         <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
                         <div class="tips">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
-                        <div class="tips">[当前版本状态] 内容已经与官方同步，基础功能即将完成</div>
+                        <div class="tips">[当前版本状态] 已建设完毕，进入正常迭代更新</div>
                         <div id="shareTitle" class="title">分享/<span class="engContent">Share</span></div>
                         <div class="line"></div>
                         <label class="tips">
@@ -542,7 +559,7 @@
         </div>
     </div>
     <!--动态追加筛选结果-->
-    <div id="select"></div>
+    <div id="select" data-i18n-before="gallery.tips"></div>
     <div id="toTop" class="hide" onclick="toTop('location0')">
         ↑<!--回到顶部-->
     </div>
@@ -561,7 +578,7 @@
     <!--语言选择页面(其实是引导页面)-->
     <div id="guide">
         <div id="guideFrame">
-            <div id="guideTitle">选择语言/Language</div>
+            <div id="guideTitle" data-i18n="guide.choice">选择语言/Language</div>
             <div class="guideLine"></div>
             <div id="choiceFrame">
                 <label id="ZHBox" class="choiceBox">
@@ -580,26 +597,26 @@
                 </label>
             </div>
             <div class="guideLine"></div>
-            <div id="choiceTips">后续可在设置中更改/You can change this later in Settings.</div>
-            <div id="guideCONFIRM" class="guideOption" data-i18n="common.confirm">确定</div>
+            <div id="choiceTips" data-i18n="guide.tips">后续可在设置中更改/You can change this later in Settings.</div>
+            <div id="guideCONFIRM" class="guideOption" data-i18n="notice.confirm">确定</div>
         </div>
     </div>
     <!--提示层(通用提示)-->
     <div id="noticeBox">
-        <div id="noticeTitle">提 示</div>
+        <div id="noticeTitle" data-i18n="notice.title">提 示</div>
         <div id="noticeContent"></div>
         <div id="noticeOption">
-            <div id="CANCEL" class="option" data-i18n="common.cancel">取消</div>
-            <div id="CONFIRM" class="option" data-i18n="common.confirm">确定</div>
+            <div id="CANCEL" class="option" data-i18n="notice.cancel">取消</div>
+            <div id="CONFIRM" class="option" data-i18n="notice.confirm">确定</div>
         </div>
     </div>
     <!--自定义鼠标/点击样式-->
     <div id="custom-cursor"></div>
     <!--移动端tab-->
     <div id="mobileTab">
-        <div id="wallpaper" class="tabButton" onclick="switchWallpaper()">浏览</div>
-        <div id="selectTag" class="tabButton" onclick="switchTags()">筛选</div>
-        <div id="set" class="tabButton" onclick="switchSet()">设置</div>
+        <div id="wallpaper" class="tabButton" data-i18n="mobileTab.explorer" onclick="switchWallpaper()">浏览</div>
+        <div id="selectTag" class="tabButton" data-i18n="mobileTab.filter" onclick="switchTags()">筛选</div>
+        <div id="set" class="tabButton" data-i18n="mobileTab.set" onclick="switchSet()">设置</div>
     </div>
 </body>
 </html>

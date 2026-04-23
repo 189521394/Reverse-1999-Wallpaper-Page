@@ -41,7 +41,10 @@
     }
     /*按钮基础样式*/
     .tabButton {
-        width: 70px;
+        /* 让三个按钮平均分配父容器的宽度 */
+        flex: 1;
+        /*限制最大宽度*/
+        max-width: 21%;
         height: 35px;
 
         border-style: solid;

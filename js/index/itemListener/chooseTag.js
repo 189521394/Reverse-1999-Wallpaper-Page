@@ -3,8 +3,9 @@ const autoReplaceList = [
     "mainLine",
     "event",
     "anecdote",
-    "version",
-    "year"
+    "versionCode",
+    "year",
+    "Tone"
 ]
 const autoReplace = document.getElementById("autoReplace");
 const autoSubmit = document.getElementById("autoSubmit");

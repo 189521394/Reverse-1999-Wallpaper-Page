@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
             // 设置加载延迟，防止直接拉到底部
             setTimeout(() => {
                 loadLock = false;
-            }, 2000);
+            }, 3000);
         }
     }
 });

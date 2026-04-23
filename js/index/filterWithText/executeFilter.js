@@ -10,8 +10,8 @@ function executeFilter() {
         return;
     }
 
-    // 把内容按照空格分割，存入数组，进行筛选
-    let select = rawText.split(/\s+/);
+    // 把内容分割，存入数组，进行筛选
+    let select = rawText.split(/\s*[;；]\s*/).filter(item => item.trim() !== "");
     DisplayImg(select);
     // 并标记上加载变量
     alreadySubmit = true;

@@ -5,7 +5,7 @@ function clean() {
     const isResult = document.getElementById("cleanResult").checked;
     const isText = document.getElementById("cleanText").checked;
 
-    const result = document.getElementById("result");
+    const resultCount = document.getElementById("resultCount");
     const imgBox = document.getElementById("select");
     const inputBox = document.getElementById("input");
 
@@ -18,7 +18,7 @@ function clean() {
         allImg.forEach((img) => img.src = "");
 
         imgBox.replaceChildren();
-        result.textContent = "0个筛选结果";
+        resultCount.textContent = "0";
         alreadySubmit = false;
     }
 

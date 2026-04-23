@@ -1,9 +1,100 @@
 {
-  "common": {
+  "notice": {
+    "title": "提 示",
     "confirm": "确定",
     "cancel": "取消"
   },
   "mobileTab": {
-
+    "explorer": "浏览",
+    "filter": "筛选",
+    "set": "设置"
+  },
+  "searchWithInput": {
+    "submit": "提交",
+    "placeholder": "输入标签 分号分隔",
+    "tipsContent": "↑/↓：上一个/下一个标签，支持循环滚动。\nTab：选中标签。\n-/+：上一页/下一页。"
+  },
+  "searchWithTag": {
+    "tagList": {
+      "character": "按角色筛选",
+      "character-short": "角色",
+      "mainLine": "按主线章节筛选",
+      "mainLine-short": "主线",
+      "event": "按活动章节筛选",
+      "event-short": "活动",
+      "anecdote": "按轶事筛选",
+      "anecdote-short": "轶事",
+      "versionCode": "按版本号筛选",
+      "versionCode-short": "版本号",
+      "year": "按时间线筛选",
+      "year-short": "时间线",
+      "tone": "按色调筛选",
+      "tone-short": "色调",
+      "special": "按特殊标签筛选",
+      "special-short": "特殊"
+    },
+    "submitPool": {
+      "tips": "选择标签"
+    }
+  },
+  "controlPanel": {
+    "result": "总计：",
+    "preferences": "设置",
+    "clear": "清空标签",
+    "clear-short": "清空",
+    "submit": "提交",
+    "submit-short": "提交"
+  },
+  "settingsMenu": {
+    "preferences": "用户偏好",
+    "tips": "使用说明",
+    "mail": "邮件",
+    "about": "关于",
+    "devOpt": "开发者选项"
+  },
+  "settings": {
+    "preferences": {
+      "general": {
+        "title": "通用/",
+        "title-small": "General",
+        "precise": "精确筛选",
+        "showTag": "在图片下方显示图片的标签",
+        "selection": "允许选择所有文本",
+        "autoReplace": "同类标签自动替换",
+        "autoSubmit": "自动提交",
+        "hideTips": "隐藏提示文本"
+      },
+      "lang": {
+        "title": "语言/",
+        "title-small": "Language",
+        "switchLang": "切换语言(Beta)",
+        "switch": "切换"
+      },
+      "mobile": {
+        "title": "适用于移动端的选项/",
+        "title-small": "Mobile Options",
+        "tabShow": "自动隐藏Tab栏",
+        "autoSwitch": "(点击)提交后自动跳转"
+      },
+      "theme": {
+        "title": "主题控制/",
+        "title-small": "Theme",
+        "auto": "跟随系统",
+        "manual": "手动控制"
+      },
+      "clear": {
+        "title": "清空按钮控制/",
+        "title-small": "Clear Button Control",
+        "result": "同时清空结果",
+        "input": "同时清空文本框"
+      }
+    }
+  },
+  "guide": {
+    "choice": "选择语言/Language",
+    "tips": "后续可在设置中更改/You can change this later in Settings."
+  },
+  "gallery": {
+    "tips": "没有符合条件的图像\n尝试输入或筛选"
   }
 }

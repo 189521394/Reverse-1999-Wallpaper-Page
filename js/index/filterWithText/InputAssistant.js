@@ -1,14 +1,9 @@
 // 用于输入提示的所有逻辑代码
 // 这个js文件的代码由ai完成，我只是做了简单审查
 
-// 引入预设的词库
-const allTagsPool = [
-    ...characterPool, ...mainLinePool, ...eventPool, ...anecdotePool,
-    ...versionCodePool, ...yearPool, ...TonePool, ...specialPool
-];
-
 // 默认推荐
-const recommendTags = ["1987宇宙组曲", "地球上最后的夜晚", "鹭鸶剪", "夜色温柔", "疯癫与文明"];
+let recommendTags = ["1987_cosmic_overture", "last_evenings_on_earth", "paper_heron", "tender_is_the_night", "folie_et_d_raison"];
+
 // 首次推荐标记
 let alreadyRecommend = false;
 
@@ -37,8 +32,8 @@ inputBox.addEventListener('input', function() {
     const cursor = this.selectionStart;
     // 只截取光标前面的文本
     const textBeforeCursor = this.value.substring(0, cursor);
-    // 按空格分割光标前的文本
-    const wordsArray = textBeforeCursor.split(/\s+/);
+    // 按分号切割光标前的文本
+    const wordsArray = textBeforeCursor.split(/\s*[;；]\s*/);
     // 精准获取光标正在修改的词
     const currentWord = wordsArray[wordsArray.length - 1];
 
@@ -53,8 +48,12 @@ inputBox.addEventListener('input', function() {
         return;
     }
 
-    // 进行匹配，结果存入matches
-    let matches = allTagsPool.filter(tag => tag.toLowerCase().includes(currentWord.toLowerCase()));
+    // 使用翻译匹配id
+    let matches = I18n.allTagsPool.filter(tagId => {
+        // 获取翻译词
+        let displayWord = I18n.Translate(tagId).toLowerCase();
+        return displayWord.includes(currentWord.toLowerCase());
+    });
 
     if (matches.length === 0) {
         return;
@@ -63,22 +62,25 @@ inputBox.addEventListener('input', function() {
     // 权重排序逻辑 (精准匹配 > 开头匹配 > 包含)
     matches.sort((a, b) => {
         // 不区分大小写
-        const aLower = a.toLowerCase();
-        const bLower = b.toLowerCase();
+        const aLower = I18n.Translate(a).toLowerCase();
+        const bLower = I18n.Translate(b).toLowerCase();
         const qLower = currentWord.toLowerCase();
 
         // 精确匹配
         const aExact = aLower === qLower ? 1 : 0;
         const bExact = bLower === qLower ? 1 : 0;
-        if (aExact !== bExact) return bExact - aExact; // 完全匹配优先
+        if (aExact !== bExact) return bExact - aExact;
+        // 完全匹配优先
 
         // 开头匹配
         const aStarts = aLower.startsWith(qLower) ? 1 : 0;
         const bStarts = bLower.startsWith(qLower) ? 1 : 0;
-        if (aStarts !== bStarts) return bStarts - aStarts; // 开头匹配优先
+        if (aStarts !== bStarts) return bStarts - aStarts;
+        // 开头匹配优先
 
         // 包含
-        return a.length - b.length; // 如果都是包含，较短的排前面 (相关性更高)
+        return aLower.length - bLower.length;
+        // 如果都是包含，较短的排前面 (相关性更高)
     });
 
     // 更新状态并渲染
@@ -99,11 +101,12 @@ function renderTips() {
     const currentDisplayedTags = filteredTags.slice(startIndex, startIndex + itemsPerPage);
 
     // 插入，当前选中的要高亮
-    currentDisplayedTags.forEach((tag, index) => {
+    currentDisplayedTags.forEach((tagId, index) => {
         const div = document.createElement('div');
         div.className = 'words';
         if (index === selectedIndex) div.classList.add('active');
-        div.textContent = tag;
+
+        div.textContent = I18n.Translate(tagId);
         inputTips.appendChild(div);
     });
 
@@ -120,8 +123,8 @@ function renderTips() {
 function selectTag(wordIndex) {
     // 获取选择的词在总匹配列表(filteredTags)里的真实序号
     const startIndex = currentPage * itemsPerPage;
-    const selectedWord = filteredTags[startIndex + wordIndex];
-    if (!selectedWord) return;
+    const selectedWordID = filteredTags[startIndex + wordIndex];
+    if (!selectedWordID) return;
 
     // 获取光标之前和之后的文本
     const cursor = inputBox.selectionStart;
@@ -129,8 +132,9 @@ function selectTag(wordIndex) {
     const textAfterCursor = inputBox.value.substring(cursor);
 
     // 获取用户正在编辑的文本，进行替换，替换成selectedWord，就是在列表里面选择的文本
-    const lastSpaceIndex = textBeforeCursor.lastIndexOf(' ');
-    const newTextBefore = textBeforeCursor.substring(0, lastSpaceIndex + 1) + selectedWord;
+    const lastSeparatorIndex = Math.max(textBeforeCursor.lastIndexOf(';'), textBeforeCursor.lastIndexOf('；'));
+    const displayWord = I18n.Translate(selectedWordID);
+    const newTextBefore = textBeforeCursor.substring(0, lastSeparatorIndex + 1) + (lastSeparatorIndex === -1 ? "" : "") + displayWord + ";";
 
     // 最终结果：前半部分 + 后半部分
     inputBox.value = newTextBefore + textAfterCursor;
@@ -229,22 +233,26 @@ inputTips.addEventListener('mousedown', function(e) {
     }
 });
 
+// 封装提示框状态函数
+function updateTips() {
+    // 如果是第一次打开（当前没有任何候选词），且输入框是空的，且没有推荐过，就加载默认词
+    if (filteredTags.length === 0 && inputBox.value.trim() === '' && !alreadyRecommend) {
+        filteredTags = recommendTags;
+        currentPage = 0;
+        selectedIndex = 0;
+        renderTips();
+    }
+    // 打开不需要刷新，省心，虽然会遗留一条提示词
+    // 这是特性，当历史记录用了，就酱
+    showInputTips(true);
+}
 // 点击空白处关闭，点击文本框打开
 document.addEventListener('mousedown', function(e) {
     // 如果点的既不是输入框，也不是提示框，就隐藏
     if (e.target !== inputBox && !inputTips.contains(e.target)) {
         showInputTips(false);
     } else if (e.target === inputBox){
-        // 如果是第一次打开（当前没有任何候选词），且输入框是空的，且没有推荐过，就加载默认词
-        if (filteredTags.length === 0 && inputBox.value.trim() === '' && !alreadyRecommend) {
-            filteredTags = recommendTags;
-            currentPage = 0;
-            selectedIndex = 0;
-            renderTips();
-        }
-        // 打开不需要刷新，省心，虽然会遗留一条提示词
-        // 这是特性，当历史记录用了，就酱
-        showInputTips(true);
+        updateTips();
     }
 });
 

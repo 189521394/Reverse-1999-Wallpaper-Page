@@ -8,11 +8,11 @@ async function DisplayImg(tags) {
     allOutSet = await loadURL(tags);
 
     let box = document.getElementById("select");
-    let result = document.getElementById("result");
+    let resultCount = document.getElementById("resultCount");
     let quantity = allOutSet.length;
 
     // 显示结果数量
-    result.textContent = quantity + "个筛选结果";
+    resultCount.textContent = quantity;
 
     // 清空结果之前先停止网络流下载
     const allImg = document.querySelectorAll(".imgs");

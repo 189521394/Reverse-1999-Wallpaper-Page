@@ -80,7 +80,7 @@
     /*铅笔灰色*/
     border: 1px dashed rgba(107, 107, 107, 0.7);
     /*不规整圆角*/
-    border-radius: 12px 5px 8px 13px / 7px 11px 15px 6px;
+    border-radius: 6px;
     box-sizing: border-box;
 }
 

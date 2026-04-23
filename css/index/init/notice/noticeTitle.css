@@ -1,7 +1,10 @@
 #noticeTitle {
-    width: 150px;
+    width: fit-content;
+    padding: 0 25px;
+
     height: 75px;
     margin-bottom: 30px;
+    white-space: nowrap;
 
     /*利用filter创建阴影*/
     filter: drop-shadow(0 0 5px var(--setSmallShadow));

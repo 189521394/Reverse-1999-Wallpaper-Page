@@ -1,0 +1,1832 @@
+{
+  "aleph": {
+    "zh": "阿莱夫",
+    "en": "Aleph",
+    "category": "character"
+  },
+  "argus": {
+    "zh": "阿尔古斯",
+    "en": "Argus",
+    "category": "character"
+  },
+  "alexios": {
+    "zh": "阿利克西欧斯",
+    "en": "Alexios",
+    "category": "character"
+  },
+  "a_fu_xi_wei": {
+    "zh": "阿夫西维",
+    "en": "Авксивий",
+    "category": "character"
+  },
+  "a_er_ka_na": {
+    "zh": "阿尔卡纳",
+    "en": "Arcana",
+    "category": "character"
+  },
+  "a_er_bo_de": {
+    "zh": "阿尔伯德",
+    "en": "Alberd",
+    "category": "character"
+  },
+  "a_ni_mu_si": {
+    "zh": "阿尼姆斯",
+    "en": "Animus",
+    "category": "character"
+  },
+  "ezio_auditore": {
+    "zh": "艾吉奥·奥迪托雷",
+    "en": "Ezio Auditore",
+    "category": "character"
+  },
+  "ezra_theodore": {
+    "zh": "爱兹拉",
+    "en": "Ezra Theodore",
+    "category": "character"
+  },
+  "erick": {
+    "zh": "埃里克",
+    "en": "Erick",
+    "category": "character"
+  },
+  "rabies": {
+    "zh": "爱宠",
+    "en": "Rabies",
+    "category": "character"
+  },
+  "ai_er_deng": {
+    "zh": "埃尔登",
+    "en": "Elden",
+    "category": "character"
+  },
+  "ai_bo_ha_te": {
+    "zh": "艾伯哈特",
+    "en": "Eberhardt",
+    "category": "character"
+  },
+  "ai_ma": {
+    "zh": "艾玛",
+    "en": "Emma",
+    "category": "character"
+  },
+  "an_ni": {
+    "zh": "安妮",
+    "en": "Annie",
+    "category": "character"
+  },
+  "ao_ke_ta_wei_ao": {
+    "zh": "奥克塔维奥",
+    "en": "Octavio",
+    "category": "character"
+  },
+  "apple": {
+    "zh": "APPLe",
+    "en": "APPLe",
+    "category": "character"
+  },
+  "barcarola": {
+    "zh": "芭卡洛儿",
+    "en": "Barcarola",
+    "category": "character"
+  },
+  "bunny_bunny": {
+    "zh": "芭妮芭妮",
+    "en": "Bunny Bunny",
+    "category": "character"
+  },
+  "centurion": {
+    "zh": "百夫长",
+    "en": "Centurion",
+    "category": "character"
+  },
+  "white_rum": {
+    "zh": "白朗姆",
+    "en": "White Rum",
+    "category": "character"
+  },
+  "bao_li_na": {
+    "zh": "保利娜",
+    "en": "Paulina",
+    "category": "character"
+  },
+  "bao_li_si": {
+    "zh": "鲍里斯",
+    "en": "Boris",
+    "category": "character"
+  },
+  "beryl": {
+    "zh": "贝丽尔",
+    "en": "Beryl",
+    "category": "character"
+  },
+  "windsong": {
+    "zh": "北方哨歌",
+    "en": "Windsong",
+    "category": "character"
+  },
+  "bette": {
+    "zh": "贝蒂",
+    "en": "Bette",
+    "category": "character"
+  },
+  "bei_ke_te": {
+    "zh": "贝克特",
+    "en": "Beckett",
+    "category": "character"
+  },
+  "bie_si_mi_er": {
+    "zh": "别斯米尔",
+    "en": "Besmir",
+    "category": "character"
+  },
+  "bkornblume": {
+    "zh": "柏林以东",
+    "en": "Bkornblume",
+    "category": "character"
+  },
+  "bu_lao_en_shao_xiao": {
+    "zh": "布劳恩少校",
+    "en": "Major Braun",
+    "category": "character"
+  },
+  "poltergeist": {
+    "zh": "吵闹鬼",
+    "en": "Poltergeist",
+    "category": "character"
+  },
+  "cheng_heguang": {
+    "zh": "程和光",
+    "en": "Cheng Heguang",
+    "category": "character"
+  },
+  "darley_clatter": {
+    "zh": "哒哒达利",
+    "en": "Darley Clatter",
+    "category": "character"
+  },
+  "de_luo_si": {
+    "zh": "德洛丝",
+    "en": "Dores",
+    "category": "character"
+  },
+  "mr_duncan": {
+    "zh": "邓肯先生",
+    "en": "Mr. Duncan",
+    "category": "character"
+  },
+  "dong": {
+    "zh": "冬",
+    "en": "Зима",
+    "category": "character"
+  },
+  "willow": {
+    "zh": "笃笃骨",
+    "en": "Willow",
+    "category": "character"
+  },
+  "duo_luo_xi_ya": {
+    "zh": "多萝西娅",
+    "en": "Dorothea",
+    "category": "character"
+  },
+  "noire": {
+    "zh": "菲林士多",
+    "en": "Noire",
+    "category": "character"
+  },
+  "fei_li_xi_an": {
+    "zh": "费利西安",
+    "en": "Felician",
+    "category": "character"
+  },
+  "necrologist": {
+    "zh": "讣告人",
+    "en": "Necrologist",
+    "category": "character"
+  },
+  "fu_ge": {
+    "zh": "福葛",
+    "en": "Fugo",
+    "category": "character"
+  },
+  "fu_li_lai": {
+    "zh": "弗里莱",
+    "en": "Freeley",
+    "category": "character"
+  },
+  "black_dwarf": {
+    "zh": "伽菈波那",
+    "en": "Black Dwarf",
+    "category": "character"
+  },
+  "corvus": {
+    "zh": "告死鸟",
+    "en": "Corvus",
+    "category": "character"
+  },
+  "getian": {
+    "zh": "葛天",
+    "en": "Getian",
+    "category": "character"
+  },
+  "ge_lei_si": {
+    "zh": "格蕾丝",
+    "en": "Grace",
+    "category": "character"
+  },
+  "ge_lu_tuo_fu": {
+    "zh": "格鲁托夫",
+    "en": "Grotov",
+    "category": "character"
+  },
+  "han_zhang_ding": {
+    "zh": "含章鼎",
+    "en": "Hanzhang Ding",
+    "category": "character"
+  },
+  "ulu": {
+    "zh": "和平乌鲁",
+    "en": "Ulu",
+    "category": "character"
+  },
+  "lilya": {
+    "zh": "红弩箭",
+    "en": "Lilya",
+    "category": "character"
+  },
+  "mondlicht": {
+    "zh": "红斗篷",
+    "en": "Mondlicht",
+    "category": "character"
+  },
+  "druvis_iii": {
+    "zh": "槲寄生",
+    "en": "Druvis III",
+    "category": "character"
+  },
+  "mercuria": {
+    "zh": "环状水星",
+    "en": "Mercuria",
+    "category": "character"
+  },
+  "brume": {
+    "zh": "灰调蓝",
+    "en": "Brume",
+    "category": "character"
+  },
+  "hui_gu": {
+    "zh": "惠姑",
+    "en": "Huigu",
+    "category": "character"
+  },
+  "huo_fu_man": {
+    "zh": "霍夫曼",
+    "en": "Hofmann",
+    "category": "character"
+  },
+  "joe": {
+    "zh": "J",
+    "en": "Joe",
+    "category": "character"
+  },
+  "changeling": {
+    "zh": "洁西卡",
+    "en": "Changeling",
+    "category": "character"
+  },
+  "jie_luo": {
+    "zh": "杰洛",
+    "en": "Jero",
+    "category": "character"
+  },
+  "blonney": {
+    "zh": "金蜜儿",
+    "en": "Blonney",
+    "category": "character"
+  },
+  "buddy_fairchild": {
+    "zh": "嚼嚼松果",
+    "en": "Buddy Fairchild",
+    "category": "character"
+  },
+  "charon": {
+    "zh": "卡戎",
+    "en": "Charon",
+    "category": "character"
+  },
+  "kassandra": {
+    "zh": "卡珊德拉",
+    "en": "Kassandra",
+    "category": "character"
+  },
+  "kakania": {
+    "zh": "卡卡尼亚",
+    "en": "Kakania",
+    "category": "character"
+  },
+  "click": {
+    "zh": "喀嚓喀嚓",
+    "en": "Click",
+    "category": "character"
+  },
+  "ka_sen": {
+    "zh": "卡森",
+    "en": "Mr. Karson",
+    "category": "character"
+  },
+  "ka_luo_lin": {
+    "zh": "卡洛琳",
+    "en": "Caroline",
+    "category": "character"
+  },
+  "ka_mu_ta": {
+    "zh": "卡穆塔",
+    "en": "Kamuta",
+    "category": "character"
+  },
+  "kanjira": {
+    "zh": "坎吉拉",
+    "en": "Kanjira",
+    "category": "character"
+  },
+  "kang_si_tan_ding": {
+    "zh": "康斯坦丁",
+    "en": "Constantine",
+    "category": "character"
+  },
+  "spathodea": {
+    "zh": "可燃点",
+    "en": "Spathodea",
+    "category": "character"
+  },
+  "ke_zi_luo_fu": {
+    "zh": "科兹洛夫",
+    "en": "Kozlov",
+    "category": "character"
+  },
+  "loggerhead": {
+    "zh": "空脑袋",
+    "en": "Loggerhead",
+    "category": "character"
+  },
+  "horropedia": {
+    "zh": "恐怖通",
+    "en": "Horropedia",
+    "category": "character"
+  },
+  "kong_xin_mu": {
+    "zh": "空心木",
+    "en": "Hollow Wood",
+    "category": "character"
+  },
+  "kiperina": {
+    "zh": "库珀花环",
+    "en": "Kiperina",
+    "category": "character"
+  },
+  "brimley": {
+    "zh": "宽檐帽",
+    "en": "Brimley",
+    "category": "character"
+  },
+  "la_source": {
+    "zh": "拉拉泉",
+    "en": "La Source",
+    "category": "character"
+  },
+  "lai_ge_si": {
+    "zh": "莱格斯",
+    "en": "Legas",
+    "category": "character"
+  },
+  "lai_ang_na_duo": {
+    "zh": "莱昂纳多",
+    "en": "Leonardo",
+    "category": "character"
+  },
+  "tuesday": {
+    "zh": "蓝手帕",
+    "en": "Tuesday",
+    "category": "character"
+  },
+  "pavia": {
+    "zh": "狼群",
+    "en": "Pavia",
+    "category": "character"
+  },
+  "hissabeth": {
+    "zh": "冷周六",
+    "en": "Hissabeth",
+    "category": "character"
+  },
+  "twins_sleep": {
+    "zh": "丽莎&路易斯",
+    "en": "Twins Sleep",
+    "category": "character"
+  },
+  "leilani": {
+    "zh": "莉拉妮",
+    "en": "Leilani",
+    "category": "character"
+  },
+  "li_xiang_jia": {
+    "zh": "理想家",
+    "en": "Idealist",
+    "category": "character"
+  },
+  "liang": {
+    "zh": "梁月",
+    "en": "Liang",
+    "category": "character"
+  },
+  "lucy": {
+    "zh": "露西",
+    "en": "Lucy",
+    "category": "character"
+  },
+  "reed": {
+    "zh": "芦草结",
+    "en": "Reed",
+    "category": "character"
+  },
+  "paper_heron": {
+    "zh": "鹭鸶剪",
+    "en": "Paper Heron",
+    "category": "character"
+  },
+  "lopera": {
+    "zh": "洛佩拉",
+    "en": "Lopera",
+    "category": "character"
+  },
+  "lorelei": {
+    "zh": "罗蕾莱",
+    "en": "Lorelei",
+    "category": "character"
+  },
+  "luo_xi_jiao_shou": {
+    "zh": "罗西教授",
+    "en": "Professor Rossi",
+    "category": "character"
+  },
+  "marsha": {
+    "zh": "玛尔纱",
+    "en": "Marsha",
+    "category": "character"
+  },
+  "sentinel": {
+    "zh": "玛丽安娜",
+    "en": "Sentinel",
+    "category": "character"
+  },
+  "marcus": {
+    "zh": "马库斯",
+    "en": "Marcus",
+    "category": "character"
+  },
+  "matilda_bouanich": {
+    "zh": "玛蒂尔达",
+    "en": "Matilda Bouanich",
+    "category": "character"
+  },
+  "sweetheart": {
+    "zh": "玛丽莲",
+    "en": "Sweetheart",
+    "category": "character"
+  },
+  "ma_er_ta": {
+    "zh": "玛尔塔",
+    "en": "Marta",
+    "category": "character"
+  },
+  "melania": {
+    "zh": "梅兰妮",
+    "en": "Melania",
+    "category": "character"
+  },
+  "mei_lei_er": {
+    "zh": "梅蕾尔",
+    "en": "Merel",
+    "category": "character"
+  },
+  "door": {
+    "zh": "门",
+    "en": "Door",
+    "category": "character"
+  },
+  "name_day": {
+    "zh": "命名日",
+    "en": "Name Day",
+    "category": "character"
+  },
+  "moldir": {
+    "zh": "莫莉德尔",
+    "en": "Moldir",
+    "category": "character"
+  },
+  "ms_moissan": {
+    "zh": "莫桑女士",
+    "en": "Ms. Moissan",
+    "category": "character"
+  },
+  "an_an_lee": {
+    "zh": "泥鯭的士",
+    "en": "An-an Lee",
+    "category": "character"
+  },
+  "nick_bottom": {
+    "zh": "尼克·波顿",
+    "en": "Nick Bottom",
+    "category": "character"
+  },
+  "the_fool": {
+    "zh": "弄臣",
+    "en": "The Fool",
+    "category": "character"
+  },
+  "nautika": {
+    "zh": "诺谛卡",
+    "en": "Nautika",
+    "category": "character"
+  },
+  "dikke": {
+    "zh": "帕米埃",
+    "en": "Dikke",
+    "category": "character"
+  },
+  "pickles": {
+    "zh": "皮克勒斯",
+    "en": "Pickles",
+    "category": "character"
+  },
+  "balloon_party": {
+    "zh": "气球派对",
+    "en": "Balloon Party",
+    "category": "character"
+  },
+  "qi_xing": {
+    "zh": "奇星",
+    "en": "Qixing",
+    "category": "character"
+  },
+  "cristallo": {
+    "zh": "铅玻璃",
+    "en": "Cristallo",
+    "category": "character"
+  },
+  "jiu_niangzi": {
+    "zh": "曲娘",
+    "en": "Jiu Niangzi",
+    "category": "character"
+  },
+  "ren_xian_zi": {
+    "zh": "任仙子",
+    "en": "Ren Xianzi",
+    "category": "character"
+  },
+  "semmelweis": {
+    "zh": "塞梅尔维斯",
+    "en": "Semmelweis",
+    "category": "character"
+  },
+  "sai_luo_ni": {
+    "zh": "塞洛尼",
+    "en": "Celony",
+    "category": "character"
+  },
+  "desert_flannel": {
+    "zh": "沙丝绒",
+    "en": "Desert Flannel",
+    "category": "character"
+  },
+  "sonetto": {
+    "zh": "十四行诗",
+    "en": "Sonetto",
+    "category": "character"
+  },
+  "shi_te_lin": {
+    "zh": "施特林",
+    "en": "Sterling",
+    "category": "character"
+  },
+  "barbara": {
+    "zh": "数羊羔",
+    "en": "Barbara",
+    "category": "character"
+  },
+  "sputnik": {
+    "zh": "斯普特尼克",
+    "en": "Sputnik",
+    "category": "character"
+  },
+  "schneider": {
+    "zh": "斯奈德",
+    "en": "Schneider",
+    "category": "character"
+  },
+  "si_jie_er_nuo_wa": {
+    "zh": "斯捷尔诺娃",
+    "en": "Sternova",
+    "category": "character"
+  },
+  "sotheby": {
+    "zh": "苏芙比",
+    "en": "Sotheby",
+    "category": "character"
+  },
+  "su_fei_ya": {
+    "zh": "苏菲亚",
+    "en": "Sophia",
+    "category": "character"
+  },
+  "tai_rui_sha": {
+    "zh": "泰瑞莎",
+    "en": "Theresa",
+    "category": "character"
+  },
+  "tennant": {
+    "zh": "坦南特",
+    "en": "Tennant",
+    "category": "character"
+  },
+  "anjo_nala": {
+    "zh": "天使娜娜",
+    "en": "Anjo Nala",
+    "category": "character"
+  },
+  "ttt": {
+    "zh": "TTT",
+    "en": "TTT",
+    "category": "character"
+  },
+  "fatutu": {
+    "zh": "图图石子",
+    "en": "Fatutu",
+    "category": "character"
+  },
+  "medicine_pocket": {
+    "zh": "兔毛手袋",
+    "en": "Medicine Pocket",
+    "category": "character"
+  },
+  "tuo_lei_mi": {
+    "zh": "托勒密",
+    "en": "Ptolemy",
+    "category": "character"
+  },
+  "diggers": {
+    "zh": "挖掘艺术",
+    "en": "Diggers",
+    "category": "character"
+  },
+  "wa_lun_ti_na": {
+    "zh": "瓦伦缇娜",
+    "en": "Valentina",
+    "category": "character"
+  },
+  "wei_la": {
+    "zh": "维拉",
+    "en": "Вила",
+    "category": "character"
+  },
+  "a_knight": {
+    "zh": "未锈铠",
+    "en": "A Knight",
+    "category": "character"
+  },
+  "wei_er_ting": {
+    "zh": "维尔汀",
+    "en": "Vertin",
+    "category": "character"
+  },
+  "eternity": {
+    "zh": "温妮弗雷德",
+    "en": "Eternity",
+    "category": "character"
+  },
+  "wen_sen_te": {
+    "zh": "文森特",
+    "en": "Vincent",
+    "category": "character"
+  },
+  "ulrich": {
+    "zh": "乌尔里希",
+    "en": "Ulrich",
+    "category": "character"
+  },
+  "satsuki": {
+    "zh": "五色月",
+    "en": "Satsuki",
+    "category": "character"
+  },
+  "oliver_fog": {
+    "zh": "雾行者",
+    "en": "Oliver Fog",
+    "category": "character"
+  },
+  "ms_radio": {
+    "zh": "无线电小姐",
+    "en": "Ms. Radio",
+    "category": "character"
+  },
+  "wu_wang_wo": {
+    "zh": "勿忘我",
+    "en": "Forget me not",
+    "category": "character"
+  },
+  "wu_er_de": {
+    "zh": "兀尔德",
+    "en": "Urd",
+    "category": "character"
+  },
+  "x": {
+    "zh": "X",
+    "en": "X",
+    "category": "character"
+  },
+  "xi_man": {
+    "zh": "希曼",
+    "en": "Hyman",
+    "category": "character"
+  },
+  "xi_li_ya": {
+    "zh": "西莉亚",
+    "en": "Celia",
+    "category": "character"
+  },
+  "charlie": {
+    "zh": "夏利",
+    "en": "Charlie",
+    "category": "character"
+  },
+  "pioneer": {
+    "zh": "先驱者",
+    "en": "Pioneer",
+    "category": "character"
+  },
+  "xiao_ye_ni_sai": {
+    "zh": "小叶尼塞",
+    "en": "Енисей",
+    "category": "character"
+  },
+  "mesmer_jr": {
+    "zh": "小梅斯梅尔",
+    "en": "Mesmer Jr.",
+    "category": "character"
+  },
+  "eagle": {
+    "zh": "小春雀儿",
+    "en": "Eagle",
+    "category": "character"
+  },
+  "ms_newbabel": {
+    "zh": "新巴别塔",
+    "en": "Ms. NewBabel",
+    "category": "character"
+  },
+  "regulus": {
+    "zh": "星锑",
+    "en": "Regulus",
+    "category": "character"
+  },
+  "alien_t": {
+    "zh": "星之眼",
+    "en": "aliEn T",
+    "category": "character"
+  },
+  "recoleta": {
+    "zh": "虚构集",
+    "en": "Recoleta",
+    "category": "character"
+  },
+  "tooth_fairy": {
+    "zh": "牙仙",
+    "en": "Tooth Fairy",
+    "category": "character"
+  },
+  "adler": {
+    "zh": "哑谜",
+    "en": "Adler",
+    "category": "character"
+  },
+  "onion": {
+    "zh": "洋葱头",
+    "en": "ONiON",
+    "category": "character"
+  },
+  "rubuska": {
+    "zh": "野树莓",
+    "en": "Rubuska",
+    "category": "character"
+  },
+  "isolde": {
+    "zh": "伊索尔德",
+    "en": "Isolde",
+    "category": "character"
+  },
+  "igor": {
+    "zh": "伊戈尔",
+    "en": "Igor",
+    "category": "character"
+  },
+  "yi_ge_li_ka": {
+    "zh": "伊格丽卡",
+    "en": "Iglika",
+    "category": "character"
+  },
+  "yi_wan": {
+    "zh": "伊万",
+    "en": "Ivan",
+    "category": "character"
+  },
+  "yi_sha_bei_la": {
+    "zh": "伊莎贝拉",
+    "en": "Isabella",
+    "category": "character"
+  },
+  "yin_you_shi_ren": {
+    "zh": "吟游诗人",
+    "en": "Bard",
+    "category": "character"
+  },
+  "baby_blue": {
+    "zh": "婴儿蓝",
+    "en": "Baby Blue",
+    "category": "character"
+  },
+  "voyager": {
+    "zh": "远旅",
+    "en": "Voyager",
+    "category": "character"
+  },
+  "john_titor": {
+    "zh": "约翰·提托",
+    "en": "John Titor",
+    "category": "character"
+  },
+  "z": {
+    "zh": "z",
+    "en": "z",
+    "category": "character"
+  },
+  "flutterpage": {
+    "zh": "纸信圈儿",
+    "en": "Flutterpage",
+    "category": "character"
+  },
+  "zhi_zhen": {
+    "zh": "指针",
+    "en": "Pointer",
+    "category": "character"
+  },
+  "shamane": {
+    "zh": "鬃毛沙砾",
+    "en": "Shamane",
+    "category": "character"
+  },
+  "210": {
+    "zh": "210",
+    "en": "210",
+    "category": "character"
+  },
+  "thirty_seven": {
+    "zh": "37",
+    "en": "Thirty-seven",
+    "category": "character"
+  },
+  "six": {
+    "zh": "6",
+    "en": "Six",
+    "category": "character"
+  },
+  "77": {
+    "zh": "77",
+    "en": "77",
+    "category": "character"
+  },
+  "888": {
+    "zh": "888",
+    "en": "888",
+    "category": "character"
+  },
+  "lorentz_butterfly": {
+    "zh": "洛伦兹蝴蝶",
+    "en": "Lorentz Butterfly",
+    "category": "character"
+  },
+  "ye_mu_lan": {
+    "zh": "野木蓝",
+    "en": "Añil",
+    "category": "character"
+  },
+  "ramona": {
+    "zh": "拉莫纳",
+    "en": "Ramona",
+    "category": "character"
+  },
+  "ma_ge_li_te": {
+    "zh": "玛格丽特",
+    "en": "Margaret",
+    "category": "character"
+  },
+  "pei_lei_si": {
+    "zh": "佩雷斯",
+    "en": "Los Pérez",
+    "category": "character"
+  },
+  "mu_lie_er": {
+    "zh": "穆列尔",
+    "en": "Muriel",
+    "category": "character"
+  },
+  "hei_huan": {
+    "zh": "黑鹮",
+    "en": "Black Ibis",
+    "category": "character"
+  },
+  "lu_de_wei_xi": {
+    "zh": "路德维希",
+    "en": "Ludwig",
+    "category": "character"
+  },
+  "zhu_xian_ju_qing": {
+    "zh": "主线剧情",
+    "en": "Story",
+    "category": "mainLine"
+  },
+  "this_is_tomorrow": {
+    "zh": "此即明日",
+    "en": "This is Tomorrow",
+    "category": "mainLine"
+  },
+  "in_our_time": {
+    "zh": "在我们的时代里",
+    "en": "In Our Time",
+    "category": "mainLine"
+  },
+  "tender_is_the_night": {
+    "zh": "夜色温柔",
+    "en": "Tender is the Night",
+    "category": "mainLine"
+  },
+  "nouvelles_et_textes_pour_rien": {
+    "zh": "故事一无所有",
+    "en": "Nouvelles et Textes pour Rien",
+    "category": "mainLine"
+  },
+  "el_oro_de_los_tigres": {
+    "zh": "老虎的金黄",
+    "en": "El Oro de los Tigres",
+    "category": "mainLine"
+  },
+  "the_prisoner_in_the_cave": {
+    "zh": "洞穴的囚徒",
+    "en": "The Prisoner in the Cave",
+    "category": "mainLine"
+  },
+  "e_lucevan_le_stelle": {
+    "zh": "今夜星光灿烂",
+    "en": "E lucevan le stelle",
+    "category": "mainLine"
+  },
+  "vereinsamt": {
+    "zh": "孤独之歌",
+    "en": "Vereinsamt",
+    "category": "mainLine"
+  },
+  "tristes_tropiques": {
+    "zh": "忧郁的热带",
+    "en": "Tristes Tropiques",
+    "category": "mainLine"
+  },
+  "folie_et_d_raison": {
+    "zh": "疯癫与文明",
+    "en": "Folie et Déraison",
+    "category": "mainLine"
+  },
+  "paradise_regained": {
+    "zh": "复乐园",
+    "en": "Paradise Regained",
+    "category": "mainLine"
+  },
+  "a_long_long_way": {
+    "zh": "行于漫漫长路上",
+    "en": "A Long Long Way",
+    "category": "mainLine"
+  },
+  "yuan_zheng_ji": {
+    "zh": "远征记",
+    "en": "Слово о полку",
+    "category": "mainLine"
+  },
+  "huo_dong_ju_qing": {
+    "zh": "活动剧情",
+    "en": "Event",
+    "category": "event"
+  },
+  "the_theft_of_the_rimet_cup": {
+    "zh": "雷米特杯失窃案",
+    "en": "The Theft of the Rimet Cup",
+    "category": "event"
+  },
+  "a_nightmare_at_green_lake": {
+    "zh": "绿湖噩梦",
+    "en": "A Nightmare at Green Lake",
+    "category": "event"
+  },
+  "journey_to_mor_pankh": {
+    "zh": "行至摩卢旁卡",
+    "en": "Journey to Mor Pankh",
+    "category": "event"
+  },
+  "revival_the_uluru_games": {
+    "zh": "复兴！乌卢鲁运动会",
+    "en": "Revival! The Uluru Games",
+    "category": "event"
+  },
+  "notes_on_shuori": {
+    "zh": "朔日手记",
+    "en": "Notes on Shuori",
+    "category": "event"
+  },
+  "farewell_rayashki": {
+    "zh": "再见，来亚什基",
+    "en": "Farewell, Rayashki",
+    "category": "event"
+  },
+  "floor_it_to_the_golden_city": {
+    "zh": "飞驰！明日之城",
+    "en": "Floor It! To the Golden City",
+    "category": "event"
+  },
+  "route_77_the_haunted_highway": {
+    "zh": "77号往事",
+    "en": "Route 77: The Haunted Highway",
+    "category": "event"
+  },
+  "chronicles_of_uluru_london_dawning": {
+    "zh": "圣火纪行：东区黎明",
+    "en": "Chronicles of Uluru: London Dawning",
+    "category": "event"
+  },
+  "last_evenings_on_earth": {
+    "zh": "地球上最后的夜晚",
+    "en": "Last Evenings on Earth",
+    "category": "event"
+  },
+  "showdown_in_chinatown": {
+    "zh": "唐人街影话",
+    "en": "Showdown in Chinatown",
+    "category": "event"
+  },
+  "1987_cosmic_overture": {
+    "zh": "1987宇宙组曲",
+    "en": "1987 Cosmic Overture",
+    "category": "event"
+  },
+  "la_primavera_di_firenze": {
+    "zh": "翡冷翠之春",
+    "en": "La Primavera di Firenze",
+    "category": "event"
+  },
+  "drama_in_athens": {
+    "zh": "入雅典记",
+    "en": "Drama in Athens",
+    "category": "event"
+  },
+  "the_midnight_whistle": {
+    "zh": "长夜鸣笛",
+    "en": "The Midnight Whistle",
+    "category": "event"
+  },
+  "a_flowing_feast": {
+    "zh": "迁流的盛宴",
+    "en": "A Flowing Feast",
+    "category": "event"
+  },
+  "spring_unending": {
+    "zh": "不老春",
+    "en": "Spring Unending",
+    "category": "event"
+  },
+  "the_turquoise_serpent_club": {
+    "zh": "《绿松石蛇俱乐部》",
+    "en": "The Turquoise Serpent Club",
+    "category": "event"
+  },
+  "last_and_first_principles": {
+    "zh": "人们向何处去",
+    "en": "Last and First Principles",
+    "category": "event"
+  },
+  "yi_shi": {
+    "zh": "轶事",
+    "en": "Side Story",
+    "category": "anecdote"
+  },
+  "thief_of_the_thieves": {
+    "zh": "梅兰妮·以盗制盗",
+    "en": "Thief of the Thieves",
+    "category": "anecdote"
+  },
+  "the_puppy_and_the_hippie": {
+    "zh": "皮克勒斯·小狗与流浪汉",
+    "en": "The Puppy And the Hippie",
+    "category": "anecdote"
+  },
+  "the_old_teeth_and_the_worn_marks": {
+    "zh": "牙仙·旧齿与陈痕",
+    "en": "The Old Teeth and the Worn Marks",
+    "category": "anecdote"
+  },
+  "jie_xi_ka_fei_yue_jiu_wu_zhi_qiang": {
+    "zh": "洁西卡·飞跃旧屋之墙",
+    "en": "One Flew Over the Old House",
+    "category": "anecdote"
+  },
+  "bell_echoing_in_the_valley": {
+    "zh": "鬃毛沙砾·晃铃响于山谷",
+    "en": "Bell Echoing in the Valley",
+    "category": "anecdote"
+  },
+  "between_dusts_and_stars": {
+    "zh": "伽菈波那·尘埃与星的边界",
+    "en": "Between Dusts And Stars",
+    "category": "anecdote"
+  },
+  "as_the_sand_remembered": {
+    "zh": "37·沙粒的记忆",
+    "en": "As the Sand Remembered",
+    "category": "anecdote"
+  },
+  "trudge_in_the_long_night": {
+    "zh": "6·漫漫之夜行迹",
+    "en": "Trudge in the Long Night",
+    "category": "anecdote"
+  },
+  "the_master_of_theatrics": {
+    "zh": "夏利·戏剧与戏剧",
+    "en": "The Master of Theatrics",
+    "category": "anecdote"
+  },
+  "the_story_of_oliver": {
+    "zh": "雾行者·奥利弗的故事",
+    "en": "The Story of Oliver",
+    "category": "anecdote"
+  },
+  "as_the_driven_snow_falls": {
+    "zh": "爱兹拉·落于积雪之上",
+    "en": "As the Driven Snow Falls",
+    "category": "anecdote"
+  },
+  "reunion_of_fires": {
+    "zh": "可燃点·焰光交汇处",
+    "en": "Reunion of Fires",
+    "category": "anecdote"
+  },
+  "the_long_night_singing_its_dirges": {
+    "zh": "帕米埃·直到长夜下旬",
+    "en": "The Long Night Singing its Dirges",
+    "category": "anecdote"
+  },
+  "after_the_good_dream": {
+    "zh": "埃里克·美梦后记",
+    "en": "After the Good Dream",
+    "category": "anecdote"
+  },
+  "light_to_the_tavern": {
+    "zh": "曲娘·曲香蒙求",
+    "en": "Light to the Tavern",
+    "category": "anecdote"
+  },
+  "flowing_in_the_wind": {
+    "zh": "葛天·天下有风",
+    "en": "Flowing in the Wind",
+    "category": "anecdote"
+  },
+  "pulp_comedy": {
+    "zh": "星之眼·庸碌喜剧",
+    "en": "Pulp Comedy",
+    "category": "anecdote"
+  },
+  "back_to_earth": {
+    "zh": "冬·重返人间",
+    "en": "Back to Earth",
+    "category": "anecdote"
+  },
+  "the_small_room": {
+    "zh": "伊索尔德·小房间",
+    "en": "The Small Room",
+    "category": "anecdote"
+  },
+  "the_tall_lighthouse": {
+    "zh": "马库斯·灯塔集",
+    "en": "The Tall Lighthouse",
+    "category": "anecdote"
+  },
+  "the_ninth_virtue": {
+    "zh": "未锈铠·第九条美德",
+    "en": "The Ninth Virtue",
+    "category": "anecdote"
+  },
+  "the_will_of_gears": {
+    "zh": "X·齿轮的意志",
+    "en": "The Will of Gears",
+    "category": "anecdote"
+  },
+  "dawn_arrives_as_usual": {
+    "zh": "维拉·黎明依旧到来",
+    "en": "Dawn Arrives as Usual",
+    "category": "anecdote"
+  },
+  "silver_knot": {
+    "zh": "北方哨歌·银线结",
+    "en": "Silver Knot",
+    "category": "anecdote"
+  },
+  "to_wennifred": {
+    "zh": "温妮弗雷德·致温妮弗雷德",
+    "en": "To Wennifred",
+    "category": "anecdote"
+  },
+  "the_winds_of_juhalerat": {
+    "zh": "芝诺·风吹乌哈拉",
+    "en": "The Winds of Juhalerat",
+    "category": "anecdote"
+  },
+  "flying_to_the_past": {
+    "zh": "露西·飞渡往日",
+    "en": "Flying to the Past",
+    "category": "anecdote"
+  },
+  "through_the_glass": {
+    "zh": "卡卡尼亚·犹在镜中",
+    "en": "Through the Glass",
+    "category": "anecdote"
+  },
+  "finding_xavier": {
+    "zh": "小春雀儿·字母的研究",
+    "en": "Finding Xavier",
+    "category": "anecdote"
+  },
+  "the_third_circumstance": {
+    "zh": "塞梅尔维斯·第三种苏醒",
+    "en": "The Third Circumstance",
+    "category": "anecdote"
+  },
+  "the_san_francisco_kids": {
+    "zh": "J·旧金山小子",
+    "en": "The San Francisco Kids",
+    "category": "anecdote"
+  },
+  "on_the_thousandth_night": {
+    "zh": "环状水星·第一千夜",
+    "en": "On the Thousandth Night",
+    "category": "anecdote"
+  },
+  "the_lady_s_etiquette": {
+    "zh": "苏芙比·淑女的守则",
+    "en": "The Lady's Etiquette",
+    "category": "anecdote"
+  },
+  "only_water_springs_know": {
+    "zh": "拉拉泉·只有泉水知道",
+    "en": "Only Water Springs Know",
+    "category": "anecdote"
+  },
+  "bedtime_story": {
+    "zh": "蓝手帕·睡前故事",
+    "en": "Bedtime Story",
+    "category": "anecdote"
+  },
+  "the_red_wall": {
+    "zh": "阿尔古斯·红墙",
+    "en": "The Red Wall",
+    "category": "anecdote"
+  },
+  "where_the_fire_starts": {
+    "zh": "金蜜儿·起火点",
+    "en": "Where the Fire Starts",
+    "category": "anecdote"
+  },
+  "when_peace_blooms": {
+    "zh": "挖掘艺术·当和平盛放",
+    "en": "When Peace Blooms",
+    "category": "anecdote"
+  },
+  "the_october_overcast": {
+    "zh": "天使娜娜·十月无晴天",
+    "en": "The October Overcast",
+    "category": "anecdote"
+  },
+  "into_the_rainforest": {
+    "zh": "洛佩拉·向雨林深处",
+    "en": "Into the Rainforest",
+    "category": "anecdote"
+  },
+  "a_day_plotted_logarithmically": {
+    "zh": "37·乘法轴上的一天",
+    "en": "A Day Plotted Logarithmically",
+    "category": "anecdote"
+  },
+  "a_night_without_end": {
+    "zh": "小梅斯梅尔·长夜未逝",
+    "en": "A Night Without End",
+    "category": "anecdote"
+  },
+  "shadow_of_the_sun": {
+    "zh": "笃笃骨·太阳的背面",
+    "en": "Shadow of the Sun",
+    "category": "anecdote"
+  },
+  "night_escapades_on_cross_street": {
+    "zh": "纸信圈儿·夜游十字街",
+    "en": "Night Escapades on Cross Street",
+    "category": "anecdote"
+  },
+  "a_fool_s_gold": {
+    "zh": "环状水星·“黄金”与悲喜剧",
+    "en": "A Fool's Gold",
+    "category": "anecdote"
+  },
+  "beyond_the_coastline": {
+    "zh": "芭卡洛儿·河港与海之间",
+    "en": "Beyond the Coastline",
+    "category": "anecdote"
+  },
+  "from_the_depths_of_space": {
+    "zh": "乌尔里希·深空波",
+    "en": "From the Depths of Space",
+    "category": "anecdote"
+  },
+  "the_best_band_in_town": {
+    "zh": "星锑·最佳乐队",
+    "en": "The Best Band in Town",
+    "category": "anecdote"
+  },
+  "saw_and_reap": {
+    "zh": "梁月·种瓜得瓜",
+    "en": "Saw and Reap",
+    "category": "anecdote"
+  },
+  "the_great_trickster": {
+    "zh": "菲林士多·洛基",
+    "en": "The Great Trickster",
+    "category": "anecdote"
+  },
+  "the_ghost_master": {
+    "zh": "泥鯭的士·鬼马探灵记",
+    "en": "The Ghost Master",
+    "category": "anecdote"
+  },
+  "ruinas_gloriosas_y_directrices_de_met_foras": {
+    "zh": "虚构集·《荣耀废墟与隐喻指南》",
+    "en": "Ruinas Gloriosas y directrices de metáforas",
+    "category": "anecdote"
+  },
+  "gap_month": {
+    "zh": "冷周六·间隔月",
+    "en": "Gap Month",
+    "category": "anecdote"
+  },
+  "doomsday_the_days_after": {
+    "zh": "库珀花环·末日与末日之后",
+    "en": "Doomsday & the Days After",
+    "category": "anecdote"
+  },
+  "the_sea_breeze_still_whispers": {
+    "zh": "图图石子·海风的往事",
+    "en": "The Sea Breeze Still Whispers",
+    "category": "anecdote"
+  },
+  "in_her_own_reflection": {
+    "zh": "诺谛卡·虚无的倒影",
+    "en": "In Her Own Reflection",
+    "category": "anecdote"
+  },
+  "a_moment_on_the_white_expanse": {
+    "zh": "莫莉德尔·冰原时隙",
+    "en": "A Moment on the White Expanse",
+    "category": "anecdote"
+  },
+  "away_from_home": {
+    "zh": "坎吉拉·在路上",
+    "en": "Away From Home",
+    "category": "anecdote"
+  },
+  "dawn_rises_over_the_kill_zone": {
+    "zh": "玛丽安娜·谋杀始于清晨",
+    "en": "Dawn Rises over the Kill Zone",
+    "category": "anecdote"
+  },
+  "fuga_a_3_soggetti": {
+    "zh": "卡戎·三重赋格",
+    "en": "Fuga a 3 Soggetti",
+    "category": "anecdote"
+  },
+  "the_diamond_con": {
+    "zh": "坦南特·钻石游戏",
+    "en": "The Diamond Con",
+    "category": "anecdote"
+  },
+  "a_shadow_s_weight": {
+    "zh": "野树莓·灵魂影映",
+    "en": "A Shadow's Weight",
+    "category": "anecdote"
+  },
+  "a_shadow_s_weight_1": {
+    "zh": "告死鸟·冷铁",
+    "en": "A Shadow's Weight",
+    "category": "anecdote"
+  },
+  "the_tombstone_museum": {
+    "zh": "讣告人·墓碑博物馆",
+    "en": "The Tombstone Museum",
+    "category": "anecdote"
+  },
+  "the_long_rain_of_fate": {
+    "zh": "贝丽尔·命运的雨季",
+    "en": "The Long Rain of Fate",
+    "category": "anecdote"
+  },
+  "an_unheated_gem": {
+    "zh": "灰调蓝·无烧",
+    "en": "An Unheated Gem",
+    "category": "anecdote"
+  },
+  "handover_day": {
+    "zh": "玛蒂尔达·交接日",
+    "en": "Handover Day",
+    "category": "anecdote"
+  },
+  "in_nomine_equitatus": {
+    "zh": "玛尔纱·以骑士之名",
+    "en": "In Nomine Equitatus",
+    "category": "anecdote"
+  },
+  "into_the_maelstrom": {
+    "zh": "伊戈尔·风暴前夜",
+    "en": "Into the Maelstrom",
+    "category": "anecdote"
+  },
+  "in_the_shadow_of_the_mountains": {
+    "zh": "莫莉德尔·在高山下",
+    "en": "In the Shadow of the Mountains",
+    "category": "anecdote"
+  },
+  "spring_comes_slowly": {
+    "zh": "鹭鸶剪·春日迟",
+    "en": "Spring Comes Slowly",
+    "category": "anecdote"
+  },
+  "to_slay_a_tiger": {
+    "zh": "程和光·打虎记",
+    "en": "To Slay a Tiger",
+    "category": "anecdote"
+  },
+  "a_song_once_heard": {
+    "zh": "葛天·有琴歌",
+    "en": "A Song Once Heard",
+    "category": "anecdote"
+  },
+  "counterpoint_of_life_and_death": {
+    "zh": "洛伦兹蝴蝶·死生对位",
+    "en": "Counterpoint of Life and Death",
+    "category": "anecdote"
+  },
+  "whirling_blooms": {
+    "zh": "拉莫纳·花朵飞旋",
+    "en": "Whirling Blooms",
+    "category": "anecdote"
+  },
+  "all_the_world_s_a_chip": {
+    "zh": "百夫长·世界筹码",
+    "en": "All the World's a Chip",
+    "category": "anecdote"
+  },
+  "the_last_film": {
+    "zh": "贝蒂·最后的电影",
+    "en": "The Last Film",
+    "category": "anecdote"
+  },
+  "1.0": {
+    "zh": "1.0",
+    "en": "1.0",
+    "category": "versionCode"
+  },
+  "1.1": {
+    "zh": "1.1",
+    "en": "1.1",
+    "category": "versionCode"
+  },
+  "1.2": {
+    "zh": "1.2",
+    "en": "1.2",
+    "category": "versionCode"
+  },
+  "1.3": {
+    "zh": "1.3",
+    "en": "1.3",
+    "category": "versionCode"
+  },
+  "1.4": {
+    "zh": "1.4",
+    "en": "1.4",
+    "category": "versionCode"
+  },
+  "1.5": {
+    "zh": "1.5",
+    "en": "1.5",
+    "category": "versionCode"
+  },
+  "1.6": {
+    "zh": "1.6",
+    "en": "1.6",
+    "category": "versionCode"
+  },
+  "1.7": {
+    "zh": "1.7",
+    "en": "1.7",
+    "category": "versionCode"
+  },
+  "1.8": {
+    "zh": "1.8",
+    "en": "1.8",
+    "category": "versionCode"
+  },
+  "1.9": {
+    "zh": "1.9",
+    "en": "1.9",
+    "category": "versionCode"
+  },
+  "2.0": {
+    "zh": "2.0",
+    "en": "2.0",
+    "category": "versionCode"
+  },
+  "2.1": {
+    "zh": "2.1",
+    "en": "2.1",
+    "category": "versionCode"
+  },
+  "2.2": {
+    "zh": "2.2",
+    "en": "2.2",
+    "category": "versionCode"
+  },
+  "2.3": {
+    "zh": "2.3",
+    "en": "2.3",
+    "category": "versionCode"
+  },
+  "2.4": {
+    "zh": "2.4",
+    "en": "2.4",
+    "category": "versionCode"
+  },
+  "2.5": {
+    "zh": "2.5",
+    "en": "2.5",
+    "category": "versionCode"
+  },
+  "2.6": {
+    "zh": "2.6",
+    "en": "2.6",
+    "category": "versionCode"
+  },
+  "2.7": {
+    "zh": "2.7",
+    "en": "2.7",
+    "category": "versionCode"
+  },
+  "2.8": {
+    "zh": "2.8",
+    "en": "2.8",
+    "category": "versionCode"
+  },
+  "3.0": {
+    "zh": "3.0",
+    "en": "3.0",
+    "category": "versionCode"
+  },
+  "3.1": {
+    "zh": "3.1",
+    "en": "3.1",
+    "category": "versionCode"
+  },
+  "3.2": {
+    "zh": "3.2",
+    "en": "3.2",
+    "category": "versionCode"
+  },
+  "3.3": {
+    "zh": "3.3",
+    "en": "3.3",
+    "category": "versionCode"
+  },
+  "3.4": {
+    "zh": "3.4",
+    "en": "3.4",
+    "category": "versionCode"
+  },
+  "3.5": {
+    "zh": "3.5",
+    "en": "3.5",
+    "category": "versionCode"
+  },
+  "3.6": {
+    "zh": "3.6",
+    "en": "3.6",
+    "category": "versionCode"
+  },
+  "SP01": {
+    "zh": "SP01",
+    "en": "SP01",
+    "category": "versionCode"
+  },
+  "unknown_time": {
+    "zh": "未知时间",
+    "en": "Unknown Time",
+    "category": "year"
+  },
+  "1912": {
+    "zh": "1912",
+    "en": "1912",
+    "category": "year"
+  },
+  "1913": {
+    "zh": "1913",
+    "en": "1913",
+    "category": "year"
+  },
+  "1914": {
+    "zh": "1914",
+    "en": "1914",
+    "category": "year"
+  },
+  "1920": {
+    "zh": "1920",
+    "en": "1920",
+    "category": "year"
+  },
+  "1929": {
+    "zh": "1929",
+    "en": "1929",
+    "category": "year"
+  },
+  "1935": {
+    "zh": "1935",
+    "en": "1935",
+    "category": "year"
+  },
+  "1936": {
+    "zh": "1936",
+    "en": "1936",
+    "category": "year"
+  },
+  "1966": {
+    "zh": "1966",
+    "en": "1966",
+    "category": "year"
+  },
+  "1971": {
+    "zh": "1971",
+    "en": "1971",
+    "category": "year"
+  },
+  "1987": {
+    "zh": "1987",
+    "en": "1987",
+    "category": "year"
+  },
+  "1990": {
+    "zh": "1990",
+    "en": "1990",
+    "category": "year"
+  },
+  "1991": {
+    "zh": "1991",
+    "en": "1991",
+    "category": "year"
+  },
+  "1996": {
+    "zh": "1996",
+    "en": "1996",
+    "category": "year"
+  },
+  "temp_warm": {
+    "zh": "色温-暖色",
+    "en": "Temp - Warm",
+    "category": "Tone"
+  },
+  "temp_cool": {
+    "zh": "色温-冷色",
+    "en": "Temp - Cool",
+    "category": "Tone"
+  },
+  "temp_neutral": {
+    "zh": "色温-中性",
+    "en": "Temp - Neutral",
+    "category": "Tone"
+  },
+  "brightness_high": {
+    "zh": "明暗调-高",
+    "en": "Brightness - High",
+    "category": "Tone"
+  },
+  "brightness_medium": {
+    "zh": "明暗调-中",
+    "en": "Brightness - Medium",
+    "category": "Tone"
+  },
+  "brightness_low": {
+    "zh": "明暗调-低",
+    "en": "Brightness - Low",
+    "category": "Tone"
+  },
+  "saturation_high": {
+    "zh": "饱和度-高",
+    "en": "Saturation - High",
+    "category": "Tone"
+  },
+  "saturation_low": {
+    "zh": "饱和度-低",
+    "en": "Saturation - Low",
+    "category": "Tone"
+  },
+  "contrast_high": {
+    "zh": "对比度-强",
+    "en": "Contrast - High",
+    "category": "Tone"
+  },
+  "contrast_low": {
+    "zh": "对比度-弱",
+    "en": "Contrast - Low",
+    "category": "Tone"
+  },
+  "color_monochromatic": {
+    "zh": "色彩-单调",
+    "en": "Color - Monochromatic",
+    "category": "Tone"
+  },
+  "color_analogous": {
+    "zh": "色彩-相似",
+    "en": "Color - Analogous",
+    "category": "Tone"
+  },
+  "color_complementary": {
+    "zh": "色彩-互补",
+    "en": "Color - Complementary",
+    "category": "Tone"
+  },
+  "color_contrasting": {
+    "zh": "色彩-对比",
+    "en": "Color - Contrasting",
+    "category": "Tone"
+  },
+  "yuri": {
+    "zh": "百合花",
+    "en": "Yuri",
+    "category": "special"
+  },
+  "group_photo": {
+    "zh": "多人合照",
+    "en": "Group Photo",
+    "category": "special"
+  },
+  "echoes_in_the_mountain": {
+    "zh": "山麓的回音",
+    "en": "Echoes in the Mountain",
+    "category": "special"
+  },
+  "a_series_of_dusks": {
+    "zh": "黄昏的音序",
+    "en": "A Series of Dusks",
+    "category": "special"
+  },
+  "the_syndrome_of_silence": {
+    "zh": "无声综合症",
+    "en": "The Syndrome of Silence",
+    "category": "special"
+  },
+  "background": {
+    "zh": "背景图",
+    "en": "Background",
+    "category": "special"
+  },
+  "special_cg": {
+    "zh": "特殊CG",
+    "en": "Special CG",
+    "category": "special"
+  },
+  "community_image": {
+    "zh": "社区图像",
+    "en": "Community Image",
+    "category": "special"
+  },
+  "manually_restored": {
+    "zh": "手动修复",
+    "en": "Manually Restored",
+    "category": "special"
+  }
+}

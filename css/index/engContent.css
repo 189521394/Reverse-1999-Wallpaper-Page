@@ -1,5 +1,13 @@
+.titleFrame {
+    font-size: 30px;
+    color: var(--fontColor);
+
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
 .engContent {
     font-size: 0.65em;
     opacity: 0.8;
-    vertical-align: baseline;
 }

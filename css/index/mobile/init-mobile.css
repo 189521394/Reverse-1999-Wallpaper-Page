@@ -51,6 +51,7 @@
         #searchButton {
             white-space: nowrap;
             font-size: 24px;
+            padding: 0 10px;
         }
 
         /*搜索提示框*/
@@ -72,7 +73,7 @@
 
         /*文本输入框*/
         #input {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         /*翻页区框架*/
@@ -103,7 +104,7 @@
 
         /*空状态引导*/
         #select::before {
-            content: "没有符合条件的图像\A尝试输入或筛选";
+            content: attr(data-before-text);
 
             font-size: 24px;
             color: var(--fontColor);
@@ -230,10 +231,6 @@
         }
 
         #control {
-            display: none;
-        }
-
-        .pc-only {
             display: none;
         }
 
@@ -393,18 +390,25 @@
         #result {
             font-size: 16px;
         }
+        #resultCount {
+            font-size: 16px;
+        }
 
         /*隐藏普通文本，用伪元素替代*/
+        /*详细逻辑在多语言引擎--移动端短文本*/
         .buttons {
             font-size: 0;
             border-radius: 0;
-            width: 80px !important;
             height: 35px !important;
             line-height: 35px !important;
         }
         .buttons:after {
             content: attr(data-short);
             font-size: 20px;
+
+            width: auto;
+            padding: 0 0.4em;
+            white-space: nowrap;
         }
         /*=============================隐藏其他元素=============================*/
         #select {
@@ -656,6 +660,9 @@
     }
 
     /*内容大小控制*/
+    .titleFrame {
+        font-size: 20px;
+    }
     .title {
         font-size: 20px;
     }
@@ -706,7 +713,7 @@
     }
     #noticeTitle {
         font-size: 30px;
-        width: 100px;
+        width: fit-content;
         height: 50px;
     }
     #noticeContent {

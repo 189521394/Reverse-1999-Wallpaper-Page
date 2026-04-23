@@ -1,6 +1,100 @@
 {
-  "common": {
+  "notice": {
+    "title": "NOTICE",
     "confirm": "CONFIRM",
     "cancel": "CANCEL"
+  },
+  "mobileTab": {
+    "explorer": "Gallery",
+    "filter": "Index",
+    "set": "Options"
+  },
+  "searchWithInput": {
+    "submit": "Submit",
+    "placeholder": "Separate tags with ';'",
+    "tipsContent": "↑/↓：Previous/Next tag, supports looping.\nTab：Select tag.\n-/+：Previous/Next page."
+  },
+  "searchWithTag": {
+    "tagList": {
+      "character": "Character",
+      "character-short": "Character",
+      "mainLine": "Main Story",
+      "mainLine-short": "Story",
+      "event": "Event",
+      "event-short": "Event",
+      "anecdote": "Side Story",
+      "anecdote-short": "Side",
+      "versionCode": "Version",
+      "versionCode-short": "Version",
+      "year": "Timeline",
+      "year-short": "Era",
+      "tone": "Tone",
+      "tone-short": "Tone",
+      "special": "Special Tags",
+      "special-short": "Special"
+    },
+    "submitPool": {
+      "tips": "Select Tags"
+    }
+  },
+  "controlPanel": {
+    "result": "Found：",
+    "preferences": "Preferences",
+    "clear": "Clear",
+    "clear-short": "Clear",
+    "submit": "Submit",
+    "submit-short": "Submit"
+  },
+  "settingsMenu": {
+    "preferences": "Preferences",
+    "tips": "Guide",
+    "mail": "Mail",
+    "about": "About",
+    "devOpt": "Dev Options"
+  },
+  "settings": {
+    "preferences": {
+      "general": {
+        "title": "General/",
+        "title-small": "通用",
+        "precise": "Exact Match",
+        "showTag": "Show Image Tags",
+        "selection": "Enable Text Selection",
+        "autoReplace": "Auto-Replace Similar Tags",
+        "autoSubmit": "Auto Submit",
+        "hideTips": "Hide Tooltips"
+      },
+      "lang": {
+        "title": "Language/",
+        "title-small": "语言",
+        "switchLang": "Switch Language(Beta)",
+        "switch": "Switch"
+      },
+      "mobile": {
+        "title": "Mobile Options/",
+        "title-small": "适用于移动端的选项",
+        "tabShow": "Auto-Hide Tab Bar",
+        "autoSwitch": "Auto-Switch Gallery"
+      },
+      "theme": {
+        "title": "Theme/",
+        "title-small": "主题控制",
+        "auto": "Auto",
+        "manual": "Manual"
+      },
+      "clear": {
+        "title": "Clear Button Control/",
+        "title-small": "清空按钮控制",
+        "result": "Also clear results",
+        "input": "Also clear input box"
+      }
+    }
+  },
+  "guide": {
+    "choice": "Language/选择语言",
+    "tips": "You can change this later in Settings/后续可在设置中更改."
+  },
+  "gallery": {
+    "tips": "No matching images found.\nTry searching or filtering."
   }
 }

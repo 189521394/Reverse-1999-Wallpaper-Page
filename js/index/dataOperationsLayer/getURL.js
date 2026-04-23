@@ -1,46 +1,32 @@
 // 定义 R2 域名
 const R2_DOMAIN = "https://img.r9wallpaper.org";
 
-// 判断当前是否在本地运行 (localhost/局域网调试)
-const hostname = window.location.hostname;
-const isLocal =
-    hostname === 'localhost' ||
-    hostname === '127.0.0.1' ||
-    hostname.startsWith('10.') ||
-    hostname.startsWith('172.') ||
-    hostname.startsWith('192.168.');
-
 // 开发调试，即时刷新
 const fastUpdate = document.getElementById("fastUpdate");
 
-async function loadURL(targetTag) {
-    let data;
-    if (fastUpdate.checked) {
-        const meta = await fetch("Filter.json");
-        data = await meta.json();
-    } else {
-        data = await loadToMemory();
-    }
+async function loadURL(targetTagDisplayWords) {
     const isPrecise = document.getElementById("preciseScreening").checked;
 
-    // 决定图片路径
-    let urlPrefix = "";
-    if (isLocal) {
-        urlPrefix = "../"
-    } else {
-        urlPrefix = (R2_DOMAIN + "/")
-    }
+    // 调用引擎，把用户输入的文本解析成纯 ID 数组
+    const targetTagIds = targetTagDisplayWords.map(word => I18n.parse(word));
 
+    let urlPrefix = isLocal ? "../" : (R2_DOMAIN + "/");
     let filteredData;
 
     // 精确筛选和模糊筛选
     if (isPrecise) {
-        filteredData = data.filter(
-            item => targetTag.every(tag => item.tag_ZH.includes(tag))
+        filteredData = runtimeDatabase.filter(
+            item => targetTagIds.every(id =>
+                (item.tags && item.tags.includes(id)) ||
+                (item.tone && item.tone.includes(id))
+            )
         );
     } else {
-        filteredData = data.filter(
-            item => targetTag.some(tag => item.tag_ZH.includes(tag))
+        filteredData = runtimeDatabase.filter(
+            item => targetTagIds.some(id =>
+                (item.tags && item.tags.includes(id)) ||
+                (item.tone && item.tone.includes(id))
+            )
         );
     }
 

@@ -8,7 +8,8 @@ async function showTag(element) {
     // 先清空，动画放在最后，等里面的标签准备完毕了再加载动画，不然动画会抽搐
     showBox.replaceChildren();
 
-    let Tags = await loadTag(rawPath);
+    // 这里拿到的是一个对象，包含标签和色调
+    let tagData = await loadTag(rawPath);
     let cache = document.createDocumentFragment();
 
     // ======================================调试模式：快速复制文件名称======================================
@@ -52,12 +53,18 @@ async function showTag(element) {
     }
     // 调试就不加try了，自己修
     // ======================================调试结束======================================
+    // 这里获取的还是ID列表
+    let displayTags = [...tagData.tags, ...tagData.tone];
 
-    for (let i = 0; i < Tags.length; i++) {
+    for (let i = 0; i < displayTags.length; i++) {
         let div = document.createElement("div");
 
-        div.textContent = Tags[i];
+        // 翻译
+        div.textContent = I18n.Translate(displayTags[i]);
         div.className = "tags";
+
+        // 给元素绑定原生的纯 ID，方便热重载抓取
+        div.setAttribute("data-raw-tag", displayTags[i]);
 
         cache.appendChild(div);
     }

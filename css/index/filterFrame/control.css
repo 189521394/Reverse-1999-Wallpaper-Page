@@ -21,18 +21,21 @@
 
 /*设置按钮大小*/
 #clean {
-    width: 6.8em;
+    width: auto;
+    padding: 0 0.4em;
 }
 
 #submit {
-    width: 4.8em;
+    width: auto;
+    padding: 0 0.4em;
 }
 
 #setButton {
-    width: 7.8em;
+    width: auto;
+    padding: 0 0.4em;
 }
 
-#result {
+#resultFrame {
     color: var(--fontColor);
 }
 
@@ -67,12 +70,14 @@
 
 /*设置结果样式*/
 /*让元素靠左对齐，同时又留有间距*/
-#result {
+#resultFrame {
+    display: flex;
+
     margin-right: auto;
     margin-left: 30px;
 }
 
-#result {
+#resultFrame {
     width: 10em;
     height: 1.4em;
     line-height: 1.4em;

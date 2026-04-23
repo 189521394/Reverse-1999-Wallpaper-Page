@@ -253,3 +253,6 @@ body {
 .mailContent {
     transition: color 250ms;
 }
+.engContent {
+    transition: color 250ms;
+}
