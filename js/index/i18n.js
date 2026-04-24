@@ -1,8 +1,16 @@
 // 当前语言包
 let currentLangPack = {};
 
+function getInitialLanguage() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('lang')) {
+        return params.get('lang'); // 只返回，不存本地
+    }
+    return localStorage.getItem("preferredLanguage") || "zh";
+}
+
 // 全局变量，查询当前语言
-let currentLanguage = localStorage.getItem("preferredLanguage") || "zh";
+let currentLanguage = getInitialLanguage();
 
 // 核心运行期数据库，纯 ID 化，常驻内存
 let runtimeDatabase = [];
@@ -247,6 +255,17 @@ async function switchLanguage(lang) {
     // 更新全局变量
     currentLanguage = localStorage.getItem("preferredLanguage") || "zh";
     // 存储的函数写在上层函数，这个函数不会被裸调用
+
+    // 动态修改地址栏 URL
+    const currentUrl = new URL(window.location);
+    if (lang === 'en') {
+        currentUrl.searchParams.set('lang', 'en');
+    } else {
+        // 如果切回中文，把 lang 参数删掉，保持中文环境的 URL 纯净
+        currentUrl.searchParams.delete('lang');
+    }
+    // 无刷新修改地址栏，且保留了可能存在的 ?mode=... 等搜索参数
+    window.history.replaceState({}, document.title, currentUrl.pathname + currentUrl.search);
 
     // 通知布局控制器更新宽度
     const tagList = document.getElementById("tagList");

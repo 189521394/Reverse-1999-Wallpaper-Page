@@ -108,11 +108,20 @@ function generateShareUrl() {
     const baseUrl = window.location.origin + window.location.pathname;
     const params = new URLSearchParams();
 
-    if (!shareWithTag.checked) {
-        return baseUrl;
+    // 始终带上明文的语言参数（如果当前是英文）
+    // 为了保持中文链接简洁，如果是中文 (zh)，可以不加参数，因为 Worker 默认返回中文
+    if (currentLanguage === 'en') {
+        params.set('lang', 'en');
     }
 
-    // 获取精确筛选的状态
+    // 如果不需要高级分享（分享纯净首页）
+    if (!shareWithTag.checked) {
+        // 如果 params 里有 lang，拼上去；没有就直接返回 baseUrl
+        const queryStr = params.toString();
+        return queryStr ? `${baseUrl}?${queryStr}` : baseUrl;
+    }
+
+    // 处理精确筛选参数 (保持你的 Base64 逻辑不变)
     const preciseCheck = document.getElementById("preciseScreening");
     const isPrecise = preciseCheck ? preciseCheck.checked : false;
 
@@ -123,7 +132,6 @@ function generateShareUrl() {
             params.set('mode', 'text');
             params.set('q', encodeBase64(rawText));
             params.set('precise', isPrecise);
-            return `${baseUrl}?${params.toString()}`;
         }
     } else if (window.currentActiveSearchMode === 'tag') {
         // 标签筛选
@@ -136,12 +144,11 @@ function generateShareUrl() {
             params.set('mode', 'tag');
             params.set('q', encodeBase64(tags.join(','))); // 标签之间用逗号隔开
             params.set('precise', isPrecise);
-            return `${baseUrl}?${params.toString()}`;
         }
     }
 
-    // 如果什么都没搜，就分享干净的首页链接
-    return baseUrl;
+    const queryStr = params.toString();
+    return queryStr ? `${baseUrl}?${queryStr}` : baseUrl;
 }
 
 // 解析 URL 并还原搜索状态
@@ -203,9 +210,16 @@ function handleUrlRouting() {
             submit();
         }
     }
+    params.delete('mode');
+    params.delete('q');
+    params.delete('precise');
 
-    // 还原地址栏参数，防止刷新残留
-    window.history.replaceState({}, document.title, window.location.pathname);
+    // 重新构建干净的 URL (可能带有 ?lang=en，也可能没有)
+    const newQueryStr = params.toString();
+    const newUrl = window.location.pathname + (newQueryStr ? `?${newQueryStr}` : '');
+
+    // 还原地址栏，防止刷新残留导致重复触发搜索，但保住了语言状态
+    window.history.replaceState({}, document.title, newUrl);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
