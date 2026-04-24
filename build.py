@@ -4,6 +4,34 @@ import shutil
 import json
 import sys
 
+# ==========================================
+# 🛠️ 构建配置区 (可在此处自由增删需要打包的文件)
+# ==========================================
+
+# 1. 需要进行 JS/CSS 合并压缩的 HTML 页面
+HTML_FILES_TO_PROCESS = [
+    'index.html',
+    'propaganda.html',
+    '404.html'
+]
+
+# 2. 需要原样拷贝到 dist 目录的静态资源 (文件/文件夹)
+# 注意：Filter.json 由编译器单独处理，无需写在这里
+STATIC_ASSETS_TO_COPY = [
+    'font',
+    'favicon.png',
+    'lang',
+    '_worker.js',    # <--- 已经将 Worker 加入白名单
+    'sitemap.xml'    # 顺手帮你把 sitemap 也加进来了，有利于 SEO
+]
+
+# 3. 构建输出目录
+DIST_DIR = 'dist'
+
+# ==========================================
+# 以下为核心构建逻辑，通常无需修改
+# ==========================================
+
 def minify_css(css_text):
     """极简 CSS 压缩：去注释、去换行"""
     css_text = re.sub(r'/\*[\s\S]*?\*/', '', css_text)
@@ -113,7 +141,6 @@ def compile_filter_json(dist_dir):
             if zh_tag in zh_to_id:
                 new_tags.append(zh_to_id[zh_tag])
             else:
-                # 触发 Fail Fast 中断机制
                 print(f"\n❌ 构建中断！存在未注册的标签: [{zh_tag}]")
                 print(f"   定位: {item.get('file')}")
                 print(f"   排错指引: 请先在 lang/tagData.json 中补充该词条再打包！\n")
@@ -126,7 +153,6 @@ def compile_filter_json(dist_dir):
             if zh_tone in zh_to_id:
                 new_tones.append(zh_to_id[zh_tone])
             else:
-                # 触发 Fail Fast 中断机制
                 print(f"\n❌ 构建中断！存在未注册的色调标签: [{zh_tone}]")
                 print(f"   定位: {item.get('file')}")
                 print(f"   排错指引: 请先在 lang/tagData.json 中补充该词条再打包！\n")
@@ -135,52 +161,41 @@ def compile_filter_json(dist_dir):
 
         compiled_data.append(new_item)
 
-    # 3. 写入 dist 并极致压缩 (去除所有空格和换行)
+    # 3. 写入 dist 并极致压缩
     dist_file = os.path.join(dist_dir, filter_file)
     with open(dist_file, 'w', encoding='utf-8') as f:
-        # separators=(',', ':') 就是 JSON 极限压缩的魔法参数
         json.dump(compiled_data, f, ensure_ascii=False, separators=(',', ':'))
 
 def build_project():
     print("开始构建生产环境代码...")
-    dist_dir = 'dist'
 
     # 每次打包前清空旧的 dist
-    if os.path.exists(dist_dir):
-        shutil.rmtree(dist_dir)
-    os.makedirs(dist_dir)
+    if os.path.exists(DIST_DIR):
+        shutil.rmtree(DIST_DIR)
+    os.makedirs(DIST_DIR)
 
-    # 1. 预编译 JSON (优先执行，如果报错立刻停机，不用浪费时间往下打包)
-    compile_filter_json(dist_dir)
+    # 1. 预编译 JSON
+    compile_filter_json(DIST_DIR)
 
     # 2. 处理页面，生成对应的 bundle
-    process_html('propaganda.html', dist_dir)
-    process_html('index.html', dist_dir)
-    process_html('404.html', dist_dir)
+    for html_file in HTML_FILES_TO_PROCESS:
+        process_html(html_file, DIST_DIR)
 
     # 3. 白名单拷贝
-    # 注意：Filter.json 已经从白名单剔除，因为它被上面的编译器接管并输出到 dist 了
-    # 新增了 'lang' 文件夹，确保线上前端能拉取多语言包
-    assets_to_copy = [
-        'font',
-        'favicon.png',
-        'lang'
-    ]
-
     print("正在拷贝必需的静态资源...")
-    for item in assets_to_copy:
+    for item in STATIC_ASSETS_TO_COPY:
         if not os.path.exists(item):
             print(f"⚠️ 警告: 找不到资源 {item}")
             continue
 
-        dst_path = os.path.join(dist_dir, item)
+        dst_path = os.path.join(DIST_DIR, item)
         if os.path.isdir(item):
             shutil.copytree(item, dst_path)
         else:
             shutil.copy2(item, dst_path)
 
     print(f"\n🚀 构建成功！🎉")
-    print(f"Cloudflare 将发布 /dist 中的内容。")
+    print(f"Cloudflare 将发布 /{DIST_DIR} 中的内容。")
 
 if __name__ == '__main__':
     build_project()
