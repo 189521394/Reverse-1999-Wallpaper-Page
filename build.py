@@ -22,7 +22,7 @@ STATIC_ASSETS_TO_COPY = [
     'favicon.png',
     'lang',
     '_worker.js',    # Worker
-    'sitemap.xml'    # 有利于 SEO
+    'sitemap.xml'    # SEO
 ]
 
 # 3. 构建输出目录

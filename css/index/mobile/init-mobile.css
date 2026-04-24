@@ -158,7 +158,6 @@
 
         /*移动端单独的图片遮罩逻辑*/
         #imgOverlay {
-            backdrop-filter: none;
             background-color: transparent;
 
             will-change: background-color;

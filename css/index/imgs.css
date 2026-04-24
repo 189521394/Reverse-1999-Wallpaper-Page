@@ -13,9 +13,6 @@
 
     /*显示方式：完整显示且保留黑边*/
     object-fit: contain;
-
-    /*设置鼠标样式*/
-    cursor: zoom-in;
 }
 /*控制背景缩略图*/
 .imgs {
@@ -65,12 +62,10 @@
 .imgs.active {
     z-index: var(--z-imgAndSet);
     background-color: var(--imgLiningColor);
-    /*鼠标缩小样式*/
-    cursor: zoom-out;
     object-fit: contain;
 
-    /*删除阴影，缩小边框*/
-    box-shadow: var(--imgHoverBorderColor) 0 0 0 1px;
+    /*删除阴影边框*/
+    box-shadow: transparent 0 0 0 0;
 
     /*使用js计算位移参数*/
     transform: translate(var(--tx), var(--ty)) scale(var(--scale)) translateZ(0);

@@ -274,46 +274,47 @@ function calculateAnimation(imgInfo) {
     const moveX = viewportCenterX - imgCenterX;
     const moveY = viewportCenterY - imgCenterY;
 
-    // 提取图片真实大小，用于移动端图片显示
-    // 仅在移动端布局进行计算
+    // 提取图片在容器中的真实显示大小
+    // 不再区分移动端或 PC 端，统一使用此逻辑
     let realImgWidth, realImgHeight;
-    if (isMobileLayout) {
-        const naturalRatio = imgInfo.naturalWidth / imgInfo.naturalHeight;
-        const boxRatio = rect.width / rect.height;
-        if (naturalRatio > boxRatio) {
-            // 图片比盒子更扁，左右撑满，上下有留白
-            realImgWidth = rect.width;
-            realImgHeight = rect.width / naturalRatio;
-        } else {
-            // 图片比盒子更瘦，上下撑满，左右有留白
-            realImgWidth = rect.height * naturalRatio;
-            realImgHeight = rect.height;
-        }
+    const naturalRatio = imgInfo.naturalWidth / imgInfo.naturalHeight;
+    const boxRatio = rect.width / rect.height;
+
+    if (naturalRatio > boxRatio) {
+        // 图片比盒子更扁，左右撑满，上下有留白
+        realImgWidth = rect.width;
+        realImgHeight = rect.width / naturalRatio;
+    } else {
+        // 图片比盒子更瘦，上下撑满，左右有留白
+        realImgWidth = rect.height * naturalRatio;
+        realImgHeight = rect.height;
     }
 
     // 计算缩放比例
-    // 第一个参数，0.87，是图片占据屏幕空间的比例，留有一定空白
-    const baseRatio = showTags.checked ? 0.87 : 0.90;
-
-    // 第二个参数，0.93，取自img的初始缩放值transform: scale(0.93)
+    // 参数，0.93，取自img的初始缩放值transform: scale(0.93)
+    // 不能删除baseScale，它是基础比率，如果删了图片可能超出屏幕
+    // 因为transform的原因，代码获取的真实尺寸其实是0.93倍，所以最后计算完要再让他缩放回来
     const baseScale = 0.93;
 
     // 详见css文件：imgs.css
     // 如果修改缩放值，也要修改这个，不然图片大小会显示异常
     //==================================================================
-    // 根据不同选项设置不同大小
-    // 关闭标签时显示大一点，不然显得开启标签很挤
+
+    // 统一根据图片真实显示大小进行缩放
     let scaleX;
     let scaleY;
     if (isMobileLayout) {
-        // 如果是移动端就根据图片真实大小缩放
-        scaleX = (window.innerWidth * baseRatio * baseScale) / realImgHeight;
-        scaleY = (window.innerHeight * baseRatio * baseScale) / realImgWidth;
+        // 移动端旋转展示
+        const mobileRatio = showTags.checked ? 0.87 : 0.90;
+        scaleX = (window.innerWidth * mobileRatio * baseScale) / realImgHeight;
+        scaleY = (window.innerHeight * mobileRatio * baseScale) / realImgWidth;
     } else {
-        // pc端
-        scaleX = (window.innerWidth * baseRatio * baseScale) / rect.width;
-        scaleY = (window.innerHeight * baseRatio * baseScale) / rect.height;
+        // pc端正常展示
+        const pcRatio = showTags.checked ? 0.92 : 0.98;
+        scaleX = (window.innerWidth * pcRatio * baseScale) / realImgWidth;
+        scaleY = (window.innerHeight * pcRatio * baseScale) / realImgHeight;
     }
+
 
     // 保持比例(取最小值)
     const scale = Math.min(scaleX, scaleY);
