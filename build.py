@@ -21,8 +21,8 @@ STATIC_ASSETS_TO_COPY = [
     'font',
     'favicon.png',
     'lang',
-    '_worker.js',    # <--- 已经将 Worker 加入白名单
-    'sitemap.xml'    # 顺手帮你把 sitemap 也加进来了，有利于 SEO
+    '_worker.js',    # Worker
+    'sitemap.xml'    # 有利于 SEO
 ]
 
 # 3. 构建输出目录
