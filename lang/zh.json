@@ -123,6 +123,14 @@
         "withTag": "附带筛选标签分享",
         "share": "分享这部分见闻...",
         "shareBtn": "分享"
+      },
+      "other": {
+        "title": "其他信息/",
+        "title-small": "Additional Info",
+        "View1": "在",
+        "View2": "查看此项目",
+        "contact": "[联系我] 2221771663@qq.com",
+        "copy": "复制"
       }
     }
   },

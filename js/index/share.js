@@ -49,6 +49,8 @@ shareBtn.addEventListener('click', async () => {
 
 // 分享成功!
 function shareSuccess(custom) {
+    const shareText = shareContent.textContent;
+
     if (custom) {
         shareContent.textContent = `${custom}`;
     } else {
@@ -57,7 +59,7 @@ function shareSuccess(custom) {
     shareContent.style.backgroundColor = "#ffffff";
 
     setTimeout(() => {
-        shareContent.textContent = "分享";
+        shareContent.textContent = shareText;
         shareContent.style.backgroundColor = "";
     }, 3000);
 }
@@ -65,11 +67,13 @@ function shareSuccess(custom) {
 // 分享失败...
 // noinspection SpellCheckingInspection
 function shareWhatttttttHappen() {
+    const shareText = shareContent.textContent;
+
     shareContent.textContent = "?";
     shareContent.style.backgroundColor = "#ffffff";
 
     setTimeout(() => {
-        shareContent.textContent = "分享";
+        shareContent.textContent = shareText;
         shareContent.style.backgroundColor = "";
     }, 3000);
 }
