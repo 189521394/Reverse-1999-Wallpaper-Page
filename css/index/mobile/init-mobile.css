@@ -690,6 +690,9 @@
     .mailInfo {
         margin-left: 5px;
     }
+    .mailTitle {
+        font-size: 25px;
+    }
     .mailContent {
         font-size: 18px;
     }

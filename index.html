@@ -452,21 +452,24 @@
                         </label>
                     </div>
                     <div id="tipList" class="setContent">
-                        <div id="tipTitle" class="title topTitle">使用说明/<span class="engContent">Guide</span></div>
+                        <div id="tipFrame" class="titleFrame">
+                            <span id="tipTitle" class="title topTitle" data-i18n="settings.guide.title">使用说明/</span>
+                            <span class="engContent" data-i18n="settings.guide.title-small">Guide</span>
+                        </div>
                         <div class="line"></div>
-                        <div class="tips">单击可以添加/移除筛选标签</div>
-                        <div class="tips">图片下方的标签可点击，点击后会添加到筛选池</div>
-                        <div class="tips">如果部分图片加载失败，不需要刷新，再次点击提交按钮即可</div>
-                        <div class="tips">文本框为空的状态下提交会执行清空操作</div>
-                        <div class="tips">邮件附件里面的内容是可以复制的，未来可能会添加...兑换码？</div>
+                        <div class="tips" data-i18n="settings.guide.tips1">单击可以添加/移除筛选标签</div>
+                        <div class="tips" data-i18n="settings.guide.tips2">图片下方的标签可点击，点击后会添加到筛选池</div>
+                        <div class="tips" data-i18n="settings.guide.tips3">如果部分图片加载失败，再次点击提交按钮即可</div>
+                        <div class="tips" data-i18n="settings.guide.tips4">文本框为空的状态下提交会执行清空操作</div>
+                        <div class="tips" data-i18n="settings.guide.tips5">邮件附件里面的内容是可以复制的，未来可能会添加...兑换码？</div>
                     </div>
                     <div id="mailList" class="setContent">
                         <div id="mail0" class="mail">
                             <div class="mailHead">
                                 <div class="mailInfo">
-                                    <div class="mailTitle">内容更新进度</div>
-                                    <div class="mailSender">发件人：暖茶与风</div>
-                                    <div class="mailDate">时间：2026年4月14日</div>
+                                    <div class="mailTitle" data-i18n="settings.mail.title">内容更新进度</div>
+                                    <div class="mailSender" data-i18n="settings.mail.sender">发件人：暖茶与风</div>
+                                    <div class="mailDate" data-i18n="settings.mail.date">时间：2026年4月14日</div>
                                 </div>
                                 <div class="STAMP">STAMP</div>
                             </div>
@@ -477,7 +480,8 @@
                             <!--版本号，版本名称-->
                             <!--时间-->
                             <!--进度-->
-                            <div class="mailContent">
+                            <!--Json-->
+                            <div class="mailContent" data-i18n="settings.mail.mailContent">
     亲爱的司辰：
     关于3.7版本《他者的悲哀》的帷幕正缓缓拉开，此刻的筹备进度如下：
         ◦ 官方发布更新通知 ✔
@@ -494,17 +498,23 @@
                         </div>
                     </div>
                     <div id="aboutList" class="setContent">
-                        <div id="aboutTitle" class="title topTitle">关于/<span class="engContent">About</span></div>
+                        <div id="aboutFrame" class="titleFrame">
+                            <span id="aboutTitle" class="title topTitle" data-i18n="settings.about.about.title">关于/</span>
+                            <span class="engContent" data-i18n="settings.about.about.title-small">About</span>
+                        </div>
                         <div class="line"></div>
-                        <div class="tips">[关于时间线] 数据来源于网络，本人并没有认真考据</div>
-                        <div class="tips">[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)</div>
-                        <div class="tips">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
-                        <div class="tips">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
-                        <div class="tips">[当前版本状态] 已建设完毕，进入正常迭代更新</div>
-                        <div id="shareTitle" class="title">分享/<span class="engContent">Share</span></div>
+                        <div class="tips" data-i18n="settings.about.about.tips1">[关于时间线] 数据来源于网络，本人并没有仔细考据</div>
+                        <div class="tips" data-i18n="settings.about.about.tips2">[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)</div>
+                        <div class="tips" data-i18n="settings.about.about.tips3">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
+                        <div class="tips" data-i18n="settings.about.about.tips4">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
+                        <div class="tips" data-i18n="settings.about.about.tips5">[当前版本状态] 已建设完毕，进入正常迭代更新</div>
+                        <div id="shareFrame" class="titleFrame">
+                            <span id="shareTitle" class="title" data-i18n="settings.about.share.title">分享/</span>
+                            <span class="engContent" data-i18n="settings.about.share.title-small">Share</span>
+                        </div>
                         <div class="line"></div>
                         <label class="tips">
-                            使用系统API
+                            <span data-i18n="settings.about.share.api">使用系统API</span>
                             <input type="checkbox" id="shareWithAPI" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -513,7 +523,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            附带筛选标签分享
+                            <span data-i18n="settings.about.share.withTag">附带筛选标签分享</span>
                             <input type="checkbox" id="shareWithTag" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -522,8 +532,8 @@
                             </span>
                         </label>
                         <div class="tips" id="share">
-                            分享这部分见闻...
-                            <span class="clickButton" id="shareButton">分享</span>
+                            <span data-i18n="settings.about.share.share">分享这部分见闻...</span>
+                            <span class="clickButton" id="shareButton" data-i18n="settings.about.share.shareBtn">分享</span>
                         </div>
                         <div id="otherTitle" class="title">其他信息/<span class="engContent">Additional Info</span></div>
                         <div class="line"></div>
