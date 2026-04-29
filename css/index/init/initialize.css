@@ -26,6 +26,19 @@ body.mode-copy * {
     user-select: text !important;
 }
 
+/*隐藏h1，不需要显示出来*/
+#h1-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 /*替换掉系统的蓝底白字*/
 ::selection {
     background-color: #7b6f55;

@@ -2,3 +2,4 @@ resource/
 startWebServer.bat
 runServer.py
 dist/
+test.js
