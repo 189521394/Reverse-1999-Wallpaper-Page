@@ -1019,6 +1019,11 @@
     "en": "Слово о полку",
     "category": "mainLine"
   },
+  "on_another_sorrow": {
+    "zh": "他者的悲哀",
+    "en": "ON ANOTHER'S SORROW",
+    "category": "mainLine"
+  },
   "huo_dong_ju_qing": {
     "zh": "活动剧情",
     "en": "Event",
@@ -1637,6 +1642,11 @@
   "3.6": {
     "zh": "3.6",
     "en": "3.6",
+    "category": "versionCode"
+  },
+  "3.7": {
+    "zh": "3.7",
+    "en": "3.7",
     "category": "versionCode"
   },
   "SP01": {
