@@ -23,8 +23,18 @@ const itemsPerPage = 5;
 // 当前页高亮的索引
 let selectedIndex = 0;
 
+// 等待 I18n 初始化完成，防止翻译还没加载就渲染提示框
+async function waitForI18n() {
+    if (I18n._initPromise) {
+        await I18n._initPromise;
+    }
+}
+
 // 监听输入框打字
-inputBox.addEventListener('input', function() {
+inputBox.addEventListener('input', async function() {
+    // 等待 I18n 初始化完成
+    await waitForI18n();
+
     // 标记筛选模式
     window.currentActiveSearchMode = 'text';
 
@@ -234,7 +244,10 @@ inputTips.addEventListener('mousedown', function(e) {
 });
 
 // 封装提示框状态函数
-function updateTips() {
+async function updateTips() {
+    // 等待 I18n 初始化完成
+    await waitForI18n();
+
     // 如果是第一次打开（当前没有任何候选词），且输入框是空的，且没有推荐过，就加载默认词
     if (filteredTags.length === 0 && inputBox.value.trim() === '' && !alreadyRecommend) {
         filteredTags = recommendTags;

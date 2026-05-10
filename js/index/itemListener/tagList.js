@@ -66,5 +66,5 @@ function getTagList(loadButtonID) {
     if(el) getTagList(btn);
 });
 
-// 添加默认选项，按主线章节筛选
-document.getElementById("mainLine").click();
+// 默认选项由 i18n.js 的 initData() 在 I18n 初始化完成后统一触发
+// 此处不再重复调用，避免 I18n 未就绪时渲染原始 ID

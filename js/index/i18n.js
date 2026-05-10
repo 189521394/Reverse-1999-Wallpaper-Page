@@ -32,7 +32,13 @@ const I18n = {
     allTagsPool: [],   // 系统所有纯 ID 集合，给输入提示用
 
     // 初始化引擎
-    async init() {
+    init() {
+        // 立即保存 Promise，让其他模块可以 await，避免竞态
+        this._initPromise = this._doInit();
+        return this._initPromise;
+    },
+
+    async _doInit() {
         try {
             const response = await fetch("lang/tagData.json");
             this.dictionary = await response.json();
