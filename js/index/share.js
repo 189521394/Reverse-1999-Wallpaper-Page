@@ -38,7 +38,7 @@ shareBtn.addEventListener('click', async () => {
     } else {
         try {
             await copyText(shareURL);
-            shareSuccess("已复制");
+            shareSuccess(getTranslation("settings.about.share.copied", currentLangPack));
         } catch (err) {
             console.error('复制失败:', err);
             shareWhatttttttHappen();

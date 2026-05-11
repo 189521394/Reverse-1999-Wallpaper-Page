@@ -122,7 +122,8 @@
         "api": "Use System API",
         "withTag": "Share with Filters",
         "share": "Share these findings...",
-        "shareBtn": "Share"
+        "shareBtn": "Share",
+        "copied": "Copied"
       },
       "other": {
         "title": "Additional Info/",
@@ -132,6 +133,16 @@
         "contact": "[Contact Me] 2221771663@qq.com",
         "copy": "Copy"
       }
+    },
+    "dev": {
+      "title": "Developer Options/",
+      "title-small": "开发者选项",
+      "tips": "[Note] Enabling some options may cause weird bugs.",
+      "fastCopy": "Quick Copy Filename",
+      "request": "Re-send Filter Requests",
+      "resetText": "Reset All Settings",
+      "resetBtn": "Reset",
+      "resetDialog": "This will reset all settings and refresh the page. Are you sure?"
     }
   },
   "guide": {

@@ -551,11 +551,14 @@
                         </div>
                     </div>
                     <div id="debugList" class="setContent">
-                        <div id="debugTitle" class="title topTitle">开发者选项/<span class="engContent">Developer Options</span></div>
+                        <div id="debugFrame" class="titleFrame">
+                            <span id="debugTitle" class="title topTitle" data-i18n="settings.dev.title">开发者选项/</span>
+                            <span class="engContent" data-i18n="settings.dev.title-small">Developer Options</span>
+                        </div>
                         <div class="line"></div>
-                        <div class="tips" id="redTips">[提示] 启用某些选项可能会造成奇怪的bug。</div>
+                        <div class="tips" id="redTips" data-i18n="settings.dev.tips">[提示] 启用某些选项可能会造成奇怪的bug。</div>
                         <label class="tips">
-                            快速复制文件名称
+                            <span data-i18n="settings.dev.fastCopy">快速复制文件名称</span>
                             <input type="checkbox" id="copyFileName" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -564,7 +567,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            重复发送Filter请求
+                            <span data-i18n="settings.dev.request">重复发送Filter请求</span>
                             <input type="checkbox" id="fastUpdate" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -573,8 +576,8 @@
                             </span>
                         </label>
                         <div class="tips">
-                            重置所有设置项
-                            <span class="clickButton" onclick="reset()">重置</span>
+                            <span data-i18n="settings.dev.resetText">重置所有设置项</span>
+                            <span class="clickButton" data-i18n="settings.dev.resetBtn" onclick="reset()">重置</span>
                         </div>
                     </div>
                 </div>

@@ -173,6 +173,7 @@ async function loadLanguagePack(lang) {
 
 // 解析嵌套的 JSON 键值
 // 将 "guide.title" 转换为 obj["guide"]["title"]
+// 这个函数填入id和当前语言包可以直接获取显示文本
 function getTranslation(key, data) {
     // 使用 reduce 沿着键名路径一层层剥开对象
     return key

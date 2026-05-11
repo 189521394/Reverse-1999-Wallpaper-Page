@@ -1,5 +1,8 @@
 async function reset() {
-    const result = await showDialog("将会重置所有设置项且刷新页面，是否确认？", false);
+    const result = await showDialog(
+        getTranslation("settings.dev.resetDialog", currentLangPack),
+        false
+    );
 
     if (result) {
         // 清空且刷新
