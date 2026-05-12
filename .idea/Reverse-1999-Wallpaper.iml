@@ -13,6 +13,5 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Python 3.12 (Reverse-1999-Wallpaper) interpreter library" level="application" />
   </component>
 </module>

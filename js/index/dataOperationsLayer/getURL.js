@@ -1,9 +1,6 @@
 // 定义 R2 域名
 const R2_DOMAIN = "https://img.r9wallpaper.org";
 
-// 开发调试，即时刷新
-const fastUpdate = document.getElementById("fastUpdate");
-
 async function loadURL(targetTagDisplayWords) {
     const isPrecise = document.getElementById("preciseScreening").checked;
 
