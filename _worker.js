@@ -60,6 +60,12 @@ export default {
                         element.setAttribute("content", request.url);
                     }
                 })
+                // 重写 Canonical URL，告诉搜索引擎这是一个独立的英文页面
+                .on('link[rel="canonical"]', {
+                    element(element) {
+                        element.setAttribute("href", "https://r9wallpaper.org/?lang=en");
+                    }
+                })
                 .transform(response);
         }
 
