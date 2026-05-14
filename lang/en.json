@@ -62,7 +62,8 @@
         "selection": "Enable Text Selection",
         "autoReplace": "Auto-Replace Similar Tags",
         "autoSubmit": "Auto Submit",
-        "hideTips": "Hide Tooltips"
+        "hideTips": "Hide Tooltips",
+        "autoFocus": "Auto-focus Search Input"
       },
       "lang": {
         "title": "Language/",

@@ -235,7 +235,7 @@
         <div id="searchFrame">
             <div id="fuckLabel">
                 <div id="inputWrapper">
-                    <input type="text" id="input" placeholder='输入标签 分号分隔' data-i18n-placeholder="searchWithInput.placeholder" aria-label="搜索输入框" autofocus>
+                    <input type="text" id="input" placeholder='输入标签 分号分隔' data-i18n-placeholder="searchWithInput.placeholder" aria-label="搜索输入框">
                     <div id="inputTips">
                         <div id="turn">
                             <div id="previous" class="switchTips">↑</div>
@@ -329,7 +329,7 @@
                             </span>
                         </label>
                         <label class="tips">
-                            <span data-i18n="settings.preferences.general.showTag">在图片下方显示图片的标签</span>
+                            <span data-i18n="settings.preferences.general.showTag">显示图片的标签</span>
                             <input type="checkbox" id="showTags" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
@@ -371,6 +371,15 @@
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
                                 <span id="HTSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <label class="tips">
+                            <span data-i18n="settings.preferences.general.autoFocus">自动聚焦搜索框</span>
+                            <input type="checkbox" id="autoFocus" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="AFSlider" class="buttonSlider"></span>
                             </span>
                         </label>
                         <div id="langFrame" class="titleFrame">
@@ -485,7 +494,7 @@
                             <div class="mailContent" data-i18n="settings.mail.mailContent">
     亲爱的司辰：
     关于3.7版本《他者的悲哀》的帷幕正缓缓拉开，此刻的筹备进度如下：
-        ◦ 官方发布更新通知 ✔
+        ◦ 官方发布更新通知 ✘
         ◦ 游戏更新 ✘
         ◦ 等待底片冲洗 ✘
         ◦ 整理画片 ✘

@@ -101,7 +101,36 @@ inputBox.addEventListener('input', async function() {
 });
 
 // 渲染提示框
-function renderTips() {
+// function renderTips() {
+//     // 清空旧的 words
+//     const oldWords = inputTips.querySelectorAll('.words');
+//     oldWords.forEach(w => w.remove());
+//
+//     // 切出当前页要展示的五个提示词
+//     const startIndex = currentPage * itemsPerPage;
+//     const currentDisplayedTags = filteredTags.slice(startIndex, startIndex + itemsPerPage);
+//
+//     // 插入，当前选中的要高亮
+//     currentDisplayedTags.forEach((tagId, index) => {
+//         const div = document.createElement('div');
+//         div.className = 'words';
+//         if (index === selectedIndex) div.classList.add('active');
+//
+//         div.textContent = I18n.Translate(tagId);
+//         inputTips.appendChild(div);
+//     });
+//
+//     // 控制翻页箭头的显示
+//     const hasPrev = currentPage > 0;
+//     const hasNext = (currentPage + 1) * itemsPerPage < filteredTags.length;
+//     inputTips.setAttribute('data-has-prev', hasPrev);
+//     inputTips.setAttribute('data-has-next', hasNext);
+//
+//     showInputTips(true);
+// }
+
+// 渲染提示框（仅DOM内容，不含显示控制）
+function renderTipsContent() {
     // 清空旧的 words
     const oldWords = inputTips.querySelectorAll('.words');
     oldWords.forEach(w => w.remove());
@@ -125,7 +154,11 @@ function renderTips() {
     const hasNext = (currentPage + 1) * itemsPerPage < filteredTags.length;
     inputTips.setAttribute('data-has-prev', hasPrev);
     inputTips.setAttribute('data-has-next', hasNext);
+}
 
+// 渲染提示框并显示
+function renderTips() {
+    renderTipsContent();
     showInputTips(true);
 }
 
@@ -253,11 +286,8 @@ async function updateTips() {
         filteredTags = recommendTags;
         currentPage = 0;
         selectedIndex = 0;
-        renderTips();
+        renderTipsContent();
     }
-    // 打开不需要刷新，省心，虽然会遗留一条提示词
-    // 这是特性，当历史记录用了，就酱
-    showInputTips(true);
 }
 // 点击空白处关闭，点击文本框打开
 document.addEventListener('mousedown', function(e) {
@@ -266,6 +296,9 @@ document.addEventListener('mousedown', function(e) {
         showInputTips(false);
     } else if (e.target === inputBox){
         updateTips();
+        // 打开不需要刷新，省心，虽然会遗留一条提示词
+        // 这是特性，当历史记录用了，就酱
+        showInputTips(true);
     }
 });
 

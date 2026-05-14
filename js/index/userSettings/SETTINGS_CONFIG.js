@@ -30,6 +30,11 @@ const SETTINGS_CONFIG = [
         animation: "HTSlider",
         callback: conciseMode
     },
+    {
+        logic: "autoFocus",
+        animation: "AFSlider",
+        callback: null
+    },
     // ================================移动端设置================================
     {
         logic: "onlyTopShowTab",

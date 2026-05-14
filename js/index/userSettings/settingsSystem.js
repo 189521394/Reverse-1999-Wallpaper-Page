@@ -109,6 +109,13 @@ function initSettingsSystem() {
     copyMode();
     refreshTab();
     conciseMode();
+
+    // 自动聚焦搜索框
+    // 临时的代码，没有函数封装，等待封装
+    if (document.getElementById("autoFocus")?.checked) {
+        document.getElementById("input")?.focus();
+        renderTips()
+    }
 }
 
 // 页面加载的时候初始化

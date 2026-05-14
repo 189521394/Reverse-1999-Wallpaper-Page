@@ -58,11 +58,12 @@
         "title": "通用/",
         "title-small": "General",
         "precise": "精确筛选",
-        "showTag": "在图片下方显示图片的标签",
+        "showTag": "显示图片的标签",
         "selection": "允许选择所有文本",
         "autoReplace": "同类标签自动替换",
         "autoSubmit": "自动提交",
-        "hideTips": "隐藏提示文本"
+        "hideTips": "隐藏提示文本",
+        "autoFocus": "自动聚焦搜索框"
       },
       "lang": {
         "title": "语言/",
