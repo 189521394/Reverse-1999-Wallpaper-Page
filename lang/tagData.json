@@ -949,6 +949,51 @@
     "en": "Ludwig",
     "category": "character"
   },
+  "Rhiannon": {
+    "zh": "小瑞安侬",
+    "en": "Rhiannon",
+    "category": "character"
+  },
+  "fa_lang_yan": {
+    "zh": "珐琅眼",
+    "en": "Coppélia",
+    "category": "character"
+  },
+  "Silverwing_Eagle": {
+    "zh": "银装小春雀儿",
+    "en": "Silverwing Eagle",
+    "category": "character"
+  },
+  "Ms_Stranger": {
+    "zh": "无名者",
+    "en": "Ms. Stranger",
+    "category": "character"
+  },
+  "Charon_Ferry": {
+    "zh": "火渡船",
+    "en": "Charon's Ferry",
+    "category": "character"
+  },
+  "Violet_Wrist": {
+    "zh": "绀紫腕",
+    "en": "Violet Wrist",
+    "category": "character"
+  },
+  "ping": {
+    "zh": "平",
+    "en": "ping",
+    "category": "character"
+  },
+  "President": {
+    "zh": "会长",
+    "en": "President",
+    "category": "character"
+  },
+  "Lady_by_the_Lake": {
+    "zh": "《湖边的女人》",
+    "en": "Lady by the Lake",
+    "category": "character"
+  },
   "zhu_xian_ju_qing": {
     "zh": "主线剧情",
     "en": "Story",
@@ -1512,6 +1557,11 @@
   "the_last_film": {
     "zh": "贝蒂·最后的电影",
     "en": "The Last Film",
+    "category": "anecdote"
+  },
+  "cheng_ni_ben_suo_shi": {
+    "zh": "小瑞安侬·成你本所是",
+    "en": "The You That's Meant To Be",
     "category": "anecdote"
   },
   "1.0": {

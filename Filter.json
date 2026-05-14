@@ -821,7 +821,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_yincangdehuizhang.png",
-    "tags": ["1.0", "主线剧情", "老虎的金黄", "1913", "康斯坦丁"],
+    "tags": ["1.0", "主线剧情", "老虎的金黄", "1913", "康斯坦丁", "会长"],
     "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
   },
   {
@@ -4831,7 +4831,7 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_19.png",
-    "tags": ["3.2", "活动剧情", "迁流的盛宴", "1936", "贝丽尔", "罗西教授", "阿尼姆斯"],
+    "tags": ["3.2", "活动剧情", "迁流的盛宴", "1936", "贝丽尔", "罗西教授", "阿尼姆斯", "平", "《湖边的女人》"],
     "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
   },
   {
@@ -5061,12 +5061,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_rouge1.png",
-    "tags": ["3.2", "活动剧情", "迁流的盛宴", "1936", "无声综合症"],
+    "tags": ["3.2", "无声综合症", "珐琅眼"],
     "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_rouge2.png",
-    "tags": ["3.2", "活动剧情", "迁流的盛宴", "1936", "无声综合症"],
+    "tags": ["3.2", "无声综合症", "珐琅眼"],
     "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
   },
   {
@@ -5796,42 +5796,42 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_01.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "梅蕾尔"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_03.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "梅蕾尔"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_04.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "梅蕾尔"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_05.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "维尔汀"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_06.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "维尔汀"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_07.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "伊戈尔", "托勒密", "莫莉德尔", "洛佩拉"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_08.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "银装小春雀儿", "无名者"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_09.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "梅蕾尔", "维尔汀", "十四行诗"],
     "tone": []
   },
   {
@@ -5851,17 +5851,17 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_13.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "会长", "阿尔卡纳"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_14.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "会长", "阿尔卡纳"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_15.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "会长", "阿尔卡纳"],
     "tone": []
   },
   {
@@ -5871,42 +5871,42 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_18.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "梅蕾尔"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_19.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "会长", "阿尔卡纳"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_20.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "会长", "阿尔卡纳"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_21.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "无名者"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_23.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "十四行诗", "维尔汀", "小瑞安侬"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_24.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "十四行诗", "维尔汀"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_25.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "槲寄生", "J", "星锑", "APPLe"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_27.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "无名者"],
     "tone": []
   },
   {
@@ -5921,12 +5921,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_32.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "轶事", "小瑞安侬·成你本所是", "未知时间", "小瑞安侬"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_33.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "轶事", "小瑞安侬·成你本所是", "未知时间", "小瑞安侬"],
     "tone": []
   },
   {
@@ -5941,32 +5941,32 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_36.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "无名者"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_37.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "康斯坦丁"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_38.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "康斯坦丁"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_39.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "维尔汀"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_40.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "阿尔卡纳", "火渡船", "绀紫腕", "平", "阿尼姆斯", "多人合照"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_41.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "阿尔卡纳", "火渡船", "绀紫腕", "平", "阿尼姆斯", "多人合照"],
     "tone": []
   },
   {
@@ -5981,12 +5981,12 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_44.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "阿尔卡纳"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_45.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "斯捷尔诺娃"],
     "tone": []
   },
   {
@@ -5996,32 +5996,32 @@
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_47.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "十四行诗", "维尔汀"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_48.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "虚构集", "槲寄生", "J", "星锑", "APPLe"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_49.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "虚构集", "槲寄生", "J", "星锑", "APPLe"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_rouge_01.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "无声综合症", "珐琅眼"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_rouge_02.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "无声综合症", "珐琅眼"],
     "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_ys_yinzhuangxiaochunqueer.png",
-    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间"],
+    "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "银装小春雀儿"],
     "tone": []
   }
 ]

@@ -13,6 +13,13 @@
     z-index: var(--z-showTags);
 }
 
+/*边框*/
+#returnTag {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: var(--goldLine);
+}
+
 /*布局方式*/
 #returnTag {
     display: flex;
