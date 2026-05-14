@@ -5892,12 +5892,12 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_23.png",
     "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "十四行诗", "维尔汀", "小瑞安侬"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-类似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_24.png",
     "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "十四行诗", "维尔汀"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-类似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_25.png",
@@ -5997,7 +5997,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_47.png",
     "tags": ["3.7", "主线剧情", "他者的悲哀", "未知时间", "十四行诗", "维尔汀"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-类似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_48.png",
@@ -6012,12 +6012,12 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_rouge_01.png",
     "tags": ["3.7", "无声综合症", "珐琅眼"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-类似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_rouge_02.png",
     "tags": ["3.7", "无声综合症", "珐琅眼"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-类似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_ys_yinzhuangxiaochunqueer.png",
