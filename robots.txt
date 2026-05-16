@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://r9wallpaper.org/sitemap.xml

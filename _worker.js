@@ -38,7 +38,7 @@ export default {
                 // 重写关键词
                 .on('meta[name="keywords"]', {
                     element(element) {
-                        element.setAttribute("content", "Reverse 1999, Reverse: 1999 wallpapers, Reverse 1999 official CG, HD wallpapers, desktop wallpapers, mobile wallpapers, anime game wallpapers");
+                        element.setAttribute("content", "Reverse 1999, Reverse: 1999 wallpapers, Reverse 1999 official CG, HD wallpapers, desktop wallpapers, mobile wallpapers, anime game wallpapers, Reverse 1999 wallpaper download, Reverse 1999 phone wallpaper, Reverse 1999 4K wallpaper, Reverse 1999 character art, anime artwork");
                     }
                 })
                 // 重写og描述

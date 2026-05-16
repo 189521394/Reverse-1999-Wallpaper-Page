@@ -29,6 +29,10 @@ npx serve .
 
 没有构建命令、没有代码检查工具、没有测试套件。
 
+## 项目部署
+
+cloudFlare Pages + cloudFlare R2对象存储
+
 ## 开发所使用的软件
 jetBrains webStorm
 
