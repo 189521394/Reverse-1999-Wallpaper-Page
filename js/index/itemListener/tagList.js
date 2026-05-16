@@ -37,6 +37,16 @@ function getTagList(loadButtonID) {
             // 直接从 I18n 引擎获取当前分类的 ID 数组
             let targetObjectPool = I18n.categoryMap[loadButtonID] || [];
 
+            // 角色名称按当前语言显示文本排序（中文按拼音，英文按字母，数字自然排序）
+            if (loadButtonID === 'character') {
+                const sortLocale = currentLanguage === 'zh' ? 'zh' : 'en';
+                targetObjectPool = [...targetObjectPool].sort((a, b) => {
+                    const textA = I18n.Translate(a);
+                    const textB = I18n.Translate(b);
+                    return textA.localeCompare(textB, sortLocale, { numeric: true, sensitivity: 'base' });
+                });
+            }
+
             for (let i = 0; i < targetObjectPool.length; i++) {
                 let div = document.createElement("div");
                 let tagId = targetObjectPool[i]; // 已经是纯 ID 了

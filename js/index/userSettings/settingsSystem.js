@@ -105,13 +105,16 @@ function initSettingsSystem() {
     });
 
     // 初始化之后要刷新一些东西
+    refreshSet()
+}
+
+function refreshSet() {
     switchTheme();
     copyMode();
     refreshTab();
     conciseMode();
 
     // 自动聚焦搜索框
-    // 临时的代码，没有函数封装，等待封装
     if (document.getElementById("autoFocus")?.checked) {
         document.getElementById("input")?.focus();
         renderTips()
