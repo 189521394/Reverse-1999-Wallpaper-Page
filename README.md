@@ -18,7 +18,7 @@
 
 ## 关于英文版
 
-已上线Beta版，基础功能可用
+已完成
 
 ---
 
@@ -44,4 +44,4 @@ The initial build is complete, and the website has now entered its regular updat
 
 ## About the English Version
 
-The Beta version is now live. Basic features are available.
+Completed.
