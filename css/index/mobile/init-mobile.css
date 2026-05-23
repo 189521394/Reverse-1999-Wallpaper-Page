@@ -526,7 +526,6 @@
     }
 
     /*=============================设置选项-实体控制=============================*/
-    /*  */
     .setItem {
         position: relative;
         background-color: transparent !important;
@@ -604,7 +603,7 @@
         --flip-y: 0px;
         transform: translate(0px, var(--flip-y));
 
-        transition: transform 500ms cubic-bezier(0.23, 1.0, 0.32, 1.0), opacity 250ms;
+        transition: transform 500ms cubic-bezier(0.23, 1.0, 0.32, 1.0), opacity 500ms;
     }
 
     .clone-item .setItem-bg {
@@ -616,7 +615,7 @@
 
     /* 上下飞行时的过渡效果 */
     .clone-item.clone-animating {
-        transition: transform 250ms;
+        transition: transform 250ms, opacity 250ms;
     }
     .clone-item.clone-animating .setItem-bg {
         transition: transform 250ms, background-color 250ms;

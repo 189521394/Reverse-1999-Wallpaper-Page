@@ -1564,6 +1564,11 @@
     "en": "The You That's Meant To Be",
     "category": "anecdote"
   },
+  "wu_lu_ke_fan": {
+    "zh": "无名者·无路可返",
+    "en": "A Stranger to Memory Lane",
+    "category": "anecdote"
+  },
   "1.0": {
     "zh": "1.0",
     "en": "1.0",
@@ -1727,6 +1732,11 @@
   "1920": {
     "zh": "1920",
     "en": "1920",
+    "category": "year"
+  },
+  "1921": {
+    "zh": "1921",
+    "en": "1921",
     "category": "year"
   },
   "1929": {
