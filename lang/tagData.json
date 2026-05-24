@@ -891,12 +891,12 @@
   },
   "thirty_seven": {
     "zh": "37",
-    "en": "Thirty-seven",
+    "en": "37",
     "category": "character"
   },
   "six": {
     "zh": "6",
-    "en": "Six",
+    "en": "6",
     "category": "character"
   },
   "77": {
@@ -995,8 +995,8 @@
     "category": "character"
   },
   "zhu_xian_ju_qing": {
-    "zh": "主线剧情",
-    "en": "Story",
+    "zh": "所有主线",
+    "en": "All Stories",
     "category": "mainLine"
   },
   "this_is_tomorrow": {
@@ -1070,8 +1070,8 @@
     "category": "mainLine"
   },
   "huo_dong_ju_qing": {
-    "zh": "活动剧情",
-    "en": "Event",
+    "zh": "所有活动",
+    "en": "All Events",
     "category": "event"
   },
   "the_theft_of_the_rimet_cup": {
@@ -1170,8 +1170,8 @@
     "category": "event"
   },
   "yi_shi": {
-    "zh": "轶事",
-    "en": "Side Story",
+    "zh": "所有轶事",
+    "en": "All Sides",
     "category": "anecdote"
   },
   "thief_of_the_thieves": {
