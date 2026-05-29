@@ -5,6 +5,8 @@
 本脚本为每个轶事项自动匹配角色英文名，组合为 "CharacterName·AnecdoteName" 格式。
 
 用法：python fix_anecdote_en.py
+
+Create by DeepSeek
 """
 
 import json
