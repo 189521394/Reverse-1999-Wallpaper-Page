@@ -65,6 +65,7 @@ function shareSuccess(custom) {
 }
 
 // 分享失败...
+// 这个注释只是为了让IDE不报错，因为t太多了...
 // noinspection SpellCheckingInspection
 function shareWhatttttttHappen() {
     const shareText = shareContent.textContent;
@@ -226,8 +227,11 @@ function handleUrlRouting() {
     window.history.replaceState({}, document.title, newUrl);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        handleUrlRouting();
-    }, 1);
+// 等待核心数据就绪后再还原分享状态，防止 I18n 字典或 Filter.json 尚未加载完成
+// 导致 handleUrlRouting 拿到空的 runtimeDatabase 而静默失败
+document.addEventListener("DOMContentLoaded", async () => {
+    if (window._coreReady) {
+        await window._coreReady;
+    }
+    handleUrlRouting();
 });

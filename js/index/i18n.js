@@ -32,6 +32,7 @@ const I18n = {
     allTagsPool: [],   // 系统所有纯 ID 集合，给输入提示用
 
     // 初始化引擎
+    // promise里面保存的是tagData，是网站核心文件
     init() {
         // 立即保存 Promise，让其他模块可以 await，避免竞态
         this._initPromise = this._doInit();
@@ -117,8 +118,9 @@ async function initData() {
     if (mainLineBtn) mainLineBtn.click();
 }
 
-// 启动系统
-initData();
+// 启动系统，同时将 Promise 挂到全局
+// 其他模块可通过 window._coreReady 等待核心筛选功能（I18n + runtimeDatabase）就绪
+window._coreReady = initData();
 
 
 

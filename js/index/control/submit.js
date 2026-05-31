@@ -11,7 +11,7 @@ function submit() {
     if (isMobileLayout) {
         browseToMain();
     }
-    // =================移动端一次性对话框=================
+    // ================================================
     // 获取用户选择的标签，存进select数组，提交筛选
     let select = [];
     for (let child of pool.children) {
