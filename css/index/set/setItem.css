@@ -1,10 +1,17 @@
 /*初始化*/
+:root {
+    /*设置菜单宽度*/
+    --item-width: 21vw;
+
+    /*菜单左侧的边距*/
+    --item-left: 40px;
+}
 #setItem {
     position: absolute;
-    width: 21vw;
-    height: 80vh;
-    left: 20px;
-    background-color: #252525;
+    width: var(--item-width);
+    height: 90vh;
+    left: var(--item-left);
+    background-color: #272524;
 
     box-sizing: border-box;
     padding-left: 30px;
@@ -33,10 +40,10 @@
 .setItem {
     margin-top: 20px;
     width: auto;
-    height: 70px;
+    /*根据比例计算高度*/
+    aspect-ratio: 5 / 1;
 
-    background-color: #d3d1cf;
-    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
+    background-color: transparent;
 }
 
 /*边框控制*/
@@ -44,22 +51,26 @@
     box-sizing: border-box;
     border-style: solid;
     border-width: 1px;
-    border-color: #d3d1cf;
+    border-color: var(--controlButtonBGC);
 }
 
 /*文本控制*/
 .setItem {
     font-size: 30px;
-    line-height: 70px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--controlButtonBGC);
+
+    transition: background-color 250ms, color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
 }
 
 /*激活样式*/
 .setItem.active {
-    border-color: var(--goldLine);
     background-color: var(--controlButtonBGC);
+    color: #272524;
 
-    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
+    transition: background-color 250ms, color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
 }
 
 
@@ -87,11 +98,11 @@
     opacity: 0;
 
     will-change: opacity;
-    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
+    transition: background-color 250ms, color 250ms, border-color 250ms, opacity 250ms ease-in-out 0ms;
 }
 
 .setItem.show {
     opacity: 1;
 
-    transition: background-color 250ms, border-color 250ms, opacity 250ms ease-in-out 250ms;
+    transition: background-color 250ms, color 250ms, border-color 250ms, opacity 250ms ease-in-out 250ms;
 }

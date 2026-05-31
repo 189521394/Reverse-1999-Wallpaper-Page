@@ -1,7 +1,8 @@
 /*设置内容部分*/
 /*这里面展示的是设置的内容，选项卡，提示文本等*/
 #setBox {
-    width: 55vw;
+    /*动态计算左侧的留白宽度，动态边距*/
+    width: calc(100% - var(--item-width) - var(--item-left));
     /*不填写高度，由父元素控制*/
     background: transparent;
     z-index: var(--z-imgAndSet);

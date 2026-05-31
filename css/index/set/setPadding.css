@@ -1,7 +1,7 @@
 /*设置外层的一个框架，充当设置内容的边距*/
 #setPadding {
-    width: 80vw;
-    height: 70vh;
+    width: 90vw;
+    height: 80vh;
     /*标准弹窗颜色*/
     background-color: var(--showTagBGC);
     z-index: var(--z-setBG);

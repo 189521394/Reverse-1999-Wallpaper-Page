@@ -507,12 +507,17 @@
     /*========菜单控制========*/
     /*默认样式*/
     .setItem {
-        line-height: 60px;
         height: 60px;
         width: 80vw;
         font-size: 25px;
 
         color: var(--controlButtonBGC);
+    }
+    /*文本控制*/
+    .setItem-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /*顶部菜单*/
     .setItem.active {

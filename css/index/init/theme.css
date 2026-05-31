@@ -235,9 +235,6 @@ body {
 #setItem {
     transition: box-shadow 250ms;
 }
-.tips {
-    transition: color 250ms;
-}
 .line {
     transition: background-color 250ms;
 }

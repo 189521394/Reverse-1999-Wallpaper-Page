@@ -19,3 +19,22 @@
 #copyButton {
     user-select: none;
 }
+
+/*给选项加上hover边框*/
+.tips {
+    box-sizing: border-box;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: transparent;
+
+    transition: border-color 150ms, color 250ms;
+}
+@media (hover: hover) {
+    .tips:hover {
+        border-style: none none solid none;
+        border-width: 1px;
+        border-color: var(--controlButtonBGC);
+
+        transition: border-color 150ms, color 250ms;
+    }
+}
