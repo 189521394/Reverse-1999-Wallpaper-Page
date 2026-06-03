@@ -178,11 +178,14 @@ async function loadLanguagePack(lang) {
 // 这个函数填入id和当前语言包可以直接获取显示文本
 function getTranslation(key, data) {
     // 使用 reduce 沿着键名路径一层层剥开对象
-    return key
+    const result = key
         .split('.')
         .reduce(
             (obj, i) => (obj ? obj[i] : null), data
         );
+    // 如果值是数组，说明是多行文本，用换行符连接后返回
+    if (Array.isArray(result)) return result.join('\n');
+    return result;
 }
 
 // 遍历DOM进行替换

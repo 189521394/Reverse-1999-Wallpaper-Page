@@ -12,7 +12,11 @@
   "searchWithInput": {
     "submit": "Submit",
     "placeholder": "Separate tags with ';'",
-    "tipsContent": "↑/↓：Previous/Next tag, supports looping.\nTab：Select tag.\n-/+：Previous/Next page."
+    "tipsContent": [
+        "↑/↓：Previous/Next tag, supports looping.",
+        "Tab：Select tag.",
+        "-/+：Previous/Next page."
+      ]
   },
   "searchWithTag": {
     "tagList": {
@@ -105,7 +109,17 @@
       "date": "Date：2026-05-29",
       "_comment1": "用于复制的字符【✘，✔】",
       "_comment2": "每次更新：版本号，版本名称，时间，进度",
-      "mailContent": "\n    Dear Timekeeper：\n    The curtain is slowly rising on Version 3.8 《End of the century scale》. Our current preparations are as follows：\n        ◦ Official update notice released ✔\n        ◦ Game update ✘\n        ◦ Awaiting film development ✘\n        ◦ Organizing photographs ✘\n        ◦ Update deployment ✘\n    The fragmented photographs await the moment they see the light of day. This may require a little patience; may this brief pause bring about a more flawless reunion. Thank you for your patience."
+      "mailContent": [
+        "",
+        "    Dear Timekeeper：",
+        "    The curtain is slowly rising on Version 3.8 《The temporal scale》. Our current preparations are as follows：",
+        "        ◦ Official update notice released ✔",
+        "        ◦ Game update ✘",
+        "        ◦ Awaiting film development ✘",
+        "        ◦ Organizing photographs ✘",
+        "        ◦ Update deployment ✘",
+        "    The fragmented photographs await the moment they see the light of day. This may require a little patience; may this brief pause bring about a more flawless reunion. Thank you for your patience."
+      ]
     },
     "about": {
       "about": {
@@ -151,6 +165,9 @@
     "tips": "You can change this later in Settings/后续可在设置中更改."
   },
   "gallery": {
-    "tips": "No matching images found.\nTry searching or filtering."
+    "tips": [
+        "No matching images found.",
+        "Try searching or filtering."
+      ]
   }
 }
