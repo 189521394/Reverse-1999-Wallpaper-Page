@@ -20,30 +20,36 @@ function openGuide() {
 
 // 初始化页面：决定使用什么语言，以及是否弹引导页
 async function initLanguage() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlLang = urlParams.get('lang');
+    const pathStartsWithEN = window.location.pathname.startsWith('/en');
     const localLang = localStorage.getItem("preferredLanguage");
 
     let targetLang = "zh"; // 默认兜底语言
     let shouldShowGuide = false; // 是否显示引导页
 
-    // 逻辑判定开始
-    if (urlLang === "en" || urlLang === "zh") {
-        // 场景 A：带有明确的 URL 语言参数（比如通过分享链接进来）
-        // 优先级最高！无条件信任 URL，存入本地，且【不弹引导页】
-        targetLang = urlLang;
+    // 逻辑判定开始（基于虚拟目录 /en/ 替代旧的 ?lang=en 参数）
+    if (pathStartsWithEN) {
+        // 场景 A：路径明确为 /en/ → 英文环境（比如通过分享链接 /en/ 进入）
+        // 最高优先级！无条件信任路径，存入本地，且【不弹引导页】
+        targetLang = "en";
         localStorage.setItem("preferredLanguage", targetLang);
         shouldShowGuide = false;
     }
+    else if (localLang === "en") {
+        // 场景 B：路径是 /，但 localStorage 存的是 "en" → 老用户回访
+        // 静默更新地址栏为 /en/，保持路径与语言一致
+        history.replaceState(null, '', '/en/' + window.location.search);
+        targetLang = "en";
+        shouldShowGuide = false;
+    }
     else if (localLang) {
-        // 场景 B：没有 URL 参数，但本地有缓存（老用户回来）
+        // 场景 C：有本地缓存且是中文 → 老用户回访
         // 使用缓存，且【不弹引导页】
         targetLang = localLang;
         shouldShowGuide = false;
     }
     else {
-        // 场景 C：没有 URL 参数，也没有缓存（纯新用户直接访问首页）
-        // 暂定默认语言，并且【弹出引导页】让用户自己选
+        // 场景 D：没有缓存（纯新用户直接访问首页）
+        // 暂定默认中文，并且【弹出引导页】让用户自己选
         targetLang = "zh";
         shouldShowGuide = true;
     }

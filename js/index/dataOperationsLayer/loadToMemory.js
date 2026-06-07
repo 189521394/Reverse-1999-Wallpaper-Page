@@ -14,7 +14,7 @@ async function loadToMemory() {
     // 封装并缓存这个 Promise
     loadPromise = (async () => {
         try {
-            const response = await fetch("Filter.json");
+            const response = await fetch("/Filter.json");
             FilterData = await response.json();
 
             // 建立标签加速映射表

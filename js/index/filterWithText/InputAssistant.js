@@ -286,8 +286,8 @@ async function updateTips() {
         filteredTags = recommendTags;
         currentPage = 0;
         selectedIndex = 0;
-        renderTipsContent();
     }
+    renderTipsContent();
 }
 // 点击空白处关闭，点击文本框打开
 document.addEventListener('mousedown', function(e) {

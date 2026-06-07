@@ -7,16 +7,16 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://r9wallpaper.org/" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://r9wallpaper.org/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://r9wallpaper.org/en/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://r9wallpaper.org/" />
     </url>
 
     <url>
-        <loc>https://r9wallpaper.org/?lang=en</loc>
+        <loc>https://r9wallpaper.org/en/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://r9wallpaper.org/" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://r9wallpaper.org/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://r9wallpaper.org/en/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://r9wallpaper.org/" />
     </url>
 

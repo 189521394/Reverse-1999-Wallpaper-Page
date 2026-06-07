@@ -19,15 +19,48 @@
 
 ## 本地开发
 
-这是一个零构建的静态站点。使用任意 HTTP 服务器在根目录启动即可预览：
+本项目配有专用的本地开发服务器 `runServer.py`，**不要**使用 WebStorm 内置服务器或其他通用 HTTP 服务器——它们缺少路径映射，会导致图片 404 和 `/en/` 虚拟目录不可用。
 
 ```bash
-python -m http.server 8080
-# 或
-npx serve .
+python runServer.py
+# 默认 normal 模式，监听 8000 端口，自动打开浏览器
 ```
 
-没有构建命令、没有代码检查工具、没有测试套件。
+### `runServer.py` 两种模式
+
+| 模式 | `DEBUG_MODE` | 工作目录 | 用途 |
+|---|---|---|---|
+| normal | `"normal"` | 项目根目录 | 日常开发，直接提供源码文件，不打包 |
+| build | `"build"` | `dist/` | 生产模拟，先调用 `build.py` 打包，再修改 isLocal/R2_DOMAIN 后从 dist 提供服务 |
+
+### `runServer.py` 路径映射（`translate_path`）
+
+服务器重写了 `SimpleHTTPRequestHandler.translate_path`，实现两层路由：
+
+1. **`/en/` 虚拟目录**：剥离前缀后映射到真实文件。`/en/` → `/index.html`，`/en/css/...` → `/css/...`。这是本地对线上 `_worker.js` Cloudflare Worker 行为的模拟。
+2. **`/resource/` 资源映射**：`resource/` 是独立 Git 仓库（使用 Git LFS），不在当前工作目录下。normal 模式用 `os.getcwd()` 定位项目根目录；build 模式从 `dist/` 往上一级定位。
+
+### 为什么不能用 WebStorm 内置服务器
+
+WebStorm 把项目放在子路径下（如 `http://localhost:63342/ProjectName/`），而 `getURL.js` 本地模式使用相对路径 `../resource/...` 拼接图片 URL。`../` 会跳出 WebStorm 的项目子目录，导致图片 404。
+
+## 生产构建系统
+
+### `build.py` — 打包脚本
+
+将源码目录打包到 `dist/`，流程：
+
+1. **编译 `Filter.json`**：将标签从中文文本清洗为纯 ID（查 `lang/tagData.json` 字典），用 `separators=(',', ':')` 紧凑输出
+2. **合并 JS/CSS**：将 HTML 中所有 `<link href="/css/...">` 和 `<script src="/js/...">` 引用合并为单个 `bundle_index.css` + `bundle_index.js`，做基础压缩（去注释、去多余空行）
+3. **拷贝静态资源**：`font/`、`lang/`、`favicon.png`、`_worker.js`、`sitemap.xml` 等原样复制
+
+**注意**：打包后的 HTML 引用 bundle 文件时**不带**前导 `/`（`href="bundle_index.css"`），因为此时 HTML 和 bundle 都在 `dist/` 同级目录。`resource/` 不会被拷贝到 `dist/`——它由服务器的 `translate_path` 映射到上级目录。
+
+### `prepare_build_env()` — 生产模拟魔改
+
+build 模式下，打包完成后会修改 `dist/` 中的 bundle JS：
+- `isLocal` → `false`（让 JS 走线上逻辑，直接读取编译后的 Filter.json，不再清洗中文）
+- `R2_DOMAIN` → `""`（空字符串，图片路径从 `https://img.r9wallpaper.org/...` 变为 `/resource/...`，由本地服务器提供）
 
 ## 项目部署
 
@@ -36,13 +69,16 @@ cloudFlare Pages + cloudFlare R2对象存储
 ## 开发所使用的软件
 jetBrains webStorm
 
-## 整体架构：三张页面
+## 整体架构：三张页面 + 本地服务器 + 边缘 Worker
 
-| 页面 | 用途                                               |
-|---|--------------------------------------------------|
-| `index.html` | 主壁纸浏览器，包含标签筛选、文本搜索、设置面板和移动端响应式 Tab               |
-| `propaganda.html` | 动画宣传/登陆页，包含主页大图、内容块、底栏等滑动分区，但暂时废弃了，只做了个重定向到index |
-| `404.html` | 极简自定义 404 页面                                     |
+| 文件 | 用途 |
+|---|---|
+| `index.html` | 主壁纸浏览器，包含标签筛选、文本搜索、设置面板和移动端响应式 Tab |
+| `propaganda.html` | 动画宣传/登陆页，已废弃，只做重定向到 index（`noindex`） |
+| `404.html` | 极简自定义 404 页面（`noindex`） |
+| `runServer.py` | 本地开发服务器（normal/build 双模式，自定义路径映射） |
+| `build.py` | 生产打包脚本（合并压缩 JS/CSS、编译 Filter.json、输出到 dist/） |
+| `_worker.js` | Cloudflare Worker（边缘节点处理 `/en/` 虚拟目录、SEO 英文重写、旧链接 301） |
 
 ## CSS 架构（`css/`）
 
@@ -122,6 +158,31 @@ jetBrains webStorm
 - `data-i18n-short` → 移动端短文本（因空间不足）
 - `data-i18n-placeholder` → input 的 placeholder 属性
 - 在本地开发环境中，`Filter.json` 中的标签是**原始中文文本**，需要通过 `I18n.convert()` 转换为 ID。线上环境则由 Python 脚本预处理为纯 ID。
+
+#### `/en/` 虚拟目录机制
+
+语言切换使用**虚拟目录**而非查询参数（从 `?lang=en` 迁移而来）：
+
+- `switchLanguage('en')` → `history.pushState(null, '', '/en/' + search)` 修改地址栏
+- `getInitialLanguage()` → 检测 `pathname.startsWith('/en')` 判定当前语言
+- **本地开发**：`runServer.py` 的 `translate_path` 剥离 `/en/` 前缀映射到真实文件
+- **生产环境**：`_worker.js`（Cloudflare Worker）在边缘节点拦截 `/en/` 请求：
+  - 静态资源 → 剥离前缀，从根路径获取
+  - HTML 页面 → 获取根 HTML，用 `HTMLRewriter` 流式重写 SEO 标签（title、meta、OG、canonical）
+  - 旧链接 `?lang=en` → 301 重定向到 `/en/`
+
+#### `isLocal` 环境判定
+
+`i18n.js` 顶部通过 hostname 判定运行环境：
+
+```js
+const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
+    hostname.startsWith('10.') || hostname.startsWith('172.') || hostname.startsWith('192.168.');
+```
+
+影响两处行为：
+1. **数据清洗**：`isLocal=true` → `Filter.json` 的 tags 从中文转换为 ID；`false` → 直接使用（已由 build.py 预处理）
+2. **图片 URL 前缀**：`isLocal=true` → `../resource/...`（相对路径）；`false` → `R2_DOMAIN + "/resource/..."`（`getURL.js`）
 
 ### 移动端（`js/index/mobile/`）
 

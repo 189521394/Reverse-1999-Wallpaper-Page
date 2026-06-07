@@ -54,10 +54,10 @@ def process_html(html_file, dist_dir):
     with open(html_file, 'r', encoding='utf-8') as f:
         html_content = f.read()
 
-    # 精准匹配 css/ 和 js/ 目录下的文件
-    css_links = re.findall(r'<link rel="stylesheet" href="(css/[^"]+)">', html_content)
+    # 精准匹配 css/ 和 js/ 目录下的文件（兼容带前导 / 和不带的写法）
+    css_links = re.findall(r'<link rel="stylesheet" href="/?(css/[^"]+)">', html_content)
     # 兼容带有 defer 和没有 defer 的 script 标签
-    js_links = re.findall(r'<script src="(js/[^"]+)"[^>]*></script>', html_content)
+    js_links = re.findall(r'<script src="/?(js/[^"]+)"[^>]*></script>', html_content)
 
     # 去重并保持顺序
     css_links = list(dict.fromkeys(css_links))
@@ -90,9 +90,9 @@ def process_html(html_file, dist_dir):
     with open(os.path.join(dist_dir, bundle_js_name), 'w', encoding='utf-8') as f:
         f.write(combined_js)
 
-    # 替换原 HTML 中的散装引用
-    prod_html = re.sub(r'<link rel="stylesheet" href="css/[^"]+">\n?', '', html_content)
-    prod_html = re.sub(r'<script src="js/[^"]+"[^>]*></script>\n?', '', prod_html)
+    # 替换原 HTML 中的散装引用（兼容带前导 / 和不带的写法）
+    prod_html = re.sub(r'<link rel="stylesheet" href="/?css/[^"]+">\n?', '', html_content)
+    prod_html = re.sub(r'<script src="/?js/[^"]+"[^>]*></script>\n?', '', prod_html)
 
     inject_str = f'<link rel="stylesheet" href="{bundle_css_name}">\n    <script src="{bundle_js_name}" defer></script>\n</head>'
     prod_html = prod_html.replace('</head>', inject_str)
@@ -194,7 +194,7 @@ def build_project():
         else:
             shutil.copy2(item, dst_path)
 
-    print(f"\n🚀 构建成功！🎉")
+    print(f"\n[OK] 构建成功！")
     print(f"Cloudflare 将发布 /{DIST_DIR} 中的内容。")
 
 if __name__ == '__main__':

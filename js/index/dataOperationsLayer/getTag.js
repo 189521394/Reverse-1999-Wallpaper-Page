@@ -9,7 +9,7 @@ async function loadTag(targetURL) {
     // 本地调试模式：即时刷新，重新拉取 Filter.json 拿到最新标签
     if (isLocal && fastUpdate.checked) {
         try {
-            const response = await fetch("Filter.json");
+            const response = await fetch("/Filter.json");
             const rawData = await response.json();
             const freshDB = rawData.map(item => ({
                 ...item,

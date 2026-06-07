@@ -109,19 +109,13 @@ function generateShareUrl() {
     // 是否需要高级分享链接
     const shareWithTag = document.getElementById("shareWithTag");
 
-    // 获取当前纯净的网址
+    // 获取当前纯净的网址（语言已通过虚拟目录 /en/ 编码在路径中）
     const baseUrl = window.location.origin + window.location.pathname;
     const params = new URLSearchParams();
 
-    // 始终带上明文的语言参数（如果当前是英文）
-    // 为了保持中文链接简洁，如果是中文 (zh)，可以不加参数，因为 Worker 默认返回中文
-    if (currentLanguage === 'en') {
-        params.set('lang', 'en');
-    }
-
     // 如果不需要高级分享（分享纯净首页）
     if (!shareWithTag.checked) {
-        // 如果 params 里有 lang，拼上去；没有就直接返回 baseUrl
+        // 纯净首页直接返回 baseUrl（已包含语言路径）
         const queryStr = params.toString();
         return queryStr ? `${baseUrl}?${queryStr}` : baseUrl;
     }
@@ -219,11 +213,11 @@ function handleUrlRouting() {
     params.delete('q');
     params.delete('precise');
 
-    // 重新构建干净的 URL (可能带有 ?lang=en，也可能没有)
+    // 重新构建干净的 URL（语言信息已由 /en/ 路径承载，不再有 ?lang= 参数）
     const newQueryStr = params.toString();
     const newUrl = window.location.pathname + (newQueryStr ? `?${newQueryStr}` : '');
 
-    // 还原地址栏，防止刷新残留导致重复触发搜索，但保住了语言状态
+    // 还原地址栏，防止刷新残留导致重复触发搜索，路径中的语言状态自然保留
     window.history.replaceState({}, document.title, newUrl);
 }
 
