@@ -16,7 +16,14 @@ export default {
         // ============================================================
         // 第二阶段：/en/ 虚拟目录拦截与 SEO 重写
         // ============================================================
-        if (url.pathname.startsWith('/en')) {
+        if (url.pathname === '/en' || url.pathname.startsWith('/en/')) {
+
+            // 尾部斜杠规范化：/en（无斜杠）→ /en/（有斜杠）301 永久重定向
+            // 确保与全站 hreflang、sitemap 中声明的 URL 格式统一
+            if (url.pathname === '/en') {
+                return Response.redirect('https://r9wallpaper.org/en/' + url.search, 301);
+            }
+
             const accept = request.headers.get('Accept') || '';
 
             // 非 HTML 请求（CSS/JS/图片/字体/数据等）：剥离 /en 前缀，从根路径获取
@@ -43,55 +50,65 @@ export default {
                 return response;
             }
 
-            // 动态获取当前访问的纯净路径（如 https://r9wallpaper.org/en/）作为 Canonical
-            const canonicalUrl = url.origin + url.pathname;
+            // 动态获取当前访问的纯净路径作为 Canonical
+            // 统一确保尾部带 /，与 index.html 及 sitemap.xml 中声明的 hreflang URL 格式一致
+            const canonicalPath = url.pathname.replace(/\/?$/, '/');
+            const canonicalUrl = url.origin + canonicalPath;
 
             // HTMLRewriter：流式重写 HTML
             return new HTMLRewriter()
+                // 多语言标记参数
                 .on('html', {
                     element(element) {
                         element.setAttribute("lang", "en");
                     }
                 })
+                // 标题
                 .on('title', {
                     element(element) {
                         element.setInnerContent("Reverse: 1999 Wallpapers | Official CG, Mobile & Desktop");
                     }
                 })
+                // 标题
                 .on('meta[property="og:title"]', {
                     element(element) {
                         element.setAttribute("content", "Reverse: 1999 Wallpapers | Official CG, Mobile & Desktop");
                     }
                 })
+                // 描述
                 .on('meta[name="description"]', {
                     element(element) {
                         element.setAttribute("content", "An HD wallpaper library designed exclusively for Reverse: 1999. It features a massive collection of official CG artwork, available for quick filtering and download.");
                     }
                 })
+                // 关键词
                 .on('meta[name="keywords"]', {
                     element(element) {
-                        element.setAttribute("content", "Reverse 1999, Reverse: 1999 wallpapers, Reverse 1999 official CG, HD wallpapers, desktop wallpapers, mobile wallpapers, anime game wallpapers, Reverse 1999 wallpaper download, Reverse 1999 phone wallpaper, Reverse 1999 4K wallpaper, Reverse 1999 character art, anime artwork");
+                        element.setAttribute("content", "Reverse 1999, 1999 wallpaper, Reverse: 1999 wallpapers, Reverse 1999 official CG, HD wallpapers, desktop wallpapers, mobile wallpapers, anime game wallpapers, Reverse 1999 wallpaper download, Reverse 1999 phone wallpaper, Reverse 1999 4K wallpaper, Reverse 1999 character art, anime artwork");
                     }
                 })
+                // 描述
                 .on('meta[property="og:description"]', {
                     element(element) {
                         element.setAttribute("content", "An HD wallpaper library designed exclusively for Reverse: 1999. It features a massive collection of official CG artwork, available for quick filtering and download.");
                     }
                 })
+                // 标题
                 .on('h1#h1-title', {
                     element(element) {
                         element.setInnerContent("Reverse: 1999 Wallpapers | Official CG, Mobile & Desktop");
                     }
                 })
+                // URL
                 .on('meta[property="og:url"]', {
                     element(element) {
                         // og:url 保持完整请求链接，方便社交分享包含查询参数
                         element.setAttribute("content", request.url);
                     }
                 })
+                // canonical
                 .on('link[rel="canonical"]', {
                     element(element) {
-                        // 核心修复：确保 Canonical 指向当前英文页面的纯净路径，而不是中文根目录
                         element.setAttribute("href", canonicalUrl);
                     }
                 })
