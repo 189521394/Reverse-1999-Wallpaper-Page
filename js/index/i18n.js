@@ -24,6 +24,14 @@ const isLocal =
     hostname.startsWith('172.') ||
     hostname.startsWith('192.168.');
 
+// 动态更新 og:url 为当前完整 URL（含查询参数），确保社交分享卡片携带筛选状态
+(function updateOgUrl() {
+    const ogUrlEl = document.querySelector('meta[property="og:url"]');
+    if (ogUrlEl) {
+        ogUrlEl.setAttribute('content', window.location.href);
+    }
+})();
+
 // ===========================================标签翻译===========================================
 const I18n = {
     dictionary: {},
@@ -275,6 +283,17 @@ async function switchLanguage(lang) {
     } else {
         // 把 /en/ 剥离，回到根目录，保留其他查询参数
         history.pushState(null, '', '/' + window.location.search);
+    }
+
+    // 同步更新 canonical 链接，确保与当前语言路径一致
+    const canonicalEl = document.querySelector('link[rel="canonical"]');
+    if (canonicalEl) {
+        canonicalEl.href = window.location.origin + (lang === 'en' ? '/en/' : '/');
+    }
+    // 同步更新 og:url 为当前完整 URL（含查询参数），确保社交分享卡片携带筛选状态
+    const ogUrlEl = document.querySelector('meta[property="og:url"]');
+    if (ogUrlEl) {
+        ogUrlEl.setAttribute('content', window.location.href);
     }
 
     // 通知布局控制器更新宽度
