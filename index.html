@@ -329,24 +329,6 @@
                             </span>
                         </label>
                         <label class="tips">
-                            <span data-i18n="settings.preferences.general.showTag">显示图片的标签</span>
-                            <input type="checkbox" id="showTags" class="switch">
-                            <span class="buttonBorder">
-                                <span class="OFF buttonText">OFF</span>
-                                <span class="ON buttonText">ON</span>
-                                <span id="STSlider" class="buttonSlider"></span>
-                            </span>
-                        </label>
-                        <label class="tips">
-                            <span data-i18n="settings.preferences.general.selection">允许选择所有文本</span>
-                            <input type="checkbox" id="allowCopy" class="switch">
-                            <span class="buttonBorder">
-                                <span class="OFF buttonText">OFF</span>
-                                <span class="ON buttonText">ON</span>
-                                <span id="COPYSlider" class="buttonSlider"></span>
-                            </span>
-                        </label>
-                        <label class="tips">
                             <span data-i18n="settings.preferences.general.autoReplace">同类标签自动替换</span>
                             <input type="checkbox" id="autoReplace" class="switch">
                             <span class="buttonBorder">
@@ -383,14 +365,46 @@
                             </span>
                         </label>
                         <div id="langFrame" class="titleFrame">
-                            <span id="langTitle" class="title" data-i18n="settings.preferences.lang.title">语言/</span>
-                            <span class="engContent" data-i18n="settings.preferences.lang.title-small">Language</span>
+                            <span id="langTitle" class="title" data-i18n="settings.preferences.lang.title">语言和文本/</span>
+                            <span class="engContent" data-i18n="settings.preferences.lang.title-small">Language & Text</span>
                         </div>
                         <div class="line"></div>
                         <div class="tips">
                             <span data-i18n="settings.preferences.lang.switchLang">切换语言(Beta)</span>
                             <span class="clickButton" onclick="openGuide()" data-i18n="settings.preferences.lang.switch">切换</span>
                         </div>
+                        <label class="tips">
+                            <span data-i18n="settings.preferences.general.selection">允许选择所有文本</span>
+                            <input type="checkbox" id="allowCopy" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="COPYSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <div id="displayFrame" class="titleFrame">
+                            <span id="displayTitle" class="title" data-i18n="settings.preferences.display.title">显示/</span>
+                            <span class="engContent" data-i18n="settings.preferences.display.title-small">Display</span>
+                        </div>
+                        <div class="line"></div>
+                        <label class="tips">
+                            <span data-i18n="settings.preferences.display.showBg">显示背景图像</span>
+                            <input type="checkbox" id="showBackgrounds" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="SBSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <label class="tips">
+                            <span data-i18n="settings.preferences.general.showTag">显示图片标签</span>
+                            <input type="checkbox" id="showTags" class="switch">
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="STSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
                         <div id="mobileFrame" class="titleFrame">
                             <span id="mobileTitle" class="title" data-i18n="settings.preferences.mobile.title">适用于移动端的选项/</span>
                             <span class="engContent" data-i18n="settings.preferences.mobile.title-small">Mobile Options</span>

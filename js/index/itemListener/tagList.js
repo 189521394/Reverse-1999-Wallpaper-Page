@@ -51,6 +51,9 @@ function getTagList(loadButtonID) {
                 let div = document.createElement("div");
                 let tagId = targetObjectPool[i]; // 已经是纯 ID 了
 
+                // 背景图像由设置面板开关控制，不显示在标签池中
+                if (tagId === 'background') continue;
+
                 // 调用引擎翻译显示
                 div.textContent = I18n.Translate(tagId);
                 div.className = "waiting";

@@ -252,7 +252,7 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1_1_bg_chaerdunjia.png",
     "tags": ["1.1", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_yaxiandengchang.png",
@@ -277,7 +277,7 @@
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_jishatufu.png",
     "tags": ["1.2", "所有活动", "绿湖噩梦", "1971", "安妮"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_jishatufu2.png",
@@ -382,7 +382,7 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1_2_bg_muwumenwai_ye.png",
     "tags": ["1.2", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_kongbaideheiban1.png",
@@ -912,802 +912,802 @@
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0deck.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0kanabi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0kanabibing.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0riverside.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0xiangzinei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0xiangzineihuanghun.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0xiangzineiwanshang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0xiangzineiyintian.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/0zhaopianqiang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/66haogonglu.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_chiyouquan1.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_huaguduo3.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_hujishengchijing.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_hujishengjiaobian.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_hujishengshifa.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_jinbishiqian.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_jinru.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_kangzaiheianzhong.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_taihejinjiaonangrenwushu.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_tongfengguandao1.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zongmaoshaligouhuoqian2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/at_zongmaoshaligouhuoqian3.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/baiping.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/bangongfangjian-hunan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/bangongfangjian.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/bangongshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/bangongshihunan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/beilinkejie2122haocheku.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/bj.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/cg_haotianqi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/cg_jiuyusan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/cg_kanchuandan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/cg_shudongjihui.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/chaerdunjia.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/chenei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/chenzhannei_wuren.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/chezhannei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/chuancangneibu.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/daxuekeshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/daxueshiyanshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/daxuetushuguan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/daxuezoulang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/dengta.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/dengta_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/dixiafangkongdong.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/dixiashi1.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/dixiashi2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/diyifangxianxuexiao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/dubaiyongheiping.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/gaocengbangongshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/gongmu.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaokeshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaoshitang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaosushe.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaotushuguan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaozoulang-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaozoulang-zhou.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaozoulang_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/guanjiaoxuexiaozoulang_zhou.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/hean.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/hegang-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/hegang_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/heiping.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/huaerjie.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/huanjingyuzhou_posui.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/huashengdunguangchang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/hubian-huanghun.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/hubian-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/hubian_huanghun.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/hubian_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jiankongshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jiaoshulin_wan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jiaoshulin_zao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jiaoshulin_zengjiajiuzhiwupin.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jijinhuibangongshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jijinhuidatang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jijinhuidating.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jijinhuikefang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jijinhuiyishiting.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jijinhuizoulang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jijinhuizoulang2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jinbishi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jiuguanmidao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/jiuguanneifangjian.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/kanabijie2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/kangfuzhongxin.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/kangfuzhongxinfangjian.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/kangfuzhongxinfangjian2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/kangfuzhongxinfangjianheiping.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/keshi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/laowunei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/lapulasidatang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/lapulasidatang2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/linzhongshandong.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/linzhongshenchu_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/linzhongshenchu_zhou.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/linzhongxiuqichu_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/linzhongxiuqichu_zhou.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/luyingdi-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/luyingdi-zhou.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/luyingdi_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/luyingdi_zhou.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/lvguan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/lvsebinlichenei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/mianhuatangjulebu_gupiaozoushi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/muwudating.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/muwumenwai-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/muwumenwai_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/powunei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/senlin-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/senlin.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/senlin_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/senlinguangchang1.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/senlinguangchang2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/shezhengjie.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/shikunei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/shuixiamaopao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/siyuannei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/sufubihaozhai.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/sufubihaozhaiyewan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/taixianshandong-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/taixianshandong_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/tiantai.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/tianwentai.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/typerbg.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/waijiejiedao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/weiyuanhuihuiyishi.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/woshi_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/wuguangchang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/wurenjiedao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/wuyunmibu.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/xuexiaotushuguan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/xuexiaozoulang-ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/xuexiaozoulang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/xuexiaozoulang_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/yinanfangjian.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/yindujiedao_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/yindujiedao_zhou.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/youlunjiaban_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/yuanfangguren.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zaluanxiaoxiang.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhanting-houmen.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhanting_houmen.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhanting_zhengmen.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhantingnei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhantingnei2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhantingnei3.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhantingnei4.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhantingnei5.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhantingneibu1.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhantingneibu2.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhaohuanhupo.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhongshijijiedao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zhongshijijiedao_ye.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zongmaolaozhairanshao.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zongmaolaozhaitingyuan.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zongmaolaozhaiwunei.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zqlm_bg3.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/bg/zqlm_bg4.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_0_bg_kanabijie.png",
     "tags": ["1.0", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1.4/1_4_at_6chenshu.png",
@@ -1997,117 +1997,117 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_6caodi.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_aolituoujidi.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_baofengyuchuanxian.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_chuandaozhezhiting_ye.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_chuandaozhezhiting_zhou.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_chuandaozhezhitingnei1.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_chuandaozhezhitingnei2.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_daoyubangongshi.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_daoyubangongshi2.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_dilao1.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_dilao2.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_dixiasuidao.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_dongxueyanjiushi1.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_dongxueyanjiushi2.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_dongxueyanjiushi3.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_dongxueyanjiushi4.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_haitan_huanghun.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_haitan_ye.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_haitan_ye_mohu.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_haitan_zhou.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_lapulasibangongshi.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_rijiwaikuang.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1.4/1_4_bg_xuepaigonggongqu.png",
     "tags": ["1.4", "所有主线", "洞穴的囚徒", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_5/1_5_at_ailikeqimojing.png",
@@ -2202,7 +2202,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/1_5/1_5_at_kerandiantuhuo1.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "所有轶事", "可燃点·焰光交汇处", "未知时间", "可燃点"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_5/1_5_at_kerandiantuhuo2.png",
@@ -2252,7 +2252,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/1_5/1_5_at_shangyeyundonghui3.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "未知时间", "爱兹拉", "沙丝绒"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_5/1_5_at_wululubihua1.png",
@@ -2297,77 +2297,77 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_guangyingrenqun.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_guanjiaosushe_ye.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_jiaotang.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_lapulasihuikeshi.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_pojiufangjian.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_quanjichang1.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_quanjichang2.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_wululuquanyan.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_wululuquanyanye.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_wululushamo.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-高", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_xingzhengdating.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_yundongchangxiujianhou_ye.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_yundongchangxiujianhou_zhou.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_yundongchangxiujianqian.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_5/1_5_bg_yundongyuanxiuxishi.png",
     "tags": ["1.5", "所有活动", "复兴！乌卢鲁运动会", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_cuyongquniang1.png",
@@ -2427,7 +2427,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getiancefei.png",
     "tags": ["1.6", "所有活动", "朔日手记", "1912", "葛天"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-互补"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_6/1_6_at_getianchuanzhici1.png",
@@ -2657,107 +2657,107 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_bidebaojiazhong.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_caoyuan_chun.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_caoyuan_dong.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_chengmenqian.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_chengmenqianmenkou.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_chengwaiduanqiao1.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_chengwaiduanqiao2.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_chengzhongjieshang.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_chengzhongjieshang_ye.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_guanfushinei1.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_guanfushinei2.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_guanfushinei2_mohu.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_guanfushinei3.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_haitanxue.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_jiaowai.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_jiaowai_ye.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_jiufangyuanzhong.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_jiufangyuanzhong_ye.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_jiufangyuanzhong_ye_qingdian.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_xueshan.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_6/1_6_bg_zhiciyuanzhong.png",
     "tags": ["1.6", "所有活动", "朔日手记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_beihoudemen1.png",
@@ -2777,7 +2777,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chuangzhongwangshi1.png",
     "tags": ["1.7", "所有轶事", "伊索尔德·小房间", "未知时间"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_7/1_7_at_chuangzhongwangshi2.png",
@@ -3107,137 +3107,137 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_at_haidao.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_at_haidao_wuta.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_at_wutai.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_baoyuyanyanjiusuo1.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_baoyuyanyanjiusuo2.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_beihoudemen.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_daoyukefang.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_fenlipaizhanting1.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_fenlipaizhanting2.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_fenlipaizhanting3.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_fenlipaizhijia.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_gongkaizhenliaoting.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_huanchengdadao_baoyu.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_huanchengdadao_wu.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_huanchengdadao_zhou.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_juyuan1.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_juyuan2.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_juyuan3.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_juyuan4.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_juyuanhoutai.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_kongfangjian.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_texiao1.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-高", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_texiao2.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-高", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_ys_weixiukaiyishi.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_zhenliaosuo_ye1.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_zhenliaosuo_ye2.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_7/1_7_bg_zhenliaosuo_zhou.png",
     "tags": ["1.7", "所有主线", "今夜星光灿烂", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_8/1_8_at_baituanzhan2.png",
@@ -3462,102 +3462,102 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_gongchangneibu.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_kuangqukaicaiqu.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_tiankong1.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_tonghuaguangchang1.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_tonghuaguangchang2.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_wurenkuangqu1.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_wurenkuangqu2.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_wurenkuangqu3.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhengangkou.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhengangkou2.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhengangkou3.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhengangkou4.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhenguangchang1.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhenguangchang2.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhenhuiyishi.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhenkeshi.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_xiaozhenlvguan.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_yuanfangdeguren.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_zhigongshitang.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_8/1_8_bg_zhigongshitang2.png",
     "tags": ["1.8", "所有活动", "再见，来亚什基", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_37wentian1.png",
@@ -3777,7 +3777,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_shabao2.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "1914", "77"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/1_9/1_9_at_shabao3.png",
@@ -3822,157 +3822,157 @@
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_chuandaozhezhiting_bianyi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_chuandaozhezhiting_hongzha.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_daoyu_gaodi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_daoyu_shatan_hongzha1.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_daoyu_shatan_hongzha2.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_dongxueyanjiushi_bianyi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_feixu.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_gongchangneibu_wuren.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_heibai1.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_heibai2.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_kakaniyawoshi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_lapulasizoulang.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_luxibangongshi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_shatan.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_shiliandi1.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_shiliandi2.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_shiliandi3.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_shiliandi4.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_shiliandizhongxin.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_shiliandizhongxin1.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_tiankong1.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_tiankong2.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_tiankong_bianyi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_toumingpoyifangjian.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_weiyenaguangchang.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_weiyenaguangchang_bianyi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_weiyenahepan.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_weiyenahepan_bianyi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_xiaoxiang_ye.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_yizi.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/1_9/1_9_bg_ziyoufeixing.png",
     "tags": ["1.9", "所有主线", "孤独之歌", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_0/2_0_at_baolina.png",
@@ -4082,72 +4082,72 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_dianwancanguan1.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_disikewuting.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_dixiasushefangjian.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_duanjiancheku.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_heiandating.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_huanzhuangshuixingfangjian.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_huatian.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_jijinhuidanganshi.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_jiufangjian.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_xiaoxiang_ye.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_xiashuidao.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_xinjiyuanjishi.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_xinjiyuanjishi1.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_0/2_0_bg_xinjiyuanjishi_ye.png",
     "tags": ["2.0", "所有活动", "飞驰！明日之城", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_1/2_1_at_aergusi.png",
@@ -4312,7 +4312,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_1/2_1_at_yeche.png",
     "tags": ["2.1", "所有活动", "77号往事", "未知时间"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_1/2_1_at_ys_jinmier.png",
@@ -4362,72 +4362,72 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_guanxishi.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_jiuba.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_lvguandanrenjian.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_lvguanqiantai.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_lvguanshuangrenjian.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_lvguanwaijing.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_lvguanwaijing_ye.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_lvguanzoulang1.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_lvguanzoulang2.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_meiguonanbu.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_xinzangfangjian.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_yuanye1.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_yuanye2.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_1/2_1_bg_yuanye3.png",
     "tags": ["2.1", "所有活动", "77号往事", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_aifu.png",
@@ -4492,7 +4492,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_nana.png",
     "tags": ["2.2", "所有轶事", "天使娜娜·十月无晴天", "未知时间", "天使娜娜"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-对比"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_2/2_2_at_nana1.png",
@@ -4627,72 +4627,72 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_binanxiaowu.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_hean.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_huikeshi.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_jiaotang1.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_jiaotang2.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_jishi.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_juzhuqu1.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_rongjunyuan1.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_rongjunyuan2.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_xifenghaiya.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_youlun.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_zhinuojidi.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_zhuangyuan.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_2/2_2_bg_zhujiemian.png",
     "tags": ["2.2", "所有主线", "忧郁的热带", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_3/2_3_at_chongjian.png",
@@ -4802,72 +4802,72 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_dongqujiedao1.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_dongqujiedao2.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_fangjian.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_gongmu_ye.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_guzhai1.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_guzhai2.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_huatian_ye.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_lianxishi.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_yundonghuichang1.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_yundonghuichang2.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_yundonghuichang3.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_yundonghuichang4.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_yundonghuichang5.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_3/2_3_bg_zhunbeishi.png",
     "tags": ["2.3", "所有活动", "圣火纪行：东区黎明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_4/2_4_at_baoyushiyan.png",
@@ -5077,72 +5077,72 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_b2_4_bg_lapulasihuiyishi.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_chuanzhangshi1.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_chuanzhangshi2.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_fashechang.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_haitan1.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_haitan2.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_jiedao.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_wutai.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_xueshan.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_youlun_ye1.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_youlun_ye2.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_youlun_ye3.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_youlundating1.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_4/2_4_bg_youlundating2.png",
     "tags": ["2.4", "所有活动", "地球上最后的夜晚", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_5/2_5_at_bangongshi.png",
@@ -5347,112 +5347,112 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_canguan.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_dianyinggongzuoshi.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_fanzuike.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_fanzuike1.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_guangzhoufandian.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_jiedao.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_jingzhangbangongshi.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_liangjiacitang1.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_liangjiacitang2.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_louceng1.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_louceng2.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_lvguan.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_pianchang.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_tangrenjie.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_tangrenjie_bianyi1.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_tangrenjie_bianyi2.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_tangrenjie_shehuo.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_wutai.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_xianggangjiedao.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_xiaoxiang.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_xiaoxiang_ye.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_5/2_5_bg_zhuzhai.png",
     "tags": ["2.5", "所有活动", "唐人街影话", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_alaifu.png",
@@ -5502,7 +5502,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_jianyudelishi.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "1991"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_6/2_6_at_kanshu.png",
@@ -5602,72 +5602,72 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_anfang.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_bangongshi.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_denghoushi.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_jianyu.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_jianyuwaiwei.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_jietou.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_kafeiguan.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_matou.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_qiushi.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_qiushi2.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_shoushushi1.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_shoushushi2.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_shujia.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_6/2_6_bg_yongdao.png",
     "tags": ["2.6", "所有主线", "疯癫与文明", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_bakaluoer1.png",
@@ -5682,7 +5682,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_beiduidiqiu.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "所有轶事", "库珀花环·末日与末日之后", "1987", "库珀花环"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_7/2_7_at_canguanhuitan1.png",
@@ -5872,92 +5872,92 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_bangongshi.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_cangshi.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_chucangjian.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_dingpeng.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_fasheshi1.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_huanjing.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_jiedao1.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_jiedao2.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_kuangkeng1.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_kuangkeng2.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_maxituan.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_maxituan2.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_wenshi.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_xuedi.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_xuedi_ye.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_yuzhou.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_yuzhou2.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_7/2_7_bg_zhangpeng.png",
     "tags": ["2.7", "所有活动", "1987宇宙组曲", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_aerkana1.png",
@@ -6027,7 +6027,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_daoying3.png",
     "tags": ["2.8", "所有轶事", "诺谛卡·虚无的倒影", "未知时间", "诺谛卡"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-冷色", "色彩-互补"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-冷色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_dazhan.png",
@@ -6247,7 +6247,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen11.png",
     "tags": ["2.8", "所有主线", "复乐园", "1991", "诺谛卡"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-高", "色温-冷色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-高", "色温-冷色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/2_8/2_8_at_toumen12.png",
@@ -6482,142 +6482,142 @@
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_7_bg_docu1.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_7_bg_docu4.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_fadianbaoshichang.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_fangche.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_haiyu2.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_huanxingguangchang1.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_jitan1.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_jitan4.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_jiutou.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_kekaozhan.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_kekaozhan2.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_kekaozhan3.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_kekaozhanfanzhuan.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_nanjibingyuan.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_nanjibingyuan2.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_rongyanguan.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_shanling.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_shenyuan.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-高", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_shibimigong.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_shuishang.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_xueyuanshichang1.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_xueyuanshichang2.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_xueyuanshichang3.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_yijicheng.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_yingdi.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_yingdi2.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_yizhichengshinei.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/2_8/2_8_bg_zhudi.png",
     "tags": ["2.8", "所有主线", "复乐园", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_0/3_0_at_aiguozhe.png",
@@ -6742,77 +6742,77 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_anquanqu1.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_dibao1.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_dibao2.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_fengcheyuanye.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_gongmu1.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_gongmu2.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_gongmu3.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_gongmu4.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_jiaotang.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_nongzhuang.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_senlin.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_wurenqu1.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_wurenqu2.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_zhanhao1.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_0/3_0_bg_zhanhao2.png",
     "tags": ["3.0", "所有主线", "行于漫漫长路上", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/s01/s01_cg_01.png",
@@ -6947,77 +6947,77 @@
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_01.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_02.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_03.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_04.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_05.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_06.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_07.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_08.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_09.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_10.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_11.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_12.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_13.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_14.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/s01/s01_bg_15.png",
     "tags": ["SP01", "所有活动", "翡冷翠之春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_aimaxixue.png",
@@ -7097,7 +7097,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_xixueguijiazu1.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "1912"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_1/3_1_at_yeshumeibeibang.png",
@@ -7167,107 +7167,107 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_aimafangjian.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_bangongchexiang.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_cangku.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_chexiang.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_chexiangyewa.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_chezhan1.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_chezhan2.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_chezhan3.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_ganranchexiang.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_nanminchexiang.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_senglin1.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_tingkaodian.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_waijiechexiang.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_waijing.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_wurenchezhan.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_xiaowu.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_xiaowu_ye.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_xuedi_ye.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_xuesemuyuan.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_1/3_1_bg_yizi.png",
     "tags": ["3.1", "所有活动", "长夜鸣笛", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_01.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "1936", "灰调蓝", "费利西安"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_02.png",
@@ -7322,7 +7322,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_16.png",
     "tags": ["3.2", "所有轶事", "灰调蓝·无烧", "未知时间", "灰调蓝"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-冷色", "色彩-互补"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-冷色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_17.png",
@@ -7547,7 +7547,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_72.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "1936", "贝丽尔"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_2/3_2_at_73.png",
@@ -7582,112 +7582,112 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_01.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_02.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_03.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_04.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_05.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_06.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_07.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_08.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_09.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_10.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_11.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_12.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_13.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_14.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_15.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_16.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_17.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_18.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_19.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_20.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_rouge.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_2/3_2_bg_rouge_1.png",
     "tags": ["3.2", "所有活动", "迁流的盛宴", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-高", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_01.png",
@@ -7762,7 +7762,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_15.png",
     "tags": ["3.3", "所有主线", "远征记", "1920"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-冷色", "色彩-互补"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-冷色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_3/3_3_at_16.png",
@@ -7897,117 +7897,117 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_at_40.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_at_41.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_01.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_02.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_03.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_04.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-互补"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_05.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_06.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_08.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_09.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_10.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_11.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_12.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_13.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_14.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_15.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_16.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_17.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_18.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_19.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_20.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_21.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_3/3_3_bg_22.png",
     "tags": ["3.3", "所有主线", "远征记", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_01.png",
@@ -8107,12 +8107,12 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_19.png",
     "tags": ["3.4", "所有活动", "不老春", "未知时间", "鹭鸶剪"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_20.png",
     "tags": ["3.4", "所有活动", "不老春", "未知时间", "程和光"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-对比"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_21.png",
@@ -8157,7 +8157,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_30.png",
     "tags": ["3.4", "所有活动", "不老春", "未知时间", "芦草结"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_31.png",
@@ -8172,7 +8172,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_33.png",
     "tags": ["3.4", "所有活动", "不老春", "未知时间", "程和光"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-相似"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_4/3_4_at_ys_getian.png",
@@ -8182,142 +8182,142 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_01.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_02.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_03.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_04.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_05.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_06.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_07.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_08.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_09.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_10.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_11.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_12.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_13.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_14.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_15.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_16.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_17.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_18.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_19.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_20.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_21.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_22.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_23.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_24.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_25.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_26.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-相似"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_27.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_4/3_4_bg_yqmb_01.png",
     "tags": ["3.4", "所有活动", "不老春", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_01.png",
@@ -8452,7 +8452,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_27.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "未知时间", "洛伦兹蝴蝶"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-互补"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_28.png",
@@ -8477,12 +8477,12 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_32.png",
     "tags": ["3.5", "所有轶事", "拉莫纳·花朵飞旋", "未知时间", "拉莫纳"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-互补"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-对比"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_33.png",
     "tags": ["3.5", "所有轶事", "拉莫纳·花朵飞旋", "未知时间", "拉莫纳"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-互补"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_5/3_5_at_34.png",
@@ -8532,137 +8532,137 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_01.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_02.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_03.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_04.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_05.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_06.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_07.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_09.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_10.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_11.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_12.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_13.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_14.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_15.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_16.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_17.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_18.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_19.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_20.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_21.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_22.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_23.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_24.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_25.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_26.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_31.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_5/3_5_bg_32.png",
     "tags": ["3.5", "所有活动", "《绿松石蛇俱乐部》", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_6/3_6_at_01.png",
@@ -8802,82 +8802,82 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_01.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_02.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_03.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_04.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_08.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_09.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_10.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_11.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_12.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_13.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_14.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_15.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_16.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-对比"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_21.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_22.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_6/3_6_bg_23.png",
     "tags": ["3.6", "所有活动", "人们向何处去", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_01.png",
@@ -9102,7 +9102,7 @@
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_rouge_02.png",
     "tags": ["3.7", "无声综合症", "珐琅眼", "未知时间"],
-    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-冷色", "色彩-相似"]
   },
   {
     "file": "resource/singlebg/storybg/story_atcg/3_7/3_7_at_ys_yinzhuangxiaochunqueer.png",
@@ -9112,206 +9112,206 @@
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_01.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_02.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_03.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_04.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_06.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_07.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_08.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_09.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_10.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_11.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_12.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_13.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_14.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_16.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_17.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_18.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_21.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_22.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_24.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_25.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_26.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_27.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_28.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_29.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_30.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_31.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_32.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_34.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_35.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_36.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_37.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_38.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_39.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_40.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_41.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_42.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_43.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_44.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_45.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_46.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+    "tone": []
   },
   {
     "file": "resource/singlebg/storybg/story_bg/3_7/3_7_bg_47.png",
     "tags": ["3.7", "所有主线", "他者的悲哀", "背景图像"],
-    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+    "tone": []
   }
 ]

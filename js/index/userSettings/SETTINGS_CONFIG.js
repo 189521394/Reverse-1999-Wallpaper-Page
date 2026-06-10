@@ -1,19 +1,21 @@
+// 背景图像开关回调：切换后重跑当前筛选，即时生效
+function toggleBackgroundFilter() {
+    if (window.currentActiveSearchMode === 'text') {
+        const text = document.getElementById("input").value.trim();
+        if (text) {
+            executeFilter();
+            return;
+        }
+    }
+    submit();
+}
+
 const SETTINGS_CONFIG = [
     // ================================通用================================
     {
         logic: "preciseScreening",
         animation: "PSSlider",
         callback: null
-    },
-    {
-        logic: "showTags",
-        animation: "STSlider",
-        callback: null
-    },
-    {
-        logic: "allowCopy",
-        animation: "COPYSlider",
-        callback: copyMode
     },
     {
         logic: "autoReplace",
@@ -34,6 +36,23 @@ const SETTINGS_CONFIG = [
         logic: "autoFocus",
         animation: "AFSlider",
         callback: null
+    },
+    // ================================显示================================
+    {
+        logic: "showBackgrounds",
+        animation: "SBSlider",
+        callback: toggleBackgroundFilter
+    },
+    {
+        logic: "showTags",
+        animation: "STSlider",
+        callback: null
+    },
+    // ================================语言和文本================================
+    {
+        logic: "allowCopy",
+        animation: "COPYSlider",
+        callback: copyMode
     },
     // ================================移动端设置================================
     {

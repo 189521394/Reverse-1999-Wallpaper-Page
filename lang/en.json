@@ -70,10 +70,15 @@
         "autoFocus": "Auto-focus Search Input"
       },
       "lang": {
-        "title": "Language/",
-        "title-small": "语言",
+        "title": "Language & Text/",
+        "title-small": "语言和文本",
         "switchLang": "Switch Language",
         "switch": "Switch"
+      },
+      "display": {
+        "title": "Display/",
+        "title-small": "显示",
+        "showBg": "Show Background Images"
       },
       "mobile": {
         "title": "Mobile Options/",

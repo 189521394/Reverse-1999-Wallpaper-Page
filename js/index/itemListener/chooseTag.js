@@ -5,7 +5,8 @@ const autoReplaceList = [
     "anecdote",
     "versionCode",
     "year",
-    "Tone"
+    "Tone",
+    "special"
 ]
 const autoReplace = document.getElementById("autoReplace");
 const autoSubmit = document.getElementById("autoSubmit");

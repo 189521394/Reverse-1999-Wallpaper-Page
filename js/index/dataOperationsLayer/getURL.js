@@ -27,6 +27,12 @@ async function loadURL(targetTagDisplayWords) {
         );
     }
 
+    // 背景图像开关过滤
+    const showBg = document.getElementById("showBackgrounds");
+    if (showBg && !showBg.checked) {
+        filteredData = filteredData.filter(item => !(item.tags && item.tags.includes("background")));
+    }
+
     // 加上前缀并返回
     return filteredData.map(item => urlPrefix + item.file);
 }

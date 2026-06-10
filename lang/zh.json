@@ -70,10 +70,15 @@
         "autoFocus": "自动聚焦搜索框"
       },
       "lang": {
-        "title": "语言/",
-        "title-small": "Language",
+        "title": "语言和文本/",
+        "title-small": "Language & Text",
         "switchLang": "切换语言",
         "switch": "切换"
+      },
+      "display": {
+        "title": "显示/",
+        "title-small": "Display",
+        "showBg": "显示背景图像"
       },
       "mobile": {
         "title": "适用于移动端的选项/",
