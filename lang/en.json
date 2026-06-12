@@ -111,7 +111,7 @@
     "mail": {
       "title": "Update Progress",
       "sender": "From：暖茶与风",
-      "date": "Date：2026-05-29",
+      "date": "Date：2026-06-12",
       "_comment1": "用于复制的字符【✘，✔】",
       "_comment2": "每次更新：版本号，版本名称，时间，进度",
       "mailContent": [
@@ -119,7 +119,7 @@
         "    Dear Timekeeper：",
         "    The curtain is slowly rising on Version 3.8 《The temporal scale》. Our current preparations are as follows：",
         "        ◦ Official update notice released ✔",
-        "        ◦ Game update ✘",
+        "        ◦ Game update ✔",
         "        ◦ Awaiting film development ✘",
         "        ◦ Organizing photographs ✘",
         "        ◦ Update deployment ✘",

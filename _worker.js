@@ -24,10 +24,12 @@ export default {
                 return Response.redirect('https://r9wallpaper.org/en/' + url.search, 301);
             }
 
-            const accept = request.headers.get('Accept') || '';
+            // 【核心修复点】：用扩展名判断是否为静态资源，而不是用 Accept 头
+            // 如果路径以 .js, .css, .png, .json 等结尾，判定为静态资源
+            const isAsset = url.pathname.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|woff2?|json|xml)$/i);
 
-            // 非 HTML 请求（CSS/JS/图片/字体/数据等）：剥离 /en 前缀，从根路径获取
-            if (!accept.includes('text/html')) {
+            if (isAsset) {
+                // 是静态资源（如 /en/bundle_index.css）：剥离 /en 前缀，从根路径获取
                 const strippedPath = url.pathname.replace(/^\/en/, '') || '/';
                 const resourceUrl = new URL(request.url);
                 resourceUrl.pathname = strippedPath;
