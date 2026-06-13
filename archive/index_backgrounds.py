@@ -21,10 +21,10 @@ from collections import Counter
 
 # ─────────────────────────── 路径常量 ───────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-RESOURCE_DIR = os.path.join(SCRIPT_DIR, 'resource')
+RESOURCE_DIR = os.path.join(SCRIPT_DIR, '../resource')
 STORY_BG_DIR = os.path.join(RESOURCE_DIR, 'singlebg', 'storybg', 'story_bg')
-FILTER_JSON = os.path.join(SCRIPT_DIR, 'Filter.json')
-TAG_DATA_JSON = os.path.join(SCRIPT_DIR, 'lang', 'tagData.json')
+FILTER_JSON = os.path.join(SCRIPT_DIR, '../Filter.json')
+TAG_DATA_JSON = os.path.join(SCRIPT_DIR, '../lang', 'tagData.json')
 TEST_DIR = os.path.join(SCRIPT_DIR, 'test')
 
 # ─────────────────────────── 工具函数 ───────────────────────────
@@ -390,7 +390,7 @@ def main():
         target_json = FILTER_JSON
         print(f"  [直接模式] 将修改原文件: {FILTER_JSON}")
     else:
-        target_json = os.path.join(TEST_DIR, 'Filter.json')
+        target_json = os.path.join(TEST_DIR, '../Filter.json')
         shutil.copy2(FILTER_JSON, target_json)
         print(f"  [测试模式] 在 test/ 目录中操作: {target_json}")
         print(f"     (使用 --apply 参数可直接修改原文件)")
