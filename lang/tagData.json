@@ -4,6 +4,21 @@
     "en": "Aleph",
     "category": "character"
   },
+  "blueprint": {
+    "zh": "蓝图",
+    "en": "Blueprint",
+    "category": "character"
+  },
+  "dian_ji_shi": {
+    "zh": "奠基石",
+    "en": "Cornerstone",
+    "category": "character"
+  },
+  "hui_sheng_yao": {
+    "zh": "回声谣",
+    "en": "Everecho",
+    "category": "character"
+  },
   "argus": {
     "zh": "阿尔古斯",
     "en": "Argus",
