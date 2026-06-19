@@ -171,6 +171,19 @@ def main():
         print("\n  ✓ 所有条目均已有色调数据，无需处理。")
         return
 
+    # ── 1.5 列出所有待更新的文件并询问用户 ──
+    print(f"\n  待更新文件列表：")
+    print("-" * 40)
+    for item in data:
+        if not item.get("tone") or len(item["tone"]) == 0:
+            print(f"    {item['file']}")
+    print("-" * 40)
+
+    answer = input(f"\n  共 {need_update} 个文件需要更新，是否继续？(y/n): ").strip().lower()
+    if answer != 'y':
+        print("  ✗ 用户取消，退出脚本。")
+        return
+
     # ── 2. 多线程分析 ──
     print(f"\n[2/3] 开启多线程色调分析 (8线程)...")
 

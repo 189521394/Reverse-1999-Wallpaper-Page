@@ -108,7 +108,7 @@ def compile_filter_json(dist_dir):
     filter_file = 'Filter.json'
     dict_file = os.path.join('lang', 'tagData.json')
 
-    print("正在编译 Filter.json (中文标签洗白与极限压缩)...")
+    print("正在编译 Filter.json...")
 
     if not os.path.exists(dict_file):
         print(f"❌ 致命错误: 找不到字典文件 {dict_file}")

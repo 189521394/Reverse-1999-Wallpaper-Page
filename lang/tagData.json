@@ -1009,6 +1009,16 @@
     "en": "Lady by the Lake",
     "category": "character"
   },
+  "ya_xiao": {
+    "zh": "亚肖",
+    "en": "Ya Xiao",
+    "category": "character"
+  },
+  "lu_qi_an": {
+    "zh": "卢齐安",
+    "en": "Lucian",
+    "category": "character"
+  },
   "zhu_xian_ju_qing": {
     "zh": "所有主线",
     "en": "All Stories",
@@ -1592,6 +1602,16 @@
   "sp_xiao_chun_que": {
     "zh": "银装小春雀儿·风暴里，雏鹰振翅",
     "en": "Silverwing Eagle·The Eaglet Takes Wing",
+    "category": "anecdote"
+  },
+  "chu_niao_zhui_luo": {
+    "zh": "回声谣·雏鸟为何坠落",
+    "en": "Everecho·A Fledgling's Brave Fall",
+    "category": "anecdote"
+  },
+  "shi_che_ju": {
+    "zh": "柏林以东·矢车菊说起的那一年",
+    "en": "Bkornblume·The Year the Cornflower Spoke",
     "category": "anecdote"
   },
   "1.0": {

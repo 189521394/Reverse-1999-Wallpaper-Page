@@ -48,6 +48,11 @@ const SETTINGS_CONFIG = [
         animation: "STSlider",
         callback: null
     },
+    {
+        logic: "showTone",
+        animation: "SToSlider",
+        callback: null
+    },
     // ================================语言和文本================================
     {
         logic: "allowCopy",

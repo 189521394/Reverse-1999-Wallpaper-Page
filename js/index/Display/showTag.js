@@ -20,7 +20,7 @@ async function showTag(element) {
 
         // 创建特殊标签元素
         let copyBtn = document.createElement("div");
-        copyBtn.textContent = "复制文件名称";
+        copyBtn.textContent = fileName;
 
         // 赋予它 .tags 类名，让它长得和普通标签一样
         copyBtn.className = "tags";
@@ -54,7 +54,10 @@ async function showTag(element) {
     // 调试就不加try了，自己修
     // ======================================调试结束======================================
     // 这里获取的还是ID列表
-    let displayTags = [...tagData.tags, ...tagData.tone];
+    let displayTags = [...tagData.tags];
+    if (document.getElementById("showTone").checked) {
+        displayTags.push(...tagData.tone);
+    }
 
     for (let i = 0; i < displayTags.length; i++) {
         let div = document.createElement("div");

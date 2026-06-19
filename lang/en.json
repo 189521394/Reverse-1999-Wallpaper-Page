@@ -62,8 +62,6 @@
         "title": "General/",
         "title-small": "通用",
         "precise": "Exact Match",
-        "showTag": "Show Image Tags",
-        "selection": "Enable Text Selection",
         "autoReplace": "Auto-Replace Similar Tags",
         "autoSubmit": "Auto Submit",
         "hideTips": "Hide Tooltips",
@@ -73,12 +71,15 @@
         "title": "Language & Text/",
         "title-small": "语言和文本",
         "switchLang": "Switch Language",
-        "switch": "Switch"
+        "switch": "Switch",
+        "selection": "Enable Text Selection"
       },
       "display": {
         "title": "Display/",
         "title-small": "显示",
-        "showBg": "Show Background Images"
+        "showBg": "Show Background Images",
+        "showTag": "Show Image Tags",
+        "showTone": "Show Tone Tags"
       },
       "mobile": {
         "title": "Mobile Options/",

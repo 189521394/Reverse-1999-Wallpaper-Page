@@ -16,6 +16,8 @@ async function loadTag(targetURL) {
                 tags: item.tags.map(zh => I18n.convert(zh)),
                 tone: (item.tone || []).map(zh => I18n.convert(zh))
             }));
+            // 同步更新全局数据库，使筛选结果也能即时反映 Filter.json 的变动
+            runtimeDatabase = freshDB;
             const result = freshDB.find(item => cleanURL.endsWith(item.file));
             if (result) {
                 return { tags: result.tags || [], tone: result.tone || [] };
