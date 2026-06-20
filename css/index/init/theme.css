@@ -3,22 +3,22 @@
 /*默认风格，暗色模式*/
 :root {
     /* 页面大背景 */
-    --pageBGC: #121416;
+    --pageBGC: #111315;
 
     /* 筛选大框 */
-    --filterBoxBGC: #1d2024;
+    --filterBoxBGC: #1b1f23;
 
     /* 控制面板 */
-    --controlBGC: #181b1f;
+    --controlBGC: #161a1e;
 
     /* 图片展示区 */
-    --showImgBGC: #0a0a0a;
+    --showImgBGC: #0c0d0f;
 
     /* 列表区域(左侧类别) */
-    --showListBGC: #2a2e33;
+    --showListBGC: #24282d;
 
     /* 标签显示区域(右侧池子) */
-    --showTagBGC: #23262b;
+    --showTagBGC: #1f2328;
 
     /* 单个标签颜色 */
     --tagBGC: #d6b882;
@@ -27,43 +27,43 @@
     --controlButtonBGC: #D16430;
 
     /* 浅色文本 */
-    --fontColor: #dcdcdc;
+    --fontColor: #d8d8d8;
 
     /* 文本hover */
     --fontHoverColor: #101010;
 
     /* 金色边框 */
-    --goldLine: #5c5645;
+    --goldLine: #6d6656;
 
     /* 图片背景板颜色 */
-    --imgLiningColor: #101010;
+    --imgLiningColor: #111214;
 
-    /*图片加载背景色*/
-    --imgLoadingBlendColor: #202020;
+    /* 图片加载背景色 */
+    --imgLoadingBlendColor: #1b1d20;
 
     /* 图片边框 */
-    --imgBorderColor: #4a5d75;
+    --imgBorderColor: #5f6f80;
 
     /* 图片Hover边框 */
-    --imgHoverBorderColor: #e0e0d0;
+    --imgHoverBorderColor: #D16430;
 
     /* 图片阴影 */
-    --imgShadowColor: #5c5c5c;
+    --imgShadowColor: rgba(0, 0, 0, 0.55);
 
     /* 滚动条轨道 */
-    --scrollBarTrack: rgba(255, 255, 255, 0.3);
+    --scrollBarTrack: rgba(255, 255, 255, 0.16);
 
     /* 滚动条滑块 */
-    --scrollBarThumb: rgba(255, 255, 255, 0.6);
+    --scrollBarThumb: rgba(255, 255, 255, 0.34);
 
     /* 滚动条滑块hover */
-    --scrollBarHover: rgba(255, 255, 255, 0.9);
+    --scrollBarHover: rgba(255, 255, 255, 0.55);
 
-    /*窗口大阴影*/
-    --setBigShadow: rgba(0, 0, 0, 0.6);
+    /* 窗口大阴影 */
+    --setBigShadow: rgba(0, 0, 0, 0.72);
 
-    /*窗口小阴影*/
-    --setSmallShadow: rgba(0, 0, 0, 0.9);
+    /* 窗口小阴影 */
+    --setSmallShadow: rgba(0, 0, 0, 0.92);
 }
 /*手动亮色模式*/
 :root[data-theme='light'] {
