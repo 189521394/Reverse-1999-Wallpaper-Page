@@ -9548,5 +9548,120 @@
     "file": "resource/singlebg/storybg/story_bg/3_8/3_8_bg_27.png",
     "tags": ["3.8", "所有活动", "世纪末尺度", "背景图像"],
     "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_01.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "马克西姆"],
+    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_08.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "维尔汀", "小梅斯梅尔", "X"],
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_09.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "马克西姆"],
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-冷色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_10.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "双生舞伶"],
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-冷色", "色彩-互补"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_11.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "P-3"],
+    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_12.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "科学家V"],
+    "tone": ["饱和度-高", "对比度-强", "明暗调-中", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_13.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "科学家V"],
+    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_14.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "维尔汀", "X", "季娜婆婆", "小梅斯梅尔"],
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-冷色", "色彩-对比"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_15.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "P-3", "小梅斯梅尔"],
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_atcg/s02/s02_cg_16.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "未知时间", "双生舞伶", "维尔汀"],
+    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_01.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-强", "明暗调-低", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_02.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-高", "对比度-强", "明暗调-高", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_03.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-低", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_04.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-强", "明暗调-中", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_05.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_06.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_07.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-高", "对比度-弱", "明暗调-中", "色温-暖色", "色彩-单调"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_08.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-弱", "明暗调-高", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_09.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_18.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-弱", "明暗调-低", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_19.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-强", "明暗调-高", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_20.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
+  },
+  {
+    "file": "resource/singlebg/storybg/story_bg/s02/s02_bg_21.png",
+    "tags": ["SP02", "所有活动", "聚合浪潮", "背景图像"],
+    "tone": ["饱和度-低", "对比度-弱", "明暗调-中", "色温-中性"]
   }
 ]

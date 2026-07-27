@@ -4,6 +4,31 @@
     "en": "Aleph",
     "category": "character"
   },
+  "Twins": {
+    "zh": "双生舞伶",
+    "en": "The Twins",
+    "category": "character"
+  },
+  "Maksim": {
+    "zh": "马克西姆",
+    "en": "Maksim",
+    "category": "character"
+  },
+  "p3": {
+    "zh": "P-3",
+    "en": "P-3",
+    "category": "character"
+  },
+  "ke_xue_jia": {
+    "zh": "科学家V",
+    "en": "Scientist V",
+    "category": "character"
+  },
+  "jina_popo": {
+    "zh": "季娜婆婆",
+    "en": "Granny Jina",
+    "category": "character"
+  },
   "blueprint": {
     "zh": "蓝图",
     "en": "Blueprint",
@@ -1199,6 +1224,11 @@
     "en": "The temporal scale",
     "category": "event"
   },
+  "ju_he_lang_chao": {
+    "zh": "聚合浪潮",
+    "en": "Polymerized Dreams",
+    "category": "event"
+  },
   "yi_shi": {
     "zh": "所有轶事",
     "en": "All Sides",
@@ -1762,6 +1792,11 @@
   "SP01": {
     "zh": "SP01",
     "en": "SP01",
+    "category": "versionCode"
+  },
+  "SP02": {
+    "zh": "SP02",
+    "en": "SP02",
     "category": "versionCode"
   },
   "unknown_time": {

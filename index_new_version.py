@@ -5,8 +5,9 @@
 
 用法: python index_new_version.py
 
-用户输入版本目录名（如 3_8），脚本自动:
+用户输入版本目录名（如 3_8 / s02），脚本自动:
   - 将 *_* 转为 *.* 版本号（3_8 → 3.8）
+  - 将 s## / S## 转为 SP## 版本号（s02 → SP02），用于联动版本
   - 对 story_atcg/ 下的新文件 → tags: [版本号, 类型, 章节名]
   - 对 story_bg/ 下的新文件   → tags: [版本号, 类型, 章节名, "背景图像"]
   - tone 统一留空 []
@@ -98,10 +99,13 @@ def resolve_version(dir_name: str) -> str | None:
     """
     解析版本号:
       - "*_*" 格式（如 3_8）→ 自动转为 "3.8"
-      - 其他格式        → 返回 None，由调用方手动输入
+      - "s##" / "S##" 格式（如 s02）→ 自动转为 "SP02"
+      - 其他格式               → 返回 None，由调用方手动输入
     """
     if re.match(r"^\d+_\d+$", dir_name):
         return dir_name.replace("_", ".")
+    if re.match(r"^[Ss]\d+$", dir_name):
+        return "SP" + dir_name[1:]
     return None
 
 
@@ -128,7 +132,7 @@ def main():
 
     # ── 2. 用户输入版本目录 ──
     print("\n[2/4] 指定要索引的版本目录")
-    print("  示例: 3_8  对应目录 resource/singlebg/storybg/story_atcg/3_8/")
+    print("  示例: 3_8 / s02  对应目录 resource/singlebg/storybg/story_atcg/3_8/ 等")
     dir_name = input("  请输入版本目录名: ").strip()
 
     if not dir_name:
