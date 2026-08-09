@@ -112,7 +112,7 @@
     "mail": {
       "title": "Update Progress",
       "sender": "From：暖茶与风",
-      "date": "Date：2026-07-27",
+      "date": "Date：2026-08-10",
       "_comment1": "用于复制的字符【✘，✔】",
       "_comment2": "留空",
       "_comment3": "联动版本文案：关于《原子之心》联动特别版本《聚合浪潮》的帷幕正缓缓拉开",
@@ -120,12 +120,12 @@
       "mailContent": [
         "",
         "    Dear Timekeeper：",
-        "    The curtain is slowly rising on the 《Atomic Heart》 crossover special version 《Polymerized Dreams》. Our current preparations are as follows：",
+        "    The curtain is slowly rising on Version 3.9 《REKINDLED GAMES OF THE Summer Gold Sea》. Our current preparations are as follows：",
         "        ◦ Official update notice released ✔",
-        "        ◦ Game update ✔",
-        "        ◦ Awaiting film development ✔",
-        "        ◦ Organizing photographs ✔",
-        "        ◦ Update deployment ✔",
+        "        ◦ Game update ✘",
+        "        ◦ Awaiting film development ✘",
+        "        ◦ Organizing photographs ✘",
+        "        ◦ Update deployment ✘",
         "    The fragmented photographs await the moment they see the light of day. This may require a little patience; may this brief pause bring about a more flawless reunion. Thank you for your patience."
       ]
     },
