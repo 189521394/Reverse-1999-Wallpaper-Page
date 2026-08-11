@@ -1,0 +1,57 @@
+/*
+ * ============================================================================
+ *  胶片颗粒（Film Grain）参数速查
+ * ============================================================================
+ *
+ *  [1] baseFrequency  — 颗粒粗细
+ *      文件：HTML > #film-grain > <feTurbulence>
+ *      范围：0.4（粗颗粒） ~ 0.8（细颗粒）
+ *      说明：值越小颗粒越大越明显，值越大颗粒越细密
+ *
+ *  [2] numOctaves  — 噪点叠加层数
+ *      文件：HTML > #film-grain > <feTurbulence>
+ *      范围：2 ~ 4
+ *      说明：越高细节越丰富，但渲染开销越大。移动端建议 ≤2
+ *
+ *  [3] grainAlpha  — 颗粒密度 / 对比度
+ *      文件：HTML > #film-grain > <feColorMatrix> values 末位
+ *      范围：0.15（清淡） ~ 0.5（浓重）
+ *      说明：控制颗粒整体的浓淡，alpha 通道系数
+ *
+ *  [4] opacity  — 整体强度
+ *      文件：本文件 > #texture
+ *      范围：0.3（隐约） ~ 0.8（强烈）
+ *      说明：配合 grainAlpha 一起调节最终可见度
+ *
+ *  [5] mix-blend-mode  — 混合模式
+ *      文件：本文件 > #texture
+ *      可选：multiply（正片叠底，偏暗）
+ *            screen（偏亮）
+ *            normal（直接覆盖，无混合）
+ *
+ * ============================================================================
+ */
+
+/* 胶片颗粒全局遮罩 */
+#texture {
+	position: fixed;
+	z-index: var(--z-texture);
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+
+	/* 噪点由单独的SVG元素生成 */
+	filter: url(#film-grain);
+
+	/* 混合模式 */
+	mix-blend-mode: multiply;
+
+	/* 颗粒透明度 */
+	opacity: 0.4;
+}
+
+#texture.hide {
+    display: none;
+}

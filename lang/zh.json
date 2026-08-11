@@ -79,7 +79,8 @@
         "title-small": "Display",
         "showBg": "显示背景图像",
         "showTag": "显示图片标签",
-        "showTone": "显示色调"
+        "showTone": "显示色调",
+        "texture": "胶片质感"
       },
       "mobile": {
         "title": "适用于移动端的选项/",

@@ -53,6 +53,11 @@ const SETTINGS_CONFIG = [
         animation: "SToSlider",
         callback: null
     },
+    {
+        logic: "useTexture",
+        animation: "UTSlider",
+        callback: switchTexture
+    },
     // ================================语言和文本================================
     {
         logic: "allowCopy",

@@ -50,7 +50,9 @@
     <!--语言选择逻辑-->
     <script src="/js/index/guide.js" defer></script>
     <script src="/js/index/i18n.js" defer></script>
-    
+    <!--纹理叠加-->
+    <script src="js/index/texture.js" defer></script>
+
     <!--====================系统提示组件(也属于初始化，较多)====================-->
     <!--提示框框架-->
     <link rel="stylesheet" href="/css/index/init/notice/noticeBox.css">
@@ -209,6 +211,8 @@
     <script src="/js/index/userSettings/SETTINGS_CONFIG.js" defer></script>
     <!--分享按钮-->
     <script src="/js/index/share.js" defer></script>
+    <!--纹理叠加-->
+    <link rel="stylesheet" href="css/index/texture.css">
     <!--=============================================↑CSS和JS部分↑=============================================-->
 </head>
 <!--添加默认主页面(移动端)-->
@@ -409,11 +413,20 @@
                         </label>
                         <label class="tips">
                             <span data-i18n="settings.preferences.display.showTone">显示色调</span>
-                            <input type="checkbox" id="showTone" class="switch" checked>
+                            <input type="checkbox" id="showTone" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
                                 <span id="SToSlider" class="buttonSlider"></span>
+                            </span>
+                        </label>
+                        <label class="tips">
+                            <span data-i18n="settings.preferences.display.texture">胶片质感</span>
+                            <input type="checkbox" id="useTexture" class="switch" checked>
+                            <span class="buttonBorder">
+                                <span class="OFF buttonText">OFF</span>
+                                <span class="ON buttonText">ON</span>
+                                <span id="UTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
                         <div id="mobileFrame" class="titleFrame">
@@ -664,6 +677,26 @@
             <div id="CONFIRM" class="option" data-i18n="notice.confirm">确定</div>
         </div>
     </div>
+    <!--胶片颗粒滤镜定义-->
+    <svg style="display: none;" aria-hidden="true">
+        <filter id="film-grain" x="0%" y="0%" width="100%" height="100%">
+            <!-- 生成分形噪点 -->
+            <feTurbulence type="fractalNoise"
+                          baseFrequency="0.6"
+                          numOctaves="2"
+                          stitchTiles="stitch"
+                          result="noise" />
+            <!-- 将噪点映射为高对比度颗粒 -->
+            <feColorMatrix type="matrix"
+                           values="0 0 0 0 0
+                                   0 0 0 0 0
+                                   0 0 0 0 0
+                                   0 0 0 0.15 0"
+                           result="grain" />
+        </filter>
+    </svg>
+    <!--纹理叠加-->
+    <div id="texture"></div>
     <!--自定义鼠标/点击样式-->
     <div id="custom-cursor"></div>
     <!--移动端tab-->

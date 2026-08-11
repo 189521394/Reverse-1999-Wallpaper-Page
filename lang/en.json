@@ -79,7 +79,8 @@
         "title-small": "显示",
         "showBg": "Show Background Images",
         "showTag": "Show Image Tags",
-        "showTone": "Show Tone Tags"
+        "showTone": "Show Tone Tags",
+        "texture": "Film Texture"
       },
       "mobile": {
         "title": "Mobile Options/",
