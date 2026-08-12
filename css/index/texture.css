@@ -16,18 +16,17 @@
  *  [3] grainAlpha  — 颗粒密度 / 对比度
  *      文件：HTML > #film-grain > <feColorMatrix> values 末位
  *      范围：0.15（清淡） ~ 0.5（浓重）
- *      说明：控制颗粒整体的浓淡，alpha 通道系数
+ *      说明：控制颗粒整体的浓淡，alpha 通道系数。仅亮色主题（黑颗粒）使用
  *
  *  [4] opacity  — 整体强度
  *      文件：本文件 > #texture
  *      范围：0.3（隐约） ~ 0.8（强烈）
  *      说明：配合 grainAlpha 一起调节最终可见度
  *
- *  [5] mix-blend-mode  — 混合模式
- *      文件：本文件 > #texture
- *      可选：multiply（正片叠底，偏暗）
- *            screen（偏亮）
- *            normal（直接覆盖，无混合）
+ *  [5] mix-blend-mode  — 混合模式（按主题区分）
+ *      亮色主题：#film-grain（黑颗粒）+ multiply（正片叠底）
+ *      暗色主题：#film-grain-gray（灰阶颗粒）+ soft-light（柔光）
+ *                可选 overlay（对比更强）替代 soft-light
  *
  * ============================================================================
  */
@@ -42,14 +41,29 @@
 	height: 100vh;
 	pointer-events: none;
 
-	/* 噪点由单独的SVG元素生成 */
+	/* 默认（暗色主题）：灰阶颗粒 + 柔光。
+	 * soft-light 以 50% 灰为界，亮侧提亮、暗侧压暗，
+	 * 颗粒明暗双向波动，无纯白亮点，避免雪花感。
+	 * 若颗粒不够明显可换成 overlay，或调大 SVG 灰度幅度。 */
+	filter: url(#film-grain-gray);
+	mix-blend-mode: soft-light;
+
+	/* 颗粒透明度（配合 SVG 灰度幅度一起调节，动画由 texture.js 的 WAAPI 控制） */
+	opacity: 0.35;
+}
+
+/* 亮色主题：黑颗粒 + 正片叠底（效果已定稿） */
+:root[data-theme='light'] #texture {
 	filter: url(#film-grain);
-
-	/* 混合模式 */
 	mix-blend-mode: multiply;
+}
 
-	/* 颗粒透明度 */
-	opacity: 0.4;
+/* 跟随系统的自动亮色 */
+@media (prefers-color-scheme: light) {
+	:root:not([data-theme="dark"]) #texture {
+		filter: url(#film-grain);
+		mix-blend-mode: multiply;
+	}
 }
 
 #texture.hide {

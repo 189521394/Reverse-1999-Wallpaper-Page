@@ -78,6 +78,7 @@ function refreshSet() {
     copyMode();
     refreshTab();
     conciseMode();
+    switchTexture();
 
     // 自动聚焦搜索框
     if (document.getElementById("autoFocus")?.checked) {

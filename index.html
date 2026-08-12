@@ -679,6 +679,7 @@
     </div>
     <!--胶片颗粒滤镜定义-->
     <svg style="display: none;" aria-hidden="true">
+        <!-- 亮色主题：黑颗粒 + 正片叠底（颗粒信息在 alpha 通道） -->
         <filter id="film-grain" x="0%" y="0%" width="100%" height="100%">
             <!-- 生成分形噪点 -->
             <feTurbulence type="fractalNoise"
@@ -686,12 +687,31 @@
                           numOctaves="2"
                           stitchTiles="stitch"
                           result="noise" />
-            <!-- 将噪点映射为高对比度颗粒 -->
+            <!-- 将噪点映射为黑色颗粒（alpha 承载颗粒密度） -->
             <feColorMatrix type="matrix"
                            values="0 0 0 0 0
                                    0 0 0 0 0
                                    0 0 0 0 0
                                    0 0 0 0.15 0"
+                           result="grain" />
+        </filter>
+        <!-- 暗色主题：灰阶颗粒 + 柔光/滤色（颗粒信息在 RGB 灰度通道，围绕 50% 灰双向波动） -->
+        <filter id="film-grain-gray" x="0%" y="0%" width="100%" height="100%">
+            <!-- 生成分形噪点：numOctaves=1 去掉高频层，避免像素级跳变（椒盐/雪花感） -->
+            <feTurbulence type="fractalNoise"
+                          baseFrequency="0.7"
+                          numOctaves="1"
+                          stitchTiles="stitch"
+                          result="noise" />
+            <!-- 去饱和为灰度并压缩幅度：0.39×灰度 + 0.45 → 颗粒落在 0.45~0.84（±0.2 内）。
+                 雪花感的根源是噪点幅度太大，亮侧像素在暗底上会变成明显的亮点。
+                 想加强颗粒：把 0.13 调大到 0.16~0.2（幅度变大），或调高 CSS opacity；
+                 想更微妙：调小到 0.1 以下。 -->
+            <feColorMatrix type="matrix"
+                           values="0.13 0.13 0.13 0 0.45
+                                   0.13 0.13 0.13 0 0.45
+                                   0.13 0.13 0.13 0 0.45
+                                   0    0    0    1 1"
                            result="grain" />
         </filter>
     </svg>
