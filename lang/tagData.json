@@ -9,6 +9,21 @@
     "en": "The Twins",
     "category": "character"
   },
+  "naXiSuoSi": {
+    "zh": "纳西索斯",
+    "en": "Narcissus",
+    "category": "character"
+  },
+  "HeDuoNie": {
+    "zh": "赫多涅",
+    "en": "Hedone",
+    "category": "character"
+  },
+  "Themis": {
+    "zh": "忒弥斯",
+    "en": "Themis",
+    "category": "character"
+  },
   "Maksim": {
     "zh": "马克西姆",
     "en": "Maksim",
@@ -1229,6 +1244,11 @@
     "en": "Polymerized Dreams",
     "category": "event"
   },
+  "hai!": {
+    "zh": "重燃！流金之海",
+    "en": "REKINDLED GAMES OF THE Summer Gold Sea",
+    "category": "event"
+  },
   "yi_shi": {
     "zh": "所有轶事",
     "en": "All Sides",
@@ -1787,6 +1807,11 @@
   "3.8": {
     "zh": "3.8",
     "en": "3.8",
+    "category": "versionCode"
+  },
+  "3.9": {
+    "zh": "3.9",
+    "en": "3.9",
     "category": "versionCode"
   },
   "SP01": {

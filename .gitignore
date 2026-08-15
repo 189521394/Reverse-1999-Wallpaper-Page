@@ -1,4 +1,3 @@
 resource/
-runServer.py
+tools/runServer.py
 dist/
-test.js

@@ -21,8 +21,9 @@ from pathlib import Path
 
 # ── 路径配置 ──────────────────────────────────────────────
 SCRIPT_DIR = Path(__file__).parent
-RESOURCE_DIR = SCRIPT_DIR / "resource"
-FILTER_JSON_PATH = SCRIPT_DIR / "Filter.json"
+ROOT_DIR = SCRIPT_DIR.parent  # 脚本位于 tools/ 下，项目根在上一级
+RESOURCE_DIR = ROOT_DIR / "resource"
+FILTER_JSON_PATH = ROOT_DIR / "Filter.json"
 
 
 # ═══════════════════════════════════════════════════════════
@@ -56,7 +57,7 @@ def scan_version_dir(dir_name: str, existing_files: set) -> dict:
             if "zone" in img_file.stem.lower():
                 continue
             # 统一用正斜杠的相对路径，与 Filter.json 保持一致
-            rel_path = str(img_file.relative_to(SCRIPT_DIR)).replace("\\", "/")
+            rel_path = str(img_file.relative_to(ROOT_DIR)).replace("\\", "/")
             if rel_path not in existing_files:
                 result[key].append(rel_path)
 

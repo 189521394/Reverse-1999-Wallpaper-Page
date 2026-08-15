@@ -9,8 +9,9 @@ from concurrent.futures import ThreadPoolExecutor
 
 # ================= 配置区 =================
 SCRIPT_DIR = Path(__file__).parent
-FILTER_JSON = SCRIPT_DIR / "Filter.json"
-BASE_IMAGE_PATH = str(SCRIPT_DIR)
+ROOT_DIR = SCRIPT_DIR.parent  # 脚本位于 tools/ 下，项目根在上一级
+FILTER_JSON = ROOT_DIR / "Filter.json"
+BASE_IMAGE_PATH = str(ROOT_DIR)
 
 
 # ==========================================

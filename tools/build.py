@@ -4,6 +4,15 @@ import shutil
 import json
 import sys
 
+# 项目根目录：脚本位于 tools/ 下，无论从哪个目录运行都以此定位源码
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# 修复 Windows 中文系统 GBK 控制台无法打印 emoji 的问题
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 # ==========================================
 # 🛠️ 构建配置区 (可在此处自由增删需要打包的文件)
 # ==========================================
@@ -198,4 +207,6 @@ def build_project():
     print(f"Cloudflare 将发布 /{DIST_DIR} 中的内容。")
 
 if __name__ == '__main__':
+    # 切换到项目根目录，保证所有相对路径（HTML/资源/dist）正确解析
+    os.chdir(PROJECT_ROOT)
     build_project()

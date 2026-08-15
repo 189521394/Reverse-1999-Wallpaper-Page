@@ -19,21 +19,21 @@
 
 ## 本地开发
 
-本项目配有专用的本地开发服务器 `runServer.py`，**不要**使用 WebStorm 内置服务器或其他通用 HTTP 服务器——它们缺少路径映射，会导致图片 404 和 `/en/` 虚拟目录不可用。
+本项目配有专用的本地开发服务器 `tools/runServer.py`，**不要**使用 WebStorm 内置服务器或其他通用 HTTP 服务器——它们缺少路径映射，会导致图片 404 和 `/en/` 虚拟目录不可用。
 
 ```bash
-python runServer.py
+python tools/runServer.py
 # 默认 normal 模式，监听 8000 端口，自动打开浏览器
 ```
 
-### `runServer.py` 两种模式
+### `tools/runServer.py` 两种模式
 
 | 模式 | `DEBUG_MODE` | 工作目录 | 用途 |
 |---|---|---|---|
 | normal | `"normal"` | 项目根目录 | 日常开发，直接提供源码文件，不打包 |
-| build | `"build"` | `dist/` | 生产模拟，先调用 `build.py` 打包，再修改 isLocal/R2_DOMAIN 后从 dist 提供服务 |
+| build | `"build"` | `dist/` | 生产模拟，先调用 `tools/build.py` 打包，再修改 isLocal/R2_DOMAIN 后从 dist 提供服务 |
 
-### `runServer.py` 路径映射（`translate_path`）
+### `tools/runServer.py` 路径映射（`translate_path`）
 
 服务器重写了 `SimpleHTTPRequestHandler.translate_path`，实现两层路由：
 
@@ -46,7 +46,7 @@ WebStorm 把项目放在子路径下（如 `http://localhost:63342/ProjectName/`
 
 ## 生产构建系统
 
-### `build.py` — 打包脚本
+### `tools/build.py` — 打包脚本
 
 将源码目录打包到 `dist/`，流程：
 
@@ -77,8 +77,8 @@ JetBrains WebStorm
 | `index.html` | 主壁纸浏览器，包含标签筛选、文本搜索、设置面板、移动端响应式 Tab 和色调筛选 |
 | `propaganda.html` | 动画宣传/登陆页，已废弃，只做重定向到 index（`noindex`） |
 | `404.html` | 极简自定义 404 页面（`noindex`） |
-| `runServer.py` | 本地开发服务器（normal/build 双模式，自定义路径映射） |
-| `build.py` | 生产打包脚本（合并压缩 JS/CSS、编译 Filter.json、输出到 dist/） |
+| `tools/runServer.py` | 本地开发服务器（normal/build 双模式，自定义路径映射） |
+| `tools/build.py` | 生产打包脚本（合并压缩 JS/CSS、编译 Filter.json、输出到 dist/） |
 | `_worker.js` | Cloudflare Worker（边缘节点处理 `/en/` 虚拟目录、SEO 英文重写、旧链接 301） |
 
 ## CSS 架构（`css/`）
@@ -186,7 +186,7 @@ JetBrains WebStorm
 - `switchLanguage('en')` → `history.pushState(null, '', '/en/' + search)` 修改地址栏
 - `getInitialLanguage()` → 检测 `pathname.startsWith('/en')` 判定当前语言
 - **引导页逻辑**（`guide.js`）：新用户首次访问显示语言选择覆盖层；通过 `/en/` 路径进入的无条件信任路径；老用户回访静默更新地址栏
-- **本地开发**：`runServer.py` 的 `translate_path` 剥离 `/en/` 前缀映射到真实文件
+- **本地开发**：`tools/runServer.py` 的 `translate_path` 剥离 `/en/` 前缀映射到真实文件
 - **生产环境**：`_worker.js`（Cloudflare Worker）在边缘节点拦截 `/en/` 请求：
   - 静态资源（`.js`、`.css`、`.png` 等）→ 剥离前缀，从根路径获取
   - HTML 页面 → 获取根 HTML，用 `HTMLRewriter` 流式重写 SEO 标签（title、meta、OG、canonical、h1）
@@ -251,7 +251,7 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 
 ## 色调系统（Tone）
 
-每张图片的 `Filter.json` 条目包含 `tone` 数组，存储由 `update_tone.py` 自动分析的颜色属性标签。色调数据独立于普通标签，但使用同一套 ID 体系（在 `lang/tagData.json` 中注册）。
+每张图片的 `Filter.json` 条目包含 `tone` 数组，存储由 `tools/update_tone.py` 自动分析的颜色属性标签。色调数据独立于普通标签，但使用同一套 ID 体系（在 `lang/tagData.json` 中注册）。
 
 色调筛选维度：
 - **饱和度**：饱和度-高 / 饱和度-低
@@ -262,7 +262,7 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 
 用户可通过 `showTone` 设置控制是否在图片下方显示色调标签，通过 `#Tone` 分类按钮按色调筛选。
 
-### `update_tone.py` — 色调分析脚本
+### `tools/update_tone.py` — 色调分析脚本
 
 使用 OpenCV + scikit-learn KMeans 对图片进行色彩分析：
 - 读取图片 → 转换 HSV 色彩空间 → 计算饱和度、对比度、明暗调
@@ -274,9 +274,8 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 
 - **`resource/compress_bg.py`** — 将 `singlebg/` 中的 PNG 批量转换为 WebP 缩略图（最大 600×600，质量 80）。使用 `ProcessPoolExecutor` 并行压缩。自动跳过目标文件比源文件新的情况（增量压缩）。
 - **`resource/upload.py`** — 将本地 `thumbnails/` 和 `singlebg/` 同步到 Cloudflare R2（兼容 S3 API）。通过文件存在性 + 文件大小进行差异比对，上传前需人工确认。依赖 `boto3`。
-- **`update_tone.py`** — 对 Filter.json 中缺失 `tone` 的条目进行颜色分析并补充色调标签。依赖 `opencv-python`、`numpy`、`scikit-learn`。
-- **`index_new_version.py`** — 交互式脚本，为指定版本目录（如 `3_8`）的新图片自动生成 Filter.json 条目。自动将 `*_*` 格式转换为 `*.*` 版本号。扫描 `story_atcg/` 和 `story_bg/` 下未索引的 PNG，过滤 `_zone` 变体文件。生成条目后追加写入 Filter.json。
-- **`archive/index_backgrounds.py`** — 已归档的背景图像批量索引脚本，用于从旧版 Filter.json 迁移背景图像数据。
+- **`tools/update_tone.py`** — 对 Filter.json 中缺失 `tone` 的条目进行颜色分析并补充色调标签。依赖 `opencv-python`、`numpy`、`scikit-learn`。
+- **`tools/index_new_version.py`** — 交互式脚本，为指定版本目录（如 `3_8`）的新图片自动生成 Filter.json 条目。自动将 `*_*` 格式转换为 `*.*` 版本号。扫描 `story_atcg/` 和 `story_bg/` 下未索引的 PNG，过滤 `_zone` 变体文件。生成条目后追加写入 Filter.json。
 
 ## 页面加载与初始化顺序
 
