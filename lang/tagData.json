@@ -4,6 +4,11 @@
     "en": "Aleph",
     "category": "character"
   },
+  "tf": {
+    "zh": "提丰",
+    "en": "Typhon",
+    "category": "character"
+  },
   "Twins": {
     "zh": "双生舞伶",
     "en": "The Twins",
@@ -1667,6 +1672,11 @@
   "zai_hui_xin_shi_jie": {
     "zh": "奠基石·再会在新世界",
     "en": "Cornerstone·See You in the New World",
+    "category": "anecdote"
+  },
+  "manAndHero": {
+    "zh": "赫多涅·凡人或英雄",
+    "en": "Hedone·The Histories",
     "category": "anecdote"
   },
   "1.0": {
