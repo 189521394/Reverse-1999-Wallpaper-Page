@@ -9,6 +9,16 @@
     "en": "Typhon",
     "category": "character"
   },
+  "Thalassa": {
+    "zh": "塔拉萨",
+    "en": "Thalassa",
+    "category": "character"
+  },
+  "Hermes": {
+    "zh": "荷米斯",
+    "en": "Hermes",
+    "category": "character"
+  },
   "Twins": {
     "zh": "双生舞伶",
     "en": "The Twins",
@@ -1677,6 +1687,16 @@
   "manAndHero": {
     "zh": "赫多涅·凡人或英雄",
     "en": "Hedone·The Histories",
+    "category": "anecdote"
+  },
+  "quietest": {
+    "zh": "纳西索斯·世界上最小的涟漪",
+    "en": "Narcissus·Of All Ripples, the Quietest",
+    "category": "anecdote"
+  },
+  "Broadcast": {
+    "zh": "洋葱头·流行于世界",
+    "en": "ONiON·Broadcast to the World",
     "category": "anecdote"
   },
   "1.0": {
