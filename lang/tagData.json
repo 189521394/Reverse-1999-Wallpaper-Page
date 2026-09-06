@@ -1149,6 +1149,11 @@
     "en": "ON ANOTHER'S SORROW",
     "category": "mainLine"
   },
+  "The_Answerer": {
+    "zh": "《应门者》",
+    "en": "The Answerer",
+    "category": "mainLine"
+  },
   "huo_dong_ju_qing": {
     "zh": "所有活动",
     "en": "All Events",
@@ -1842,6 +1847,11 @@
   "3.9": {
     "zh": "3.9",
     "en": "3.9",
+    "category": "versionCode"
+  },
+  "4.0": {
+    "zh": "4.0",
+    "en": "4.0",
     "category": "versionCode"
   },
   "SP01": {
