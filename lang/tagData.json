@@ -1,7 +1,42 @@
 {
+  "Creius": {
+    "zh": "刻雷乌斯",
+    "en": "Creius",
+    "category": "character"
+  },
   "aleph": {
     "zh": "阿莱夫",
     "en": "Aleph",
+    "category": "character"
+  },
+  "Veronica": {
+    "zh": "维罗妮卡",
+    "en": "Veronica",
+    "category": "character"
+  },
+  "Elowen": {
+    "zh": "埃洛温",
+    "en": "Elowen",
+    "category": "character"
+  },
+  "drake": {
+    "zh": "德雷克",
+    "en": "Drake",
+    "category": "character"
+  },
+  "Lancelot": {
+    "zh": "兰斯洛特",
+    "en": "Lancelot",
+    "category": "character"
+  },
+  "Huntsworn": {
+    "zh": "狩勋女巫红弩箭",
+    "en": "Huntsworn Lilya",
+    "category": "character"
+  },
+  "Arthur": {
+    "zh": "亚瑟",
+    "en": "King Arthur",
     "category": "character"
   },
   "tf": {
