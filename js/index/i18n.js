@@ -1,3 +1,12 @@
+// 开发环境兜底：生产环境由 build.py 注入的内联 <script> 提前定义 DATA_PATHS
+if (typeof DATA_PATHS === 'undefined') {
+    var DATA_PATHS = {
+        filter: '/Filter.json',
+        tagData: '/lang/tagData.json',
+        lang: {}
+    };
+}
+
 // 当前语言包
 let currentLangPack = {};
 
@@ -49,7 +58,7 @@ const I18n = {
 
     async _doInit() {
         try {
-            const response = await fetch("/lang/tagData.json");
+            const response = await fetch(DATA_PATHS.tagData);
             this.dictionary = await response.json();
 
             // 遍历字典，一次性构建所有索引
@@ -105,7 +114,7 @@ async function initData() {
     await I18n.init();
 
     // 拉取工作区数据
-    const response = await fetch("/Filter.json");
+    const response = await fetch(DATA_PATHS.filter);
     const rawData = await response.json();
 
     // 核心分流：本地运行时清洗，线上直接读取
@@ -155,7 +164,7 @@ async function loadLanguagePack(lang) {
     // 3. 真正发起请求，并把这个动作封装成 Promise 存起来
     langLoadPromises[lang] = (async () => {
         try {
-            const response = await fetch(`/lang/${lang}.json`);
+            const response = await fetch(DATA_PATHS.lang[lang] || `/lang/${lang}.json`);
             if (!response.ok) {
                 console.error(`多语言文件加载失败 (${lang})：`, response.status);
                 return null;
