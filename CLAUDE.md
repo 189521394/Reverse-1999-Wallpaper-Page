@@ -279,6 +279,8 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 
 ## 页面加载与初始化顺序
 
+0. **主题初始化内联脚本**（head 内、无 defer）在首绘前写 `data-theme`，防止深色用户白闪（FOUC）。它必须保持内联无 defer（defer 赶不上首绘，且 build.py 会把外链合并成 defer bundle）；语义与 `switchTheme()` 一致、空存储默认值对齐 HTML checkbox、不读 body 元素、避开 `const isLocal` / `const R2_DOMAIN` 字样
+
 1. 浏览器解析 HTML，开始预加载 `Filter.json`（`<link rel="preload">`）
 2. 所有 JS 脚本带有 `defer` 属性 → 在 HTML 解析完成后按顺序执行
 3. `mobile-init.js` 最先执行（检测移动端环境）

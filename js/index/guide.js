@@ -98,6 +98,16 @@ optionEN.addEventListener('change', ENChecked);
 
 // 确定按钮
 confirmBtn.addEventListener('click', () => {
+    // 如果用户没有点按选项，获取当前选项并存入
+    const isZH = optionZH.checked
+    let preferLang
+    if (isZH) {
+        preferLang = "zh";
+    } else {
+        preferLang = "en";
+    }
+    localStorage.setItem("preferredLanguage", preferLang);
+
     // 隐藏语言选择页
     guidePage.classList.remove("show");
 
