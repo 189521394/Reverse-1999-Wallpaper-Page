@@ -1,5 +1,15 @@
 #github {
     color: var(--controlButtonBGC);
+    /* 不要下划线：括号 + 醒目颜色已足够标识链接 */
+    text-decoration: none;
+}
+/*外链小图标：跟随文字颜色*/
+#github svg {
+    width: 0.5em;
+    height: 0.5em;
+    margin-left: 0;
+    margin-right: 0.05em;
+    vertical-align: 0.25em;
 }
 #superLink {
     display: block;

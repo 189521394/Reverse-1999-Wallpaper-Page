@@ -26,19 +26,24 @@
 #setBackground {
     /*让鼠标穿过设置层*/
     pointer-events: none;
+    /*关闭时彻底移出渲染合成树，释放合成层*/
+    visibility: hidden;
 
-    backdrop-filter: brightness(100%) blur(0px);
+    /*固定模糊半径，不参与逐帧半径动画，靠 opacity 实现平滑渐显*/
+    backdrop-filter: brightness(60%) blur(20px);
+    -webkit-backdrop-filter: brightness(60%) blur(20px);
     opacity: 0;
 
-    will-change: backdrop-filter, opacity;
-    transition: backdrop-filter 250ms, opacity 250ms;
+    /*关闭时延时 250ms 再 hidden，保证渐隐退场动画完整播放*/
+    transition: opacity 250ms ease, visibility 0ms linear 250ms;
 }
 /*显示样式*/
 #setBackground.show {
     /*禁止鼠标穿过设置层*/
     pointer-events: auto;
+    visibility: visible;
 
-    backdrop-filter: brightness(60%) blur(30px);
     opacity: 1;
-    transition: backdrop-filter 500ms, opacity 250ms;
+    /*打开时立即 visible，仅过渡 opacity*/
+    transition: opacity 250ms ease, visibility 0ms linear 0ms;
 }

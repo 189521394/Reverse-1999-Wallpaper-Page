@@ -38,11 +38,19 @@
                 z-index 0ms 250ms,
                 background-color 250ms;
 
-    /*告诉浏览器这些属性将会改变，让浏览器预先渲染，优化性能*/
-    will-change: transform, z-index, box-shadow;
+    /* 移除常驻 will-change 和 translateZ(0)，消灭 48+ 个常驻 GPU 图层 */
+    /* 该缩放值与js动画设置里面的缩放值绑定，两个必须同时修改，不然图片大小会显示异常*/
+    transform: scale(0.93);
 
-    /*该缩放值与js动画设置里面的缩放值绑定，两个必须同时修改，不然图片大小会显示异常*/
-    transform: scale(0.93) translateZ(0);
+    /* 允许浏览器跳过视口外图片的渲染，仅在滚动接近时激活 */
+    content-visibility: auto;
+    contain-intrinsic-size: auto 200px;
+}
+
+/*仅在需要动画时临时提升合成层*/
+.imgs:hover,
+.imgs.active {
+    will-change: transform;
 }
 
 /*图片浮过样式*/

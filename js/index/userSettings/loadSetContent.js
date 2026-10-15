@@ -73,6 +73,8 @@ function closeMenuAnimation(targetTab) {
 
     // 生成克隆体
     cloneEl = targetTab.cloneNode(true);
+    cloneEl.removeAttribute("id"); // 移除克隆体的重复 ID(多语言系统)
+    cloneEl.classList.remove("activeWait", "hidden-item"); // 清理可能残留的状态类
     cloneEl.classList.add("clone-item");
 
     // 初始化克隆体坐标
@@ -119,9 +121,14 @@ function closeMenuAnimation(targetTab) {
 
 // ================展开全屏菜单================
 function openMenuAnimation() {
-    if (!cloneEl || !cachedRect) return;
+    if (!cloneEl || !originalActiveTab) return;
     // 开启动画锁
     isAnimating = true;
+
+    // 在菜单降下来之前，如果窗口高度发生过变化（如手机地址栏收起/弹出），重新校准坐标
+    // 因为此时 #setItem 处于 translateY(calc(-100% + 60px)) 状态，直接用 offsetTop 计算最准
+    const currentTop = originalActiveTab.offsetTop;
+    cloneEl.style.top = `${currentTop}px`;
 
     // 克隆体回到原来的位置
     cloneEl.style.setProperty('--flip-y', `0px`);

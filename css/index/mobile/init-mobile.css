@@ -454,33 +454,9 @@
         padding: 5px;
     }
     /*=============================设置菜单=============================*/
-    /*基础样式*/
+    /*移动端菜单容器：统一使用默认 ease 曲线，与克隆体运动保持绝对同步*/
+    #setItem,
     #setItem.show {
-        left: 0;
-        top: 0;
-        height: calc(100dvh - 70px);
-        width: 100vw;
-
-        padding: 0 3px;
-        box-shadow: transparent 0 0 0 0;
-    }
-    /*内容布局*/
-    #setItem.show {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        transition: transform 250ms cubic-bezier(0.23, 1.0, 0.32, 1.0), height 250ms;
-    }
-    /*菜单收起时的样式*/
-    #setItem.roll {
-        height: 60px;
-
-        transition: transform 250ms cubic-bezier(0.23, 1.0, 0.32, 1.0), height 250ms;
-    }
-    /*关闭菜单的样式，全部覆写，防止动画抽搐*/
-    #setItem {
         left: 0;
         top: 0;
         height: calc(100dvh - 70px);
@@ -494,14 +470,7 @@
         padding: 0 3px;
         box-shadow: transparent 0 0 0 0;
 
-        transition: transform 250ms cubic-bezier(0.23, 1.0, 0.32, 1.0), height 250ms;
-    }
-    /*菜单右下角小字*/
-    #setItem.roll > #r1999 {
-        pointer-events: none;
-        opacity: 0;
-
-        transition: color 250ms, opacity 250ms;
+        transition: transform 250ms ease, height 250ms ease;
     }
 
     /*========菜单控制========*/
@@ -572,14 +541,12 @@
     }
 
     /* 设置页面背景动画时序控制 */
-    #setItem {
-        transition: transform 250ms;
-    }
+    /* 设置页面移动上去 */
     #setItem.shifted {
         /* 60px保留顶部设置栏 */
         transform: translateY(calc(-100% + 60px));
         pointer-events: none;
-        transition: transform 250ms;
+        /* 不写 transition，直接继承上面 #setItem 的 ease 曲线 */
     }
 
     .setItem.hidden-item {
@@ -601,14 +568,15 @@
         padding: 0;
         font-size: 25px;
     }
-    .clone-item {
+    /* 保持 (0,2,0) 权重压制 .setItem.show，使用 ease 与 #setItem 同步升降 */
+    .setItem.clone-item {
         will-change: transform;
 
         /* x和y都会移动，融合两个位移变量 */
         --flip-y: 0px;
         transform: translate(0px, var(--flip-y));
 
-        transition: transform 500ms cubic-bezier(0.23, 1.0, 0.32, 1.0), opacity 500ms;
+        transition: transform 250ms ease, opacity 250ms ease;
     }
 
     .clone-item .setItem-bg {
@@ -616,17 +584,12 @@
         transform-origin: center;
 
         will-change: transform, background-color;
+
+        transition: transform 250ms ease, background-color 250ms ease;
     }
 
-    /* 上下飞行时的过渡效果 */
-    .clone-item.clone-animating {
-        transition: transform 250ms, opacity 250ms;
-    }
-    .clone-item.clone-animating .setItem-bg {
-        transition: transform 250ms, background-color 250ms;
-    }
-    .clone-item.clone-animating .setItem-text {
-        transition: color 250ms;
+    .clone-item .setItem-text {
+        transition: color 250ms ease;
     }
 
     /* 隐藏页面（关闭设置页面） */

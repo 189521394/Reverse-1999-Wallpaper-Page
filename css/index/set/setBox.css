@@ -81,14 +81,12 @@
 .setContent {
     opacity: 0;
     display: none;
-    will-change: opacity, display;
     transition: opacity 250ms;
 }
 
 .setContent.show {
     opacity: 1;
     display: block;
-    will-change: opacity, display;
     transition: opacity 250ms;
 }
 

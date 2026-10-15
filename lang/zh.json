@@ -86,7 +86,7 @@
         "title": "适用于移动端的选项/",
         "title-small": "Mobile Options",
         "tabShow": "自动隐藏Tab栏",
-        "autoSwitch": "(点击)提交后自动跳转"
+        "autoSwitch": "提交后自动跳转"
       },
       "theme": {
         "title": "主题控制/",

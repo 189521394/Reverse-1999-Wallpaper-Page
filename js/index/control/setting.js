@@ -1,33 +1,19 @@
 const setBackground = document.getElementById("setBackground");
-// setItem 已经定义，直接用
+// setItemContainer 在 loadSetContent.js 中定义，直接用
 const setPadding = document.getElementById("setPadding");
 const setBox = document.getElementById("setBox");
 const setItems = document.querySelectorAll(".setItem");
 
 // 封装动画
-function setAni(boolean) {
-    if (boolean) {
-        setBackground.classList.add('show');
-        setItem.classList.add('show');
-        setPadding.classList.add('show');
-        setBox.classList.add('show');
-        setItems.forEach((element) => {element.classList.add('show');});
+function setAni(isOpen) {
+    // 统一管理需要切换 .show 的容器
+    [setBackground, setItemContainer, setPadding, setBox, ...setItems].forEach(el => {
+        if (el) el.classList.toggle('show', isOpen);
+    });
 
-        const clone = document.querySelector(".clone-item");
-        if (clone) {
-            clone.classList.remove("global-hide");
-        }
-    } else {
-        setBackground.classList.remove('show');
-        setItem.classList.remove('show');
-        setPadding.classList.remove('show');
-        setBox.classList.remove('show');
-        setItems.forEach((element) => {element.classList.remove('show');});
-
-        const clone = document.querySelector(".clone-item");
-        if (clone) {
-            clone.classList.add('global-hide');
-        }
+    // 直接使用全局变量 cloneEl，无需重新查询 DOM
+    if (cloneEl) {
+        cloneEl.classList.toggle('global-hide', !isOpen);
     }
 }
 

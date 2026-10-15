@@ -17,6 +17,11 @@ async function DisplayImg(tags) {
     // 清空结果之前先停止网络流下载
     const allImg = document.querySelectorAll(".imgs");
     allImg.forEach((img) => {
+        // 释放还没销毁的原图 blob，防止筛选提交时泄漏
+        if (img.dataset.blobURL) {
+            URL.revokeObjectURL(img.dataset.blobURL);
+            delete img.dataset.blobURL;
+        }
         img.src = "";
         img.removeAttribute('src');
     });
