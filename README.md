@@ -12,13 +12,10 @@
 
 如果要访问HTML页面，请点击[这里](https://r9wallpaper.org/)或手动复制：https://r9wallpaper.org/
 
-## 网站状态
+## 加入群组
 
-已建设完毕，进入正常迭代更新。
-
-## 关于英文版
-
-已完成
+- [中国] QQ 群组：[点击加入](https://qm.qq.com/q/NyaB5WjL0s)（`1130610900`）
+- [Global] Telegram：[Join](https://t.me/r9wallpaper)（`https://t.me/r9wallpaper`）
 
 ---
 
@@ -38,10 +35,7 @@ Source files are provided by [this repository](https://github.com/myssal/Reverse
 
 To visit the website, please click [here](https://r9wallpaper.org/) or copy the link manually: https://r9wallpaper.org/
 
-## Website Status
+## Join the Community
 
-The initial build is complete, and the website has now entered its regular update and iteration phase.
-
-## About the English Version
-
-Completed.
+- [中国] QQ 群组：[点击加入](https://qm.qq.com/q/NyaB5WjL0s)（`1130610900`）
+- [Global] Telegram：[Join](https://t.me/r9wallpaper)（`https://t.me/r9wallpaper`）
