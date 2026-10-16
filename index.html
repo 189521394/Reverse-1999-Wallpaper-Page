@@ -208,6 +208,8 @@
     <link rel="stylesheet" href="/css/index/set/setContent/tips.css">
     <!--快速复制-->
     <script src="/js/index/copyContact.js" defer></script>
+    <!--加入群组-->
+    <script src="/js/index/discussion.js" defer></script>
     <!--简洁模式-->
     <script src="/js/index/conciseMode.js" defer></script>
     <!--网页的一部分英文文本-->
@@ -312,7 +314,7 @@
                 <span id="resultCount">0</span>
             </div>
             <div id="setButton" class="buttons" onclick="openSettings()" data-i18n="controlPanel.preferences">设置</div>
-            <div id="clean" class="buttons" onclick="clean()" data-short="清空" data-i18n="controlPanel.clear" data-i18n-short="controlPanel.clear-short">清空标签</div>
+            <div id="clean" class="buttons" onclick="clean()" data-short="清空" data-i18n="controlPanel.clear" data-i18n-short="controlPanel.clear-short">清空</div>
             <div id="submit" class="buttons" onclick="submit()" data-short="提交" data-i18n="controlPanel.submit" data-i18n-short="controlPanel.submit-short">提交</div>
         </div>
     </div>
@@ -328,10 +330,6 @@
                 <div id="preference" class="setItem" data-Content="setList">
                     <div class="setItem-bg"></div>
                     <div class="setItem-text" data-i18n="settingsMenu.preferences">用户偏好</div>
-                </div>
-                <div id="tips" class="setItem" data-Content="tipList">
-                    <div class="setItem-bg"></div>
-                    <div class="setItem-text" data-i18n="settingsMenu.tips">使用说明</div>
                 </div>
                 <div id="mail" class="setItem" data-Content="mailList">
                     <div class="setItem-bg"></div>
@@ -383,15 +381,6 @@
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
                                 <span id="ASSlider" class="buttonSlider"></span>
-                            </span>
-                        </label>
-                        <label class="tips">
-                            <span data-i18n="settings.preferences.general.hideTips">隐藏提示文本</span>
-                            <input type="checkbox" id="hideTips" class="switch">
-                            <span class="buttonBorder">
-                                <span class="OFF buttonText">OFF</span>
-                                <span class="ON buttonText">ON</span>
-                                <span id="HTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
                         <label class="tips">
@@ -462,27 +451,13 @@
                                 <span id="UTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <div id="mobileFrame" class="titleFrame">
-                            <span id="mobileTitle" class="title" data-i18n="settings.preferences.mobile.title">适用于移动端的选项/</span>
-                            <span class="engContent" data-i18n="settings.preferences.mobile.title-small">Mobile Options</span>
-                        </div>
-                        <div class="line"></div>
                         <label class="tips">
-                            <span data-i18n="settings.preferences.mobile.tabShow">自动隐藏Tab栏</span>
-                            <input type="checkbox" id="onlyTopShowTab" class="switch" checked>
+                            <span data-i18n="settings.preferences.general.hideTips">隐藏提示文本</span>
+                            <input type="checkbox" id="hideTips" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
-                                <span id="OTSTSlider" class="buttonSlider"></span>
-                            </span>
-                        </label>
-                        <label class="tips">
-                            <span data-i18n="settings.preferences.mobile.autoSwitch">提交后自动跳转</span>
-                            <input type="checkbox" id="clickToWallpaper" class="switch">
-                            <span class="buttonBorder">
-                                <span class="OFF buttonText">OFF</span>
-                                <span class="ON buttonText">ON</span>
-                                <span id="CTWSlider" class="buttonSlider"></span>
+                                <span id="HTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
                         <div id="themeFrame" class="titleFrame">
@@ -508,41 +483,38 @@
                                 <span id="MSTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                        <div id="clearFrame" class="titleFrame">
-                            <span id="clearTitle" class="title" data-i18n="settings.preferences.clear.title">清空按钮控制/</span>
-                            <span class="engContent" data-i18n="settings.preferences.clear.title-small">Clear Button Control</span>
+                        <div id="mobileFrame" class="titleFrame">
+                            <span id="mobileTitle" class="title" data-i18n="settings.preferences.mobile.title">适用于移动端的选项/</span>
+                            <span class="engContent" data-i18n="settings.preferences.mobile.title-small">Mobile Options</span>
                         </div>
                         <div class="line"></div>
                         <label class="tips">
-                            <span data-i18n="settings.preferences.clear.result">同时清空结果</span>
-                            <input type="checkbox" id="cleanResult" class="switch">
+                            <span data-i18n="settings.preferences.mobile.tabShow">自动隐藏Tab栏</span>
+                            <input type="checkbox" id="onlyTopShowTab" class="switch" checked>
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
-                                <span id="CRSlider" class="buttonSlider"></span>
+                                <span id="OTSTSlider" class="buttonSlider"></span>
                             </span>
                         </label>
                         <label class="tips">
-                            <span data-i18n="settings.preferences.clear.input">同时清空文本框</span>
-                            <input type="checkbox" id="cleanText" class="switch">
+                            <span data-i18n="settings.preferences.mobile.autoSwitch">提交后自动跳转</span>
+                            <input type="checkbox" id="clickToWallpaper" class="switch">
                             <span class="buttonBorder">
                                 <span class="OFF buttonText">OFF</span>
                                 <span class="ON buttonText">ON</span>
-                                <span id="CTSlider" class="buttonSlider"></span>
+                                <span id="CTWSlider" class="buttonSlider"></span>
                             </span>
                         </label>
-                    </div>
-                    <div id="tipList" class="setContent">
-                        <div id="tipFrame" class="titleFrame">
-                            <span id="tipTitle" class="title topTitle" data-i18n="settings.guide.title">使用说明/</span>
-                            <span class="engContent" data-i18n="settings.guide.title-small">Guide</span>
+                        <div id="resetFrame" class="titleFrame">
+                            <span id="resetTitle" class="title" data-i18n="settings.preferences.reset.title">重置/</span>
+                            <span class="engContent" data-i18n="settings.preferences.reset.title-small">Reset</span>
                         </div>
                         <div class="line"></div>
-                        <div class="tips" data-i18n="settings.guide.tips1">单击可以添加/移除筛选标签</div>
-                        <div class="tips" data-i18n="settings.guide.tips2">图片下方的标签可点击，点击后会添加到筛选池</div>
-                        <div class="tips" data-i18n="settings.guide.tips3">如果部分图片加载失败，再次点击提交按钮即可</div>
-                        <div class="tips" data-i18n="settings.guide.tips4">文本框为空的状态下提交会执行清空操作</div>
-                        <div class="tips" data-i18n="settings.guide.tips5">邮件附件里面的内容是可以复制的，未来可能会添加...兑换码？</div>
+                        <div class="tips">
+                            <span data-i18n="settings.preferences.reset.text">重置所有设置</span>
+                            <span class="clickButton" data-i18n="settings.preferences.reset.btn" onclick="reset()">重置</span>
+                        </div>
                     </div>
                     <div id="mailList" class="setContent">
                         <div id="mail0" class="mail">
@@ -581,7 +553,35 @@
                         <div class="tips" data-i18n="settings.about.about.tips2">[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)</div>
                         <div class="tips" data-i18n="settings.about.about.tips3">[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)</div>
                         <div class="tips" data-i18n="settings.about.about.tips4">[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里</div>
-                        <div class="tips" data-i18n="settings.about.about.tips5">[当前版本状态] 已建设完毕，进入正常迭代更新</div>
+                        <div id="dissFrame" class="titleFrame">
+                            <span id="dissTitle" class="title" data-i18n="settings.about.group.title">加入群组/</span>
+                            <span class="engContent" data-i18n="settings.about.group.title-small">Join Community</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="tips" id="dissQQ">
+                            <span>
+                                <span>[中国]</span><a href="https://qm.qq.com/q/NyaB5WjL0s" target="_blank" id="qqLink">[QQ群组
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em"
+                                         viewBox="0 0 16 16" fill="currentColor" aria-label="新标签页打开">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                    </svg>]</a>
+                                <span id="qqText">1130610900</span>
+                            </span>
+                            <span class="clickButton" id="copyQQ" onclick="copyDiss(this, '1130610900')">复制</span>
+                        </div>
+                        <div class="tips" id="dissTG">
+                            <span>
+                                <span>[Global]</span><a href="https://t.me/r9wallpaper" target="_blank" id="tgLink">[Telegram
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em"
+                                         viewBox="0 0 16 16" fill="currentColor" aria-label="新标签页打开">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                    </svg>]</a>
+                                <span id="tgText">https://t.me/r9wallpaper</span>
+                            </span>
+                            <span class="clickButton" id="copyTG" onclick="copyDiss(this, 'https://t.me/r9wallpaper')">Copy</span>
+                        </div>
                         <div id="shareFrame" class="titleFrame">
                             <span id="shareTitle" class="title" data-i18n="settings.about.share.title">分享/</span>
                             <span class="engContent" data-i18n="settings.about.share.title-small">Share</span>
@@ -655,8 +655,8 @@
                             </span>
                         </label>
                         <div class="tips">
-                            <span data-i18n="settings.dev.resetText">重置所有设置项</span>
-                            <span class="clickButton" data-i18n="settings.dev.resetBtn" onclick="reset()">重置</span>
+                            <span data-i18n="settings.dev.resetText">清空LocalStorage</span>
+                            <span class="clickButton" data-i18n="settings.dev.resetBtn" onclick="reset()">清空</span>
                         </div>
                     </div>
                 </div>
@@ -708,7 +708,7 @@
     </div>
     <!--提示层(通用提示)-->
     <div id="noticeBox">
-        <div id="noticeTitle" data-i18n="notice.title">提 示</div>
+        <div id="noticeTitle" data-i18n="notice.title">NOTICE</div>
         <div id="noticeContent"></div>
         <div id="noticeOption">
             <div id="CANCEL" class="option" data-i18n="notice.cancel">取消</div>

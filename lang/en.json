@@ -51,7 +51,6 @@
   },
   "settingsMenu": {
     "preferences": "Preferences",
-    "tips": "Guide",
     "mail": "Mail",
     "about": "About",
     "devOpt": "Dev Options"
@@ -94,21 +93,12 @@
         "auto": "Auto",
         "manual": "Manual"
       },
-      "clear": {
-        "title": "Clear Button Control/",
-        "title-small": "清空按钮控制",
-        "result": "Also clear results",
-        "input": "Also clear input box"
+      "reset": {
+        "title": "Reset/",
+        "title-small": "重置",
+        "text": "Reset All Settings",
+        "btn": "Reset"
       }
-    },
-    "guide": {
-      "title": "Guide/",
-      "title-small": "使用说明",
-      "tips1": "Click to add/remove tags.",
-      "tips2": "Click tags under images to add them to filters.",
-      "tips3": "If images fail to load, just click submit again.",
-      "tips4": "Submit an empty input to clear.",
-      "tips5": "Attachment text can be copied. Promo codes coming soon...?"
     },
     "mail": {
       "title": "Update Progress",
@@ -138,8 +128,7 @@
         "tips1": "[Timeline] Data sourced online; not strictly verified.",
         "tips2": "[Image Sources] Extracted from datamined game files (not by me).",
         "tips3": "[Special CGs] Found in game files but unused (or maybe I just missed them).",
-        "tips4": "[Community Images] Official social media art, also packed in game files.",
-        "tips5": "[Current Status] Core development complete. Now on regular updates."
+        "tips4": "[Community Images] Official social media art, also packed in game files."
       },
       "share": {
         "title": "Share/",
@@ -149,6 +138,10 @@
         "share": "Share these findings...",
         "shareBtn": "Share",
         "copied": "Copied"
+      },
+      "group": {
+        "title": "Join Groups/",
+        "title-small": "加入群组"
       },
       "other": {
         "title": "Additional Info/",
@@ -165,8 +158,8 @@
       "tips": "[Caution] Proceed with care. Selected options may trigger「The Storm Syndrome」.",
       "fastCopy": "Quick Copy Filename",
       "request": "Re-send Filter Requests",
-      "resetText": "Reset All Settings",
-      "resetBtn": "Reset",
+      "resetText": "Clear LocalStorage",
+      "resetBtn": "Clear",
       "resetDialog": "This will reset all settings and refresh the page. Are you sure?"
     }
   },

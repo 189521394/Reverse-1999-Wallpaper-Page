@@ -28,14 +28,15 @@ const SETTINGS_CONFIG = [
         callback: null
     },
     {
-        logic: "hideTips",
-        animation: "HTSlider",
-        callback: conciseMode
-    },
-    {
         logic: "autoFocus",
         animation: "AFSlider",
         callback: null
+    },
+    // ================================语言和文本================================
+    {
+        logic: "allowCopy",
+        animation: "COPYSlider",
+        callback: copyMode
     },
     // ================================显示================================
     {
@@ -58,22 +59,10 @@ const SETTINGS_CONFIG = [
         animation: "UTSlider",
         callback: switchTexture
     },
-    // ================================语言和文本================================
     {
-        logic: "allowCopy",
-        animation: "COPYSlider",
-        callback: copyMode
-    },
-    // ================================移动端设置================================
-    {
-        logic: "onlyTopShowTab",
-        animation: "OTSTSlider",
-        callback: refreshTab,
-    },
-    {
-        logic: "clickToWallpaper",
-        animation: "CTWSlider",
-        callback: null,
+        logic: "hideTips",
+        animation: "HTSlider",
+        callback: conciseMode
     },
     // ================================主题控制================================
     {
@@ -87,16 +76,16 @@ const SETTINGS_CONFIG = [
         callback: switchTheme,
         conflictWith: ["autoSwitchTheme"]
     },
-    // ================================清空按钮控制================================
+    // ================================移动端设置================================
     {
-        logic: "cleanResult",
-        animation: "CRSlider",
-        callback: null
+        logic: "onlyTopShowTab",
+        animation: "OTSTSlider",
+        callback: refreshTab,
     },
     {
-        logic: "cleanText",
-        animation: "CTSlider",
-        callback: null
+        logic: "clickToWallpaper",
+        animation: "CTWSlider",
+        callback: null,
     },
     // ================================关于================================
     {

@@ -1,10 +1,10 @@
-#github {
+#github, #tgLink, #qqLink {
     color: var(--controlButtonBGC);
     /* 不要下划线：括号 + 醒目颜色已足够标识链接 */
     text-decoration: none;
 }
 /*外链小图标：跟随文字颜色*/
-#github svg {
+#github svg, #tgLink svg, #qqLink svg {
     width: 0.5em;
     height: 0.5em;
     margin-left: 0;

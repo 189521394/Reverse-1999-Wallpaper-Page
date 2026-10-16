@@ -1,6 +1,6 @@
 {
   "notice": {
-    "title": "提 示",
+    "title": "NOTICE",
     "confirm": "确定",
     "cancel": "取消"
   },
@@ -44,14 +44,13 @@
   "controlPanel": {
     "result": "总计：",
     "preferences": "设置",
-    "clear": "清空标签",
+    "clear": "清空",
     "clear-short": "清空",
     "submit": "提交",
     "submit-short": "提交"
   },
   "settingsMenu": {
     "preferences": "用户偏好",
-    "tips": "使用说明",
     "mail": "邮件",
     "about": "关于",
     "devOpt": "开发者选项"
@@ -94,21 +93,12 @@
         "auto": "跟随系统",
         "manual": "手动控制"
       },
-      "clear": {
-        "title": "清空按钮控制/",
-        "title-small": "Clear Button Control",
-        "result": "同时清空结果",
-        "input": "同时清空文本框"
+      "reset": {
+        "title": "重置/",
+        "title-small": "Reset",
+        "text": "重置所有设置",
+        "btn": "重置"
       }
-    },
-    "guide": {
-      "title": "使用说明/",
-      "title-small": "Guide",
-      "tips1": "单击可以添加/移除筛选标签",
-      "tips2": "图片下方的标签可点击，点击后会添加到筛选池",
-      "tips3": "如果部分图片加载失败，再次点击提交按钮即可",
-      "tips4": "文本框为空的状态下提交会执行清空操作",
-      "tips5": "邮件附件里面的内容是可以复制的，未来可能会添加...兑换码？"
     },
     "mail": {
       "title": "内容更新进度",
@@ -138,8 +128,7 @@
         "tips1": "[关于时间线] 数据来源于网络，本人并没有仔细考据",
         "tips2": "[关于图像来源] 图像来自游戏解包文件(解包工作并不是我完成的)",
         "tips3": "[关于特殊CG] 这些CG在某个版本被添加到游戏内，但是未被使用(或许是我没找到)",
-        "tips4": "[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里",
-        "tips5": "[当前版本状态] 已建设完毕，进入正常迭代更新"
+        "tips4": "[关于社区图像] 这些图像由官方发布至社区，但同时也被打包进了游戏里"
       },
       "share": {
         "title": "分享/",
@@ -149,6 +138,10 @@
         "share": "分享这部分见闻...",
         "shareBtn": "分享",
         "copied": "已复制"
+      },
+      "group": {
+        "title": "加入群组/",
+        "title-small": "Join Community"
       },
       "other": {
         "title": "其他信息/",
@@ -165,8 +158,8 @@
       "tips": "[注意] 谨慎操作，部分选项或将触发「暴雨症候」。",
       "fastCopy": "快速复制文件名称",
       "request": "重复发送Filter请求",
-      "resetText": "重置所有设置项",
-      "resetBtn": "重置",
+      "resetText": "清空LocalStorage",
+      "resetBtn": "清空",
       "resetDialog": "将会重置所有设置项且刷新页面，是否确认？"
     }
   },

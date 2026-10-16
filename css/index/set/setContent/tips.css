@@ -20,6 +20,20 @@
     user-select: none;
 }
 
+/*群组文本允许鼠标选中复制*/
+#qqText, #tgText, #tgLink, #qqLink {
+    user-select: text;
+}
+
+#copyQQ, #copyTG {
+    user-select: none;
+}
+
+/*TG 复制按钮文案固定为英文，字号始终采用英文模式的小字号（与 :lang(en) .clickButton 一致）*/
+#copyTG {
+    font-size: 20px;
+}
+
 /*给选项加上hover边框*/
 .tips {
     box-sizing: border-box;
