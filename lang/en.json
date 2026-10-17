@@ -9,6 +9,13 @@
     "filter": "Index",
     "set": "Options"
   },
+  "onceTips": {
+    "browseToMain": [
+      "After submitting, switch to the Gallery tab to view results.",
+      "You can change this in Settings."
+    ],
+    "returnMenu": "Tap the orange title to reopen the menu."
+  },
   "searchWithInput": {
     "submit": "Submit",
     "placeholder": "Separate tags with ';'",

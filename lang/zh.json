@@ -9,6 +9,13 @@
     "filter": "筛选",
     "set": "设置"
   },
+  "onceTips": {
+    "browseToMain": [
+      "提交后需手动切换到浏览页查看。",
+      "后续可在设置中修改。"
+    ],
+    "returnMenu": "点击橙色标题可重新打开菜单。"
+  },
   "searchWithInput": {
     "submit": "提交",
     "placeholder": "输入标签 分号分隔",
