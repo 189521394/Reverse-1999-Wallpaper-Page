@@ -1,125 +1,120 @@
+// 构建时由 tools/build.py 注入：
+// const PIC_ID_TO_THUMB = { "ATCG_xxx": ["resource/thumbnails/...webp", "中文短标题", "English Short Title"], ... };
+
 export default {
     async fetch(request, env) {
         const url = new URL(request.url);
+        const origin = 'https://r9wallpaper.org';
 
         // ============================================================
-        // 第一阶段：老链接 301 重定向（向后兼容）
+        // 第一阶段：老链接 ?lang=en 301 重定向（向后兼容）
         // 将 ?lang=en 的旧格式永久重定向到 /en/ 虚拟目录
         // ============================================================
         if (url.searchParams.get('lang') === 'en') {
             url.searchParams.delete('lang');
             // 保留可能存在的其他查询参数（如高级分享的 mode/q/precise）
             const remainingSearch = url.search;
-            return Response.redirect('https://r9wallpaper.org/en/' + remainingSearch, 301);
+            return Response.redirect(origin + '/en/' + remainingSearch, 301);
         }
 
         // ============================================================
-        // 第二阶段：/en/ 虚拟目录拦截与 SEO 重写
+        // 第二阶段：单图分享路由 /i/<pic_id>/ 与 /en/i/<pic_id>/ 动态拦截
+        // 拉取对应语言的首页 HTML 作模板，注入该图的社交分享卡片（OG/Twitter）
         // ============================================================
-        if (url.pathname === '/en' || url.pathname.startsWith('/en/')) {
+        const picMatch = url.pathname.match(/^(\/en)?\/i\/([^/]+)\/$/);
+        if (picMatch) {
+            const isEn = !!picMatch[1];
+            const picId = picMatch[2];
+            const picInfo = PIC_ID_TO_THUMB[picId];
 
-            // 尾部斜杠规范化：/en（无斜杠）→ /en/（有斜杠）301 永久重定向
-            // 确保与全站 hreflang、sitemap 中声明的 URL 格式统一
-            if (url.pathname === '/en') {
-                return Response.redirect('https://r9wallpaper.org/en/' + url.search, 301);
+            // 未知单图 ID 直接 404
+            if (!picInfo) {
+                return new Response('Not Found', { status: 404 });
             }
 
-            // 【核心修复点】：用扩展名判断是否为静态资源，而不是用 Accept 头
-            // 如果路径以 .js, .css, .png, .json 等结尾，判定为静态资源
-            const isAsset = url.pathname.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|woff2?|json|xml)$/i);
+            const [thumbPath, zhTitle, enTitle] = picInfo;
+            const shortTitle = isEn ? enTitle : zhTitle;
+            const ogImage = 'https://img.r9wallpaper.org/' + thumbPath;
+            const pageTitle = `${shortTitle} | Reverse: 1999 Wallpaper (${picId})`;
 
-            if (isAsset) {
-                // 是静态资源（如 /en/bundle_index.css）：剥离 /en 前缀，从根路径获取
-                const strippedPath = url.pathname.replace(/^\/en/, '') || '/';
-                const resourceUrl = new URL(request.url);
-                resourceUrl.pathname = strippedPath;
-                return env.ASSETS.fetch(new Request(resourceUrl.toString(), request));
-            }
-
-            // HTML 页面请求：获取主站根 HTML 并在边缘节点重写
+            // 拉取对应语言的首页 HTML 作为响应模板（/en/ 版本已有实体文件）
             const rootUrl = new URL(request.url);
-            rootUrl.pathname = '/';
-
+            rootUrl.pathname = isEn ? '/en/index.html' : '/index.html';
             const rootRequest = new Request(rootUrl.toString(), {
                 method: 'GET',
                 headers: request.headers
             });
-
             const response = await env.ASSETS.fetch(rootRequest);
 
-            const contentType = response.headers.get("content-type");
-            if (!contentType || !contentType.includes("text/html")) {
+            const contentType = response.headers.get('content-type');
+            if (!contentType || !contentType.includes('text/html')) {
                 return response;
             }
 
-            // 动态获取当前访问的纯净路径作为 Canonical
-            // 统一确保尾部带 /，与 index.html 及 sitemap.xml 中声明的 hreflang URL 格式一致
-            const canonicalPath = url.pathname.replace(/\/?$/, '/');
-            const canonicalUrl = url.origin + canonicalPath;
+            const fullUrl = url.origin + url.pathname + url.search;
 
-            // HTMLRewriter：流式重写 HTML
+            // HTMLRewriter：注入单图专属的社交分享卡片（noindex 防止稀释整站 SEO 权重）
             return new HTMLRewriter()
-                // 多语言标记参数
-                .on('html', {
-                    element(element) {
-                        element.setAttribute("lang", "en");
-                    }
-                })
-                // 标题
                 .on('title', {
                     element(element) {
-                        element.setInnerContent("Reverse: 1999 Wallpapers | Official CG, Mobile & Desktop");
+                        element.setInnerContent(pageTitle);
                     }
                 })
-                // 标题
                 .on('meta[property="og:title"]', {
                     element(element) {
-                        element.setAttribute("content", "Reverse: 1999 Wallpapers | Official CG, Mobile & Desktop");
+                        element.setAttribute('content', pageTitle);
                     }
                 })
-                // 描述
-                .on('meta[name="description"]', {
+                .on('meta[property="og:image"]', {
                     element(element) {
-                        element.setAttribute("content", "An HD wallpaper library designed exclusively for Reverse: 1999. It features a massive collection of official CG artwork, available for quick filtering and download.");
+                        element.setAttribute('content', ogImage);
                     }
                 })
-                // 关键词
-                .on('meta[name="keywords"]', {
-                    element(element) {
-                        element.setAttribute("content", "Reverse 1999, 1999 wallpaper, Reverse: 1999 wallpapers, Reverse 1999 official CG, HD wallpapers, desktop wallpapers, mobile wallpapers, anime game wallpapers, Reverse 1999 wallpaper download, Reverse 1999 phone wallpaper, Reverse 1999 4K wallpaper, Reverse 1999 character art, anime artwork");
-                    }
-                })
-                // 描述
-                .on('meta[property="og:description"]', {
-                    element(element) {
-                        element.setAttribute("content", "An HD wallpaper library designed exclusively for Reverse: 1999. It features a massive collection of official CG artwork, available for quick filtering and download.");
-                    }
-                })
-                // 标题
-                .on('h1#h1-title', {
-                    element(element) {
-                        element.setInnerContent("Reverse: 1999 Wallpapers | Official CG, Mobile & Desktop");
-                    }
-                })
-                // URL
                 .on('meta[property="og:url"]', {
                     element(element) {
-                        // og:url 保持完整请求链接，方便社交分享包含查询参数
-                        element.setAttribute("content", request.url);
+                        element.setAttribute('content', fullUrl);
                     }
                 })
-                // canonical
                 .on('link[rel="canonical"]', {
                     element(element) {
-                        element.setAttribute("href", canonicalUrl);
+                        element.setAttribute('href', fullUrl);
                     }
                 })
-                // hreflang 标签已在源站 index.html 中正确声明，无需重复注入
+                .on('head', {
+                    element(element) {
+                        element.append('<meta name="robots" content="noindex, follow">', { html: true });
+                        element.append('<meta name="twitter:card" content="summary_large_image">', { html: true });
+                    }
+                })
                 .transform(response);
         }
 
         // ============================================================
-        // 第三阶段：中文路径 (/) 正常透传
+        // 第三阶段：尾部斜杠规范化
+        // 非静态资源请求不带尾斜杠（如 /c/vertin、/en、/i/ATCG_xxx）→ 301 补斜杠
+        // 与全站 hreflang、sitemap 中声明的 URL 格式统一
+        // ============================================================
+        const isAsset = url.pathname.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|webp|woff2?|json|xml|txt)$/i);
+        if (!isAsset && !url.pathname.endsWith('/')) {
+            return Response.redirect(origin + url.pathname + '/' + url.search, 301);
+        }
+
+        // ============================================================
+        // 第四阶段：/en/ 静态资源路径修正
+        // 若请求以 /en/ 开头且是静态资源（如 /en/bundle_index.css）：
+        // 剥离 /en 前缀后从根路径获取（双保险，配合 build.py 的根路径引用）
+        // ============================================================
+        if (url.pathname.startsWith('/en/') && isAsset) {
+            const strippedPath = url.pathname.replace(/^\/en/, '') || '/';
+            const resourceUrl = new URL(request.url);
+            resourceUrl.pathname = strippedPath;
+            return env.ASSETS.fetch(new Request(resourceUrl.toString(), request));
+        }
+
+        // ============================================================
+        // 第五阶段：其余所有请求直接透传 Cloudflare Pages 静态资产
+        // （含 /、/en/、/c/vertin/、/en/c/vertin/、/about/ 等——
+        //  build.py 已在 dist/ 下预生成对应的实体 index.html）
         // ============================================================
         return env.ASSETS.fetch(request);
     }

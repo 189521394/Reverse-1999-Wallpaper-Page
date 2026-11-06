@@ -19,6 +19,8 @@ function executeFilter() {
     alreadyRecommend = true;
     // 标记筛选模式
     window.currentActiveSearchMode = 'text';
+    // 文本搜索模式不使用落地页路由，地址栏同步回退到根路径
+    syncUrlWithState();
 }
 
 // 点击搜索触发

@@ -36,8 +36,9 @@ async function initLanguage() {
     }
     else if (localLang === "en") {
         // 场景 B：路径是 /，但 localStorage 存的是 "en" → 老用户回访
-        // 静默更新地址栏为 /en/，保持路径与语言一致
-        history.replaceState(null, '', '/en/' + window.location.search);
+        // 静默更新地址栏为 /en/，保持路径与语言一致（保留当前子路径与查询参数）
+        const currentPath = window.location.pathname.replace(/^\/en(?=\/|$)/, '');
+        history.replaceState(null, '', '/en' + currentPath + window.location.search);
         targetLang = "en";
         shouldShowGuide = false;
     }
@@ -68,7 +69,8 @@ async function initLanguage() {
     }
 
     // 2. 核心：执行语言切换并拉取数据
-    await switchLanguage(targetLang);
+    // 页面初始化阶段用 replaceState，避免历史记录里多出一条相同页面
+    await switchLanguage(targetLang, true);
 
     // 3. 决定是否显示引导页
     if (shouldShowGuide) {

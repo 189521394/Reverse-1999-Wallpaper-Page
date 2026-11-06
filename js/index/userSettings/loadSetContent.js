@@ -187,10 +187,21 @@ function switchContent(targetID) {
     if (targetContent) {
         targetContent.classList.add("show");
     }
+
+    // 设置面板打开时，地址栏同步当前页签路由（如 /mail/）
+    // 注意：本文件先于 share.js 加载，页面初始化阶段（静态设置页预置了 .show）可能被立即调用，
+    // 此时 syncUrlWithState 尚未定义，需做存在性防御；DOMContentLoaded 后的调用不受影响
+    if (setBackground.classList.contains('show') && typeof syncUrlWithState === 'function') {
+        syncUrlWithState();
+    }
 }
 
 // 初始化：电脑端默认打开第一个设置页面
+// 静态设置落地页（/about/ 等）已由 build.py 预置目标页签的 .active 类，
+// 此时不要再强制切到"偏好"页签，否则会覆盖预置状态、造成闪烁
 if (!isMobileLayout) {
-    const prefTab = document.getElementById("preference");
-    if (prefTab) prefTab.click();
+    if (!setItemContainer.querySelector('.setItem.active')) {
+        const prefTab = document.getElementById("preference");
+        if (prefTab) prefTab.click();
+    }
 }

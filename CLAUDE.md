@@ -35,14 +35,16 @@ python tools/runServer.py
 
 ### `tools/runServer.py` 路径映射（`translate_path`）
 
-服务器重写了 `SimpleHTTPRequestHandler.translate_path`，实现两层路由：
+服务器重写了 `SimpleHTTPRequestHandler.translate_path`，实现四层路由：
 
-1. **`/en/` 虚拟目录**：剥离前缀后映射到真实文件。`/en/` → `/index.html`，`/en/css/...` → `/css/...`。这是本地对线上 `_worker.js` Cloudflare Worker 行为的模拟。
-2. **`/resource/` 资源映射**：`resource/` 是独立 Git 仓库（使用 Git LFS），不在当前工作目录下。normal 模式用 `os.getcwd()` 定位项目根目录；build 模式从 `dist/` 往上一级定位。
+1. **`/i/<pic_id>/` 单图路由**：本地模拟 Worker 动态拦截，映射到对应语言首页，前端自动渲染并放大该图。
+2. **`/en/` 虚拟目录**：剥离前缀后映射到真实文件。`/en/` → `/index.html`，`/en/css/...` → `/css/...`。
+3. **`/resource/` 资源映射**：`resource/` 是独立 Git 仓库（使用 Git LFS），不在当前工作目录下。normal 模式用 `os.getcwd()` 定位项目根目录；build 模式从 `dist/` 往上一级定位。
+4. **SPA 回退**：无扩展名的路径映射不到实体文件时回退到 `index.html`（normal 模式下落地页/设置页路由依赖此行为，前端 `handleUrlRouting` 按地址栏还原状态）。
 
 ### 为什么不能用 WebStorm 内置服务器
 
-WebStorm 把项目放在子路径下（如 `http://localhost:63342/ProjectName/`），而 `getURL.js` 本地模式使用相对路径 `../resource/...` 拼接图片 URL。`../` 会跳出 WebStorm 的项目子目录，导致图片 404。
+WebStorm 把项目放在子路径下（如 `http://localhost:63342/ProjectName/`），而 `getURL.js` 本地模式使用绝对路径 `/resource/...` 拼接图片 URL。绝对路径会指向 WebStorm 服务器的根目录而非项目子目录，导致图片 404。此外落地页/设置页路由依赖服务器的 SPA 回退与 `/en/` 映射（见 `translate_path`），WebStorm 内置服务器也不提供。
 
 ## 生产构建系统
 
@@ -52,9 +54,10 @@ WebStorm 把项目放在子路径下（如 `http://localhost:63342/ProjectName/`
 
 1. **编译 `Filter.json`**：将标签从中文文本清洗为纯 ID（查 `lang/tagData.json` 字典），用 `separators=(',', ':')` 紧凑输出。同时验证所有标签和色调均已注册，未注册则中断构建。
 2. **合并 JS/CSS**：将 HTML 中所有 `<link href="/css/...">` 和 `<script src="/js/...">` 引用合并为单个 `bundle_*.css` + `bundle_*.js`，做基础压缩（去注释、去多余空行）。支持 `index.html`、`propaganda.html`、`404.html` 三个页面。
-3. **拷贝静态资源**：`font/`、`lang/`、`favicon.png`、`_worker.js`、`sitemap.xml` 等原样复制
+3. **拷贝静态资源**：`font/`、`lang/`、`favicon.png`、`_worker.js` 等原样复制（`sitemap.xml` **不拷贝**，由阶段 4 动态生成）
+4. **生成 SEO 落地页**：以打包后的 `dist/index.html` 为模板批量生成中英双语静态页（详见下方"SEO 结构化路由"一节），动态生成含图片节点的 `sitemap.xml`，并向 `dist/_worker.js` 注入单图映射字典。
 
-**注意**：打包后的 HTML 引用 bundle 文件时**不带**前导 `/`（`href="bundle_index.css"`），因为此时 HTML 和 bundle 都在 `dist/` 同级目录。`resource/` 不会被拷贝到 `dist/`——它由服务器的 `translate_path` 映射到上级目录。
+**注意**：bundle 引用**必须带前导 `/`**（`href="/bundle_index.css"`），否则子目录落地页（如 `/c/vertin/index.html`）找不到 CSS 和 JS。`resource/` 不会被拷贝到 `dist/`——它由服务器的 `translate_path` 映射到上级目录。
 
 ### `prepare_build_env()` — 生产模拟魔改
 
@@ -65,6 +68,18 @@ build 模式下，打包完成后会修改 `dist/` 中的 bundle JS：
 ## 项目部署
 
 Cloudflare Pages + Cloudflare R2 对象存储
+
+## SEO 结构化路由（重点约束）
+
+站点拥有完整的中英双语路径路由体系，由 build.py 预渲染静态 HTML + 前端 `share.js` 路由控制器共同支撑：
+
+- **落地页路由**：`/c/<slug>/`（角色）、`/v/<slug>/`（版本）、`/s/` `/e/` `/a/`（主线/活动/轶事汇总及子页）、`/c/` `/v/`（分类汇总索引）、`/preference/` `/mail/` `/about/` `/debug/`（设置面板，preference/debug 为 noindex）、`/i/<pic_id>/`（单图分享，Worker 动态注入 OG、noindex）。所有路由均有 `/en/` 英文版。
+- **slug 永久固化**：`lang/tagData.json` 的词条带有 `slug` 字段（URL 依据）。**修改英文翻译不会自动改 slug**；新增词条须运行 `tools/add_slugs.py`（幂等，只补缺失的 slug）。
+- **静态页预渲染**：build.py 为每个标签生成实体页面——head 元信息（title/description/hreflang/og）、预填 `#submitPool`（严禁空白）、前 48 张带 alt 的 `<img>`、`window.__INITIAL_ROUTE__` 接管标记。
+- **首屏接管（Hydration）**：前端检测 `__INITIAL_ROUTE__` + 预渲染 DOM 数量一致时不清空重绘，只补齐状态供滚动续载；不一致时走正常重建流程。
+- **地址栏同步**：所有筛选/设置/大图交互通过 `syncUrlWithState()`（share.js）同步地址栏；路由解析统一走 `handleUrlRouting()`（含 popstate）。新增交互时须挂载同步。
+- **背景图过滤必须按 `background` 标签**，不能按 `/story_bg/` 路径——有 183 张该路径下的图未打标签，前端会正常显示；构建端（build.py 的 `is_background()`）与前端（`hydrateSummaryPage`）已统一按标签。
+- **图片 URL**：本地 `isLocal=true` 用绝对路径 `/resource/...`（不能用相对路径，SPA 回退后子路径下会解析错层）；线上用 `R2_DOMAIN + "/"` 前缀。
 
 ## 开发所使用的软件
 
@@ -79,7 +94,7 @@ JetBrains WebStorm
 | `404.html` | 极简自定义 404 页面（`noindex`） |
 | `tools/runServer.py` | 本地开发服务器（normal/build 双模式，自定义路径映射） |
 | `tools/build.py` | 生产打包脚本（合并压缩 JS/CSS、编译 Filter.json、输出到 dist/） |
-| `_worker.js` | Cloudflare Worker（边缘节点处理 `/en/` 虚拟目录、SEO 英文重写、旧链接 301） |
+| `_worker.js` | Cloudflare Worker（尾斜杠 301、`/en/` 静态资源剥离、`/i/<pic_id>/` 动态 OG 注入、其余纯透传） |
 
 ## CSS 架构（`css/`）
 
@@ -123,8 +138,9 @@ JetBrains WebStorm
 
 点击缩略图时计算从缩略图到屏幕中心的位移动画，通过 `--tx`、`--ty`、`--scale` CSS 变量驱动。同时管理：
 - 原图流式下载（`fetch` + `ReadableStream`）与进度条更新
-- 遮罩层与下载按钮的显示/隐藏
+- 遮罩层、下载按钮与大图分享按钮（`#imgShare`）的显示/隐藏
 - 图片标签的同步显示
+- 打开大图前 `requestTabLock` 隐藏移动端 tab（关闭时释放）
 - PC 端和移动端的缩放比例差异
 
 ### 标签交互（`js/index/itemListener/`）
@@ -187,11 +203,10 @@ JetBrains WebStorm
 - `getInitialLanguage()` → 检测 `pathname.startsWith('/en')` 判定当前语言
 - **引导页逻辑**（`guide.js`）：新用户首次访问显示语言选择覆盖层；通过 `/en/` 路径进入的无条件信任路径；老用户回访静默更新地址栏
 - **本地开发**：`tools/runServer.py` 的 `translate_path` 剥离 `/en/` 前缀映射到真实文件
-- **生产环境**：`_worker.js`（Cloudflare Worker）在边缘节点拦截 `/en/` 请求：
-  - 静态资源（`.js`、`.css`、`.png` 等）→ 剥离前缀，从根路径获取
-  - HTML 页面 → 获取根 HTML，用 `HTMLRewriter` 流式重写 SEO 标签（title、meta、OG、canonical、h1）
+- **生产环境**：`/en/` 下有实体静态文件（build.py 生成），Worker 直接透传；仅保留三件事：
+  - 静态资源（`.js`、`.css`、`.png` 等）→ 剥离 `/en` 前缀从根路径获取（双保险）
   - 旧链接 `?lang=en` → 301 重定向到 `/en/`
-  - `/en`（无尾斜杠）→ 301 重定向到 `/en/`
+  - 无尾斜杠的非静态路径（如 `/c/vertin`、`/en`）→ 301 补斜杠
 
 #### `isLocal` 环境判定
 
@@ -204,15 +219,16 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 
 影响两处行为：
 1. **数据清洗**：`isLocal=true` → `Filter.json` 的 tags 和 tone 从中文转换为 ID；`false` → 直接使用（已由 build.py 预处理）
-2. **图片 URL 前缀**：`isLocal=true` → `../resource/...`（相对路径）；`false` → `R2_DOMAIN + "/resource/..."`（`getURL.js`）
+2. **图片 URL 前缀**：`isLocal=true` → `/resource/...`（绝对路径，配合 runServer 的根路径映射与落地页 SPA 回退）；`false` → `R2_DOMAIN + "/resource/..."`（`getURL.js`）
 
-### 分享系统（`js/index/share.js`）
+### 分享与路由（`js/index/share.js`）
 
-生成带有筛选状态的分享链接：
-- 使用 Base64 编码将标签或文本搜索内容编码为 URL 参数（`mode`、`q`、`precise`）
-- 语言信息由虚拟目录 `/en/` 承载，不再需要 `?lang=` 参数
-- `handleUrlRouting()` 在 DOMContentLoaded 时解析 URL 参数并还原筛选状态
-- 支持 Web Share API 和剪贴板回退
+站点的**路径路由控制器**，同时承载分享功能：
+- `getStatePath()`：计算当前状态对应的规范路径（单图 `/i/` → 单标签落地页 → 汇总页 → 根路径）
+- `syncUrlWithState()`：所有交互点调用它同步地址栏；`handleUrlRouting()`：解析路径（含 `/en` 剥离）+ 旧 `?mode=` Base64 参数，popstate 时复用；处理期间用 `suppressUrlSync` 抑制中间状态的 push
+- 多标签/文本分享沿用 Base64 参数（`mode`、`q`、`precise`）；单标签分享由路径承载、仅附 `precise`；单图分享为纯 `/i/` 链接
+- `showButtonFeedback(btn, text, duration)`：全站"点击后显示反馈、定时复原"按钮的**统一入口**（含恢复锁，防连点污染缓存）。新增此类按钮必须走它
+- 大图分享按钮 `#imgShare` 与 toast 气泡（`showToast()`）也在本文件
 
 ### 移动端（`js/index/mobile/`）
 
@@ -220,7 +236,7 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 |---|---|
 | `mobile-init.js` | 移动端专有初始化，检测设备类型 |
 | `tabSwitch.js` | 在壁纸浏览/筛选/设置三个 Tab 之间切换。初次点击筛选 Tab 时自动触发主线章节筛选 |
-| `scrollHideTab.js` | 向下滚动时自动隐藏底部 Tab 栏，向上滚动时显示 |
+| `scrollHideTab.js` | 向下滚动时自动隐藏底部 Tab 栏，向上滚动时显示；内含 **tab 状态锁**（`requestTabLock`/`releaseTabLock`，仿滚动锁，大图预览时强制藏 tab） |
 | `once-tips.js` | 仅在首次移动端访问时显示的一次性提示 |
 
 ### 其他独立模块
@@ -245,7 +261,7 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 | 文件 | 用途 |
 |---|---|
 | `Filter.json` | 主壁纸数据库：`[{file, tags[], tone[]}]`。线上环境 tags/tone 是纯 ID，本地开发环境是原始中文文本。约 500KB |
-| `lang/tagData.json` | 标签字典：`{id: {zh, en, category?}}`。标签分类由此文件自动推导。约 43KB |
+| `lang/tagData.json` | 标签字典：`{id: {zh, en, category?, slug?}}`。标签分类由此文件自动推导；`slug` 为落地页 URL 依据（永久固化）。约 43KB |
 | `lang/zh.json` / `lang/en.json` | UI 界面翻译字符串（嵌套键路径） |
 | `schemas.json` | JSON Schema 校验模式，列出所有已注册标签的中文名枚举，用于验证 Filter.json |
 
@@ -275,6 +291,7 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 - **`resource/compress_bg.py`** — 将 `singlebg/` 中的 PNG 批量转换为 WebP 缩略图（最大 600×600，质量 80）。使用 `ProcessPoolExecutor` 并行压缩。自动跳过目标文件比源文件新的情况（增量压缩）。
 - **`resource/upload.py`** — 将本地 `thumbnails/` 和 `singlebg/` 同步到 Cloudflare R2（兼容 S3 API）。通过文件存在性 + 文件大小进行差异比对，上传前需人工确认。依赖 `boto3`。
 - **`tools/update_tone.py`** — 对 Filter.json 中缺失 `tone` 的条目进行颜色分析并补充色调标签。依赖 `opencv-python`、`numpy`、`scikit-learn`。
+- **`tools/add_slugs.py`** — 为 tagData.json 中缺失 `slug` 的词条批量生成 slug（西里尔转写、重音剥离、分类内去重）。幂等，跳过已有 slug。
 - **`tools/index_new_version.py`** — 交互式脚本，为指定版本目录（如 `3_8`）的新图片自动生成 Filter.json 条目。自动将 `*_*` 格式转换为 `*.*` 版本号。扫描 `story_atcg/` 和 `story_bg/` 下未索引的 PNG，过滤 `_zone` 变体文件。生成条目后追加写入 Filter.json。
 
 ## 页面加载与初始化顺序

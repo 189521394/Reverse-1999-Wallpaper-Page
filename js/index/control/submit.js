@@ -21,6 +21,8 @@ function submit() {
     alreadySubmit = true;
     // 标记筛选模式
     window.currentActiveSearchMode = 'tag';
+    // 同步地址栏路由（1 个标签 → /c/xxx/ 落地页，其余回退 /）
+    syncUrlWithState();
 }
 
 

@@ -40,3 +40,46 @@
     pointer-events: none;
     transition: opacity 250ms;
 }
+
+/*====================大图分享按钮（与下载按钮同款，位于其正左边）====================*/
+#imgShare {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 80px;
+    /*显示高度，图片之上*/
+    z-index: var(--z-showTags);
+
+    background-color: var(--controlButtonBGC);
+    color: var(--fontHoverColor);
+    opacity: 1;
+    transition: background-color 250ms, color 250ms, opacity 250ms;
+}
+
+/*居中内容*/
+#imgShare {
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+@media (hover: hover) {
+    #imgShare:hover {
+        background-color: #ffffff;
+        color: var(--fontHoverColor);
+        transition: background-color 250ms, color 250ms;
+    }
+}
+
+#imgShare:active {
+    background-color: #d2d2d2;
+    transition: background-color 250ms, color 250ms;
+}
+
+/*默认隐藏*/
+#imgShare.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms;
+}

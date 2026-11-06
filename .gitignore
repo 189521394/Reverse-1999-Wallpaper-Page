@@ -1,3 +1,7 @@
 resource/
 tools/runServer.py
 dist/
+网站浏览量数据（缓存，记得删，不推送）/
+# Python 缓存
+tools/__pycache__/
+__pycache__/

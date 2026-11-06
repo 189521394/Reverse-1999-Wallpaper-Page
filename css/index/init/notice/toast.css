@@ -1,0 +1,35 @@
+/*轻提示气泡：定位在分享按钮(#imgShare)正左边，与其同水平线同高度*/
+#toast {
+    position: fixed;
+    /*分享按钮 top:20px right:80px 宽50px，toast 位于其左侧留 10px 间距*/
+    top: 20px;
+    right: 140px;
+    height: 50px;
+
+    /*文字垂直居中，宽度随内容自适应*/
+    line-height: 50px;
+    padding: 0 16px;
+    font-size: 16px;
+    color: var(--fontColor);
+
+    /*背景板：与图片下方标签栏(#returnTag)一致的主题淡黄色*/
+    background-color: var(--showTagBGC);
+
+    /*左侧 2px 主题橙色竖条*/
+    border-left: 2px solid var(--controlButtonBGC);
+
+    /*与分享按钮同层级显示在图片之上*/
+    z-index: var(--z-showTags);
+
+    opacity: 1;
+    pointer-events: none;
+    /*主题颜色变化动画（文本+背景 250ms），与显隐的 opacity 过渡合并声明，避免互相覆盖；橙色竖条不参与动画*/
+    transition: background-color 250ms, color 250ms, opacity 250ms;
+}
+
+/*默认隐藏（showToast 移除 hide 显示）*/
+#toast.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms;
+}

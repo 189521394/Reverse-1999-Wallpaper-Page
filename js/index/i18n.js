@@ -24,6 +24,19 @@ let currentLanguage = getInitialLanguage();
 // 核心运行期数据库，纯 ID 化，常驻内存
 let runtimeDatabase = [];
 
+// ===========================================单图路由辅助===========================================
+// 根据图片路径生成全局唯一的单图 ID（大写前缀 + 下划线 + 原文件名，不带扩展名）
+// ATCG_ = 立绘(story_atcg) / BG_ = 背景(story_bg) / CG_ = 兜底
+window.getPicIdFromFile = function (filePath) {
+    const base = filePath.split('/').pop().replace(/\.png$/i, '');
+    if (filePath.includes('/story_atcg/')) return 'ATCG_' + base;
+    if (filePath.includes('/story_bg/')) return 'BG_' + base;
+    return 'CG_' + base;
+};
+
+// 单图 ID → 图片数据条目 的 O(1) 反查表，initData() 完成后构建
+window.picIdToFileMap = {};
+
 // 判断当前是否在本地运行 (localhost/局域网调试)
 const hostname = window.location.hostname;
 const isLocal =
@@ -42,11 +55,22 @@ const isLocal =
 })();
 
 // ===========================================标签翻译===========================================
+// 分类 → 路由前缀映射（只有这五个分类拥有落地页路由）
+const CATEGORY_ROUTE_PREFIX = {
+    character: '/c/',
+    versionCode: '/v/',
+    mainLine: '/s/',
+    event: '/e/',
+    anecdote: '/a/'
+};
+
 const I18n = {
     dictionary: {},
     zhToIdMap: {},
     categoryMap: {},   // 自动从 JSON 构建的分类表：{ "mainLine": ["id1", "id2"], ... }
     allTagsPool: [],   // 系统所有纯 ID 集合，给输入提示用
+    idToRouteMap: {},  // 标签 ID → 路由路径（不含 /en 前缀），如 "vertin" -> "/c/vertin/"
+    routeToIdMap: {},  // 路由路径 → 标签 ID 反查表，如 "/c/vertin/" -> "vertin"
 
     // 初始化引擎
     // promise里面保存的是tagData，是网站核心文件
@@ -76,6 +100,15 @@ const I18n = {
 
                 // 加入全局 ID 池
                 this.allTagsPool.push(id);
+
+                // 构建标签路由双向查找表（year/Tone/special 不收录，不放入表）
+                const prefix = CATEGORY_ROUTE_PREFIX[item.category];
+                if (prefix && typeof item.slug === 'string') {
+                    // 汇总标签（slug 为空）直接映射到分类根路径，如 "/s/"
+                    const route = prefix + (item.slug ? item.slug + '/' : '');
+                    this.idToRouteMap[id] = route;
+                    this.routeToIdMap[route] = id;
+                }
             }
         } catch (error) {
             console.error("字典加载失败:", error);
@@ -129,6 +162,12 @@ async function initData() {
         // 这里假设 Python 脚本打包时已经把纯 ID 生成到了 tags 字段
         runtimeDatabase = rawData;
     }
+
+    // 构建单图 ID → 图片条目 的 O(1) 反查表，供 /i/<pic_id>/ 单图路由使用
+    window.picIdToFileMap = {};
+    runtimeDatabase.forEach(item => {
+        window.picIdToFileMap[getPicIdFromFile(item.file)] = item;
+    });
 
     // 系统准备完毕，触发默认主线章节筛选
     const mainLineBtn = document.getElementById("mainLine");
@@ -278,7 +317,9 @@ function applyLanguage(translations) {
 }
 
 // 切换语言，主函数
-async function switchLanguage(lang) {
+// replaceHistory：页面初始化时传 true，用 replaceState 避免产生重复的历史记录
+// （否则从外部链接进入后按后退会原地停留一次）；用户主动切换语言时保持 pushState
+async function switchLanguage(lang, replaceHistory = false) {
     // 修改 <html> 标签的 lang 属性
     document.documentElement.lang = lang;
     // 更新全局变量
@@ -286,18 +327,19 @@ async function switchLanguage(lang) {
     // 存储的函数写在上层函数，这个函数不会被裸调用
 
     // 动态修改地址栏 URL（基于虚拟目录 /en/ 替代旧的 ?lang=en 参数）
+    // 保留当前子路径（如 /c/vertin/ ↔ /en/c/vertin/），同时保留查询参数
+    const currentPath = window.location.pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+    const historyFn = replaceHistory ? history.replaceState : history.pushState;
     if (lang === 'en') {
-        // 保留可能存在的其他参数（比如 ?id=xxx），修改路径为 /en/
-        history.pushState(null, '', '/en/' + window.location.search);
+        historyFn.call(history, null, '', '/en' + currentPath + window.location.search);
     } else {
-        // 把 /en/ 剥离，回到根目录，保留其他查询参数
-        history.pushState(null, '', '/' + window.location.search);
+        historyFn.call(history, null, '', currentPath + window.location.search);
     }
 
     // 同步更新 canonical 链接，确保与当前语言路径一致
     const canonicalEl = document.querySelector('link[rel="canonical"]');
     if (canonicalEl) {
-        canonicalEl.href = window.location.origin + (lang === 'en' ? '/en/' : '/');
+        canonicalEl.href = window.location.origin + (lang === 'en' ? '/en' + currentPath : currentPath);
     }
     // 同步更新 og:url 为当前完整 URL（含查询参数），确保社交分享卡片携带筛选状态
     const ogUrlEl = document.querySelector('meta[property="og:url"]');

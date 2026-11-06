@@ -5,6 +5,8 @@ const showTags = document.getElementById("showTags");
 
 // 下载按钮
 const downloadButton = document.getElementById("download");
+// 大图分享按钮
+const imgShareButton = document.getElementById("imgShare");
 
 // 图片专属的遮罩层
 const overlay = document.getElementById('imgOverlay');
@@ -204,11 +206,17 @@ function closeImage() {
     // 取消滚动锁定
     releaseScrollLock(wallpaperLockID);
 
+    // 释放 tab 锁，恢复底部 tab 显示
+    releaseTabLock(wallpaperLockID);
+
     // 关闭遮罩
     overlay.classList.remove('show');
 
     // 隐藏下载按钮
     downloadButton.classList.add("hide");
+
+    // 隐藏大图分享按钮
+    imgShareButton.classList.add("hide");
 
     // 更新回到顶部按钮状态
     updateToTopBtnVisibility();
@@ -217,9 +225,15 @@ function closeImage() {
     if (showTags.checked) {
         hideTag();
     }
+
+    // 地址栏退出单图分享路由（activeImg 已清空，由 syncUrlWithState 决定下一路径）
+    syncUrlWithState();
 }
 // ================================== 开启图像 ==================================
 function openImage(imgInfo) {
+    // 打开图片之前：隐藏移动端底部 tab（tab 锁，随大图关闭恢复显示）
+    requestTabLock(wallpaperLockID);
+
     // 取出原图
     let rawPath = imgInfo.dataset.original;
 
@@ -241,6 +255,9 @@ function openImage(imgInfo) {
     // 显示下载按钮
     downloadButton.classList.remove("hide");
 
+    // 显示大图分享按钮
+    imgShareButton.classList.remove("hide");
+
     // 更新回到顶部按钮状态
     updateToTopBtnVisibility();
 
@@ -248,6 +265,9 @@ function openImage(imgInfo) {
     if (showTags.checked) {
         showTag(imgInfo)
     }
+
+    // 地址栏同步为单图分享路由 /i/<pic_id>/
+    syncUrlWithState();
 }
 // ================================== 图片动画计算 ==================================
 function calculateAnimation(imgInfo) {

@@ -185,10 +185,8 @@
             border-width: 1px 0 0 0;
             border-color: var(--goldLine);
         }
-        /*根据tab控制显示位置*/
-        #returnTag {
-            margin-bottom: var(--bottom-for-tab);
-        }
+        /*定位说明：标签栏只在大图预览期间显示，而预览期间 tab 被 tab 锁强制隐藏，
+          故无需 margin-bottom 避让 tab，直接以屏幕最下方（bottom:0）为基准即可*/
         /*首位左右边距*/
         .tags:first-child {
             margin-left: 8px;

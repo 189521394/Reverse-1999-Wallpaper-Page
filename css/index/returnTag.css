@@ -8,7 +8,7 @@
     padding: 10px;
 
     /*标准提示框颜色*/
-    background-color: #F3E9E3;
+    background-color: var(--returnTagBGC);
 
     z-index: var(--z-showTags);
 }

@@ -8,24 +8,10 @@ async function copyContact() {
         const match = text.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
         let mail = match[0];
 
-        const cache = copyButton.textContent;
         await copyText(mail);
-        copyButton.textContent = "✔";
-        copyButton.style.backgroundColor = "#ffffff";
-
-        setTimeout(() => {
-            copyButton.textContent = cache;
-            copyButton.style.backgroundColor = "";
-        }, 3000);
+        showButtonFeedback(copyButton, "✔");
     } catch (err) {
-        const cache = copyButton.textContent;
-        copyButton.textContent = "✘";
-        copyButton.style.backgroundColor = "#ffffff";
         console.log(err);
-
-        setTimeout(() => {
-            copyButton.textContent = cache;
-            copyButton.style.backgroundColor = "";
-        }, 3000);
+        showButtonFeedback(copyButton, "✘");
     }
 }

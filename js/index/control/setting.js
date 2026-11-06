@@ -23,11 +23,15 @@ function openSettings() {
     // 滚动锁定，防止背景滚动
     requestScrollLock(setLockID);
     setAni(true);
+    // 地址栏同步为设置面板路由
+    syncUrlWithState();
 }
 
 function closeSettings() {
     releaseScrollLock(setLockID)
     setAni(false);
+    // 地址栏退回设置面板之前的页面
+    syncUrlWithState();
 }
 
 setBackground.addEventListener('click', function (event) {

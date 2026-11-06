@@ -2,6 +2,40 @@ let allOutSet = [];   // 用来存筛选出来的所有图片链接
 let currentLoaded = 0;   // 记录当前已经显示了多少张
 const BATCH_SIZE = 48;   // 每次加载多少张
 
+// 汇总标签（生成 alt 时跳过，无信息量）
+const AGGREGATE_TAG_IDS = new Set(['zhu_xian_ju_qing', 'huo_dong_ju_qing', 'yi_shi']);
+
+// 根据纯 ID 标签数组生成 img 的 alt 文本（与 build.py 的 build_alt_text 逻辑保持一致）
+function buildAltFromTagIds(tagIds) {
+    const chars = [], chapters = [], versions = [];
+    for (const t of tagIds) {
+        if (AGGREGATE_TAG_IDS.has(t)) continue;
+        const entry = I18n.dictionary[t];
+        if (!entry) continue;
+        const cat = entry.category;
+        const name = entry[currentLanguage] || entry.zh || t;
+        if (cat === 'character') {
+            chars.push(name);
+        } else if (cat === 'mainLine' || cat === 'event' || cat === 'anecdote') {
+            chapters.push(name);
+        } else if (cat === 'versionCode') {
+            versions.push(name);
+        }
+    }
+    const parts = [];
+    if (chars.length) parts.push(chars.join(', '));
+    if (chapters.length) {
+        let ch = chapters.join(', ');
+        if (versions.length) ch += ` (${versions[0]})`;
+        parts.push(ch);
+    } else if (versions.length) {
+        parts.push(`(${versions[0]})`);
+    }
+    const middle = parts.join(' - ');
+    const suffix = currentLanguage === 'zh' ? '重返未来：1999 官方CG壁纸' : 'Reverse: 1999 Official CG Wallpaper';
+    return middle ? `${middle} | ${suffix}` : suffix;
+}
+
 // ================= DisplayImg =================
 async function DisplayImg(tags) {
     // 获取所有结果
@@ -72,6 +106,13 @@ function loadMoreImages() {
         img.loading = "lazy";
         // 添加跨域身份请求
         img.crossOrigin = "anonymous";
+
+        // 异步补齐 SEO 友好的 alt 属性（角色/章节/版本名）
+        loadTag(originalPath).then(tagData => {
+            img.alt = buildAltFromTagIds(tagData.tags);
+        }).catch(() => {
+            // alt 获取失败保持空，不影响展示
+        });
 
         cache.appendChild(img);
     }

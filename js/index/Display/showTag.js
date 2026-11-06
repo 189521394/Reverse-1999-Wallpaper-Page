@@ -37,15 +37,8 @@ async function showTag(element) {
             // 执行复制到剪切板
             await copyText(fileName);
 
-            // 变成“已复制”1秒钟
-            let originalText = copyBtn.textContent;
-            copyBtn.textContent = "✅ 已复制";
-            copyBtn.style.backgroundColor = "#fff"; // 闪烁一下白底
-
-            setTimeout(() => {
-                copyBtn.textContent = originalText;
-                copyBtn.style.backgroundColor = ""; // 恢复原样
-            }, 1000);
+            // 变成“已复制”1秒钟（统一走带恢复锁的反馈函数）
+            showButtonFeedback(copyBtn, "✅ 已复制", 1000);
         });
 
         // 将这个特殊标签添加到最前面

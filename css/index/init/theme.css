@@ -23,6 +23,9 @@
     /* 单个标签颜色 */
     --tagBGC: #d6b882;
 
+    /* 图片标签栏背景（图片下方标签容器 #returnTag） */
+    --returnTagBGC: #F3E9E3;
+
     /* 提交按钮 */
     --controlButtonBGC: #D16430;
 
@@ -87,6 +90,9 @@
 
     /* 标签颜色 */
     --tagBGC: #d6b882;
+
+    /* 图片标签栏背景（图片下方标签容器 #returnTag） */
+    --returnTagBGC: #F3E9E3;
 
     /* 提交按钮 */
     --controlButtonBGC: #D16430;
@@ -153,6 +159,9 @@
 
         /* 标签颜色 */
         --tagBGC: #d6b882;
+
+        /* 图片标签栏背景（图片下方标签容器 #returnTag） */
+        --returnTagBGC: #F3E9E3;
 
         /* 提交按钮 */
         --controlButtonBGC: #D16430;
