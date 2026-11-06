@@ -663,8 +663,8 @@ def generate_settings_page(dist_dir, zh_template, en_template, page_key, lang_pa
                        'Preferences page of the Reverse: 1999 wallpaper gallery.'),
         'mail': ('《重返未来：1999》壁纸站的内容更新进度，跟随游戏版本同步更新。',
                  'Update progress of the Reverse: 1999 wallpaper gallery.'),
-        'about': ('关于《重返未来：1999》壁纸站：图像来源、时间线说明、社区群组与联系方式。',
-                  'About the Reverse: 1999 wallpaper gallery: image sources, timeline notes, community groups and contact.'),
+        'about': ('关于《重返未来：1999》壁纸站：时间线说明、社区群组与联系方式。',
+                  'About the Reverse: 1999 wallpaper gallery: timeline notes, community groups and contact.'),
         'debug': ('《重返未来：1999》壁纸站的开发者选项页面。',
                   'Developer options page of the Reverse: 1999 wallpaper gallery.'),
     }
