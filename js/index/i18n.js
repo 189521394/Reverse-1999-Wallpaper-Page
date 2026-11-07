@@ -360,4 +360,7 @@ async function switchLanguage(lang, replaceHistory = false) {
 
     // 重新渲染输入提示框
     updateTips();
+
+    // 语言包应用完成后同步浏览器标签页标题
+    updateDocumentTitle();
 }

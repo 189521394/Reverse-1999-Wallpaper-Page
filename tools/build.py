@@ -34,7 +34,8 @@ STATIC_ASSETS_TO_COPY = [
     'font',
     'favicon.png',
     'lang',
-    '_worker.js'    # Worker（拷贝后由 inject_worker_pic_map() 注入单图映射字典）
+    '_worker.js',   # Worker（拷贝后由 inject_worker_pic_map() 注入单图映射字典）
+    'robots.txt'
 ]
 
 # 3. 构建输出目录
@@ -546,7 +547,8 @@ def write_page(dist_dir, rel_dir, html_text):
 
 
 def build_noscript_links(dictionary, category, lang):
-    """为汇总页生成 noscript 内链锚点列表，供爬虫抓取"""
+    """为汇总页生成 noscript 内链锚点列表，供爬虫抓取（英文页链接带 /en 前缀）"""
+    lang_prefix = '/en' if lang == 'en' else ''
     links = []
     for tag_id, entry in dictionary.items():
         if entry.get('category') != category:
@@ -555,7 +557,7 @@ def build_noscript_links(dictionary, category, lang):
         if not slug:
             continue
         name = entry.get(lang) or entry.get('zh', '') or tag_id
-        links.append(f'<a href="{CATEGORY_ROUTE_PREFIX[category]}{slug}/">{html.escape(name)}</a>')
+        links.append(f'<a href="{lang_prefix}{CATEGORY_ROUTE_PREFIX[category]}{slug}/">{html.escape(name)}</a>')
     return '<noscript><div class="seo-links">' + ' '.join(links) + '</div></noscript>'
 
 
@@ -572,6 +574,8 @@ def generate_tag_page(dist_dir, zh_template, en_template, tag_id, entry, compile
     n = len(visible)
     og_list = visible if visible else matches
     og_image = (IMG_DOMAIN + '/' + thumb_path(og_list[0]['file'])) if og_list else f'{SITE_URL}/favicon.png'
+    # 0 张图的标签页为薄内容，标 noindex（页面保留，以后版本补图后自动恢复收录）
+    robots = 'noindex, follow' if n == 0 else None
 
     for lang, template in (('zh', zh_template), ('en', en_template)):
         name = entry.get(lang) or entry.get('zh', '') or tag_id
@@ -583,7 +587,7 @@ def generate_tag_page(dist_dir, zh_template, en_template, tag_id, entry, compile
         description = build_seo_description(tag_id, visible, dictionary, lang)
 
         html_text = template
-        html_text = replace_head_seo(html_text, lang, title, description, keywords, rel_path, og_image)
+        html_text = replace_head_seo(html_text, lang, title, description, keywords, rel_path, og_image, robots=robots)
         html_text = replace_h1(html_text, title)
         html_text = fill_submit_pool(html_text, tag_id, category, name)
         html_text = html_text.replace('<span id="resultCount">0</span>', f'<span id="resultCount">{n}</span>', 1)
@@ -698,6 +702,14 @@ def generate_sitemap(dist_dir, entries, dictionary):
         lang = 'en' if path.startswith('/en') else 'zh'
         kind = entry['kind']
         url = SITE_URL + path
+        # 提取不含 /en 前缀的基础路径：hreflang 交替链接必须 zh↔en 互指，
+        # 直接用带 /en 的 path 拼接会得到 /en/en/... 的错误地址
+        if path == '/en':
+            base_path = '/'
+        elif path.startswith('/en/'):
+            base_path = path[3:]
+        else:
+            base_path = path
         if kind == 'home':
             changefreq, priority = 'daily', '1.0'
         elif kind == 'summary':
@@ -710,9 +722,9 @@ def generate_sitemap(dist_dir, entries, dictionary):
         lines.append(f'        <loc>{html.escape(url)}</loc>')
         lines.append(f'        <changefreq>{changefreq}</changefreq>')
         lines.append(f'        <priority>{priority}</priority>')
-        lines.append(f'        <xhtml:link rel="alternate" hreflang="zh" href="{html.escape(SITE_URL + path)}" />')
-        lines.append(f'        <xhtml:link rel="alternate" hreflang="en" href="{html.escape(SITE_URL + "/en" + path)}" />')
-        lines.append(f'        <xhtml:link rel="alternate" hreflang="x-default" href="{html.escape(SITE_URL + path)}" />')
+        lines.append(f'        <xhtml:link rel="alternate" hreflang="zh" href="{html.escape(SITE_URL + base_path)}" />')
+        lines.append(f'        <xhtml:link rel="alternate" hreflang="en" href="{html.escape(SITE_URL + "/en" + base_path)}" />')
+        lines.append(f'        <xhtml:link rel="alternate" hreflang="x-default" href="{html.escape(SITE_URL + base_path)}" />')
         # 标签落地页：写入全部图片（最多 1000 张）
         if kind == 'tag' and entry.get('images'):
             for item in entry['images'][:1000]:
@@ -781,12 +793,20 @@ def generate_seo_pages(dist_dir, compiled_data, dictionary):
     for tag_id, entry in dictionary.items():
         if entry.get('category') not in SEO_CATEGORIES:
             continue
-        if not isinstance(entry.get('slug'), str):
+        slug = entry.get('slug')
+        # 防呆：SEO 分类的标签必须有有效 slug（汇总标签除外，它们映射到分类根路径），
+        # 否则会静默漏掉落地页（如合并新版本标签时遗漏 add_slugs.py）
+        if tag_id not in AGGREGATE_TAGS and not (isinstance(slug, str) and slug.strip()):
+            raise ValueError(
+                f"SEO 标签缺少有效 slug: {tag_id}（请在 lang/tagData.json 补充 slug 或运行 tools/add_slugs.py）")
+        if not isinstance(slug, str):
             continue
         rel_path, visible = generate_tag_page(dist_dir, zh_template, en_template,
                                               tag_id, entry, compiled_data, dictionary, lang_packs)
-        sitemap_entries.append({'path': rel_path, 'kind': 'tag', 'images': visible})
-        sitemap_entries.append({'path': '/en' + rel_path, 'kind': 'tag', 'images': visible})
+        # 0 张图的标签页标 noindex 后不再写入 sitemap（HTML 文件照常生成，供前端路由使用）
+        if len(visible) > 0:
+            sitemap_entries.append({'path': rel_path, 'kind': 'tag', 'images': visible})
+            sitemap_entries.append({'path': '/en' + rel_path, 'kind': 'tag', 'images': visible})
         tag_page_count += 1
     print(f"  单标签落地页：{tag_page_count} 个标签 × 2 语言 = {tag_page_count * 2} 页")
 

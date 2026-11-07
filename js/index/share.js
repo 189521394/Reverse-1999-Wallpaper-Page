@@ -225,6 +225,93 @@ function generateShareUrl() {
     return queryStr ? `${baseUrl}?${queryStr}` : baseUrl;
 }
 
+// ===================== 动态标题同步 =====================
+// 根据当前语言与路由/状态计算浏览器标签页标题，规则与 tools/build.py 的标题模板保持一致
+const ROUTE_TO_MENU_KEY = {
+    preference: 'preferences',
+    mail: 'mail',
+    about: 'about',
+    debug: 'devOpt'
+};
+
+// 仿 build.py build_short_title：角色名优先，前 2 个 + 版本号，如「维尔汀, 1.0」
+function buildShortTitleFromTagIds(tagIds) {
+    const aggregate = new Set(['zhu_xian_ju_qing', 'huo_dong_ju_qing', 'yi_shi']);
+    const chars = [], chapters = [], versions = [];
+    for (const t of tagIds) {
+        if (aggregate.has(t)) continue;
+        const entry = I18n.dictionary[t];
+        if (!entry) continue;
+        const cat = entry.category;
+        const name = entry[currentLanguage] || entry.zh || t;
+        if (cat === 'character') {
+            chars.push(name);
+        } else if (cat === 'mainLine' || cat === 'event' || cat === 'anecdote') {
+            chapters.push(name);
+        } else if (cat === 'versionCode') {
+            versions.push(name);
+        }
+    }
+    const names = chars.length ? chars : chapters;
+    let prefix = names.slice(0, 2).join(', ');
+    if (versions.length) {
+        prefix = prefix ? `${prefix}, ${versions[0]}` : versions[0];
+    }
+    return prefix;
+}
+
+function updateDocumentTitle() {
+    const isEn = currentLanguage === 'en';
+    const SITE_ZH = '重返未来：1999 壁纸站';
+    const SITE_EN = 'Reverse: 1999 Gallery';
+
+    // 1. 单图预览打开中 → <shortTitle> | Reverse: 1999 Wallpaper (<picId>)（与 _worker.js 一致）
+    if (activeImg && activeImg.dataset && activeImg.dataset.original) {
+        const picId = getPicIdFromFile(activeImg.dataset.original);
+        const picItem = window.picIdToFileMap[picId];
+        const shortTitle = (picItem && buildShortTitleFromTagIds(picItem.tags || [])) || picId;
+        document.title = `${shortTitle} | Reverse: 1999 Wallpaper (${picId})`;
+        return;
+    }
+
+    // 2. 设置面板打开中 → 当前页签菜单名 + 站点名
+    if (setBackground.classList.contains('show')) {
+        const visibleContent = document.querySelector('#setBox .setContent.show');
+        const routeName = visibleContent ? SETTING_CONTENT_TO_ROUTE[visibleContent.id] : 'preference';
+        const menuKey = ROUTE_TO_MENU_KEY[routeName] || routeName;
+        const menuName = getTranslation('settingsMenu.' + menuKey, currentLangPack) || routeName;
+        document.title = `${menuName} | ${isEn ? SITE_EN : SITE_ZH}`;
+        return;
+    }
+
+    // 3. 单标签落地页 → 标签译名 + 张数
+    const cleanPath = window.location.pathname.replace(/^\/en(?=\/|$)/, '') || '/';
+    const normalizedPath = cleanPath.replace(/\/?$/, '/');
+    const tagId = I18n.routeToIdMap[normalizedPath];
+    if (tagId) {
+        const name = I18n.Translate(tagId);
+        const n = (window.currentActiveSearchMode === 'tag' && Array.isArray(allOutSet)) ? allOutSet.length : 0;
+        document.title = isEn
+            ? `${name} Wallpapers & Backgrounds (${n} HD CGs) | ${SITE_EN}`
+            : `${name}壁纸与官方CG合集 (共${n}张) | ${SITE_ZH}`;
+        return;
+    }
+
+    // 4. 分类汇总页
+    if (normalizedPath === '/c/' || normalizedPath === '/v/') {
+        const summaryTitle = normalizedPath === '/c/'
+            ? (isEn ? 'Characters Index' : '角色汇总')
+            : (isEn ? 'Versions Index' : '版本汇总');
+        document.title = `${summaryTitle} | ${isEn ? SITE_EN : SITE_ZH}`;
+        return;
+    }
+
+    // 5. 首页及其他（/ 根路径、文本搜索、多标签）
+    document.title = isEn
+        ? 'Reverse: 1999 Wallpapers & Backgrounds | Official HD CG & Wallpaper Collection'
+        : '重返未来：1999 壁纸资源站 | 官方高清 CG 与壁纸收藏 (Reverse: 1999)';
+}
+
 // ===================== 路径路由控制器 =====================
 // 设置面板路由 → DOM ID 反查表
 const SETTING_ROUTE_TO_ITEM = {
@@ -314,6 +401,8 @@ function syncUrlWithState(replace = false) {
             window.history.pushState({ path: targetPath }, '', targetPath);
         }
     }
+    // 地址栏（或状态）变化后同步浏览器标签页标题
+    updateDocumentTitle();
 }
 
 // 等待图片加载完成后自动弹出大图预览
@@ -452,10 +541,17 @@ function handleTagRoute(tagId) {
     const waiting = pool.querySelectorAll('.waiting');
     const alreadySelected = waiting.length === 1 && waiting[0].getAttribute('data-raw-tag') === tagId;
 
-    // 静态落地页首屏：接管预渲染内容，不重复清空重绘
-    if (alreadySelected && window.__INITIAL_ROUTE__ &&
+    // 静态落地页首屏：接管预渲染内容，不重复清空重绘（首屏接管只发生一次）
+    if (alreadySelected && window.__INITIAL_ROUTE__ && !window.__INITIAL_ROUTE__.hydrated &&
         window.__INITIAL_ROUTE__.type === 'tag' && window.__INITIAL_ROUTE__.tagId === tagId) {
         hydrateTagPage();
+        return;
+    }
+
+    // 当前已处于该单标签的筛选渲染状态（如从大图 /i/ 或设置面板按返回键退回）：
+    // DOM 与 allOutSet/currentLoaded 完好，直接保持现状，禁止重复 submit 重建
+    if (alreadySelected && alreadySubmit && window.currentActiveSearchMode === 'tag' &&
+        document.querySelectorAll('#select .imgs').length > 0) {
         return;
     }
 
@@ -484,6 +580,9 @@ function handleSummaryRoute() {
 // 首屏防闪烁接管（Hydration）：不重复创建前 48 张 DOM，只补齐状态供滚动无缝续载
 function hydrateTagPage() {
     const route = window.__INITIAL_ROUTE__;
+    // 标记首屏接管已消费：后续 popstate 返回时不再按"首屏接管"路径判断，
+    // 避免用户滚动加载超过 48 张后（existing !== expected）被误判为"DOM 被改动"而重建
+    route.hydrated = true;
     const expected = Math.min(48, route.count);
     const existing = document.querySelectorAll('#select .imgs').length;
 
@@ -501,6 +600,7 @@ function hydrateTagPage() {
         window.currentActiveSearchMode = 'tag';
         const resultCount = document.getElementById('resultCount');
         if (resultCount) resultCount.textContent = full.length;
+        updateDocumentTitle();
     });
 }
 
@@ -513,28 +613,40 @@ function hydrateSummaryPage() {
 
     const existing = document.querySelectorAll('#select .imgs').length;
     const firstImg = document.querySelector('#select .imgs');
+    const expected = Math.min(48, full.length);
+    const firstMatches = !!(firstImg && firstImg.dataset.original === full[0]);
 
-    // 校验当前 DOM 确实是汇总页预渲染内容（首图与全库首图一致），
-    // 否则（如 popstate 从标签页返回、normal 模式无预渲染）重建汇总页首屏
-    if (existing !== 48 || !firstImg || firstImg.dataset.original !== full[0]) {
-        const box = document.getElementById('select');
-        box.replaceChildren();
-        allOutSet = full;
-        currentLoaded = 0;
-        alreadySubmit = true;
-        window.currentActiveSearchMode = 'none';
-        loadMoreImages();
-        const resultCount = document.getElementById('resultCount');
-        if (resultCount) resultCount.textContent = full.length;
+    // 状态 A：当前已是汇总页激活状态且首图匹配（如从大图 /i/ 或设置面板按返回键退回），
+    // DOM 与 currentLoaded 完好，直接保持现状，禁止清空重建
+    if (alreadySubmit && window.currentActiveSearchMode === 'none' &&
+        existing >= expected && firstMatches) {
+        updateDocumentTitle();
         return;
     }
 
+    // 状态 B：首屏未接管且 DOM 正是预渲染的汇总页首屏 → 静默接管
+    if (!alreadySubmit && existing === expected && firstMatches) {
+        allOutSet = full;
+        currentLoaded = existing;
+        alreadySubmit = true;
+        window.currentActiveSearchMode = 'none';
+        const resultCount = document.getElementById('resultCount');
+        if (resultCount) resultCount.textContent = full.length;
+        updateDocumentTitle();
+        return;
+    }
+
+    // 状态 C：其余情况（DOM 是其他页面的内容、normal 模式无预渲染等）→ 重建首屏
+    const box = document.getElementById('select');
+    box.replaceChildren();
     allOutSet = full;
-    currentLoaded = existing;
+    currentLoaded = 0;
     alreadySubmit = true;
     window.currentActiveSearchMode = 'none';
+    loadMoreImages();
     const resultCount = document.getElementById('resultCount');
     if (resultCount) resultCount.textContent = full.length;
+    updateDocumentTitle();
 }
 
 // 解析 URL 并还原路由状态（新路径路由 + 旧 ?mode= 分享参数）
@@ -545,6 +657,8 @@ function handleUrlRouting() {
         routeByPathAndQuery();
     } finally {
         suppressUrlSync = false;
+        // popstate/首次加载场景统一刷新标题（开/关大图、设置面板、标签路由切换）
+        updateDocumentTitle();
     }
 }
 

@@ -67,6 +67,9 @@ async function DisplayImg(tags) {
 
     // 加载一批图片
     loadMoreImages();
+
+    // 结果集就绪后同步浏览器标签页标题（张数 n 以 allOutSet 为准）
+    updateDocumentTitle();
 }
 
 // ================= 加载下一批图片 =================
