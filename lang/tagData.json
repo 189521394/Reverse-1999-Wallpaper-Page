@@ -2285,6 +2285,12 @@
     "category": "versionCode",
     "slug": "4.0"
   },
+  "4.1": {
+    "zh": "4.1",
+    "en": "4.1",
+    "category": "versionCode",
+    "slug": "4.1"
+  },
   "SP01": {
     "zh": "SP01",
     "en": "SP01",

@@ -2,7 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Python" name="Python facet">
-      <configuration sdkName="Python 3.13 (Reverse-1999-Wallpaper)" />
+      <configuration sdkName="Python 3.12 (Reverse-1999-Wallpaper)" />
     </facet>
   </component>
   <component name="NewModuleRootManager">
@@ -11,7 +11,8 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (resource)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Reverse-1999-Wallpaper)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Python 3.12 (Reverse-1999-Wallpaper) interpreter library" level="application" />
   </component>
 </module>
