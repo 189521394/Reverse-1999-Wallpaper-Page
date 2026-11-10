@@ -330,11 +330,3 @@ const isLocal = hostname === 'localhost' || hostname === '127.0.0.1' ||
 1. 在 `lang/tagData.json` 中为新分类添加标签条目（指定对应的 category 值）
 2. 在 `index.html` 的 `#tagList` 分区中添加对应的筛选按钮（id 需与 category 值匹配，并添加 data-i18n 属性）
 3. 在 `css/index/filterFrame/tagList.css` 中添加新按钮的外观样式
-
-## 提交风格
-
-项目使用中文提交信息，最近提交记录风格示例：
-- `微调暗色主题`
-- `新版本内容补全，独立控制色调，开发者功能优化，补全色调脚本优化`
-- `他者的悲哀`
-- `SEO优化`

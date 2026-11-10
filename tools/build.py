@@ -33,6 +33,7 @@ HTML_FILES_TO_PROCESS = [
 STATIC_ASSETS_TO_COPY = [
     'font',
     'favicon.png',
+    'OGimage.jpg',
     'lang',
     '_worker.js',   # Worker（拷贝后由 inject_worker_pic_map() 注入单图映射字典）
     'robots.txt'
@@ -77,7 +78,7 @@ HOME_EN_TITLE = 'Reverse: 1999 Wallpapers & Backgrounds | Official HD CG & Wallp
 HOME_ZH_DESCRIPTION = '专为《重返未来：1999》(Reverse: 1999) 设计的高清壁纸网站。收录大量官方CG图像，可供快速筛选与下载。'
 HOME_EN_DESCRIPTION = 'An HD wallpaper website designed exclusively for Reverse: 1999. It features a massive collection of official CG wallpapers & backgrounds, available for quick filtering and download.'
 HOME_ZH_KEYWORDS = 'Reverse 1999, 重返未来1999, 1999壁纸, 重返未来1999壁纸, 1999CG, 重返未来壁纸, wallpapers, 游戏壁纸, 重返未来官方CG, 重返未来高清壁纸, 重返未来手机壁纸, 重返未来桌面壁纸, Reverse1999 wallpaper, 1999官方壁纸'
-HOME_EN_KEYWORDS = 'Reverse 1999, 1999 wallpaper, Reverse: 1999 wallpapers, Reverse 1999 official CG, HD wallpapers, desktop wallpapers, mobile wallpapers, anime game wallpapers, Reverse 1999 wallpaper download, Reverse 1999 phone wallpaper, Reverse 1999 character art, anime artwork'
+HOME_EN_KEYWORDS = 'Reverse 1999, 1999 wallpaper, 1999 wallpapers, Reverse: 1999 wallpapers, Reverse 1999 official CG, HD wallpapers, desktop wallpapers, mobile wallpapers, anime game wallpapers, Reverse 1999 wallpaper download, Reverse 1999 phone wallpaper, Reverse 1999 character art, anime artwork'
 
 # ==========================================
 # 以下为核心构建逻辑，通常无需修改
@@ -573,7 +574,7 @@ def generate_tag_page(dist_dir, zh_template, en_template, tag_id, entry, compile
     visible = [i for i in matches if not is_background(i)]
     n = len(visible)
     og_list = visible if visible else matches
-    og_image = (IMG_DOMAIN + '/' + thumb_path(og_list[0]['file'])) if og_list else f'{SITE_URL}/favicon.png'
+    og_image = (IMG_DOMAIN + '/' + thumb_path(og_list[0]['file'])) if og_list else f'{SITE_URL}/OGimage.jpg'
     # 0 张图的标签页为薄内容，标 noindex（页面保留，以后版本补图后自动恢复收录）
     robots = 'noindex, follow' if n == 0 else None
 
@@ -605,7 +606,7 @@ def generate_summary_page(dist_dir, zh_template, en_template, key, category, com
     rel_path = f'/{key}/'
     all_visible = [i for i in compiled_data if not is_background(i)]
     n = len(all_visible)
-    og_image = (IMG_DOMAIN + '/' + thumb_path(all_visible[0]['file'])) if all_visible else f'{SITE_URL}/favicon.png'
+    og_image = (IMG_DOMAIN + '/' + thumb_path(all_visible[0]['file'])) if all_visible else f'{SITE_URL}/OGimage.jpg'
 
     titles = {
         'c': ('角色汇总 | 重返未来：1999 壁纸站', 'Characters Index | Reverse: 1999 Gallery'),
@@ -680,7 +681,7 @@ def generate_settings_page(dist_dir, zh_template, en_template, page_key, lang_pa
 
         html_text = template
         html_text = replace_head_seo(html_text, lang, title, description, keywords, f'/{page_key}/',
-                                     f'{SITE_URL}/favicon.png', robots=cfg['robots'])
+                                     f'{SITE_URL}/OGimage.jpg', robots=cfg['robots'])
         html_text = replace_h1(html_text, title)
         html_text = open_settings_statically(html_text, page_key)
         html_text = inject_static_texts(html_text, lang_packs[lang])
@@ -778,7 +779,7 @@ def generate_seo_pages(dist_dir, compiled_data, dictionary):
     # 英文首页模板 dist/en/index.html
     en_template = zh_template.replace('<html lang="zh"', '<html lang="en"', 1)
     en_template = replace_head_seo(en_template, 'en', HOME_EN_TITLE, HOME_EN_DESCRIPTION,
-                                   HOME_EN_KEYWORDS, '/', f'{SITE_URL}/favicon.png')
+                                   HOME_EN_KEYWORDS, '/', f'{SITE_URL}/OGimage.jpg')
     en_template = replace_h1(en_template, HOME_EN_TITLE)
     en_template = inject_static_texts(en_template, en_pack)
     write_page(dist_dir, 'en', en_template)
