@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /font/
 Allow: /
 
 Sitemap: https://r9wallpaper.org/sitemap.xml
