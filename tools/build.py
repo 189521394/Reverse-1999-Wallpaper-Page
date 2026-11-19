@@ -535,7 +535,8 @@ def inject_static_texts(html_text, lang_pack):
         text = get_translation(key, lang_pack)
         if text is None:
             return m.group(0)
-        return m.group(1) + html.escape(str(text)) + '<'
+        # DATA_I18N_TEXT_RE 末尾使用了正向前瞻 (?=<)，并未消费后面的 '<'，此处不能重复拼接
+        return m.group(1) + html.escape(str(text))
     return DATA_I18N_TEXT_RE.sub(repl, html_text)
 
 
@@ -629,7 +630,7 @@ def generate_summary_page(dist_dir, zh_template, en_template, key, category, com
         html_text = replace_h1(html_text, title)
         html_text = html_text.replace('<span id="resultCount">0</span>', f'<span id="resultCount">{n}</span>', 1)
         html_text = fill_select(html_text, all_visible[:48], dictionary, lang)
-        html_text = inject_initial_route(html_text, {'type': 'summary', 'count': n})
+        html_text = inject_initial_route(html_text, {'type': 'summary', 'path': rel_path, 'count': n})
         html_text = html_text.replace('</body>', build_noscript_links(dictionary, category, lang) + '\n</body>', 1)
         html_text = inject_static_texts(html_text, lang_packs[lang])
 

@@ -62,9 +62,9 @@ document.addEventListener("click", function(e) {
 function closeMenuAnimation(targetTab) {
     isAnimating = true; // 上锁
 
-    // 删除所有设置项的wait样式
+    // 删除所有设置项的wait样式与静态落地页可能预置的active样式
     setItemContainer.querySelectorAll(".setItem").forEach(el => {
-        el.classList.remove("activeWait");
+        el.classList.remove("activeWait", "active");
     });
 
     // 获取坐标快照
@@ -74,7 +74,7 @@ function closeMenuAnimation(targetTab) {
     // 生成克隆体
     cloneEl = targetTab.cloneNode(true);
     cloneEl.removeAttribute("id"); // 移除克隆体的重复 ID(多语言系统)
-    cloneEl.classList.remove("activeWait", "hidden-item"); // 清理可能残留的状态类
+    cloneEl.classList.remove("activeWait", "active", "hidden-item"); // 清理可能残留的状态类
     cloneEl.classList.add("clone-item");
 
     // 初始化克隆体坐标

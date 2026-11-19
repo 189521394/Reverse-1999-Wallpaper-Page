@@ -30,6 +30,12 @@ function openSettings() {
 function closeSettings() {
     releaseScrollLock(setLockID)
     setAni(false);
+    // 移动端通过返回键或遮罩关闭设置面板时，若底部 Tab 仍停留在“设置”，恢复回当前页面对应的 Tab
+    const setTabBtn = document.getElementById('set');
+    if (setTabBtn && setTabBtn.classList.contains('active') && typeof switchTab === 'function') {
+        const isTagsPage = document.body.classList.contains('tab-tags');
+        switchTab(isTagsPage ? 'tab-tags' : 'tab-wallpaper', isTagsPage ? 'selectTag' : 'wallpaper', true);
+    }
     // 地址栏退回设置面板之前的页面
     syncUrlWithState();
 }

@@ -329,6 +329,11 @@ const SETTING_CONTENT_TO_ROUTE = {
     debugList: 'debug'
 };
 
+// 记录当前所处的分类汇总页路径（'/c/' 或 '/v/'），避免打开大图/设置后读取到临时路径
+let currentSummaryPath = (window.__INITIAL_ROUTE__ && window.__INITIAL_ROUTE__.type === 'summary')
+    ? (window.__INITIAL_ROUTE__.path || null)
+    : null;
+
 // 计算当前筛选状态对应的规范路径（不含查询参数、含语言前缀）
 // 供分享链接生成与地址栏同步共用；不含设置面板分支——分享时取背后筛选状态
 function getStatePath() {
@@ -358,12 +363,11 @@ function getStatePath() {
         if (route) return langPrefix + route;
     }
 
-    // 优先级 3：分类汇总页（/c/ /v/）且未做任何筛选 → 保持当前汇总路径
-    // 注意：__INITIAL_ROUTE__ 只是页面加载时的初始标记，用户后续筛选后它不再代表当前状态，
-    // 因此必须同时要求筛选池为空（清空筛选后才回到汇总页路径）
-    if (window.__INITIAL_ROUTE__ && window.__INITIAL_ROUTE__.type === 'summary' && waiting.length === 0) {
-        const cleanPath = window.location.pathname.replace(/^\/en(?=\/|$)/, '') || '/';
-        return langPrefix + cleanPath;
+    // 优先级 3：分类汇总页（/c/ /v/）且未做任何筛选 → 保持汇总页规范路径
+    // 使用记录的 currentSummaryPath 而非当前 location.pathname，
+    // 防止从汇总页打开大图(/i/)或设置(/preference/)关闭后地址栏卡在临时路径
+    if (currentSummaryPath && waiting.length === 0) {
+        return langPrefix + currentSummaryPath;
     }
 
     // 其余（0 个、多个标签）→ 根路径
@@ -512,6 +516,10 @@ function handleSettingRoute(normalizedPath) {
         // 这里补申请滚动锁，与运行时打开设置的行为保持一致
         requestScrollLock(setLockID);
     }
+    // 移动端同步底部 Tab 高亮到“设置”，防止刷新或路由直达时停留在主页 Tab
+    if (typeof switchTab === 'function') {
+        switchTab('tab-set', 'set', true);
+    }
     const item = document.getElementById(itemId);
     if (item) item.click();
 }
@@ -570,10 +578,12 @@ function handleTagRoute(tagId) {
 // 分类汇总页 /c/ /v/：接管预渲染的全库非背景首屏
 // hydrateSummaryPage 内部会校验 DOM 是否为预渲染内容，不匹配则动态重建，
 // 因此 normal 模式（SPA 回退、无 __INITIAL_ROUTE__）刷新汇总页也能正常出图
-function handleSummaryRoute() {
+function handleSummaryRoute(normalizedPath) {
     if (activeImg) closeImage();
     if (setBackground.classList.contains('show')) closeSettings();
 
+    // 记录当前汇总页规范路径，供关闭大图/设置后准确回退
+    currentSummaryPath = normalizedPath;
     hydrateSummaryPage();
 }
 
@@ -691,12 +701,14 @@ function routeByPathAndQuery() {
 
     // 4. 分类汇总页 /c/ /v/
     if (normalizedPath === '/c/' || normalizedPath === '/v/') {
-        handleSummaryRoute();
+        handleSummaryRoute(normalizedPath);
         return;
     }
 
     // 5. 根路径：清空筛选池、关闭覆盖层后继续走旧 ?mode= 参数解析
     if (normalizedPath === '/') {
+        // 已回到根路径，清除汇总页路径记录
+        currentSummaryPath = null;
         // 先清空池子，否则 closeSettings/closeImage 内部的 syncUrlWithState
         // 会因残留标签把地址栏重新推回标签页路由，导致后退失效
         const rootPool = document.getElementById('submitPool');

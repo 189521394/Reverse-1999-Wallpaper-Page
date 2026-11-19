@@ -55,9 +55,22 @@ if (overlay) {
     overlay.addEventListener('click', closeImage);
 }
 // ================================== 获取图片和进度 ==================================
-async function fetchImageWithProgress(url, imgElement) {
-    // 创建图片专属进度条(如果图片没加载过)
-    if (!(imgElement.dataset.loadStatus)) {
+function fetchImageWithProgress(url, imgElement) {
+    if (imgElement.dataset.loadStatus === "finished") {
+        return Promise.resolve();
+    }
+
+    if (imgElement.dataset.loadStatus === "loading" && imgElement._fetchPromise) {
+        // 如果正在加载，就重新显示进度条，并返回同一个进行中的 Promise，
+        // 避免再次打开覆盖 fetchResult 导致下载按钮误以为加载已完成
+        if (imgElement.exclusiveTrack) {
+            imgElement.exclusiveTrack.classList.remove('hide');
+        }
+        return imgElement._fetchPromise;
+    }
+
+    // 创建图片专属进度条（仅当尚未创建时克隆，防止失败重试时重复创建）
+    if (!imgElement.exclusiveTrack) {
         // 获取模板
         const template = document.getElementById("progressTemplate");
         // 用于存储私有进度条的父元素
@@ -74,17 +87,9 @@ async function fetchImageWithProgress(url, imgElement) {
         // 把进度条和图片绑定在一起
         imgElement.exclusiveTrack = selfTrack;
         imgElement.exclusiveBar = selfBar;
-    }
-
-    if (imgElement.dataset.loadStatus === "finished") {
-        return;
-    }
-
-    if (imgElement.dataset.loadStatus === "loading") {
-        // 如果正在加载，就重新显示进度条，继续加载
-        // 同时直接返回，不需要二次加载
-        imgElement.exclusiveTrack.classList.remove('hide');
-        return;
+    } else if (imgElement.exclusiveBar) {
+        // 重试时复位进度条位置
+        imgElement.exclusiveBar.style.transform = '';
     }
 
     // 标记正在加载
@@ -93,99 +98,131 @@ async function fetchImageWithProgress(url, imgElement) {
     // 显示进度条
     imgElement.exclusiveTrack.classList.remove('hide');
 
-    // 网络请求
-    try {
-        // 发起请求
-        const response = await fetch(url, { mode: 'cors' });
+    // 保存本次请求的 Promise，供重复打开与下载逻辑复用
+    const task = (async () => {
+        // 网络请求
+        try {
+            // 发起请求
+            const response = await fetch(url, { mode: 'cors' });
 
-        if (!response.ok) {
-            // 这个注释只是为了不让ide标黄
-            // noinspection ExceptionCaughtLocallyJS
-            throw new Error(`HTTPS 错误: ${response.status}`);
-        }
+            if (!response.ok) {
+                // 这个注释只是为了不让ide标黄
+                // noinspection ExceptionCaughtLocallyJS
+                throw new Error(`HTTPS 错误: ${response.status}`);
+            }
 
-        // 获取总大小
-        const imgLength = response.headers.get('content-length');
+            // 获取总大小
+            const imgLength = response.headers.get('content-length');
 
-        // 10是进制单位，代表十进制
-        const total = parseInt(imgLength, 10);
-        let loaded = 0;
+            // 10是进制单位，代表十进制
+            const total = parseInt(imgLength, 10);
+            let loaded = 0;
 
-        // 记录上一次打印的整数百分比
-        let lastLoggedPercent = -1;
+            // 记录上一次打印的整数百分比
+            let lastLoggedPercent = -1;
 
-        // 下载进度监控
-        const reader = response.body.getReader();
-        const chunks = [];
+            // 下载进度监控
+            const reader = response.body.getReader();
+            const chunks = [];
 
-        while (true) {
-            const { done, value } = await reader.read();
+            while (true) {
+                const { done, value } = await reader.read();
 
-            if (done) break;
-            // 下载进度记录
-            chunks.push(value);
-            loaded += value.length;
+                if (done) break;
+                // 下载进度记录
+                chunks.push(value);
+                loaded += value.length;
 
-            if (total) {
-                // 计算当前的整数百分比
-                const currentPercent = Math.floor((loaded / total) * 100);
+                if (total) {
+                    // 计算当前的整数百分比
+                    const currentPercent = Math.floor((loaded / total) * 100);
 
-                // 只有当整数百分比发生变化时，才更新
-                if (currentPercent > lastLoggedPercent) {
-                    lastLoggedPercent = currentPercent; // 更新记录
+                    // 只有当整数百分比发生变化时，才更新
+                    if (currentPercent > lastLoggedPercent) {
+                        lastLoggedPercent = currentPercent; // 更新记录
 
-                    // 更新私有进度条
-                    if (!isMobileLayout) {
-                        imgElement.exclusiveBar.style.transform = `translateX(${-(100 - currentPercent)}vw)`;
-                    } else {
-                        imgElement.exclusiveBar.style.transform = `translateY(${-(100 - currentPercent)}vh)`;
+                        // 更新私有进度条
+                        if (imgElement.exclusiveBar) {
+                            if (!isMobileLayout) {
+                                imgElement.exclusiveBar.style.transform = `translateX(${-(100 - currentPercent)}vw)`;
+                            } else {
+                                imgElement.exclusiveBar.style.transform = `translateY(${-(100 - currentPercent)}vh)`;
+                            }
+                        }
+                    }
+                } else {
+                    // 如果没拿到 Content-Length，就按接收次数限流打印
+                    if (throwErr) {
+                        throwErr = false;
+                        showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
+                    }
+                    if (chunks.length % 10 === 0) {
+                        console.log(`获取文件大小失败，已下载: ${(loaded / 1024 / 1024).toFixed(2)} MB`);
                     }
                 }
-            } else {
-                // 如果没拿到 Content-Length，就按接收次数限流打印
-                if (throwErr) {
-                    throwErr = false;
-                    showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
-                }
-                if (chunks.length % 10 === 0) {
-                    console.log(`获取文件大小失败，已下载: ${(loaded / 1024 / 1024).toFixed(2)} MB`);
-                }
             }
+
+            // 若加载期间已切换筛选导致图片脱离 DOM，销毁进度条并放弃创建无主 blob
+            if (!imgElement.isConnected) {
+                if (imgElement.exclusiveTrack) {
+                    imgElement.exclusiveTrack.remove();
+                    delete imgElement.exclusiveTrack;
+                    delete imgElement.exclusiveBar;
+                }
+                delete imgElement.dataset.loadStatus;
+                return;
+            }
+
+            // 把数据拼接为图像
+            const blob = new Blob(chunks, { type: response.headers.get('content-type') || 'image/webp' });
+
+            // 生成本地虚拟链接
+            const objectURL = URL.createObjectURL(blob);
+
+            // 显示出图像
+            imgElement.src = objectURL;
+
+            // blob存起来
+            imgElement.dataset.blobURL = objectURL;
+
+            // 标记已经加载
+            imgElement.dataset.loadStatus = "finished";
+
+            // 隐藏进度条
+            if (imgElement.exclusiveTrack) {
+                imgElement.exclusiveTrack.classList.add('hide');
+
+                // 隐藏后销毁进度条
+                setTimeout(() => {
+                    if (imgElement.exclusiveTrack) {
+                        imgElement.exclusiveTrack.remove();
+                        delete imgElement.exclusiveTrack;
+                        delete imgElement.exclusiveBar;
+                    }
+                }, 400);
+            }
+        } catch (error) {
+            console.error('获取对象失败：', error);
+            // 失败后复位加载状态并隐藏进度条，允许后续再次打开时重试
+            delete imgElement.dataset.loadStatus;
+            if (imgElement.exclusiveTrack) {
+                imgElement.exclusiveTrack.classList.add('hide');
+            }
+            // 控制这个提示框只能显示一次
+            if (throwErr) {
+                throwErr = false;
+                showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
+            }
+            if (imgElement.isConnected) {
+                imgElement.src = url;
+            }
+        } finally {
+            delete imgElement._fetchPromise;
         }
+    })();
 
-        // 把数据拼接为图像
-        const blob = new Blob(chunks, { type: response.headers.get('content-type') || 'image/webp' });
-
-        // 生成本地虚拟链接
-        const objectURL = URL.createObjectURL(blob);
-
-        // 显示出图像
-        imgElement.src = objectURL;
-
-        // blob存起来
-        imgElement.dataset.blobURL = objectURL;
-
-        // 标记已经加载
-        imgElement.dataset.loadStatus = "finished";
-
-        // 隐藏进度条
-        imgElement.exclusiveTrack.classList.add('hide');
-
-        // 隐藏后销毁进度条
-        setTimeout(() => {
-            imgElement.exclusiveTrack.remove();
-            delete imgElement.exclusiveTrack;
-            delete imgElement.exclusiveBar;
-        }, 400);
-    } catch (error) {
-        console.error('获取对象失败：', error);
-        // 控制这个提示框只能显示一次
-        if (throwErr) {
-            throwErr = false;
-            showDialog("获取对象失败，回退至普通下载，进度条可能无法显示。", true);
-        }
-        imgElement.src = url;
-    }
+    imgElement._fetchPromise = task;
+    return task;
 }
 // ================================== 关闭图像 ==================================
 function closeImage() {

@@ -2,9 +2,10 @@
 const mobileQuery = window.matchMedia('(max-width: 768px)');
 let isMobileLayout = mobileQuery.matches;
 
-// 切换到主页
+// 切换到主页（静态设置落地页初始已打开设置面板，直接高亮“设置”避免闪烁）
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("wallpaper").classList.add("active");
+    const isSettingOpen = document.getElementById("setBackground")?.classList.contains("show");
+    document.getElementById(isSettingOpen ? "set" : "wallpaper").classList.add("active");
 });
 
 // 如果切换了布局，自动刷新页面
