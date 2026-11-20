@@ -11,6 +11,7 @@
 用法：在项目根目录运行 python tools/add_slugs.py
 """
 
+import argparse
 import json
 import os
 import re
@@ -77,14 +78,32 @@ def generate_slug(en_text: str) -> str:
     return text
 
 
-def main():
+def write_tag_data_atomic(tag_data: dict) -> None:
+    """原子覆写 lang/tagData.json（先写临时文件再替换）"""
+    tmp_path = os.path.join(os.path.dirname(TAG_DATA_PATH), f".tagData.json.tmp.{os.getpid()}")
+    try:
+        with open(tmp_path, 'w', encoding='utf-8') as f:
+            json.dump(tag_data, f, ensure_ascii=False, indent=2)
+        os.replace(tmp_path, TAG_DATA_PATH)
+    except Exception:
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+        raise
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description='为 lang/tagData.json 中缺失 slug 的 SEO 词条批量生成 slug')
+    parser.add_argument('--dry-run', action='store_true', help='仅检查并预览将生成的 slug，不写入文件')
+    args = parser.parse_args()
+
     with open(TAG_DATA_PATH, 'r', encoding='utf-8') as f:
         tag_data = json.load(f)
 
     # 统计每个分类已使用的 slug，用于唯一性校验
     used_slugs = {}   # category -> set(slug)
-    added_count = 0
+    added_items = []
     skipped_count = 0
+    invalid_items = []
 
     for tag_id, item in tag_data.items():
         category = item.get('category')
@@ -102,10 +121,21 @@ def main():
             slug = ''
         elif category == 'versionCode':
             # 版本号保持原样
-            slug = str(item.get('en', tag_id))
+            raw_ver = str(item.get('en') or tag_id).strip()
+            if not raw_ver:
+                invalid_items.append((tag_id, category, 'versionCode 缺少有效英文/版本号'))
+                continue
+            slug = raw_ver
         else:
-            # 其余标签基于英文名转写
-            slug = generate_slug(item.get('en', tag_id))
+            # 其余标签基于英文名转写，缺英文或转写为空时拦截
+            en_val = str(item.get('en', '')).strip()
+            if not en_val:
+                invalid_items.append((tag_id, category, '缺少 en 字段，无法生成 slug'))
+                continue
+            slug = generate_slug(en_val)
+            if not slug:
+                invalid_items.append((tag_id, category, f'en="{en_val}" 转写后 slug 为空（请检查英文翻译）'))
+                continue
 
         # 同一分类内唯一性校验
         category_used = used_slugs.setdefault(category, set())
@@ -119,34 +149,30 @@ def main():
         category_used.add(slug)
 
         item['slug'] = slug
-        added_count += 1
+        added_items.append((tag_id, category, item.get('en', ''), slug))
 
-    with open(TAG_DATA_PATH, 'w', encoding='utf-8') as f:
-        json.dump(tag_data, f, ensure_ascii=False, indent=2)
+    if invalid_items:
+        print(f'❌ slug 生成失败：发现 {len(invalid_items)} 个词条无法生成合法 slug，未修改 tagData.json！', file=sys.stderr)
+        for tag_id, category, reason in invalid_items:
+            print(f'   - [{category}] {tag_id}: {reason}', file=sys.stderr)
+        return 1
 
-    print(f'[OK] slug 生成完成：新增 {added_count} 个，跳过(已有) {skipped_count} 个')
+    if not added_items:
+        print(f'[OK] lang/tagData.json 无需更新：所有 {skipped_count} 个 SEO 词条均已有 slug')
+        return 0
 
-    # 输出验收样例
-    print('\n=== 验收样例 ===')
-    samples = [
-        ('zhu_xian_ju_qing', '所有主线(汇总)'),
-        ('1.0', '版本号'),
-        ('dong', '俄文 Зима'),
-        ('wei_la', '俄文 Вила'),
-        ('xiao_ye_ni_sai', '俄文 Енисей'),
-        ('a_fu_xi_wei', '俄文 Авксивий'),
-        ('fa_lang_yan', '重音 Coppélia'),
-        ('ye_mu_lan', '重音 Añil'),
-        ('yuan_zheng_ji', '西里尔主线'),
-        ('back_to_earth', '西里尔轶事'),
-    ]
-    for tag_id, desc in samples:
-        if tag_id in tag_data:
-            item = tag_data[tag_id]
-            print(f'  {tag_id} ({desc}): {item.get("en", "")} -> "{item.get("slug", "(无)")}"')
-        else:
-            print(f'  {tag_id} ({desc}): ❌ 词条不存在！')
+    if args.dry_run:
+        print(f'[DRY-RUN] 预计新增 {len(added_items)} 个 slug（跳过已有 {skipped_count} 个），未写入文件：')
+        for tag_id, category, en_val, slug in added_items:
+            print(f'  + [{category}] {tag_id} ({en_val}) -> "{slug}"')
+        return 0
+
+    write_tag_data_atomic(tag_data)
+    print(f'[OK] slug 生成完成：新增 {len(added_items)} 个，跳过(已有) {skipped_count} 个')
+    for tag_id, category, en_val, slug in added_items:
+        print(f'  + [{category}] {tag_id} ({en_val}) -> "{slug}"')
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

@@ -5,3 +5,5 @@ dist/
 # Python 缓存
 tools/__pycache__/
 __pycache__/
+# 工作流断点状态文件
+.workflow_state.json
